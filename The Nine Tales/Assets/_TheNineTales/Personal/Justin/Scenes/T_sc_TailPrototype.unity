@@ -544,7 +544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &997075129
 Transform:
   m_ObjectHideFlags: 0
@@ -690,10 +690,12 @@ MonoBehaviour:
   smoothSpeed: 0.02
   wiggleSpeed: 3
   wiggleMagnitude: 10
+  velocitySpeedModifier: 0.5
   tailBase: {fileID: 997075129}
   lineRend: {fileID: 997075130}
   targetDir: {fileID: 71863243}
   sr: {fileID: 685183188}
+  characterController: {fileID: 685183190}
 --- !u!1 &1286017388
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,12 +888,14 @@ MonoBehaviour:
   length: 6
   targetDist: 0.25
   smoothSpeed: 0.02
-  wiggleSpeed: 3
-  wiggleMagnitude: 10
+  wiggleSpeed: 10
+  wiggleMagnitude: 50
+  velocitySpeedModifier: 0.5
   tailBase: {fileID: 1630316080}
   lineRend: {fileID: 1630316081}
   targetDir: {fileID: 1286017389}
   sr: {fileID: 685183188}
+  characterController: {fileID: 685183190}
 --- !u!1 &2144503199
 GameObject:
   m_ObjectHideFlags: 0

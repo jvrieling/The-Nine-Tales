@@ -806,6 +806,7 @@ GameObject:
   - component: {fileID: 1544987961}
   - component: {fileID: 1544987960}
   - component: {fileID: 1544987963}
+  - component: {fileID: 1544987964}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -843,7 +844,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67
-    y: 69
+    y: 68
     width: 94
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -857,6 +858,7 @@ MonoBehaviour:
   - {fileID: 1544987958}
   - {fileID: 1544987957}
   - {fileID: 1544987956}
+  - {fileID: 1544987964}
   - {fileID: 1544987955}
   - {fileID: 1544987954}
   - {fileID: 1544987953}
@@ -900,7 +902,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1544987942}
   selectedCommands:
-  - {fileID: 1544987948}
+  - {fileID: 1544987964}
   variables: []
   description: 
   stepPause: 0
@@ -1309,7 +1311,7 @@ MonoBehaviour:
   commentText: Set chapter headings to invisible, then fade them in
 --- !u!114 &1544987960
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1323,12 +1325,12 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal: T_sc_CameraControls_v01
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1544987961
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1348,7 +1350,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &1544987962
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1366,7 +1368,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &1544987963
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1380,6 +1382,26 @@ MonoBehaviour:
   indentLevel: 0
   commenterName: Justin
   commentText: Fade out, then load the desired scene
+--- !u!114 &1544987964
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544987940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  duration: 0.5
+  targetAlpha: 0
+  waitUntilFinished: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeTexture: {fileID: 0}
+  fadeTweenType: 4
 --- !u!1 &1826812246
 GameObject:
   m_ObjectHideFlags: 0
