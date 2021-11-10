@@ -62,11 +62,6 @@ public class StateManager : MonoBehaviour
         lastGameState = currentGameState;
         currentGameState = state;
 
-        if (CurrentGameState == GameState.Dialogue || CurrentGameState == GameState.StillImage)
-        {
-            cc.enabled = true;
-        }
-
         switch (state)
         {
             case GameState.Narrative:
