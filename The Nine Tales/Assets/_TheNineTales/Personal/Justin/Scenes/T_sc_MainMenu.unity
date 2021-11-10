@@ -632,7 +632,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: T_sc_ChapterHeaderTemplate
+    stringVal: T_sc_Chapter1Header
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &687144206
@@ -830,7 +830,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &687144215
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -850,7 +850,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &687144216
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -865,7 +865,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &687144217
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -879,7 +879,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 127
     y: -22
-    width: 111
+    width: 78
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0

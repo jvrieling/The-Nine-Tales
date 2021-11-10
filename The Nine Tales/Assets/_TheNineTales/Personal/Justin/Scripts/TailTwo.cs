@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tail : MonoBehaviour
+public class TailTwo : MonoBehaviour
 {
     [Header("General Settings")]
-    public int length = 6;    
+    public int length = 6;
     public float targetDist = 0.25f;
     public float smoothSpeed = 0.02f;
-    public float trailSpeed = 350;
 
     [Header("Wiggle Settings")]
     public float wiggleSpeed = 3;
@@ -72,7 +71,8 @@ public class Tail : MonoBehaviour
         if (sr.flipX)
         {
             tailBase.rotation = startingRotation * Quaternion.Euler(0, 0, 180);
-        } else
+        }
+        else
         {
             tailBase.rotation = startingRotation * Quaternion.Euler(0, 0, 0);
         }
@@ -81,7 +81,8 @@ public class Tail : MonoBehaviour
 
         for (int i = 1; i < segments.Length; i++)
         {
-            segments[i] = Vector3.SmoothDamp(segments[i], segments[i - 1] + targetDir.right * targetDist, ref segmentV[i], smoothSpeed + i / trailSpeed);
+            Vector3 targetPos = segments[i - 1] + (segments[i] - segments[i - 1]).normalized * targetDist;
+            segments[i] = Vector3.SmoothDamp(segments[i], targetPos, ref segmentV[i], smoothSpeed);
         }
 
         lineRend.SetPositions(segments);
