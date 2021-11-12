@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     private float DashSpeed = 10;
 
     bool CanDash = true;
-    bool isDashing = false;
+    public bool isDashing = false;
 
     public enum FacingDirection { Left, Right }
     bool isQuickTurning;

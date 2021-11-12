@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageArea : MonoBehaviour
 {
-    public float damage;
+    public float damage = 1000;
     // Start is called before the first frame update
     void Start()
     {
