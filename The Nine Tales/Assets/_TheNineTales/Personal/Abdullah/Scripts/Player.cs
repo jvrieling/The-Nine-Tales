@@ -42,6 +42,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float DashSpeed = 10;
 
+    [SerializeField]
+    private float GroundedCastDistance = 0.1f;
+
     bool CanDash = true;
     public bool isDashing = false;
 
@@ -119,7 +122,7 @@ public class Player : MonoBehaviour
     public bool IsGrounded()
     {
         Vector2 BoxSize = new Vector2(0.9f, 1.3f);
-        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.down, .1f, GroundLayer))
+        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.down, GroundedCastDistance, GroundLayer))
         {
             return true;
 
@@ -388,5 +391,14 @@ public class Player : MonoBehaviour
     {
         Scene scene = SceneManager.GetActiveScene(); 
         SceneManager.LoadScene(scene.name);
+    }
+
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Vector3 BoxSize = new Vector3(0.9f, 1.3f, 0.1f);
+        Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
+
+        Gizmos.color = Color.white;
     }
 }
