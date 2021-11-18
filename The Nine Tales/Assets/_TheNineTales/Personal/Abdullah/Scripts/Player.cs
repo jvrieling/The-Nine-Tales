@@ -44,9 +44,11 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private float GroundedCastDistance = 0.1f;
+    public Vector2 BoxSize = new Vector2(0.9f, 1.3f);
+    public SpriteRenderer PlayerSprite;
 
     bool CanDash = true;
-    bool isDashing = false;
+    public bool isDashing = false;
 
     public enum FacingDirection { Left, Right }
     bool isQuickTurning;
@@ -121,7 +123,6 @@ public class Player : MonoBehaviour
 
     public bool IsGrounded()
     {
-        Vector2 BoxSize = new Vector2(0.9f, 1.3f);
         if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.down, GroundedCastDistance, GroundLayer))
         {
             return true;
@@ -137,14 +138,14 @@ public class Player : MonoBehaviour
     {
         if (InputTracker.GetDirectionalInput().x > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;
+            PlayerSprite.flipX = true;
 
 
             return FacingDirection.Right;
         }
         else if (InputTracker.GetDirectionalInput().x < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;
+            PlayerSprite.flipX = false;
 
 
             return FacingDirection.Left;
@@ -152,7 +153,7 @@ public class Player : MonoBehaviour
         else
         {
 
-            GetComponent<SpriteRenderer>().flipX = GetComponent<SpriteRenderer>().flipX;
+            PlayerSprite.flipX = PlayerSprite.flipX;
 
             return LastFacingDirection;
         }
@@ -396,7 +397,6 @@ public class Player : MonoBehaviour
     public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;
-        Vector3 BoxSize = new Vector3(0.9f, 1.3f, 0.1f);
         Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
 
         Gizmos.color = Color.white;
