@@ -26,8 +26,9 @@ public class Tail : MonoBehaviour
     private Vector3[] segments;
     private Vector3[] segmentV;
     private Quaternion startingRotation;
-    private float originalWiggleSpeed;
-    private float originalWiggleMagnitude;
+
+    private float currentWiggleSpeed;
+    private float currentWiggleMagnitude;
 
     private void Start()
     {
@@ -35,8 +36,8 @@ public class Tail : MonoBehaviour
         segments = new Vector3[length];
         segmentV = new Vector3[length];
         startingRotation = transform.rotation;
-        originalWiggleSpeed = wiggleSpeed;
-        originalWiggleMagnitude = wiggleMagnitude;
+        currentWiggleSpeed = wiggleSpeed;
+        currentWiggleMagnitude = wiggleMagnitude;
     }
     private void Reset()
     {
@@ -61,20 +62,22 @@ public class Tail : MonoBehaviour
     private void Update()
     {
         //Modify the tail wiggling based on the current velocity in the player controller.
-        wiggleSpeed = originalWiggleSpeed + Mathf.Abs(characterController.m_PlayerVelocity.x) * velocitySpeedModifier;
-        wiggleMagnitude = originalWiggleMagnitude - Mathf.Abs(characterController.m_PlayerVelocity.x) * velocitySpeedModifier;
+        currentWiggleSpeed = wiggleSpeed + Mathf.Abs(characterController.m_PlayerVelocity.x) * velocitySpeedModifier;
+        currentWiggleMagnitude = wiggleMagnitude - Mathf.Abs(characterController.m_PlayerVelocity.x) * velocitySpeedModifier;
 
         //Wiggle the tail by moving the rotation in a sine wave.
-        targetDir.localRotation = Quaternion.Euler(0, 0, Mathf.Sin(Time.time * wiggleSpeed) * wiggleMagnitude);
+        targetDir.localRotation = Quaternion.Euler(0, 0, Mathf.Sin(Time.time * currentWiggleSpeed) * currentWiggleMagnitude);
 
         //Flip the target direction if the sprite is flipped.
         //Note: The sprite gets flipped by the character controller.
         if (sr.flipX)
         {
             tailBase.rotation = startingRotation * Quaternion.Euler(0, 0, 180);
+            if(tailBase.localPosition.x > 0) tailBase.localPosition = tailBase.localPosition * -1;
         } else
         {
             tailBase.rotation = startingRotation * Quaternion.Euler(0, 0, 0);
+            if (tailBase.localPosition.x < 0) tailBase.localPosition = tailBase.localPosition * -1;
         }
 
         segments[0] = targetDir.position;
@@ -82,6 +85,7 @@ public class Tail : MonoBehaviour
         for (int i = 1; i < segments.Length; i++)
         {
             segments[i] = Vector3.SmoothDamp(segments[i], segments[i - 1] + targetDir.right * targetDist, ref segmentV[i], smoothSpeed + i / trailSpeed);
+            segments[i] = segments[i-1] + Vector3.ClampMagnitude(segments[i] - segments[i-1], targetDist);
         }
 
         lineRend.SetPositions(segments);
