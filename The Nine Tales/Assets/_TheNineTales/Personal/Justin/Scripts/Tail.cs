@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tail : MonoBehaviour
 {
     [Header("General Settings")]
-    public int length = 6;    
+    public int length = 6;
     public float targetDist = 0.25f;
     public float smoothSpeed = 0.02f;
     public float trailSpeed = 350;
@@ -70,14 +70,24 @@ public class Tail : MonoBehaviour
 
         //Flip the target direction if the sprite is flipped.
         //Note: The sprite gets flipped by the character controller.
+        Vector3 newPos = tailBase.localPosition;
         if (sr.flipX)
         {
             tailBase.rotation = startingRotation * Quaternion.Euler(0, 0, 180);
-            if(tailBase.localPosition.x > 0) tailBase.localPosition = tailBase.localPosition * -1;
-        } else
+            if (tailBase.localPosition.x > 0)
+            {
+                newPos.x *= -1;
+                tailBase.localPosition = newPos;
+            }
+        }
+        else
         {
             tailBase.rotation = startingRotation * Quaternion.Euler(0, 0, 0);
-            if (tailBase.localPosition.x < 0) tailBase.localPosition = tailBase.localPosition * -1;
+            if (tailBase.localPosition.x < 0)
+            {
+                newPos.x *= -1;
+                tailBase.localPosition = newPos;
+            }
         }
 
         segments[0] = targetDir.position;
@@ -85,7 +95,7 @@ public class Tail : MonoBehaviour
         for (int i = 1; i < segments.Length; i++)
         {
             segments[i] = Vector3.SmoothDamp(segments[i], segments[i - 1] + targetDir.right * targetDist, ref segmentV[i], smoothSpeed + i / trailSpeed);
-            segments[i] = segments[i-1] + Vector3.ClampMagnitude(segments[i] - segments[i-1], targetDist);
+            segments[i] = segments[i - 1] + Vector3.ClampMagnitude(segments[i] - segments[i - 1], targetDist);
         }
 
         lineRend.SetPositions(segments);
