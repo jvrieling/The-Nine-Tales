@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public bool EnableControls = true;
+    public bool EnableDashControls = true;
+    public bool EnableJumpControls = true;
+
 
     [SerializeField]
     private float m_jumpApexHeight = 3f;
@@ -18,6 +22,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float m_jumpBufferTime = 0.2f;
 
+    [SerializeField]
+    private float CoyoteTime = 0.2f;
+    
     [SerializeField]
     private float m_accelerationTimeFromRest = .5f;
 
@@ -52,7 +59,8 @@ public class Player : MonoBehaviour
 
     public enum FacingDirection { Left, Right }
     bool isQuickTurning;
-    bool isBufferJumpReady;
+    bool isBufferJumpReady = true;
+    bool isBufferJumpQueued;
     float m_bufferJumpCountdown;
     float m_CoyoteCountdown;
 
@@ -88,6 +96,11 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
+        if (!EnableControls)
+        {
+            return;
+        }
+
 
         HandleHorizontalMovement();
 
@@ -95,11 +108,20 @@ public class Player : MonoBehaviour
         GroundIt();
         m_PlayerVelocity.y = m_PlayerVelocity.y + (m_PlayerAccel.y * Time.deltaTime);
 
-        RegularJump();
-        //BufferJump();
+        if (EnableJumpControls)
+        {
+            RegularJump();
+            BufferJump();
+            CoyoteJump();
+        }
+
         // The following function ensures that the knight does not exceed TERMINAL VELOCITY
         TerminalVelocity();
-        HandleDash();
+        if (EnableDashControls)
+        {
+            HandleDash();
+        }
+
 
         m_PlayerRigidBody.velocity = m_PlayerVelocity;
         LastFacingDirection = GetFacingDirection();
@@ -300,7 +322,7 @@ public class Player : MonoBehaviour
         // prevent coyote jump follow up after regular jump
         m_CoyoteCountdown = -1;
         // Prevent Buffer Jump
-        isBufferJumpReady = false;
+        //isBufferJumpQueued = false;
         m_bufferJumpCountdown = -1;
     }
     void RegularJump()
@@ -316,22 +338,18 @@ public class Player : MonoBehaviour
 
         }
     }
-    void ResetSnakeSpeed()
-    {
-        m_maxHorizontalSpeed = 7;
-    }
-
 
     void BufferJump()
     {
         if (IsGrounded())
         {
             // Use quequed up jump and reset it
-            if (isBufferJumpReady)
+            if (isBufferJumpQueued)
             {
                 Jump();
                 print("BufferJump");
             }
+
         }
         else
         {
@@ -341,21 +359,44 @@ public class Player : MonoBehaviour
             // Remove queued up jump if buffer time exceeded
             if (m_bufferJumpCountdown < 0)
             {
-                isBufferJumpReady = false;
+                isBufferJumpQueued = false;
             }
 
 
             // Queue up jump when jump key was pressed while not grounded
-            if (InputTracker.WasJumpPressed())
+            if (InputTracker.IsJumpPressed())
             {
                 m_bufferJumpCountdown = m_jumpBufferTime;
-                isBufferJumpReady = true;
+                isBufferJumpQueued = true;
             }
         }
 
     }
 
+    void CoyoteJump()
+    {
+        if (IsGrounded())
+        {
+            // Reset countdown when grounded
+            m_CoyoteCountdown = CoyoteTime;
+        }
+        else
+        {
+            // Jump if you still have time left in your count down, and key is pressed
+            if (InputTracker.IsJumpPressed() && (m_CoyoteCountdown > 0))
+            {
+                Jump();
+                print("CoyoteJump");
+            }
+            else
+            {
+                //  keep Counting down 
+                m_CoyoteCountdown = m_CoyoteCountdown - Time.deltaTime;
+            }
 
+        }
+
+    }
 
     void TerminalVelocity()
     {
