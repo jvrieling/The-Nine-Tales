@@ -23,6 +23,9 @@ public class Player : MonoBehaviour
     private float m_jumpBufferTime = 0.2f;
 
     [SerializeField]
+    private float CoyoteTime = 0.2f;
+    
+    [SerializeField]
     private float m_accelerationTimeFromRest = .5f;
 
     [SerializeField]
@@ -109,6 +112,7 @@ public class Player : MonoBehaviour
         {
             RegularJump();
             BufferJump();
+            CoyoteJump();
         }
 
         // The following function ensures that the knight does not exceed TERMINAL VELOCITY
@@ -370,7 +374,30 @@ public class Player : MonoBehaviour
 
     }
 
+    void CoyoteJump()
+    {
+        if (IsGrounded())
+        {
+            // Reset countdown when grounded
+            m_CoyoteCountdown = CoyoteTime;
+        }
+        else
+        {
+            // Jump if you still have time left in your count down, and key is pressed
+            if (InputTracker.IsJumpPressed() && (m_CoyoteCountdown > 0))
+            {
+                Jump();
+                print("CoyoteJump");
+            }
+            else
+            {
+                //  keep Counting down 
+                m_CoyoteCountdown = m_CoyoteCountdown - Time.deltaTime;
+            }
 
+        }
+
+    }
 
     void TerminalVelocity()
     {

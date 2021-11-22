@@ -2444,12 +2444,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6244967175497373724, guid: 88c389b3f5248a54b947423a999731d7, type: 3}
+      propertyPath: CoyoteTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6244967175497373724, guid: 88c389b3f5248a54b947423a999731d7, type: 3}
       propertyPath: m_jumpApexTime
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6244967175497373724, guid: 88c389b3f5248a54b947423a999731d7, type: 3}
       propertyPath: m_jumpApexHeight
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6244967175497373725, guid: 88c389b3f5248a54b947423a999731d7, type: 3}
       propertyPath: m_Name
