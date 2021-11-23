@@ -8,6 +8,9 @@ public class TalkOnTrigger : MonoBehaviour
 {
     public Flowchart flowchart;
 
+    [Tooltip("Set to false if you want this to trigger EVERY time the target hits the collider.")]
+    public bool oneTimeUse = true;
+
     [Tooltip("The tag that will trigger the flowchart. Set to empty if you want any trigger collision to activate the flowchart.")]
     public string targetTag = "Player";
 
@@ -15,6 +18,8 @@ public class TalkOnTrigger : MonoBehaviour
     public bool allowTriggers = true;
     [Tooltip("Set to true if you want to check for regular collisions.")]
     public bool allowCollisions = false;
+
+    private bool triggered;
 
     void Start()
     {
@@ -43,7 +48,11 @@ public class TalkOnTrigger : MonoBehaviour
 
     public void StartTalking()
     {
-        flowchart.ExecuteBlock("Trigger");
-        StateManager.SetState(GameState.Dialogue);
+        if (!triggered)
+        {
+            flowchart.ExecuteBlock("Trigger");
+            StateManager.SetState(GameState.Dialogue);
+            triggered = true;
+        }
     }
 }
