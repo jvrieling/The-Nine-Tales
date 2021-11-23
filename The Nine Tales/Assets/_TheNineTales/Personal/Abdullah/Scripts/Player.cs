@@ -334,7 +334,6 @@ public class Player : MonoBehaviour
             if (InputTracker.IsJumpPressed())
             {
                 Jump();
-                print("RegularJump");
             }
 
         }
