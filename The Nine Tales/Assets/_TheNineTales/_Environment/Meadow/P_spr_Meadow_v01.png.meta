@@ -1,0 +1,1224 @@
+fileFormatVersion: 2
+guid: 8dce2a05d75cd5a40a4c7343cdbc6619
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 430
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2624.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c046e462bd167db469e3a9076b9720bd
+      internalID: 1279843359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_1
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 2624.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f1a46fdd1f17cb4d881ae573953f390
+      internalID: -1780370214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_2
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 2624.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4de183f4fac9444aa46de8a5ffbe19
+      internalID: 714037176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_3
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 2624.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffd580f8bfe3af4f8ad1f707c1c6f63
+      internalID: 268610951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_4
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 2624.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08ed48e2e13f6942927b2ffd2a74967
+      internalID: 2141343986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_5
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 2624.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35d3224db584cb499207d0c552bd67f
+      internalID: 2063301313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_6
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 2624.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850202ad9768e4e41859e800e7844228
+      internalID: 366290146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2187.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cda26f0d4a1c143a7f510bbf322851
+      internalID: 954325634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_8
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 2187.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce44e9a483b13b349a525e1caca90def
+      internalID: -1103749389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_9
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 2187.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c228796c6453ff949aad19793d290dda
+      internalID: 81263756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_10
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 2187.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5acffbbd3eff744993f66e6bf71c462
+      internalID: -574947953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_11
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 2187.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd5dc983dbe00b4e81f85c321da13d1
+      internalID: -331466663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_12
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 2187.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e15618b3441c24a838a6d661aa1b64
+      internalID: 1764969948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_13
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 2187.5715
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751ecd8dccce50d4ea7333800128bc46
+      internalID: -848994239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654160c336d2c9345bc983e0b8f962dc
+      internalID: 273155511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_15
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1750.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0d5dd71193c6b44a51b5bf24a85629
+      internalID: -1518628786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_16
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1750.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3b158f32a983b4d9a252f640b005be
+      internalID: 1274604178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_17
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1750.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b57fd93d83d164b8dceed00067514d
+      internalID: 1532504521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_18
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1750.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609ec75fe34cb784d9d5e8354259d588
+      internalID: -1845597459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_19
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 1750.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8750fd5b21f53149ba1cac77a57bf05
+      internalID: 87785627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_20
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 1750.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2a3d8d0e80faa419950e65637d36e3
+      internalID: 2120858182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1313.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3e6443ad69a8e41b8f7ace9b216b5e
+      internalID: -13878517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_22
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1313.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7351bd26e66bf24391ae218bfc8275e
+      internalID: -1150881520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_23
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 1313.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e423420d660a1084bbfacd514ce41fee
+      internalID: -547363669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_24
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1313.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ce7cb1fa1f84247b537cdc4800229d
+      internalID: 1765205872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_25
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 1313.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d87fee67e328df45a1f4bb86ee4eca8
+      internalID: 6829754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_26
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 1313.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a48cc2bf00b3ff468b2cb63778561ae
+      internalID: -197533672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_27
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 1313.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e913ac661739e46964eb252380d0b0
+      internalID: 1788680528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425ca9d8100cfa341afe618a9abf2600
+      internalID: 1210836633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_29
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 876.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f214e86c8d7be264c9b5890b908d4bc5
+      internalID: -1370485234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_30
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 876.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619aad17fa472a143b40c88d5e29aee0
+      internalID: -1458763117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_31
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 876.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a22a8f2b05f1d49ad917410b0ac9b2
+      internalID: 1387947190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_32
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 876.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c105351f9917bf541b08b33ec21de62b
+      internalID: -1873891988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_33
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 876.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e357f8904b78dc44b633e20ff2e19bd
+      internalID: 1637421937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_34
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 876.5714
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c867cbba58d86aa4eaf6ae7346cc2908
+      internalID: 27783179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 439.57144
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab33c88a00254a44d85b3d44bf174ade
+      internalID: -1222347808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_36
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 439.57144
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7588a4778dada41a9394d696dc0e7f
+      internalID: 1984874302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_37
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 439.57144
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf21f631a4c40846b1abc486c864601
+      internalID: -1583664571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_38
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 439.57144
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2be22b1a0146c4b8a4c9563f2063ed
+      internalID: 1174108287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_39
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 439.57144
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dafe1357d4065468ee629d793f966b
+      internalID: -1677278007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_40
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 439.57144
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160c314a969f6104a82027219cf6c0f5
+      internalID: 1982036591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_41
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 439.57144
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553b6f4d9b1789e4a8769c0d99eb11c9
+      internalID: 1344178499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.5714417
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4816790b66f4d4baab6c1c0c258345
+      internalID: -1699556182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_43
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 2.5714417
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de318a1eae5bd934c9016ab381ee140f
+      internalID: -896497721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_44
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 2.5714417
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b08b414bd18cd445a215864b974dc8d
+      internalID: 1745607508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_45
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 2.5714417
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f811984b31cdb0e428581daa752c55b4
+      internalID: 689131197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_46
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 2.5714417
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187f43bf415dff64baa942ddc2ca2d0b
+      internalID: -1541641030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_47
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 2.5714417
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20968f4f7b434ca4f97f0911a9ea5cd2
+      internalID: -1949822908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_Meadow_v01_48
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 2.5714417
+        width: 437.57144
+        height: 437.42856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f718adeb7af47f44ad10c3ec91667e9
+      internalID: -969621417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      P_spr_Meadow_v01_9: 81263756
+      P_spr_Meadow_v01_32: -1873891988
+      P_spr_Meadow_v01_36: 1984874302
+      P_spr_Meadow_v01_3: 268610951
+      P_spr_Meadow_v01_17: 1532504521
+      P_spr_Meadow_v01_45: 689131197
+      P_spr_Meadow_v01_31: 1387947190
+      P_spr_Meadow_v01_10: -574947953
+      P_spr_Meadow_v01_48: -969621417
+      P_spr_Meadow_v01_33: 1637421937
+      P_spr_Meadow_v01_37: -1583664571
+      P_spr_Meadow_v01_24: 1765205872
+      P_spr_Meadow_v01_15: -1518628786
+      P_spr_Meadow_v01_28: 1210836633
+      P_spr_Meadow_v01_19: 87785627
+      P_spr_Meadow_v01_47: -1949822908
+      P_spr_Meadow_v01_1: -1780370214
+      P_spr_Meadow_v01_11: -331466663
+      P_spr_Meadow_v01_27: 1788680528
+      P_spr_Meadow_v01_5: 2063301313
+      P_spr_Meadow_v01_23: -547363669
+      P_spr_Meadow_v01_40: 1982036591
+      P_spr_Meadow_v01_26: -197533672
+      P_spr_Meadow_v01_34: 27783179
+      P_spr_Meadow_v01_20: 2120858182
+      P_spr_Meadow_v01_6: 366290146
+      P_spr_Meadow_v01_21: -13878517
+      P_spr_Meadow_v01_14: 273155511
+      P_spr_Meadow_v01_22: -1150881520
+      P_spr_Meadow_v01_39: -1677278007
+      P_spr_Meadow_v01_13: -848994239
+      P_spr_Meadow_v01_42: -1699556182
+      P_spr_Meadow_v01_12: 1764969948
+      P_spr_Meadow_v01_16: 1274604178
+      P_spr_Meadow_v01_46: -1541641030
+      P_spr_Meadow_v01_25: 6829754
+      P_spr_Meadow_v01_29: -1370485234
+      P_spr_Meadow_v01_30: -1458763117
+      P_spr_Meadow_v01_38: 1174108287
+      P_spr_Meadow_v01_8: -1103749389
+      P_spr_Meadow_v01_43: -896497721
+      P_spr_Meadow_v01_0: 1279843359
+      P_spr_Meadow_v01_41: 1344178499
+      P_spr_Meadow_v01_4: 2141343986
+      P_spr_Meadow_v01_35: -1222347808
+      P_spr_Meadow_v01_2: 714037176
+      P_spr_Meadow_v01_44: 1745607508
+      P_spr_Meadow_v01_7: 954325634
+      P_spr_Meadow_v01_18: -1845597459
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

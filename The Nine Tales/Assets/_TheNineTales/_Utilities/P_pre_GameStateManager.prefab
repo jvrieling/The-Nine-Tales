@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9732028bfe0c94dbf7a649cac93c9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingFlowchart: {fileID: 0}
+  skipOpeningFlowchart: 0
   characterController: {fileID: 0}
   startingState: 3
   stateText: {fileID: 6199300609426832507}

@@ -8,6 +8,9 @@ public enum GameState { Platforming, Narrative, Dialogue, StillImage, Paused }
 
 public class StateManager : MonoBehaviour
 {
+    public Flowchart startingFlowchart;
+    public bool skipOpeningFlowchart;
+
     public Player characterController;
     public GameState startingState = GameState.Dialogue;
     public Text stateText;
@@ -37,6 +40,15 @@ public class StateManager : MonoBehaviour
         if (characterController == null) characterController = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
         SetState(startingState);
+
+        if(startingFlowchart != null)
+        {
+            if(!skipOpeningFlowchart) startingFlowchart.ExecuteBlock("Starting");
+            else startingFlowchart.ExecuteBlock("GiveControl");
+        } else
+        {
+            if (!skipOpeningFlowchart) Debug.LogWarning("No starting flowchart was assigned, but you didn't choose to skip the starting flowchart in " + gameObject.name + "!");
+        }
     }
     private void Update()
     {
