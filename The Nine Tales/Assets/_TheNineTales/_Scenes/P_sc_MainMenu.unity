@@ -297,8 +297,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -71.5367, y: -30.1584}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0.000061035156}
+  m_SizeDelta: {x: 0, y: 0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &373065860
 MonoBehaviour:
@@ -385,8 +385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1386, y: 0.6373}
-  m_SizeDelta: {x: 983.9923, y: 553.2189}
+  m_AnchoredPosition: {x: 1.2711, y: 8.2637}
+  m_SizeDelta: {x: 936.5837, y: 569.1427}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &487820040
 MonoBehaviour:
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9beb1c885410579458ad437ccc9b3f53, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bcde4dae1b28f34596b462b244d1af7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -632,7 +632,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: T_sc_Chapter1Header
+    stringVal: P_sc_Chapter1Header
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &687144206
@@ -685,7 +685,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 67
-    y: 70
+    y: 69
     width: 75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -723,8 +723,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 687144217}
-  selectedCommands: []
+  - {fileID: 687144208}
+  selectedCommands:
+  - {fileID: 687144205}
   variables: []
   description: 
   stepPause: 0

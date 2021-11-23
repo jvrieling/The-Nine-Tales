@@ -13,6 +13,7 @@ public class SetGameState : Command
     public override void OnEnter()
     {
         StateManager.SetState(newGameState);
+        Debug.Log("Let's goooo!");
         Continue();
     }
 

@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 246354546436543988}
   - component: {fileID: 246354546436543995}
   m_Layer: 0
-  m_Name: Player
+  m_Name: P_pre_Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -222,10 +222,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eacb53d7dfd2eb644bb8b72186596f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnableControls: 1
+  EnableDashControls: 1
+  EnableJumpControls: 1
   m_jumpApexHeight: 3
   m_jumpApexTime: 0.4
   m_terminalVelocity: -20
   m_jumpBufferTime: 0.2
+  CoyoteTime: 0.2
   m_accelerationTimeFromRest: 0.5
   m_decelerationTimeToRest: 0.25
   m_maxHorizontalSpeed: 7
@@ -692,3 +696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactRange: 2.13
   interactPrompt: {fileID: 766635337658818532}
+  interactNameDisplay: {fileID: 0}
+  interactLayers:
+    serializedVersion: 2
+    m_Bits: 8
