@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class BackgroundParalax : MonoBehaviour
 {
     private float length;
@@ -19,6 +18,11 @@ public class BackgroundParalax : MonoBehaviour
     public float _selfMovingRate;
     public float _totalDistanceSelfMoved;
 
+    private void Awake()
+    {
+        if (cameraPos == null) cameraPos = Camera.main.gameObject;
+    }
+
     private void Start()
     {
         startPosition = transform.position.x;
@@ -26,7 +30,7 @@ public class BackgroundParalax : MonoBehaviour
     }
 
     // update the parallax effect
-    private void FixedUpdate()
+    private void Update()
     {
         // track the distance we have moved
         float temp = (cameraPos.transform.position.x * (1 - parallaxEffect));

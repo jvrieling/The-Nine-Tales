@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 246354546436543988}
   - component: {fileID: 246354546436543995}
   - component: {fileID: 7897411903047362637}
+  - component: {fileID: 7964551327419498086}
   m_Layer: 0
   m_Name: P_pre_Player
   m_TagString: Player
@@ -376,7 +377,26 @@ MonoBehaviour:
   - {x: -0.4479792, y: -0.3954127, z: 0}
   m_ShapePathHash: 1928521147
   m_Mesh: {fileID: 0}
-  m_InstanceId: 85214
+  m_InstanceId: 54622
+--- !u!114 &7964551327419498086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246354546436543999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: The Fox
+  nameColor: {r: 0.8962264, g: 0.73043627, b: 0.5707102, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: The main character
 --- !u!1 &246354546781621990
 GameObject:
   m_ObjectHideFlags: 0
