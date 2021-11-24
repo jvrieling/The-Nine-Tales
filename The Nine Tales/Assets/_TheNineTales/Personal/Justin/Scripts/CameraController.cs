@@ -29,7 +29,7 @@ public class CameraController : MonoBehaviour
 
     private Camera cam;
 
-    private void Start()
+    private void Awake()
     {
         cam = GetComponent<Camera>();
 

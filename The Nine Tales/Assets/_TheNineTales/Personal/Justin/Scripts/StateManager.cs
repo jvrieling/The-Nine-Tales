@@ -88,7 +88,7 @@ public class StateManager : MonoBehaviour
                 break;
             case GameState.Dialogue:
                 cam.SetCameraZoom(true);
-                cam.SetCameraFollow(true);
+                cam.SetCameraFollow(false);
                 cc.enabled = false;
                 break;
             case GameState.StillImage:
