@@ -14,6 +14,7 @@ public class InteractableObject : MonoBehaviour
     {
         if (!used)
         {
+            if (oneTimeUse) used = true;
             if (destroyOnInteract) Destroy(gameObject);
         }
         return this;

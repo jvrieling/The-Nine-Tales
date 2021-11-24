@@ -79,6 +79,10 @@ public class Player : MonoBehaviour
     public float m_CurrentHealth = 10;
     float m_damageReduction = 0;
 
+    public GameObject jumpVFX;
+    public GameObject dashVFX;
+    public GameObject landVFX;
+    private bool groundedLastFrame;
 
     private void Awake()
     {
@@ -125,6 +129,16 @@ public class Player : MonoBehaviour
 
         m_PlayerRigidBody.velocity = m_PlayerVelocity;
         LastFacingDirection = GetFacingDirection();
+    }
+
+    public void LateUpdate()
+    {
+        if (!groundedLastFrame)
+        {
+           if(IsGrounded()) Instantiate(landVFX, transform);
+        }
+
+        groundedLastFrame = IsGrounded();
     }
 
     //**********************************************************************************************************************************
@@ -293,7 +307,7 @@ public class Player : MonoBehaviour
         Invoke("ResetSpeedLimit", DashDuration);
         isDashing = true;
         CanDash = false;
-
+        Instantiate(dashVFX, transform);
     }
 
     void EnableDash()
@@ -317,6 +331,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
+        Instantiate(jumpVFX, transform);
         // preform jump
         m_PlayerVelocity.y = 2 * m_jumpApexHeight / m_jumpApexTime;
         // prevent coyote jump follow up after regular jump

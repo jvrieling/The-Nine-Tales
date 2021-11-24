@@ -7,6 +7,11 @@
 [Oo]bj/
 [Ll]ogs/
 [Aa]ssets/AssetStoreTools*
+/[Uu]ser[Ss]ettings/
+
+# MemoryCaptures can get excessive in size.
+# They also could contain extremely sensitive data
+/[Mm]emoryCaptures/
 
 # Visual Studio cache directory
 .vs/

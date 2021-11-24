@@ -8,9 +8,11 @@ public enum GameState { Platforming, Narrative, Dialogue, StillImage, Paused }
 
 public class StateManager : MonoBehaviour
 {
+    public Flowchart startingFlowchart;
+    public bool skipOpeningFlowchart;
+
     public Player characterController;
     public GameState startingState = GameState.Dialogue;
-    public Flowchart startingFlowchart;
     public Text stateText;
 
     private static Player cc;
@@ -35,8 +37,18 @@ public class StateManager : MonoBehaviour
     private void Start()
     {
         if (cam == null) cam = Camera.main.GetComponent<CameraController>();
+        if (characterController == null) characterController = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
         SetState(startingState);
+
+        if(startingFlowchart != null)
+        {
+            if(!skipOpeningFlowchart) startingFlowchart.ExecuteBlock("Starting");
+            else startingFlowchart.ExecuteBlock("GiveControl");
+        } else
+        {
+            if (!skipOpeningFlowchart) Debug.LogWarning("No starting flowchart was assigned, but you didn't choose to skip the starting flowchart in " + gameObject.name + "!");
+        }
     }
     private void Update()
     {
@@ -66,21 +78,26 @@ public class StateManager : MonoBehaviour
         {
             case GameState.Narrative:
                 cam.SetCameraZoom(true);
+                cam.SetCameraFollow(true);
                 cc.enabled = true;
                 break;
             case GameState.Platforming:
                 cam.SetCameraZoom(false);
+                cam.SetCameraFollow(true);
                 cc.enabled = true;
                 break;
             case GameState.Dialogue:
                 cam.SetCameraZoom(true);
+                cam.SetCameraFollow(false);
                 cc.enabled = false;
                 break;
             case GameState.StillImage:
                 cam.SetCameraZoom(true);
+                cam.SetCameraFollow(false);
                 cc.enabled = false;
                 break;
             case GameState.Paused:
+                cam.SetCameraFollow(true);
                 cc.enabled = false;
                 break;
         }

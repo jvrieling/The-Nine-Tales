@@ -4,84 +4,93 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public bool runInEditor;
+    [Tooltip("The GameObject to follow around")]
     public Transform target;
-	public float smoothSpeed = 0.125f;
+    public float smoothSpeed = 0.125f;
 
-	public Vector3 offset;
-	public bool calculateOffsetOnStart = true;
+    public Vector3 offset;
+    public bool calculateOffsetOnStart = true;
 
-	public float platformingCameraSize;
-	public float narrativeCameraSize = 5.3f;
-	public float zoomTime = 0.7f;
-	public AnimationCurve zoomCurve;
+    public float platformingCameraSize;
+    public float narrativeCameraSize = 5.3f;
+    public float zoomTime = 0.7f;
+    public AnimationCurve zoomCurve;
 
-	private float zoomTimer;
-	private float targetSize;
-	private float startingSize;
-	private bool zooming;
-	public bool zoomedIn;
+    private float zoomTimer;
+    private float targetSize;
+    private float startingSize;
+    private bool zooming;
 
-	private Camera cam;
+    [Tooltip("set to true if the camera is currently zoomed in to the narrative camera size. Only affects anything if one of the camera sizes are not set.")]
+    public bool zoomedIn;
 
-    private void Start()
+    private bool follow = true;
+
+    private Camera cam;
+
+    private void Awake()
     {
-		cam = GetComponent<Camera>();
+        cam = GetComponent<Camera>();
 
-		if(target == null)
+        if (target == null)
         {
-			target = GameObject.Find("Player").transform;
+            target = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
-		if (zoomedIn && narrativeCameraSize == 0) narrativeCameraSize = cam.orthographicSize; 
-		else if(!zoomedIn && platformingCameraSize == 0) platformingCameraSize = cam.orthographicSize;
+        if (zoomedIn && narrativeCameraSize == 0) narrativeCameraSize = cam.orthographicSize;
+        else if (!zoomedIn && platformingCameraSize == 0) platformingCameraSize = cam.orthographicSize;
+    }
+    private void OnValidate()
+    {
+        runInEditMode = runInEditor;
     }
 
-    public void FixedUpdate()
-	{
-		Vector3 desiredPosition = target.position + offset;
-		Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-		transform.position = smoothedPosition;
+    public void Update()
+    {
+        if (follow)
+        {
+            Vector3 desiredPosition = target.position + offset;
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+            transform.position = smoothedPosition;
+        }
 
         if (zooming)
         {
-			zoomTimer = Mathf.Clamp(zoomTimer + Time.deltaTime, 0, zoomTime);
+            zoomTimer = Mathf.Clamp(zoomTimer + Time.deltaTime, 0, zoomTime);
 
-			cam.orthographicSize = Mathf.Lerp(startingSize, targetSize, zoomCurve.Evaluate(zoomTimer / zoomTime));
+            cam.orthographicSize = Mathf.Lerp(startingSize, targetSize, zoomCurve.Evaluate(zoomTimer / zoomTime));
 
-			if (zoomTimer >= zoomTime) zooming = false;
-			
-			/*if (zoomedIn)
-            {
-				cam.orthographicSize = Mathf.Lerp(narrativeCameraSize, platformingCameraSize, zoomCurve.Evaluate(zoomTimer/zoomTime));
-            } else
-            {
-				cam.orthographicSize = Mathf.Lerp(platformingCameraSize, narrativeCameraSize, zoomCurve.Evaluate(zoomTimer / zoomTime));
-			}*/
+            if (zoomTimer >= zoomTime) zooming = false;
         }
-	}
-
-	[ContextMenu("Zoom Out")]
-	public void ZoomOut()
-    {
-		SetCameraZoom(platformingCameraSize);
-    }
-	[ContextMenu("Zoom In")]
-	public void ZoomIn()
-    {
-		SetCameraZoom(narrativeCameraSize);
     }
 
-	public void SetCameraZoom(bool zoomIn)
+    [ContextMenu("Zoom Out")]
+    public void ZoomOut()
     {
-		if (zoomIn) SetCameraZoom(narrativeCameraSize);
-		else SetCameraZoom(platformingCameraSize);
+        SetCameraZoom(platformingCameraSize);
+    }
+    [ContextMenu("Zoom In")]
+    public void ZoomIn()
+    {
+        SetCameraZoom(narrativeCameraSize);
     }
 
-	public void SetCameraZoom(float zoom)
+    public void SetCameraZoom(bool zoomIn)
     {
-		targetSize = zoom;
-		startingSize = cam.orthographicSize;
-		zooming = true;
-		zoomTimer = 0;
+        if (zoomIn) SetCameraZoom(narrativeCameraSize);
+        else SetCameraZoom(platformingCameraSize);
+    }
+
+    public void SetCameraZoom(float zoom)
+    {
+        targetSize = zoom;
+        startingSize = cam.orthographicSize;
+        zooming = true;
+        zoomTimer = 0;
+    }
+    public void SetCameraFollow(bool shouldFollowTarget)
+    {
+        follow = shouldFollowTarget;
     }
 }
