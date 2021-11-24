@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public bool runInEditor;
     [Tooltip("The GameObject to follow around")]
     public Transform target;
     public float smoothSpeed = 0.125f;
@@ -40,8 +41,12 @@ public class CameraController : MonoBehaviour
         if (zoomedIn && narrativeCameraSize == 0) narrativeCameraSize = cam.orthographicSize;
         else if (!zoomedIn && platformingCameraSize == 0) platformingCameraSize = cam.orthographicSize;
     }
+    private void OnValidate()
+    {
+        runInEditMode = runInEditor;
+    }
 
-    public void FixedUpdate()
+    public void Update()
     {
         if (follow)
         {
