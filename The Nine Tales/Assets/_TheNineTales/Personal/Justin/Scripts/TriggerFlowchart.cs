@@ -4,7 +4,7 @@ using UnityEngine;
 using Fungus;
 
 [RequireComponent(typeof(Collider2D))]
-public class TalkOnTrigger : MonoBehaviour
+public class TriggerFlowchart : MonoBehaviour
 {
     public Flowchart flowchart;
 
