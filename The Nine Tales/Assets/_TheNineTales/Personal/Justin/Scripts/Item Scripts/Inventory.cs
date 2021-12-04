@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     public List<ItemStack> items;
     public Item debugItem;
-    public GameObject inventoryItemUI;
+
+    public Text inventoryText;
+    public Image[] icons;
 
     private void Awake()
     {
@@ -15,6 +18,30 @@ public class Inventory : MonoBehaviour
             items = new List<ItemStack>();
         }
     }
+
+    private void Start()
+    {
+        UpdateUI();
+    }
+
+    public void UpdateUI()
+    {
+        string inventoryStr = "";
+        int j = 0;
+        foreach(ItemStack i in items)
+        {
+            inventoryStr += i.itemName + " x" + i.count + "\n";
+
+            if (j < icons.Length)
+            {
+                icons[j].sprite = i.icon;
+                j++;
+            }
+        }
+
+        inventoryText.text = inventoryStr;
+    }
+
     [ContextMenu("Give Debug Item")]
     public void GiveDebugItem()
     {
@@ -34,11 +61,15 @@ public class Inventory : MonoBehaviour
     public void AddItem(Item item)
     {
         items.Add(new ItemStack(item));
+
+        UpdateUI();
     }
 
     public void AddItem(ItemStack item)
     {
         items.Add(item);
+
+        UpdateUI();
     }
 
     public bool UseItem(Item item)
@@ -52,6 +83,7 @@ public class Inventory : MonoBehaviour
         {
             items.Remove(items[index]);
         }
+        UpdateUI();
         return true;
     }
 

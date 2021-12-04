@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public static GameObject player;
+    public static Inventory inventory;
+    public static Interactor interactor;
+
     public bool EnableControls = true;
     public bool EnableDashControls = true;
     public bool EnableJumpControls = true;
@@ -59,7 +63,7 @@ public class Player : MonoBehaviour
 
     public enum FacingDirection { Left, Right }
     bool isQuickTurning;
-    bool isBufferJumpReady = true;
+    //bool isBufferJumpReady = true;
     bool isBufferJumpQueued;
     float m_bufferJumpCountdown;
     float m_CoyoteCountdown;
@@ -87,7 +91,10 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        print(instance.gameObject);
+
+        player = gameObject;
+        inventory = GetComponentInChildren<Inventory>();
+        interactor = GetComponentInChildren<Interactor>();
     }
 
 
@@ -362,7 +369,6 @@ public class Player : MonoBehaviour
             if (isBufferJumpQueued)
             {
                 Jump();
-                print("BufferJump");
             }
 
         }
@@ -401,7 +407,6 @@ public class Player : MonoBehaviour
             if (InputTracker.IsJumpPressed() && (m_CoyoteCountdown > 0))
             {
                 Jump();
-                print("CoyoteJump");
             }
             else
             {

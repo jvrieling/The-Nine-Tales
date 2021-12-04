@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a298cde658f5f7d42944e74731d41f21, type: 3}
-  m_Name: Apple
+  m_Name: T_so_Coin
   m_EditorClassIdentifier: 
-  name: Apple
-  count: 0
-  icon: {fileID: 21300000, guid: 7f712bb6d46f2a64cbec0ae2019fc39c, type: 3}
-  id: 1
+  itemName: Coin
+  icon: {fileID: 21300000, guid: 71727913cf865a94387c69658b785b0e, type: 3}
+  id: 2

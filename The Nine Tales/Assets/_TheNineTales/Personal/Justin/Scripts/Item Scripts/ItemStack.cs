@@ -5,14 +5,14 @@ using UnityEngine;
 [System.Serializable]
 public class ItemStack
 {
-    public string name;
+    public string itemName;
     public int count;
     public Sprite icon;
     public int id;
 
     public ItemStack(Item item)
     {
-        name = item.name;
+        itemName = item.itemName;
         count = 1;
         icon = item.icon;
         id = item.id;
@@ -20,7 +20,7 @@ public class ItemStack
 
     public ItemStack(Item item, int i)
     {
-        name = item.name;
+        itemName = item.itemName;
         count = i;
         icon = item.icon;
         id = item.id;

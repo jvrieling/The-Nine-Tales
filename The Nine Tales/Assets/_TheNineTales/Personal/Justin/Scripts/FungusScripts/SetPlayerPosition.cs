@@ -8,30 +8,25 @@ using Fungus;
     "Sets the player's position without wasting cpu on iTween.")]
 public class SetPlayerPosition : Command
 {
-    private static GameObject player;
-
     public Transform position;
 
     public override void OnEnter()
     {
-        if (player == null) GetPlayer();
+        if (Player.player == null) GetPlayer();
 
-        if (player != null)
-        {
             if (position != null)
             {
-                player.transform.position = position.position;
+                Player.player.transform.position = position.position;
             } else { Debug.LogWarning("The player's position was supposed to be set by a flowchart on " + gameObject.name + " but the position was not provided! Didn't move the player."); }
-        } else { Debug.LogWarning("Couldnt find the player in the SetPlayerPosition script!"); }
         Continue();
     }
 
     public override string GetSummary()
     {
         string p = "NO PLAYER FOUND";
-        if(player!= null)
+        if(Player.player != null)
         {
-            p = player.name;
+            p = Player.player.name;
         } else
         {
             GetPlayer();
@@ -50,7 +45,7 @@ public class SetPlayerPosition : Command
     // Start is called before the first frame update
     void Start()
     {
-        if(player == null)
+        if(Player.player == null)
         {
             GetPlayer();
         }
@@ -58,6 +53,7 @@ public class SetPlayerPosition : Command
 
     private void GetPlayer()
     {
-       player = GameObject.FindGameObjectWithTag("Player");
+
+        Player.player = GameObject.FindGameObjectWithTag("Player");
     }
 }

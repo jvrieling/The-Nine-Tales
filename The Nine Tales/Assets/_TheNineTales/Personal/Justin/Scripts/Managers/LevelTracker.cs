@@ -14,7 +14,6 @@ public static class LevelTracker
     [RuntimeInitializeOnLoadMethod]
     public static void SubscribeToNewScenes()
     {
-        Debug.Log("Level Tracker Initializing...");
         SceneManager.sceneLoaded += SetNewScene;
     }
 
