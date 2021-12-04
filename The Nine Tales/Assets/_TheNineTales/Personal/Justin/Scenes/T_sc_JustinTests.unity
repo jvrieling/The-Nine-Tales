@@ -5001,6 +5001,10 @@ PrefabInstance:
       propertyPath: characterController
       value: 
       objectReference: {fileID: 1432054248}
+    - target: {fileID: 76276325999693352, guid: 10b0147f09977d44987b3dbb84b78c1d, type: 3}
+      propertyPath: skipOpeningFlowchart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 76276325999693355, guid: 10b0147f09977d44987b3dbb84b78c1d, type: 3}
       propertyPath: m_RootOrder
       value: 2

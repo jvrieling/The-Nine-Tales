@@ -26,7 +26,8 @@ public class BackgroundParalax : MonoBehaviour
     private void Start()
     {
         startPosition = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+
+        if (TryGetComponent(out SpriteRenderer sr)) length = sr.bounds.size.x;
     }
 
     // update the parallax effect
@@ -40,17 +41,18 @@ public class BackgroundParalax : MonoBehaviour
         float selfMoveDelta = 0;
 
         // only calculate the self moving delta if this is a self moving paralax image
-        if (_selfMoving) {
-             selfMoveDelta = _selfMovingRate * Time.deltaTime;
-             _totalDistanceSelfMoved = _totalDistanceSelfMoved + selfMoveDelta;
-             startPosition = startPosition + selfMoveDelta;
-            
+        if (_selfMoving)
+        {
+            selfMoveDelta = _selfMovingRate * Time.deltaTime;
+            _totalDistanceSelfMoved = _totalDistanceSelfMoved + selfMoveDelta;
+            startPosition = startPosition + selfMoveDelta;
+
         }
 
         transform.position = new Vector3(startPosition + delta + positionAdjustments.x, (cameraPos.transform.position.y + positionAdjustments.y) * yMoveMultiplier, transform.position.z);
 
         // if the distance we have self moved is greater then the length of the sprite then reset our sprite location
-        if(Mathf.Abs(_totalDistanceSelfMoved) > length)
+        if (Mathf.Abs(_totalDistanceSelfMoved) > length)
         {
             startPosition -= _totalDistanceSelfMoved;
             _totalDistanceSelfMoved = 0;
@@ -58,10 +60,11 @@ public class BackgroundParalax : MonoBehaviour
 
 
         // adjust the position of this background image based off of its movement relative to where it started
-        if(temp > startPosition + length)
+        if (temp > startPosition + length)
         {
             startPosition += length;
-        } else if(temp < startPosition - length)
+        }
+        else if (temp < startPosition - length)
         {
             startPosition -= length;
         }
