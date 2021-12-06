@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     [Tooltip("The GameObject to follow around")]
     public Transform target;
     public float smoothSpeed = 0.125f;
+    public float accuracy = 1f;
 
     public Vector3 offset;
     public bool calculateOffsetOnStart = true;
@@ -51,8 +52,11 @@ public class CameraController : MonoBehaviour
         if (follow)
         {
             Vector3 desiredPosition = target.position + offset;
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-            transform.position = smoothedPosition;
+            if (Vector3.Distance(transform.position, desiredPosition) > accuracy)
+            {
+                Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+                transform.position = smoothedPosition;
+            }
         }
 
         if (zooming)

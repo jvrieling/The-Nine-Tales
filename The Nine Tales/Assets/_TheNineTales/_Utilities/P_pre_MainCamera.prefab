@@ -220,6 +220,7 @@ MonoBehaviour:
   runInEditor: 0
   target: {fileID: 0}
   smoothSpeed: 0.125
+  accuracy: 1
   offset: {x: 0, y: 2.3, z: -10}
   calculateOffsetOnStart: 0
   platformingCameraSize: 7
