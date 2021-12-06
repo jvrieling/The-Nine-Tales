@@ -1,0 +1,938 @@
+fileFormatVersion: 2
+guid: d68701894fbe3574f93a41edae655aad
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 308
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2187.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f429c3c6083b44fbc71cc98dc21395
+      internalID: -997004946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 2187.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d6ede4222a76d4da03098592099f0a
+      internalID: 623315592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_2
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 2187.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3815c4da689f3f846a33ff742492d25a
+      internalID: -931849395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_3
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 2187.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1867dda5394d49e47a229a5a780100a7
+      internalID: 927875626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_4
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 2187.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c1de1332016044c9c49d347093ffd2
+      internalID: -232599141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_5
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 2187.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f2cf46b57e3594cb335f70e308fbb2
+      internalID: -87666632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3164a3b5eded5fc4c9e90e24b94c5ef7
+      internalID: 1590619630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_7
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1750.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23038b19a61013b45850c02452631a8a
+      internalID: 1839983364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_8
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1750.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3350294dbb29b4abb911207a95e7f6
+      internalID: -1362135703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_9
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1750.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f935fd44f16c39749ad54f9782fd292c
+      internalID: -1844709735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_10
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1750.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dc3d94533b4c945a9789ceab5a5acb
+      internalID: -276534781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_11
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 1750.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f528c24595d157e4599ee1df97d9bfc1
+      internalID: 98589906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1313.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4afb85a6a34a84bb2309892f79a222
+      internalID: -1858551466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_13
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1313.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d0a999280daf8449cf42c729c37dd0
+      internalID: -1484016362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_14
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 1313.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f94bd76fa1d3d74daef5162d8957943
+      internalID: -1436300885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_15
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 1313.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c17db21a905d049a4d092ea1fd9786
+      internalID: -1613388556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_16
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 1313.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f1bdde6baaf95479d2801162327a87
+      internalID: 935625013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_17
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 1313.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6cda1edc39f6548924421ae5cebe44
+      internalID: 885037276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63c618fc4e30cb4c95cb9798879d911
+      internalID: 1013682107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_19
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 876.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc2800c8ab23d248b04c0291971269f
+      internalID: -1910837971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_20
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 876.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eecc32fae3ab8b4fa406b319fdbed03
+      internalID: 253978726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_21
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 876.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbd05b951a66e846b8997757e8f24bc
+      internalID: 556764482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_22
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 876.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ca04689388584428ccea08bd2b3481
+      internalID: 1922385427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_23
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 876.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c77937036d94b4fad3b215d4abf071
+      internalID: -2109962627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 439.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf27f8c1fe1a7f8448f34460e2cbadf1
+      internalID: 1755145770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_25
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 439.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5720ca46b3696bf46acb0a19fbb9b881
+      internalID: 1434841515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_26
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 439.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a0fb778f120a742a1115bf3e942685
+      internalID: -54481062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_27
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 439.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265a87943505bab4ba35ca6c5ca9f460
+      internalID: 1636615523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_28
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 439.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0e3a9eb68cc6b4cbfc533200dd5eed
+      internalID: -2066501740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_29
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 439.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c714ddb4b9376004382c697203760fae
+      internalID: -1229437960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672353a52214c38458abd2a49e51f867
+      internalID: 1945267196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_31
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 2.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3b163df13481c408f1b9c1587a7263
+      internalID: -1598359865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_32
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 2.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb2ace771724084f84fbf551db03308
+      internalID: 542393126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_33
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 2.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f22d05f082078459edadd477b05454
+      internalID: -1840271635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_34
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 2.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bb23309459aae47a0d7677003bbc26
+      internalID: -566995457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_spr_MeadowTiles_v2_35
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 2.5
+        width: 439.33334
+        height: 437.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cbc118175db634f9cc2b9551aa01f5
+      internalID: 501814665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      P_spr_MeadowTiles_v2_24: 1755145770
+      P_spr_MeadowTiles_v2_0: -997004946
+      P_spr_MeadowTiles_v2_5: -87666632
+      P_spr_MeadowTiles_v2_4: -232599141
+      P_spr_MeadowTiles_v2_33: -1840271635
+      P_spr_MeadowTiles_v2_11: 98589906
+      P_spr_MeadowTiles_v2_13: -1484016362
+      P_spr_MeadowTiles_v2_9: -1844709735
+      P_spr_MeadowTiles_v2_2: -931849395
+      P_spr_MeadowTiles_v2_29: -1229437960
+      P_spr_MeadowTiles_v2_35: 501814665
+      P_spr_MeadowTiles_v2_27: 1636615523
+      P_spr_MeadowTiles_v2_25: 1434841515
+      P_spr_MeadowTiles_v2_6: 1590619630
+      P_spr_MeadowTiles_v2_7: 1839983364
+      P_spr_MeadowTiles_v2_12: -1858551466
+      P_spr_MeadowTiles_v2_10: -276534781
+      P_spr_MeadowTiles_v2_14: -1436300885
+      P_spr_MeadowTiles_v2_30: 1945267196
+      P_spr_MeadowTiles_v2_19: -1910837971
+      P_spr_MeadowTiles_v2_3: 927875626
+      P_spr_MeadowTiles_v2_22: 1922385427
+      P_spr_MeadowTiles_v2_32: 542393126
+      P_spr_MeadowTiles_v2_1: 623315592
+      P_spr_MeadowTiles_v2_21: 556764482
+      P_spr_MeadowTiles_v2_8: -1362135703
+      P_spr_MeadowTiles_v2_23: -2109962627
+      P_spr_MeadowTiles_v2_15: -1613388556
+      P_spr_MeadowTiles_v2_16: 935625013
+      P_spr_MeadowTiles_v2_20: 253978726
+      P_spr_MeadowTiles_v2_26: -54481062
+      P_spr_MeadowTiles_v2_31: -1598359865
+      P_spr_MeadowTiles_v2_34: -566995457
+      P_spr_MeadowTiles_v2_18: 1013682107
+      P_spr_MeadowTiles_v2_28: -2066501740
+      P_spr_MeadowTiles_v2_17: 885037276
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
