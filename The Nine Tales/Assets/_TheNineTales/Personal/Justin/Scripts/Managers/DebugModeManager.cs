@@ -14,22 +14,49 @@ public class DebugModeManager : MonoBehaviour
     {
         items = givableItems;
         DebugLogConsole.AddCommand<string>("give", "Gives an item", Give);
+        DebugLogConsole.AddCommand<string, int>("give", "Gives an item", Give);
+        DebugLogConsole.AddCommand<string, int, int>("check", "Checks if a plyer has an item between min and max (inclusive)", CheckInventory);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-    public static void Give(string g)
+    public static void CheckInventory(string item, int min, int max)
     {
         foreach (Item i in items)
         {
-            if(i.itemName.Equals(g, System.StringComparison.CurrentCultureIgnoreCase) || i.id.ToString() == g)
+            if (i.itemName.Equals(item, System.StringComparison.CurrentCultureIgnoreCase) || i.id.ToString() == item)
             {
-                Player.inventory.AddItem(i);
+                int index = Player.inventory.GetItemIndex(i);
+                if (index > 0)
+                {
+                    if (Player.inventory.Contains(i, min, max))
+                    {
+                        Debug.Log("Success: The player has between " + min + " and " + max + " of " + item + " (" + Player.inventory.items[index].count + ")");
+                    }
+                    else
+                    {
+                        Debug.Log("Fail: The player has " + item + ", but not an amount between " + min + " and " + max);
+                    }
+                }
+                else
+                {
+                    Debug.Log("Fail: The player does not have any " + item + " on hand.");
+                }
+                return;
+            }
+        }
+
+        Debug.LogWarning("No item name or id found matching " + item + ". Please ensure it is added to the \"Givable Items\" list in inspector before pressing play.");
+    }
+    public static void Give(string g)
+    {
+        Give(g, 1);
+    }
+    public static void Give(string g, int count)
+    {
+        foreach (Item i in items)
+        {
+            if (i.itemName.Equals(g, System.StringComparison.CurrentCultureIgnoreCase) || i.id.ToString() == g)
+            {
+                Player.inventory.AddItem(new ItemStack(i, count));
                 return;
             }
         }

@@ -18,10 +18,10 @@ public class ItemStack
         id = item.id;
     }
 
-    public ItemStack(Item item, int i)
+    public ItemStack(Item item, int stackCount)
     {
         itemName = item.itemName;
-        count = i;
+        count = stackCount;
         icon = item.icon;
         id = item.id;
     }

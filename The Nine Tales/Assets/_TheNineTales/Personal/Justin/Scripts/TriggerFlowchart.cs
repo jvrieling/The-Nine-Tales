@@ -51,7 +51,6 @@ public class TriggerFlowchart : MonoBehaviour
         if (!triggered)
         {
             flowchart.ExecuteBlock("Trigger");
-            StateManager.SetState(GameState.Dialogue);
             triggered = true;
         }
     }

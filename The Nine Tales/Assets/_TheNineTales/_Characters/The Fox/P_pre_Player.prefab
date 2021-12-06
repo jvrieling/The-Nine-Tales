@@ -413,7 +413,7 @@ MonoBehaviour:
   - {x: -0.4479792, y: -0.3954127, z: 0}
   m_ShapePathHash: 1928521147
   m_Mesh: {fileID: 0}
-  m_InstanceId: 52482
+  m_InstanceId: 80864
 --- !u!114 &7964551327419498086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,14 +749,12 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.5
-  m_Text: 'apple
+    m_LineSpacing: 1.4
+  m_Text: '---
 
-    coin
+    ---
 
-    spice
-
-    ginger'
+    ---'
 --- !u!1 &749405391511038957
 GameObject:
   m_ObjectHideFlags: 0
@@ -6532,7 +6530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 18.00003, y: 37.296703}
+  m_AnchoredPosition: {x: 18.00003, y: 60.679}
   m_SizeDelta: {x: 22, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7824545909555314469
@@ -7033,7 +7031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 18.00003, y: 60.679}
+  m_AnchoredPosition: {x: 18, y: 37.597}
   m_SizeDelta: {x: 22, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1235096688686400367
@@ -7927,7 +7925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11414302, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11440770, guid: 67117722a812a2e46ab8cb8eafbf5f5e, type: 3}
       propertyPath: m_PresetInfoIsWorld

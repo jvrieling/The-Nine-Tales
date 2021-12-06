@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
     {
         string inventoryStr = "";
         int j = 0;
-        foreach(ItemStack i in items)
+        foreach (ItemStack i in items)
         {
             inventoryStr += i.itemName + " x" + i.count + "\n";
 
@@ -60,14 +60,21 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Item item)
     {
-        items.Add(new ItemStack(item));
+        AddItem(new ItemStack(item));
 
         UpdateUI();
     }
 
     public void AddItem(ItemStack item)
     {
-        items.Add(item);
+        int index = GetItemIndex(item);
+        if (index == -1)
+        {
+            items.Add(item);
+        } else
+        {
+            items[index].count += item.count;
+        }
 
         UpdateUI();
     }
@@ -96,6 +103,10 @@ public class Inventory : MonoBehaviour
     {
         return items.FindIndex(item.Equals);
     }
+    public int GetItemIndex(ItemStack item)
+    {
+        return items.FindIndex(item.Equals);
+    }
     public bool Contains(Item item)
     {
         foreach (ItemStack i in items)
@@ -105,6 +116,25 @@ public class Inventory : MonoBehaviour
                 return true;
             }
         }
+        return false;
+    }
+
+    /// <summary>
+    /// Checks if the inventory contains the item of a specified amount.
+    /// </summary>
+    /// <param name="item">The item you're looking for</param>
+    /// <param name="minCount">The minimum number of the item you're loooking for</param>
+    /// <param name="maxCount">The max number of the item you're looking for.</param>
+    /// <returns>True if the inventory contains an item stack between the specified values. (both inclusive)</returns>
+    public bool Contains(Item item, int minCount = 1, int maxCount = int.MaxValue)
+    {
+        int index = GetItemIndex(item);
+
+        if(index >= 0)
+        {
+            return items[index].count >= minCount && items[index].count <= maxCount;
+        }
+
         return false;
     }
 }

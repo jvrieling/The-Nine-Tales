@@ -15,6 +15,7 @@ public class StateManager : MonoBehaviour
     public GameState startingState = GameState.Dialogue;
     public Text levelText;
     public Text lastSceneText;
+    public Text currentStateText;
 
     private static Player cc;
 
@@ -55,6 +56,7 @@ public class StateManager : MonoBehaviour
     {
         levelText.text = LevelTracker.GetCurrentLevel();
         lastSceneText.text = LevelTracker.lastScene;
+        currentStateText.text = currentGameState.ToString();
     }
 
     public void ExitDialogueToPlatforming()
