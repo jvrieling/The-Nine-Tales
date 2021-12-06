@@ -48,6 +48,11 @@ public class DebugModeManager : MonoBehaviour
     }
     public static void Give(string g)
     {
+        if(g == "1-e")
+        {
+            Give("Cut Grass", 10);
+            Give("Spices", 1);
+        }
         Give(g, 1);
     }
     public static void Give(string g, int count)

@@ -10,6 +10,7 @@ public class TriggerFlowchart : MonoBehaviour
 
     [Tooltip("Set to false if you want this to trigger EVERY time the target hits the collider.")]
     public bool oneTimeUse = true;
+    public bool disableTriggerOnUse = false;
 
     [Tooltip("The tag that will trigger the flowchart. Set to empty if you want any trigger collision to activate the flowchart.")]
     public string targetTag = "Player";
@@ -21,6 +22,10 @@ public class TriggerFlowchart : MonoBehaviour
 
     private bool triggered;
 
+    private void OnValidate()
+    {
+        if (disableTriggerOnUse) oneTimeUse = true;
+    }
     void Start()
     {
         if (flowchart == null)
@@ -52,6 +57,7 @@ public class TriggerFlowchart : MonoBehaviour
         {
             flowchart.ExecuteBlock("Trigger");
             triggered = true;
+            if (disableTriggerOnUse) GetComponent<Collider2D>().enabled = false;
         }
     }
 }

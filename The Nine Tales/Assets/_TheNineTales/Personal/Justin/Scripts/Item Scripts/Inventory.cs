@@ -23,25 +23,7 @@ public class Inventory : MonoBehaviour
     {
         UpdateUI();
     }
-
-    public void UpdateUI()
-    {
-        string inventoryStr = "";
-        int j = 0;
-        foreach (ItemStack i in items)
-        {
-            inventoryStr += i.itemName + " x" + i.count + "\n";
-
-            if (j < icons.Length)
-            {
-                icons[j].sprite = i.icon;
-                j++;
-            }
-        }
-
-        inventoryText.text = inventoryStr;
-    }
-
+    
     [ContextMenu("Give Debug Item")]
     public void GiveDebugItem()
     {
@@ -79,19 +61,32 @@ public class Inventory : MonoBehaviour
         UpdateUI();
     }
 
-    public bool UseItem(Item item)
+    public bool UseItem(Item item, int count = 1)
     {
         int index = GetItemIndex(item);
 
         if (index == -1) return false;
 
-        items[index].count -= 1;
+        RemoveItem(index, count);
+        return true;
+    }
+
+    public void RemoveItem(Item item, int count)
+    {
+        int index = GetItemIndex(item);
+
+        if (index == -1) return;
+        RemoveItem(index, count);
+    }
+    public void RemoveItem(int index, int count)
+    {
+        items[index].count -= count;
         if (items[index].count < 1)
         {
             items.Remove(items[index]);
         }
+
         UpdateUI();
-        return true;
     }
 
     /// <summary>
@@ -136,5 +131,30 @@ public class Inventory : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void UpdateUI()
+    {
+        string inventoryStr = "";
+        int j = 0;
+
+        foreach(Image i in icons)
+        {
+            i.enabled = false;
+        }
+
+        foreach (ItemStack i in items)
+        {
+            inventoryStr += i.itemName + " x" + i.count + "\n";
+
+            if (j < icons.Length)
+            {
+                icons[j].enabled = true;
+                icons[j].sprite = i.icon;
+                j++;
+            }
+        }
+
+        inventoryText.text = inventoryStr;
     }
 }
