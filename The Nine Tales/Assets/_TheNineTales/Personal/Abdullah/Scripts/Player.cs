@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public static Inventory inventory;
     public static Interactor interactor;
 
-    public bool EnableControls = true;
+    public bool ControlsEnableled = true;
     public bool EnableDashControls = true;
     public bool EnableJumpControls = true;
 
@@ -107,35 +107,46 @@ public class Player : MonoBehaviour
     }
     private void Update()
     {
-        if (!EnableControls)
+        if (ControlsEnableled)
         {
-            return;
+            HandleHorizontalMovement(); ;
         }
-
-
-        HandleHorizontalMovement();
 
         // Vertical Movement    
         GroundIt();
         m_PlayerVelocity.y = m_PlayerVelocity.y + (m_PlayerAccel.y * Time.deltaTime);
 
-        if (EnableJumpControls)
+        if (ControlsEnableled)
         {
             RegularJump();
             BufferJump();
             CoyoteJump();
+            HandleDash();
+            LastFacingDirection = GetFacingDirection();
+        }
+        else
+        {
+            m_PlayerVelocity.x = 0;
         }
 
         // The following function ensures that the knight does not exceed TERMINAL VELOCITY
         TerminalVelocity();
-        if (EnableDashControls)
-        {
-            HandleDash();
-        }
-
 
         m_PlayerRigidBody.velocity = m_PlayerVelocity;
-        LastFacingDirection = GetFacingDirection();
+
+
+
+        if (Input.GetKeyDown("k"))
+        {
+            if (ControlsEnableled)
+            {
+                DisableControls();
+            }
+            else
+            {
+                EnableControls();
+            }
+        }
     }
 
     public void LateUpdate()
@@ -460,5 +471,14 @@ public class Player : MonoBehaviour
         Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
 
         Gizmos.color = Color.white;
+    }
+    
+    public void EnableControls()
+    {
+        ControlsEnableled = true;
+    }
+    public void DisableControls()
+    {
+        ControlsEnableled = false;
     }
 }
