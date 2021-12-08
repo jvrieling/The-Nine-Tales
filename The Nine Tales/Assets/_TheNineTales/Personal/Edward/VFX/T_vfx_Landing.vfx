@@ -964,7 +964,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1.7
+      m_SerializableObject: 3.05
     m_Space: 2147483647
   m_Property:
     name: Size
@@ -1975,7 +1975,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":-2.5,"y":0.10000000149011612,"z":0.0}}'
+      m_SerializableObject: '{"vector":{"x":-5.0,"y":0.10000000149011612,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: Velocity
@@ -2172,7 +2172,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Position, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"position":{"x":0.0,"y":0.800000011920929,"z":0.0}}'
+      m_SerializableObject: '{"position":{"x":0.0,"y":2.1600000858306886,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: Position
@@ -2566,7 +2566,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
+      m_SerializableObject: 0.9
     m_Space: 2147483647
   m_Property:
     name: Size
@@ -2590,7 +2590,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 1413, y: 294}
+  m_UIPosition: {x: 1402, y: 333}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -3460,7 +3460,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":2.5,"y":0.10000000149011612,"z":0.0}}'
+      m_SerializableObject: '{"vector":{"x":5.0,"y":0.10000000149011612,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: Velocity
@@ -3854,7 +3854,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
+      m_SerializableObject: 0.9
     m_Space: 2147483647
   m_Property:
     name: Size
