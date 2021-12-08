@@ -88,6 +88,8 @@ public class Player : MonoBehaviour
     public GameObject landVFX;
     private bool groundedLastFrame;
 
+    private Animator an;
+
     private void Awake()
     {
         instance = this;
@@ -95,12 +97,12 @@ public class Player : MonoBehaviour
         player = gameObject;
         inventory = GetComponentInChildren<Inventory>();
         interactor = GetComponentInChildren<Interactor>();
+        an = GetComponent<Animator>();
     }
 
 
     private void Start()
     {
-
         m_PlayerRigidBody = GetComponent<Rigidbody2D>();
         m_PlayerAccel.y = -3;
         m_CurrentHealth = m_FullHealth;
@@ -147,6 +149,9 @@ public class Player : MonoBehaviour
                 EnableControls();
             }
         }
+
+        an.SetBool("IsGrounded", IsGrounded());
+        an.SetBool("IsRunning", Mathf.Abs(m_PlayerVelocity.x) > 0);
     }
 
     public void LateUpdate()
@@ -349,6 +354,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
+        an.SetTrigger("Jump");
         Instantiate(jumpVFX, transform);
         // preform jump
         m_PlayerVelocity.y = 2 * m_jumpApexHeight / m_jumpApexTime;
