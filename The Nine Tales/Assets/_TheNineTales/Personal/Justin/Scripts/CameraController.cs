@@ -42,10 +42,6 @@ public class CameraController : MonoBehaviour
         if (zoomedIn && narrativeCameraSize == 0) narrativeCameraSize = cam.orthographicSize;
         else if (!zoomedIn && platformingCameraSize == 0) platformingCameraSize = cam.orthographicSize;
     }
-    private void OnValidate()
-    {
-        runInEditMode = runInEditor;
-    }
 
     public void Update()
     {
