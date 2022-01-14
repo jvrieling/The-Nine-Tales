@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GrassCuttable: {fileID: 11400000, guid: 80e1423def6c90a45b5adb9c6eb6a819, type: 2}
+  persistant: 1
+  id: 0
 --- !u!61 &1900708392415470317
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public List<ItemStack> items;
+    public static List<ItemStack> items;
     public Item debugItem;
 
     public Text inventoryText;
