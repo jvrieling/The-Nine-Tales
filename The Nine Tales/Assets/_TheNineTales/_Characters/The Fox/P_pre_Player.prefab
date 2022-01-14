@@ -40,9 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6703631746001399282}
-  - component: {fileID: 2305606573612510686}
-  - component: {fileID: 5433153871524310471}
-  - component: {fileID: 8653407057122314420}
   m_Layer: 0
   m_Name: SFX
   m_TagString: Untagged
@@ -65,72 +62,6 @@ Transform:
   m_Father: {fileID: 246354546436543993}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2305606573612510686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203488826864323088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b304b6df1ff7fcb4ea0ad532fd790c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    Guid:
-      Data1: -180519357
-      Data2: 1079793464
-      Data3: 1095641748
-      Data4: 1508196133
-    Path: event:/Foley/Footstep
---- !u!114 &5433153871524310471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203488826864323088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  Event: 
-  PlayEvent: 5
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
---- !u!114 &8653407057122314420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203488826864323088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: Grass
-  Emitters:
-  - Target: {fileID: 5433153871524310471}
-    Params: []
-  TriggerEvent: 3
 --- !u!1 &246354546192690580
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +250,7 @@ GameObject:
   - component: {fileID: 7897411903047362637}
   - component: {fileID: 7964551327419498086}
   - component: {fileID: 8672836545935732067}
+  - component: {fileID: 205114084000767346}
   m_Layer: 0
   m_Name: P_pre_Player
   m_TagString: Player
@@ -516,7 +448,7 @@ MonoBehaviour:
   - {x: -0.4479792, y: -0.3954127, z: 0}
   m_ShapePathHash: 1928521147
   m_Mesh: {fileID: 0}
-  m_InstanceId: 69578
+  m_InstanceId: 53592
 --- !u!114 &7964551327419498086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,6 +492,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &205114084000767346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246354546436543999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -180519357
+      Data2: 1079793464
+      Data3: 1095641748
+      Data4: 1508196133
+    Path: event:/Foley/Footstep
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &246354546781621990
 GameObject:
   m_ObjectHideFlags: 0
