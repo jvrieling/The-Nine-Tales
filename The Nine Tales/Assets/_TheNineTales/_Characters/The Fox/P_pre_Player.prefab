@@ -318,8 +318,29 @@ MonoBehaviour:
   m_FullHealth: 10
   m_CurrentHealth: 10
   jumpVFX: {fileID: 1988350440947039752, guid: c2ddeb86861652d40a9b38f77f439060, type: 3}
+  jumpSound:
+    Guid:
+      Data1: -1253407576
+      Data2: 1332037022
+      Data3: -981737571
+      Data4: 274066262
+    Path: event:/Foley/Jump
   dashVFX: {fileID: 8992092285104031098, guid: afc1cde7b4611d84bb7dddd7ad79236f, type: 3}
+  dashSound:
+    Guid:
+      Data1: 790022330
+      Data2: 1163194717
+      Data3: -184547966
+      Data4: -1712663652
+    Path: event:/Foley/Dash
   landVFX: {fileID: 5138902148118288712, guid: 12722312c81391a4baa66575480eed49, type: 3}
+  landSound:
+    Guid:
+      Data1: 1977562997
+      Data2: 1272390961
+      Data3: 1374614718
+      Data4: -2121937748
+    Path: event:/Foley/Land
 --- !u!212 &246354546436543992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -448,7 +469,7 @@ MonoBehaviour:
   - {x: -0.4479792, y: -0.3954127, z: 0}
   m_ShapePathHash: 1928521147
   m_Mesh: {fileID: 0}
-  m_InstanceId: 53592
+  m_InstanceId: 54268
 --- !u!114 &7964551327419498086
 MonoBehaviour:
   m_ObjectHideFlags: 0
