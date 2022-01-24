@@ -134,6 +134,11 @@ public class Player : MonoBehaviour
         // The following function ensures that the knight does not exceed TERMINAL VELOCITY
         TerminalVelocity();
 
+        GroundIt();
+        IsBlockedRight();
+        IsBlockedLeft();
+        IsBlockedUp();
+
         m_PlayerRigidBody.velocity = m_PlayerVelocity;
 
 
@@ -190,6 +195,50 @@ public class Player : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    void IsBlockedRight()
+    {
+        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.right, GroundedCastDistance, GroundLayer))
+        {
+            if(m_PlayerVelocity.x > 0)
+            {
+                m_PlayerVelocity.x = 0;
+            }
+        }
+        else
+        {
+
+        }
+    }
+
+    void IsBlockedLeft()
+    {
+        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.left, GroundedCastDistance, GroundLayer))
+        {
+            if (m_PlayerVelocity.x < 0)
+            {
+                m_PlayerVelocity.x = 0;
+            }
+        }
+        else
+        {
+
+        }
+    }
+    void IsBlockedUp()
+    {
+        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.up, GroundedCastDistance, GroundLayer))
+        {
+            if (m_PlayerVelocity.y > 0)
+            {
+                m_PlayerVelocity.y = 0;
+            }
+        }
+        else
+        {
+
         }
     }
 
@@ -347,7 +396,10 @@ public class Player : MonoBehaviour
     {
         if (IsGrounded())
         {
-            m_PlayerVelocity.y = 0;
+            if(m_PlayerVelocity.y < 0)
+            {
+                m_PlayerVelocity.y = 0;
+            }
         }
     }
 
@@ -471,14 +523,7 @@ public class Player : MonoBehaviour
         SceneManager.LoadScene(scene.name);
     }
 
-    public void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
 
-        Gizmos.color = Color.white;
-    }
-    
     public void EnableControls()
     {
         ControlsEnableled = true;
@@ -486,5 +531,24 @@ public class Player : MonoBehaviour
     public void DisableControls()
     {
         ControlsEnableled = false;
+    }
+
+    //  ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos
+
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position + new Vector3(0, GroundedCastDistance, 0), BoxSize);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(transform.position - new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireCube(transform.position + new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+
+        Gizmos.color = Color.white;
     }
 }
