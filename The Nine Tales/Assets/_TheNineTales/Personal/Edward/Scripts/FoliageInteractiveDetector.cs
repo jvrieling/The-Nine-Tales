@@ -72,6 +72,12 @@ namespace ShaderInteractive
                     targetMat.SetFloat("_WindStrength", strength);
                     changedMats.Add(targetMat);
                     //StartCoroutine(ResetWindData(targetMat));
+
+                    //Fall off vfx imp
+                    if (collision.gameObject.GetComponent<FallOffHolder>())
+                    {
+                        collision.gameObject.GetComponent<FallOffHolder>().TriggerVFX();
+                    }
                 }
             }
         }
