@@ -29,7 +29,7 @@ public class DebugModeManager : MonoBehaviour
                 {
                     if (Player.inventory.Contains(i, min, max))
                     {
-                        Debug.Log("Success: The player has between " + min + " and " + max + " of " + item + " (" + Player.inventory.items[index].count + ")");
+                        Debug.Log("Success: The player has between " + min + " and " + max + " of " + item + " (" + Inventory.items[index].count + ")");
                     }
                     else
                     {

@@ -5,39 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/_TheNineTales/Personal/Justin/Scenes/Testing Scenes/T_sc_CameraControls_v01.unity
-    guid: d674899a1f813564bb59ee2be2f5d6cd
-  - enabled: 0
-    path: Assets/Settings/Scenes/2D URP Scene Template.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/1.unity
-    guid: e805a9b3e7bf06e45b1ec9ed2aa17665
-  - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/2.unity
-    guid: c117578eccc11b94ea77f43d5db4f6b1
-  - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/3.unity
-    guid: aaffa36a84663a34fb3c4c72f12fecfd
-  - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/4.unity
-    guid: b283f955b38ab454e949a7ea8f3313d5
-  - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/5.unity
-    guid: 0213602d2a1ee634dab338e375049c2d
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/7.unity
-    guid: e136e019111390c4d9a7fc8d0ddf9f55
-  - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/8.unity
-    guid: 6e712dbbaeb376a48b0b43174d1a51a1
-  - enabled: 1
-    path: Assets/_TheNineTales/Personal/Abdullah/Scenes/9.unity
-    guid: 58ad98d767447e34881e7fedfda38971
+    path: Assets/_TheNineTales/_Scenes/P_sc_MainMenu.unity
+    guid: 6e1259ad96843a643b5f93c126ed99a2
   - enabled: 1
     path: Assets/_TheNineTales/_Scenes/P_sc_Chapter1Header.unity
     guid: fa961d51f46e409488d942c6ac610f9f
@@ -50,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_TheNineTales/_Scenes/P_sc_Village.unity
     guid: 2816e49dcfe2d4d469a0f38511d3e011
-  - enabled: 1
-    path: Assets/_TheNineTales/_Scenes/P_sc_MainMenu.unity
-    guid: 6e1259ad96843a643b5f93c126ed99a2
   m_configObjects: {}

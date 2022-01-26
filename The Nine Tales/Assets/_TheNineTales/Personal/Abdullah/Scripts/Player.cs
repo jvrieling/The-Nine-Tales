@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class Player : MonoBehaviour
 {
@@ -84,9 +85,14 @@ public class Player : MonoBehaviour
     float m_damageReduction = 0;
 
     public GameObject jumpVFX;
+    public EventReference jumpSound;
     public GameObject dashVFX;
+    public EventReference dashSound;
     public GameObject landVFX;
+    public EventReference landSound;
     private bool groundedLastFrame;
+
+    private Animator an;
 
     private void Awake()
     {
@@ -95,12 +101,12 @@ public class Player : MonoBehaviour
         player = gameObject;
         inventory = GetComponentInChildren<Inventory>();
         interactor = GetComponentInChildren<Interactor>();
+        an = GetComponent<Animator>();
     }
 
 
     private void Start()
     {
-
         m_PlayerRigidBody = GetComponent<Rigidbody2D>();
         m_PlayerAccel.y = -3;
         m_CurrentHealth = m_FullHealth;
@@ -132,6 +138,11 @@ public class Player : MonoBehaviour
         // The following function ensures that the knight does not exceed TERMINAL VELOCITY
         TerminalVelocity();
 
+        GroundIt();
+        IsBlockedRight();
+        IsBlockedLeft();
+        IsBlockedUp();
+
         m_PlayerRigidBody.velocity = m_PlayerVelocity;
 
 
@@ -147,13 +158,20 @@ public class Player : MonoBehaviour
                 EnableControls();
             }
         }
+
+        an.SetBool("IsGrounded", IsGrounded());
+        an.SetBool("IsRunning", Mathf.Abs(m_PlayerVelocity.x) > 0);
     }
 
     public void LateUpdate()
     {
         if (!groundedLastFrame)
         {
-           if(IsGrounded()) Instantiate(landVFX, transform);
+            if (IsGrounded())
+            {
+                Instantiate(landVFX, transform);
+                RuntimeManager.PlayOneShot(landSound);
+            }
         }
 
         groundedLastFrame = IsGrounded();
@@ -185,6 +203,50 @@ public class Player : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    void IsBlockedRight()
+    {
+        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.right, GroundedCastDistance, GroundLayer))
+        {
+            if(m_PlayerVelocity.x > 0)
+            {
+                m_PlayerVelocity.x = 0;
+            }
+        }
+        else
+        {
+
+        }
+    }
+
+    void IsBlockedLeft()
+    {
+        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.left, GroundedCastDistance, GroundLayer))
+        {
+            if (m_PlayerVelocity.x < 0)
+            {
+                m_PlayerVelocity.x = 0;
+            }
+        }
+        else
+        {
+
+        }
+    }
+    void IsBlockedUp()
+    {
+        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.up, GroundedCastDistance, GroundLayer))
+        {
+            if (m_PlayerVelocity.y > 0)
+            {
+                m_PlayerVelocity.y = 0;
+            }
+        }
+        else
+        {
+
         }
     }
 
@@ -326,6 +388,7 @@ public class Player : MonoBehaviour
         isDashing = true;
         CanDash = false;
         Instantiate(dashVFX, transform);
+        RuntimeManager.PlayOneShot(dashSound);
     }
 
     void EnableDash()
@@ -342,14 +405,19 @@ public class Player : MonoBehaviour
     {
         if (IsGrounded())
         {
-            m_PlayerVelocity.y = 0;
+            if(m_PlayerVelocity.y < 0)
+            {
+                m_PlayerVelocity.y = 0;
+            }
         }
     }
 
 
     void Jump()
     {
+        an.SetTrigger("Jump");
         Instantiate(jumpVFX, transform);
+        RuntimeManager.PlayOneShot(jumpSound);
         // preform jump
         m_PlayerVelocity.y = 2 * m_jumpApexHeight / m_jumpApexTime;
         // prevent coyote jump follow up after regular jump
@@ -465,14 +533,7 @@ public class Player : MonoBehaviour
         SceneManager.LoadScene(scene.name);
     }
 
-    public void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
 
-        Gizmos.color = Color.white;
-    }
-    
     public void EnableControls()
     {
         ControlsEnableled = true;
@@ -480,5 +541,24 @@ public class Player : MonoBehaviour
     public void DisableControls()
     {
         ControlsEnableled = false;
+    }
+
+    //  ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos ************* Gizmos
+
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position + new Vector3(0, GroundedCastDistance, 0), BoxSize);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(transform.position - new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireCube(transform.position + new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+
+        Gizmos.color = Color.white;
     }
 }
