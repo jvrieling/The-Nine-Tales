@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2785250952946338678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,16 +56,16 @@ VisualEffect:
       - m_Value: 0.15
         m_Name: Size
         m_Overridden: 1
-      - m_Value: 0.6
+      - m_Value: 0.4
         m_Name: LIfe Time
         m_Overridden: 1
       - m_Value: 0.2
         m_Name: Wave Frequency
         m_Overridden: 1
-      - m_Value: 0.4
+      - m_Value: 0.6
         m_Name: Wave Range
         m_Overridden: 1
-      - m_Value: 0.8
+      - m_Value: 0.5
         m_Name: Life Time Random Range
         m_Overridden: 1
       - m_Value: 180
@@ -87,7 +87,7 @@ VisualEffect:
       m_Array: []
     m_Int:
       m_Array:
-      - m_Value: 4
+      - m_Value: 8
         m_Name: Rate
         m_Overridden: 1
     m_Matrix4x4f:
@@ -124,24 +124,24 @@ VisualEffect:
       m_Array:
       - m_Value:
           serializedVersion: 2
-          key0: {r: 0, g: 3.5607843, b: 0.17254902, a: 1}
-          key1: {r: 0.07260416, g: 1.012783, b: 0.051594526, a: 0.5686275}
-          key2: {r: 0.16078432, g: 0.5019608, b: 0, a: 0}
-          key3: {r: 0, g: 0, b: 0, a: 0}
-          key4: {r: 0, g: 0, b: 0, a: 0}
+          key0: {r: 0.4581306, g: 0.8574187, b: 0.44972453, a: 1}
+          key1: {r: 0.22973967, g: 0.41893706, b: 0.22523497, a: 0.67058825}
+          key2: {r: 0.2015563, g: 0.3662527, b: 0.19461787, a: 0}
+          key3: {r: 0.2015563, g: 0.3662527, b: 0.19461787, a: 0}
+          key4: {r: 0.2015563, g: 0.3662527, b: 0.19461787, a: 0}
           key5: {r: 0, g: 0, b: 0, a: 0}
           key6: {r: 0, g: 0, b: 0, a: 0}
           key7: {r: 0, g: 0, b: 0, a: 0}
-          ctime0: 14842
-          ctime1: 25443
-          ctime2: 38550
-          ctime3: 0
-          ctime4: 0
+          ctime0: 28527
+          ctime1: 47417
+          ctime2: 60909
+          ctime3: 60909
+          ctime4: 60909
           ctime5: 0
           ctime6: 0
           ctime7: 0
           atime0: 0
-          atime1: 53392
+          atime1: 56283
           atime2: 0
           atime3: 0
           atime4: 0
