@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{45023e98-6786-4f67-a299-317059753382}">
+		<property name="assetPath">
+			<value>Campfire_1.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>13.35249433106576</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{08b8ccfc-ec03-4324-91a8-30190ecd2380}</destination>
+		</relationship>
+	</object>
+</objects>
