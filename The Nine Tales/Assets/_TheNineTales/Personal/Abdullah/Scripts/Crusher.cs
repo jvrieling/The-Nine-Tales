@@ -29,6 +29,6 @@ public class Crusher : MonoBehaviour
             moveDirection = -1;
         }
 
-        transform.position = transform.position + new Vector3(0, moveDirection * moveSpeed, 0);
+        transform.position = transform.position + new Vector3(0, moveDirection * moveSpeed * Time.deltaTime, 0);
     }
 }
