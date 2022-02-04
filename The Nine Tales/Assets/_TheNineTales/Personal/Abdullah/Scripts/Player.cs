@@ -364,7 +364,7 @@ public class Player : MonoBehaviour
 
     void HandleDash()
     {
-        if (Input.GetKeyDown("s") && CanDash)
+        if ((Input.GetKeyDown("s") || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 1")) && CanDash)
         {
             StartDash();
         }
