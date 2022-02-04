@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Crusher : MonoBehaviour
 {
-    float moveSpeed = 2;
-    float moveDirection = 1;
-    float Range = 4;
+    public float moveSpeed = 2;
+    float moveDirection = -1;
+    public float Range = 4;
     Vector3 OriginalPoisition;
     Vector3 TargetPoisition;
 
@@ -19,16 +19,32 @@ public class Crusher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(transform.position.y < OriginalPoisition.y)
+        // facing up
+        if(OriginalPoisition.y < TargetPoisition.y)
         {
-            moveDirection = 1;
+            if (transform.position.y < OriginalPoisition.y)
+            {
+                moveDirection = 1;
+            }
+            if (transform.position.y > TargetPoisition.y)
+            {
+                moveDirection = -1;
+            }
         }
-        if (transform.position.y > TargetPoisition.y)
+        // Rotated down
+        if (OriginalPoisition.y > TargetPoisition.y)
         {
-            moveDirection = -1;
+            print("hi");
+            if (transform.position.y > OriginalPoisition.y)
+            {
+                moveDirection = -1;
+            }
+            if (transform.position.y < TargetPoisition.y)
+            {
+                moveDirection = 1;
+            }
         }
 
-        transform.position = transform.position + new Vector3(0, moveDirection * moveSpeed * Time.deltaTime, 0);
+        transform.localPosition = transform.localPosition + new Vector3(0, moveDirection * moveSpeed * Time.deltaTime, 0);
     }
 }
