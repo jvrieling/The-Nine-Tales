@@ -81,26 +81,31 @@ public class StateManager : MonoBehaviour
         switch (state)
         {
             case GameState.Narrative:
+                cc.ForceIdleAnimation(false);
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(true);
                 cc.enabled = true;
                 break;
             case GameState.Platforming:
+                cc.ForceIdleAnimation(false);
                 cam.SetCameraZoom(false);
                 cam.SetCameraFollow(true);
                 cc.enabled = true;
                 break;
             case GameState.Dialogue:
+                cc.ForceIdleAnimation();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
                 cc.enabled = false;
                 break;
             case GameState.StillImage:
+                cc.ForceIdleAnimation();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
                 cc.enabled = false;
                 break;
             case GameState.Paused:
+                cc.ForceIdleAnimation();
                 cam.SetCameraFollow(true);
                 cc.enabled = false;
                 break;

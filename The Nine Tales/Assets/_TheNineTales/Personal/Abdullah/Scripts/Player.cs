@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private float CoyoteTime = 0.2f;
-    
+
     [SerializeField]
     private float m_accelerationTimeFromRest = .5f;
 
@@ -210,7 +210,7 @@ public class Player : MonoBehaviour
     {
         if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.right, GroundedCastDistance, GroundLayer))
         {
-            if(m_PlayerVelocity.x > 0)
+            if (m_PlayerVelocity.x > 0)
             {
                 m_PlayerVelocity.x = 0;
             }
@@ -379,7 +379,7 @@ public class Player : MonoBehaviour
                 m_PlayerVelocity.x = -DashSpeed;
             }
             m_PlayerVelocity.y = 0;
-        } 
+        }
     }
     void StartDash()
     {
@@ -405,7 +405,7 @@ public class Player : MonoBehaviour
     {
         if (IsGrounded())
         {
-            if(m_PlayerVelocity.y < 0)
+            if (m_PlayerVelocity.y < 0)
             {
                 m_PlayerVelocity.y = 0;
             }
@@ -529,7 +529,7 @@ public class Player : MonoBehaviour
 
     public void makeDead()
     {
-        Scene scene = SceneManager.GetActiveScene(); 
+        Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
 
@@ -560,5 +560,10 @@ public class Player : MonoBehaviour
         Gizmos.DrawWireCube(transform.position + new Vector3(GroundedCastDistance, 0, 0), BoxSize);
 
         Gizmos.color = Color.white;
+    }
+
+    public void ForceIdleAnimation(bool force = true)
+    {
+        an.SetBool("ForceIdle", force);
     }
 }
