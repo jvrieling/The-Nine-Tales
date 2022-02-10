@@ -56,7 +56,7 @@ public class TriggerFlowchart : MonoBehaviour
         if (!triggered)
         {
             flowchart.ExecuteBlock("Trigger");
-            triggered = true;
+            if(oneTimeUse) triggered = true;
             if (disableTriggerOnUse) GetComponent<Collider2D>().enabled = false;
         }
     }
