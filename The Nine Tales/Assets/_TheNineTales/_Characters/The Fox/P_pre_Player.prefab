@@ -88,7 +88,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246354546192690580}
   m_LocalRotation: {x: -0, y: -0, z: -0.07758909, w: 0.99698544}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -140,7 +140,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -170,6 +170,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -177,8 +178,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -186,8 +187,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -199,8 +200,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -307,7 +308,7 @@ MonoBehaviour:
   m_accelerationTimeFromQuickturn: 0.125
   m_decelerationTimeFromQuickturn: 0.125
   DashDuration: 0.3
-  DashCooldown: 2
+  DashCooldown: 1.5
   DashSpeed: 20
   GroundedCastDistance: 0.57
   BoxSize: {x: 0.9, y: 1.3}
@@ -384,7 +385,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 92ffe79e7a0d3a64da6adaa8fa6c4937, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4.6, y: 2.9}
@@ -469,7 +470,7 @@ MonoBehaviour:
   - {x: -0.4479792, y: -0.3954127, z: 0}
   m_ShapePathHash: 1928521147
   m_Mesh: {fileID: 0}
-  m_InstanceId: 80078
+  m_InstanceId: 92118
 --- !u!114 &7964551327419498086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +608,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569534635315471172}
   m_LocalRotation: {x: -0, y: -0, z: 0.07004176, w: 0.9975441}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -627,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -659,7 +660,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -689,6 +690,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -696,8 +698,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -705,8 +707,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -718,8 +720,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1106,7 +1108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942900172980811039}
   m_LocalRotation: {x: -0, y: -0, z: -0.361929, w: 0.93220574}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1126,7 +1128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -1158,7 +1160,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1188,6 +1190,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -1195,8 +1198,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1204,8 +1207,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -1217,8 +1220,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1351,7 +1354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196290530082141954}
   m_LocalRotation: {x: -0, y: -0, z: 0.14702062, w: 0.9891335}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1371,7 +1374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -1403,7 +1406,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1433,6 +1436,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -1440,8 +1444,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1449,8 +1453,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -1462,8 +1466,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6302,7 +6306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019764906261970655}
   m_LocalRotation: {x: -0, y: -0, z: -0.17183872, w: 0.9851251}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6322,7 +6326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -6354,7 +6358,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6384,6 +6388,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -6391,8 +6396,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -6400,8 +6405,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -6413,8 +6418,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6710,7 +6715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4216603959250843342}
   m_LocalRotation: {x: -0, y: -0, z: 0.16349334, w: 0.98654443}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6730,7 +6735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -6762,7 +6767,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6792,6 +6797,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -6799,8 +6805,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -6808,8 +6814,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -6821,8 +6827,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6963,7 +6969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6312215008276890980}
   m_LocalRotation: {x: -0, y: -0, z: -0.20191373, w: 0.9794033}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6983,7 +6989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -7015,7 +7021,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7045,6 +7051,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -7052,8 +7059,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -7061,8 +7068,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -7074,8 +7081,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -7487,7 +7494,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8431618730815757888}
   m_LocalRotation: {x: -0, y: -0, z: 0.10848075, w: 0.99409854}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7507,7 +7514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -7539,7 +7546,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7569,6 +7576,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -7576,8 +7584,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -7585,8 +7593,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -7598,8 +7606,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -7659,7 +7667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8672080028222049650}
   m_LocalRotation: {x: -0, y: -0, z: 0.40037417, w: 0.91635174}
-  m_LocalPosition: {x: 0.94999987, y: -0.060000077, z: 0.099999994}
+  m_LocalPosition: {x: -0.77, y: 0.09, z: 0.099999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7679,7 +7687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd77289a514b6f841a4e84b84b7a55bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 8
+  length: 9
   targetDist: 0.25
   smoothSpeed: 0.02
   trailSpeed: 60
@@ -7711,7 +7719,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d019b91bac693414c96970b1e7e7baa1, type: 2}
+  - {fileID: 2100000, guid: 71213d4049b78d4489f3266d968fac94, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7741,6 +7749,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -7748,8 +7757,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.030612946
-        value: 0.3700714
+        time: 0.01008606
+        value: 0.5967369
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -7757,8 +7766,8 @@ LineRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.99997216
-        value: 0.10235938
+        time: 0.9941128
+        value: 0.18236122
         inSlope: -1.242442
         outSlope: -1.242442
         tangentMode: 0
@@ -7770,8 +7779,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 1}
-      key1: {r: 0, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
