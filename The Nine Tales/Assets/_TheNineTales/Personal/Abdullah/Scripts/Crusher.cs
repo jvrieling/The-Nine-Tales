@@ -34,7 +34,6 @@ public class Crusher : MonoBehaviour
         // Rotated down
         if (OriginalPoisition.y > TargetPoisition.y)
         {
-            print("hi");
             if (transform.position.y > OriginalPoisition.y)
             {
                 moveDirection = -1;
