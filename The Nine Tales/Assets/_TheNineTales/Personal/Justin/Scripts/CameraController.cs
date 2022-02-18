@@ -45,15 +45,36 @@ public class CameraController : MonoBehaviour
 
     public void Update()
     {
-        if (follow)
+        Vector3 desiredPosition = transform.position;
+
+        float height = 2 * cam.orthographicSize;
+        float width = height * cam.aspect;
+
+        if (StateManager.CurrentGameState == GameState.Platforming || StateManager.CurrentGameState == GameState.Narrative)
         {
-            Vector3 desiredPosition = target.position + offset;
+            desiredPosition = target.position;
             if (Vector3.Distance(transform.position, desiredPosition) > accuracy)
             {
+                //Camera targets putting the player on the upper third of the screen if the S key is pressed.
+                int upperOrLowerThird = Input.GetKey(KeyCode.S) ? -3 : 3;
+                desiredPosition += new Vector3(0, cam.orthographicSize / upperOrLowerThird, 0);
+
+                SpriteRenderer playerSprite = StateManager.cc.GetComponent<SpriteRenderer>();
+                if (playerSprite.flipX)
+                {
+                    desiredPosition += new Vector3(cam.orthographicSize / 3, 0, 0);
+                } else
+                {
+                    desiredPosition += new Vector3(-cam.orthographicSize / 3, 0, 0);
+                }
+
                 Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-                transform.position = smoothedPosition;
+                desiredPosition = smoothedPosition;
             }
         }
+
+        desiredPosition.z = -10;
+        if(desiredPosition != transform.position) transform.position = desiredPosition;
 
         if (zooming)
         {

@@ -17,7 +17,7 @@ public class StateManager : MonoBehaviour
     public Text lastSceneText;
     public Text currentStateText;
 
-    private static Player cc;
+    public static Player cc;
 
     private static GameState currentGameState;
     private static GameState lastGameState;
@@ -82,32 +82,32 @@ public class StateManager : MonoBehaviour
         {
             case GameState.Narrative:
                 cc.ForceIdleAnimation(false);
+                cc.EnableControls();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(true);
-                cc.enabled = true;
                 break;
             case GameState.Platforming:
                 cc.ForceIdleAnimation(false);
+                cc.EnableControls();
                 cam.SetCameraZoom(false);
                 cam.SetCameraFollow(true);
-                cc.enabled = true;
                 break;
             case GameState.Dialogue:
                 cc.ForceIdleAnimation();
+                cc.DisableControls();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
-                cc.enabled = false;
                 break;
             case GameState.StillImage:
                 cc.ForceIdleAnimation();
+                cc.DisableControls();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
-                cc.enabled = false;
                 break;
             case GameState.Paused:
                 cc.ForceIdleAnimation();
+                cc.DisableControls();
                 cam.SetCameraFollow(true);
-                cc.enabled = false;
                 break;
         }
     }
