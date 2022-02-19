@@ -316,6 +316,7 @@ MonoBehaviour:
   GroundValue: 0
   PlayerSprite: {fileID: 246354546436543992}
   isDashing: 0
+  canCoyoteJump: 1
   m_PlayerVelocity: {x: 0, y: 0}
   m_PlayerAccel: {x: 0, y: 0}
   m_FullHealth: 5
@@ -561,7 +562,7 @@ MonoBehaviour:
   - {x: -1.1501884, y: -0.855193, z: 0}
   m_ShapePathHash: -906315697
   m_Mesh: {fileID: 0}
-  m_InstanceId: 168416
+  m_InstanceId: 263694
 --- !u!1 &246354546781621990
 GameObject:
   m_ObjectHideFlags: 0

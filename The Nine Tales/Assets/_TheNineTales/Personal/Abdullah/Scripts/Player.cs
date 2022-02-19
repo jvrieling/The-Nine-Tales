@@ -69,6 +69,7 @@ public class Player : MonoBehaviour
     bool isBufferJumpQueued;
     float m_bufferJumpCountdown;
     float m_CoyoteCountdown;
+    public bool canCoyoteJump = true;
 
     Rigidbody2D m_PlayerRigidBody;
     public Vector2 m_PlayerVelocity = Vector2.zero;
@@ -131,7 +132,7 @@ public class Player : MonoBehaviour
         {
             RegularJump();
             BufferJump();
-            CoyoteJump();
+            //CoyoteJump();
             HandleDash();
             LastFacingDirection = GetFacingDirection();
         }
@@ -434,8 +435,10 @@ public class Player : MonoBehaviour
         m_PlayerVelocity.y = 2 * m_jumpApexHeight / m_jumpApexTime;
         // prevent coyote jump follow up after regular jump
         m_CoyoteCountdown = -1;
+        canCoyoteJump = false;
+        Invoke("EnableCoyoteJump", CoyoteTime);
         // Prevent Buffer Jump
-        //isBufferJumpQueued = false;
+        isBufferJumpQueued = false;
         m_bufferJumpCountdown = -1;
     }
     void RegularJump()
@@ -497,7 +500,10 @@ public class Player : MonoBehaviour
             // Jump if you still have time left in your count down, and key is pressed
             if (InputTracker.WasJumpPressed() && (m_CoyoteCountdown > 0))
             {
-                Jump();
+                if (canCoyoteJump)
+                {
+                    Jump();
+                }
             }
             else
             {
@@ -508,6 +514,12 @@ public class Player : MonoBehaviour
         }
 
     }
+
+    void EnableCoyoteJump()
+    {
+        canCoyoteJump = true;
+    }
+
 
     void TerminalVelocity()
     {
