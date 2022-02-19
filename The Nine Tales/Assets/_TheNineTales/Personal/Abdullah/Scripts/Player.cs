@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float GroundedCastDistance = 0.1f;
     public Vector2 BoxSize = new Vector2(0.9f, 1.3f);
+    public bool GroundValue;
     public SpriteRenderer PlayerSprite;
 
     bool CanDash = true;
@@ -93,6 +94,10 @@ public class Player : MonoBehaviour
     private bool groundedLastFrame;
 
     private Animator an;
+
+    public GameObject LastCheckpoint;
+    public GameObject DamageVFX;
+    public GameObject FeetVFX;
 
     private void Awake()
     {
@@ -139,6 +144,7 @@ public class Player : MonoBehaviour
         TerminalVelocity();
 
         GroundIt();
+        GroundValue = IsGrounded();
         IsBlockedRight();
         IsBlockedLeft();
         IsBlockedUp();
@@ -213,6 +219,7 @@ public class Player : MonoBehaviour
             if (m_PlayerVelocity.x > 0)
             {
                 m_PlayerVelocity.x = 0;
+                print("Blocked Right");
             }
         }
         else
@@ -228,6 +235,7 @@ public class Player : MonoBehaviour
             if (m_PlayerVelocity.x < 0)
             {
                 m_PlayerVelocity.x = 0;
+                print("Blocked Left");
             }
         }
         else
@@ -241,7 +249,8 @@ public class Player : MonoBehaviour
         {
             if (m_PlayerVelocity.y > 0)
             {
-                m_PlayerVelocity.y = 0;
+               m_PlayerVelocity.y = 0;
+                print("Blocked Up");
             }
         }
         else
@@ -364,7 +373,7 @@ public class Player : MonoBehaviour
 
     void HandleDash()
     {
-        if ((Input.GetKeyDown("s") || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 1")) && CanDash)
+        if (( Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 1")) && CanDash)
         {
             StartDash();
         }
@@ -385,6 +394,7 @@ public class Player : MonoBehaviour
     {
         Invoke("EnableDash", DashCooldown);
         Invoke("ResetSpeedLimit", DashDuration);
+        FeetVFX.gameObject.SetActive(false);
         isDashing = true;
         CanDash = false;
         Instantiate(dashVFX, transform);
@@ -394,6 +404,7 @@ public class Player : MonoBehaviour
     void EnableDash()
     {
         CanDash = true;
+        FeetVFX.gameObject.SetActive(true);
     }
     void ResetSpeedLimit()
     {
@@ -432,7 +443,7 @@ public class Player : MonoBehaviour
         {
             // reset Gravitational Acceleration for low jump when grounded
             m_PlayerAccel.y = -2 * m_jumpApexHeight / (m_jumpApexTime * m_jumpApexTime);
-            if (InputTracker.IsJumpPressed())
+            if (InputTracker.WasJumpPressed())
             {
                 Jump();
             }
@@ -464,7 +475,7 @@ public class Player : MonoBehaviour
 
 
             // Queue up jump when jump key was pressed while not grounded
-            if (InputTracker.IsJumpPressed())
+            if (InputTracker.WasJumpPressed())
             {
                 m_bufferJumpCountdown = m_jumpBufferTime;
                 isBufferJumpQueued = true;
@@ -483,7 +494,7 @@ public class Player : MonoBehaviour
         else
         {
             // Jump if you still have time left in your count down, and key is pressed
-            if (InputTracker.IsJumpPressed() && (m_CoyoteCountdown > 0))
+            if (InputTracker.WasJumpPressed() && (m_CoyoteCountdown > 0))
             {
                 Jump();
             }
@@ -516,9 +527,10 @@ public class Player : MonoBehaviour
         {
             return;
         }
+
         damage = damage - (damage * m_damageReduction / 100);
         m_CurrentHealth -= damage;
-
+        GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth); 
 
         if (m_CurrentHealth <= 0)
         {
@@ -529,8 +541,25 @@ public class Player : MonoBehaviour
 
     public void makeDead()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        // reset darkness
+        GlobalVolumeController.Singleton.ResetCameraFade();
+        // reset health 
+        m_CurrentHealth = m_maxHorizontalSpeed;
+        // Show VFX
+        Instantiate(DamageVFX, transform.position + new Vector3(0,0, -2), Quaternion.identity);
+
+        if (LastCheckpoint != null)
+        {
+            m_PlayerVelocity = Vector3.zero;
+            transform.position = LastCheckpoint.transform.position;
+        }
+        else
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
+        
+
     }
 
 
@@ -547,17 +576,22 @@ public class Player : MonoBehaviour
 
     public void OnDrawGizmosSelected()
     {
+        
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
+        //Gizmos.DrawWireCube(transform.position - new Vector3(0, GroundedCastDistance, 0), BoxSize);
+        Gizmos.DrawWireCube(transform.position - new Vector3(0, 0, 0), BoxSize);
 
         Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(transform.position + new Vector3(0, GroundedCastDistance, 0), BoxSize);
+        //Gizmos.DrawWireCube(transform.position + new Vector3(0, GroundedCastDistance, 0), BoxSize);
+        Gizmos.DrawWireCube(transform.position + new Vector3(0, 0, 0), BoxSize);
 
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(transform.position - new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+        //Gizmos.DrawWireCube(transform.position - new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+        Gizmos.DrawWireCube(transform.position - new Vector3(0, 0, 0), BoxSize);
 
         Gizmos.color = Color.black;
-        Gizmos.DrawWireCube(transform.position + new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+        //Gizmos.DrawWireCube(transform.position + new Vector3(GroundedCastDistance, 0, 0), BoxSize);
+        Gizmos.DrawWireCube(transform.position + new Vector3(0, 0, 0), BoxSize);
 
         Gizmos.color = Color.white;
     }
