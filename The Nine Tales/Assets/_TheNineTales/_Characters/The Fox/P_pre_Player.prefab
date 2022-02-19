@@ -311,8 +311,9 @@ MonoBehaviour:
   DashDuration: 0.3
   DashCooldown: 1.5
   DashSpeed: 20
-  GroundedCastDistance: 0.57
-  BoxSize: {x: 0.9, y: 1.3}
+  GroundedCastDistance: 0.1
+  BoxSize: {x: 0.9, y: 1}
+  GroundValue: 0
   PlayerSprite: {fileID: 246354546436543992}
   isDashing: 0
   m_PlayerVelocity: {x: 0, y: 0}
@@ -560,7 +561,7 @@ MonoBehaviour:
   - {x: -1.1501884, y: -0.855193, z: 0}
   m_ShapePathHash: -906315697
   m_Mesh: {fileID: 0}
-  m_InstanceId: 136948
+  m_InstanceId: 168416
 --- !u!1 &246354546781621990
 GameObject:
   m_ObjectHideFlags: 0

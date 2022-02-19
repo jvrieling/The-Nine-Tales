@@ -138,6 +138,7 @@ public class Player : MonoBehaviour
         else
         {
             m_PlayerVelocity.x = 0;
+            m_PlayerVelocity.y = -5;
         }
 
         // The following function ensures that the knight does not exceed TERMINAL VELOCITY
@@ -201,7 +202,7 @@ public class Player : MonoBehaviour
 
     public bool IsGrounded()
     {
-        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.down, GroundedCastDistance, GroundLayer))
+        if (Physics2D.BoxCast(transform.position - new Vector3 (0, (BoxSize.y + 0.001f) /2, 0 ), BoxSize, 0f, Vector2.down, GroundedCastDistance, GroundLayer))
         {
             return true;
 
@@ -214,7 +215,7 @@ public class Player : MonoBehaviour
 
     void IsBlockedRight()
     {
-        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.right, GroundedCastDistance, GroundLayer))
+        if (Physics2D.BoxCast(transform.position + new Vector3( (BoxSize.x + 0.001f) / 2, 0, 0), BoxSize, 0f, Vector2.right, GroundedCastDistance, GroundLayer))
         {
             if (m_PlayerVelocity.x > 0)
             {
@@ -230,7 +231,7 @@ public class Player : MonoBehaviour
 
     void IsBlockedLeft()
     {
-        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.left, GroundedCastDistance, GroundLayer))
+        if (Physics2D.BoxCast(transform.position - new Vector3( (BoxSize.x + 0.001f) / 2, 0, 0), BoxSize, 0f, Vector2.left, GroundedCastDistance, GroundLayer))
         {
             if (m_PlayerVelocity.x < 0)
             {
@@ -245,7 +246,7 @@ public class Player : MonoBehaviour
     }
     void IsBlockedUp()
     {
-        if (Physics2D.BoxCast(transform.position, BoxSize, 0f, Vector2.up, GroundedCastDistance, GroundLayer))
+        if (Physics2D.BoxCast(transform.position + new Vector3(0, (BoxSize.y + 0.001f) / 2, 0), BoxSize, 0f, Vector2.up, GroundedCastDistance, GroundLayer))
         {
             if (m_PlayerVelocity.y > 0)
             {
