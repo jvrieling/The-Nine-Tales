@@ -39,4 +39,17 @@ public class GrassCut : MonoBehaviour
 
         }
     }
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.GetComponent<Player>() != null)
+        {
+            if (col.GetComponent<Player>().isDashing == true)
+            {
+                Player.inventory.AddItem(GrassCuttable);
+                if (persistant) destroyedPersistants.Add(id);
+                Destroy(gameObject);
+            }
+
+        }
+    }
 }
