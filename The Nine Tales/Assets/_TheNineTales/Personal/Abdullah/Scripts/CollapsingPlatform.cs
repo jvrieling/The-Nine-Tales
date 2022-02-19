@@ -6,6 +6,7 @@ public class CollapsingPlatform : MonoBehaviour
 {
     public Vector2 CollapseSpeed;
     public float CollapseTime = 1;
+    bool isFalling = false;
     Rigidbody2D RB;
     Vector3 OriginalPosition;
     float ResetTriggerHeight = -8;
@@ -13,6 +14,7 @@ public class CollapsingPlatform : MonoBehaviour
 
     void Start()
     {
+        // Save original platform position to allow it to reset when player die or if it falls
         OriginalPosition = transform.position;
         RB = GetComponent<Rigidbody2D>();
         PlatformManager.Singleton.CollapsingPlatforms.Add(this);
@@ -30,12 +32,18 @@ public class CollapsingPlatform : MonoBehaviour
 
     public void PrepCollapse()
     {
-        Invoke("Collapse", CollapseTime);
+        // only invoke a collapse if it isnt falling, to avoid invoking it on falling platfrom before resting
+        if (!isFalling)
+        {
+            // Strt falling after delay
+            Invoke("Collapse", CollapseTime);
+        }
     }
 
     public void Collapse()
     {
         RB.velocity = CollapseSpeed;
+        isFalling = true;
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -47,5 +55,6 @@ public class CollapsingPlatform : MonoBehaviour
     {
         RB.velocity = Vector3.zero;
         transform.position = OriginalPosition;
+        isFalling = false;
     }
 }
