@@ -32,4 +32,14 @@ public class DestructableObstacle : MonoBehaviour
 
         }
     }
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.GetComponent<Player>() != null)
+        {
+            if (col.GetComponent<Player>().isDashing == true)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 }
