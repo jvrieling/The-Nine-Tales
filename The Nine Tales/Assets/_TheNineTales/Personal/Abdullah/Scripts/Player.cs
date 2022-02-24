@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using FMODUnity;
 
 public class Player : MonoBehaviour
 {
@@ -87,11 +86,8 @@ public class Player : MonoBehaviour
     float m_damageReduction = 0;
 
     public GameObject jumpVFX;
-    public EventReference jumpSound;
     public GameObject dashVFX;
-    public EventReference dashSound;
     public GameObject landVFX;
-    public EventReference landSound;
     private bool groundedLastFrame;
 
     private Animator an;
@@ -178,7 +174,6 @@ public class Player : MonoBehaviour
             if (IsGrounded())
             {
                 Instantiate(landVFX, transform);
-                RuntimeManager.PlayOneShot(landSound);
             }
         }
 
@@ -400,7 +395,6 @@ public class Player : MonoBehaviour
         isDashing = true;
         CanDash = false;
         Instantiate(dashVFX, transform);
-        RuntimeManager.PlayOneShot(dashSound);
     }
 
     void EnableDash()
@@ -430,7 +424,6 @@ public class Player : MonoBehaviour
     {
         an.SetTrigger("Jump");
         Instantiate(jumpVFX, transform);
-        RuntimeManager.PlayOneShot(jumpSound);
         // preform jump
         m_PlayerVelocity.y = 2 * m_jumpApexHeight / m_jumpApexTime;
         // prevent coyote jump follow up after regular jump

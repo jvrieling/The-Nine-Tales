@@ -250,7 +250,6 @@ GameObject:
   - component: {fileID: 246354546436543995}
   - component: {fileID: 8672836545935732067}
   - component: {fileID: 7964551327419498086}
-  - component: {fileID: 205114084000767346}
   - component: {fileID: 7897411903047362637}
   m_Layer: 0
   m_Name: P_pre_Player
@@ -322,29 +321,8 @@ MonoBehaviour:
   m_FullHealth: 5
   m_CurrentHealth: 5
   jumpVFX: {fileID: 1988350440947039752, guid: c2ddeb86861652d40a9b38f77f439060, type: 3}
-  jumpSound:
-    Guid:
-      Data1: -1253407576
-      Data2: 1332037022
-      Data3: -981737571
-      Data4: 274066262
-    Path: event:/Foley/Jump
   dashVFX: {fileID: 8992092285104031098, guid: afc1cde7b4611d84bb7dddd7ad79236f, type: 3}
-  dashSound:
-    Guid:
-      Data1: 790022330
-      Data2: 1163194717
-      Data3: -184547966
-      Data4: -1712663652
-    Path: event:/Foley/Dash
   landVFX: {fileID: 5138902148118288712, guid: 12722312c81391a4baa66575480eed49, type: 3}
-  landSound:
-    Guid:
-      Data1: 1977562997
-      Data2: 1272390961
-      Data3: 1374614718
-      Data4: -2121937748
-    Path: event:/Foley/Land
   LastCheckpoint: {fileID: 0}
   DamageVFX: {fileID: 6591836109642705354, guid: e5dd8a6d5d80fa249a181c97ddbf746a, type: 3}
   FeetVFX: {fileID: 8548641258513296527}
@@ -506,36 +484,6 @@ MonoBehaviour:
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: The main character
---- !u!114 &205114084000767346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246354546436543999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -180519357
-      Data2: 1079793464
-      Data3: 1095641748
-      Data4: 1508196133
-    Path: event:/Foley/Footstep
-  Event: 
-  PlayEvent: 0
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!114 &7897411903047362637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +510,7 @@ MonoBehaviour:
   - {x: -1.1501884, y: -0.855193, z: 0}
   m_ShapePathHash: -906315697
   m_Mesh: {fileID: 0}
-  m_InstanceId: 263694
+  m_InstanceId: 81242
 --- !u!1 &246354546781621990
 GameObject:
   m_ObjectHideFlags: 0
