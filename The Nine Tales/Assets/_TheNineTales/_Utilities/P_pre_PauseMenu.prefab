@@ -342,8 +342,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 5180919404301652864}
-  selectedCommands: []
+  - {fileID: 5180919404301652879}
+  selectedCommands:
+  - {fileID: 5180919404301652886}
   variables:
   - {fileID: 5180919404301652872}
   description: 
@@ -578,7 +579,7 @@ MonoBehaviour:
     colorVal: {r: 1, g: 1, b: 1, a: 1}
   targetAlpha:
     floatRef: {fileID: 0}
-    floatVal: 0.5
+    floatVal: 1
 --- !u!114 &5180919404301652877
 MonoBehaviour:
   m_ObjectHideFlags: 0
