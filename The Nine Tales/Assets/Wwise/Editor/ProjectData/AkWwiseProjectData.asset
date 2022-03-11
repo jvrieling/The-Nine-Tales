@@ -303,8 +303,48 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: a523732cdf014146a8572b3bb46eac39
     GuidInternal: 
-    m_lastTime: -8585558025542608062
+    m_lastTime: -8585552668816695404
     List:
+    - name: Ambient
+      guid: a66d6568530cf847b5bb2e6c1bb11339
+      id: 77978275
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a523732cdf014146a8572b3bb46eac39
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: 0682a21d68dafb429d49681575151d65
+      - ElementName: Ambient
+        ObjectType: 2
+        guid: a66d6568530cf847b5bb2e6c1bb11339
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World/Ambient
+    - name: AUX
+      guid: 133b6e6b1e16954cb3dcf398bcf519d4
+      id: 983310469
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a523732cdf014146a8572b3bb46eac39
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: 0682a21d68dafb429d49681575151d65
+      - ElementName: AUX
+        ObjectType: 2
+        guid: 133b6e6b1e16954cb3dcf398bcf519d4
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World/AUX
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -333,6 +373,100 @@ MonoBehaviour:
         ObjectType: 2
         guid: c6b9f92af16ee946b5f2e30c9e602c74
       Path: Master-Mixer Hierarchy/Default Work Unit/Motion Factory Bus
+    - name: Music
+      guid: bf5a0f8c6dcd9043b61fbfe848aed934
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a523732cdf014146a8572b3bb46eac39
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Non-World
+        ObjectType: 2
+        guid: 16514c43c77cba47a7368ae6dfb5bf61
+      - ElementName: Music
+        ObjectType: 2
+        guid: bf5a0f8c6dcd9043b61fbfe848aed934
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non-World/Music
+    - name: Non-World
+      guid: 16514c43c77cba47a7368ae6dfb5bf61
+      id: 838047381
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a523732cdf014146a8572b3bb46eac39
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Non-World
+        ObjectType: 2
+        guid: 16514c43c77cba47a7368ae6dfb5bf61
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non-World
+    - name: Player
+      guid: e2c36fae74f1414885134073fbb8b73b
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a523732cdf014146a8572b3bb46eac39
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: 0682a21d68dafb429d49681575151d65
+      - ElementName: Player
+        ObjectType: 2
+        guid: e2c36fae74f1414885134073fbb8b73b
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World/Player
+    - name: UI
+      guid: f093bc6cf9231a4bb8d6f6049c47d2a2
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a523732cdf014146a8572b3bb46eac39
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Non-World
+        ObjectType: 2
+        guid: 16514c43c77cba47a7368ae6dfb5bf61
+      - ElementName: UI
+        ObjectType: 2
+        guid: f093bc6cf9231a4bb8d6f6049c47d2a2
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Non-World/UI
+    - name: World
+      guid: 0682a21d68dafb429d49681575151d65
+      id: 2609808943
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a523732cdf014146a8572b3bb46eac39
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: World
+        ObjectType: 2
+        guid: 0682a21d68dafb429d49681575151d65
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/World
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
@@ -345,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585558017670028411
+    m_lastTime: -8585547502469062523
     List:
     - name: Main
       guid: 6b59b5d7d583064fb199b3432d49c5be
@@ -373,8 +507,339 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585558018801693014
+    m_lastTime: -8585547436545439173
     List:
+    - name: Ambient_Campfire
+      guid: 73d81bd2289dc843b557d58f2fbdc35a
+      id: 3652009445
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Ambient_Campfire
+        ObjectType: 3
+        guid: 73d81bd2289dc843b557d58f2fbdc35a
+      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Campfire
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Ambient_Dream
+      guid: c8b2bc68af0b044c8792ac63ba730a10
+      id: 2155509767
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Ambient_Dream
+        ObjectType: 3
+        guid: c8b2bc68af0b044c8792ac63ba730a10
+      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Dream
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Ambient_Forest
+      guid: 39531e387e5a164ebd6588001a6c44d0
+      id: 4234424953
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Ambient_Forest
+        ObjectType: 3
+        guid: 39531e387e5a164ebd6588001a6c44d0
+      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Forest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ambient_Forest_Stop
+      guid: 5a6c08a11656f34e8fac83fb2de3dc45
+      id: 4164439052
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Ambient_Forest_Stop
+        ObjectType: 3
+        guid: 5a6c08a11656f34e8fac83fb2de3dc45
+      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Forest_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Ambient_Regions
+      guid: 8b25ec1e21d8e3409f2034779ab46d98
+      id: 1866658237
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      Path: Events/Default Work Unit/Ambient_Regions
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ambient_Storm
+      guid: 09bb27857265eb489b56388dff9fb915
+      id: 1893400265
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Ambient_Storm
+        ObjectType: 3
+        guid: 09bb27857265eb489b56388dff9fb915
+      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Storm
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Fox_Dash
+      guid: 9aac398aecbfce4f8e6dc4263cfa8f07
+      id: 2956011499
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Fox_Dash
+        ObjectType: 3
+        guid: 9aac398aecbfce4f8e6dc4263cfa8f07
+      Path: Events/Default Work Unit/Player/Fox_Dash
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Fox_Footstep
+      guid: 8093f4ca54405f4792ffab81d2c2a74a
+      id: 3242941405
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Fox_Footstep
+        ObjectType: 3
+        guid: 8093f4ca54405f4792ffab81d2c2a74a
+      Path: Events/Default Work Unit/Player/Fox_Footstep
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Fox_Jump
+      guid: 7b7ba233e024a54194a939a9a4d1470b
+      id: 1783467547
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Fox_Jump
+        ObjectType: 3
+        guid: 7b7ba233e024a54194a939a9a4d1470b
+      Path: Events/Default Work Unit/Player/Fox_Jump
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Fox_Land
+      guid: b6dcca467055e3479b3d554c73af8e10
+      id: 1687841656
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Fox_Land
+        ObjectType: 3
+        guid: b6dcca467055e3479b3d554c73af8e10
+      Path: Events/Default Work Unit/Player/Fox_Land
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Gain_Tail
+      guid: 6e6d0c2ccc48a74b94407520be5a1362
+      id: 2680479089
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Gain_Tail
+        ObjectType: 3
+        guid: 6e6d0c2ccc48a74b94407520be5a1362
+      Path: Events/Default Work Unit/Player/Gain_Tail
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Main_Menu_Theme
+      guid: d542b49efd15384ab196952c9a58baa3
+      id: 1878720482
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Main_Menu_Theme
+        ObjectType: 3
+        guid: d542b49efd15384ab196952c9a58baa3
+      Path: Events/Default Work Unit/Music/Main_Menu_Theme
+      maxAttenuation: 0
+      maxDuration: 122
+      minDuration: 122
+    - name: Main_Menu_Theme_Stop
+      guid: 64a5dd0b1f2692449b47ebb97cabfc90
+      id: 2681051297
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Main_Menu_Theme_Stop
+        ObjectType: 3
+        guid: 64a5dd0b1f2692449b47ebb97cabfc90
+      Path: Events/Default Work Unit/Music/Main_Menu_Theme_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music
+      guid: 3bada98847689943b5bfbd6066eb1240
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      Path: Events/Default Work Unit/Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player
+      guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      Path: Events/Default Work Unit/Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Quill_Scratch
+      guid: 466b9f1feb0e9c4195019917e9d05890
+      id: 1880629771
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: UI
+        ObjectType: 4
+        guid: 51e2480c2051c64da8c492b4b898f543
+      - ElementName: Quill_Scratch
+        ObjectType: 3
+        guid: 466b9f1feb0e9c4195019917e9d05890
+      Path: Events/Default Work Unit/UI/Quill_Scratch
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Respawn
+      guid: 98a3b95a24b8f44d8c937e536368935f
+      id: 4279841335
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Respawn
+        ObjectType: 3
+        guid: 98a3b95a24b8f44d8c937e536368935f
+      Path: Events/Default Work Unit/Player/Respawn
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Test_Event
       guid: 882a9e5f5a32994286e6a584461f62d0
       id: 4258653052
@@ -390,8 +855,65 @@ MonoBehaviour:
         guid: 882a9e5f5a32994286e6a584461f62d0
       Path: Events/Default Work Unit/Test_Event
       maxAttenuation: 0
-      maxDuration: 80.271065
-      minDuration: 80.271065
+      maxDuration: -1
+      minDuration: -1
+    - name: Test_Forest
+      guid: 5e7f50d49f8c8f45b0f610c4fe982c7f
+      id: 1109175735
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Test_Forest
+        ObjectType: 3
+        guid: 5e7f50d49f8c8f45b0f610c4fe982c7f
+      Path: Events/Default Work Unit/Ambient_Regions/Test_Forest
+      maxAttenuation: 0
+      maxDuration: 51.13034
+      minDuration: 51.13034
+    - name: Test_Storm
+      guid: fb241f3e9467e342be5a975324ebd393
+      id: 2584216087
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Test_Storm
+        ObjectType: 3
+        guid: fb241f3e9467e342be5a975324ebd393
+      Path: Events/Default Work Unit/Ambient_Regions/Test_Storm
+      maxAttenuation: 0
+      maxDuration: 60
+      minDuration: 60
+    - name: UI
+      guid: 51e2480c2051c64da8c492b4b898f543
+      id: 1551306167
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: UI
+        ObjectType: 4
+        guid: 51e2480c2051c64da8c492b4b898f543
+      Path: Events/Default Work Unit/UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -643,7 +1165,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 07000000080000000c0000000d000000
+  ExpandedWaapiItemIds: 010000000700000008000000090000000a0000000c0000000d0000001000000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
