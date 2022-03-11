@@ -22,7 +22,7 @@ public class Interactor : MonoBehaviour
                 interactNameDisplay.text = inter.interactionName;
                 interactPrompt.SetActive(inter.CanInteract());
 
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.JoystickButton2))
                 {
                     inter.Interact(this);
                 }

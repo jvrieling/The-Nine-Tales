@@ -8,9 +8,6 @@ public class Inventory : MonoBehaviour
     public static List<ItemStack> items;
     public Item debugItem;
 
-    public Text inventoryText;
-    public Image[] icons;
-
     private void Awake()
     {
         if (items == null)
@@ -19,11 +16,6 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        UpdateUI();
-    }
-    
     [ContextMenu("Give Debug Item")]
     public void GiveDebugItem()
     {
@@ -43,8 +35,6 @@ public class Inventory : MonoBehaviour
     public void AddItem(Item item)
     {
         AddItem(new ItemStack(item));
-
-        UpdateUI();
     }
 
     public void AddItem(ItemStack item)
@@ -57,8 +47,6 @@ public class Inventory : MonoBehaviour
         {
             items[index].count += item.count;
         }
-
-        UpdateUI();
     }
 
     public bool UseItem(Item item, int count = 1)
@@ -85,8 +73,6 @@ public class Inventory : MonoBehaviour
         {
             items.Remove(items[index]);
         }
-
-        UpdateUI();
     }
 
     /// <summary>
@@ -131,30 +117,5 @@ public class Inventory : MonoBehaviour
         }
 
         return false;
-    }
-
-    public void UpdateUI()
-    {
-        string inventoryStr = "";
-        int j = 0;
-
-        foreach(Image i in icons)
-        {
-            i.enabled = false;
-        }
-
-        foreach (ItemStack i in items)
-        {
-            inventoryStr += i.itemName + " x" + i.count + "\n";
-
-            if (j < icons.Length)
-            {
-                icons[j].enabled = true;
-                icons[j].sprite = i.icon;
-                j++;
-            }
-        }
-
-        inventoryText.text = inventoryStr;
     }
 }
