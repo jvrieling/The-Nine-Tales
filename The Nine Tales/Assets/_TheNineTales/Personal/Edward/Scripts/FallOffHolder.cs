@@ -9,8 +9,13 @@ public class FallOffHolder : MonoBehaviour
 
     public void TriggerVFX()
     {
-        GameObject temp = Instantiate(fallOffFX,transform.position,Quaternion.identity);
+        if (fallOffFX)
+        {
+            GameObject temp = Instantiate(fallOffFX, transform.position, Quaternion.identity);
 
-        Destroy(temp, 2);
+            Destroy(temp, 2);
+        }
+        else
+            Debug.Log("Ask Edward where the fall off fx is");
     }
 }
