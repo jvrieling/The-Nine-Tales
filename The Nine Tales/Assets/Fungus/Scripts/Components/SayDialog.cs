@@ -411,7 +411,7 @@ namespace Fungus
             }
 
             // Adjust story text box to not overlap image rect
-            if (fitTextWithImage && 
+           /* if (fitTextWithImage && 
                 StoryText != null &&
                 characterImage.gameObject.activeSelf)
             {
@@ -434,7 +434,7 @@ namespace Fungus
                         startStoryTextInset, 
                         startStoryTextWidth - characterImage.rectTransform.rect.width);
                 }
-            }
+            }*/
         }
 
         /// <summary>
