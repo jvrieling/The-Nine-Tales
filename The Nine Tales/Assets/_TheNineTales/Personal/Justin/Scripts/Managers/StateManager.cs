@@ -18,6 +18,7 @@ public class StateManager : MonoBehaviour
     public Text currentStateText;
 
     public static Player cc;
+    public static Interactor pi;
 
     private static GameState currentGameState;
     private static GameState lastGameState;
@@ -34,6 +35,7 @@ public class StateManager : MonoBehaviour
     private void Awake()
     {
         if (cc == null) cc = characterController;
+        if (pi == null) pi = cc.GetComponentInChildren<Interactor>();
     }
 
     private void Start()
@@ -85,29 +87,34 @@ public class StateManager : MonoBehaviour
                 cc.EnableControls();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(true);
+                pi.enabled = true;
                 break;
             case GameState.Platforming:
                 cc.ForceIdleAnimation(false);
                 cc.EnableControls();
                 cam.SetCameraZoom(false);
                 cam.SetCameraFollow(true);
+                pi.enabled = true;
                 break;
             case GameState.Dialogue:
                 cc.ForceIdleAnimation();
                 cc.DisableControls();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
+                pi.enabled = false;
                 break;
             case GameState.StillImage:
                 cc.ForceIdleAnimation();
                 cc.DisableControls();
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
+                pi.enabled = false;
                 break;
             case GameState.Paused:
                 cc.ForceIdleAnimation();
                 cc.DisableControls();
                 cam.SetCameraFollow(true);
+                pi.enabled = false;
                 break;
         }
     }

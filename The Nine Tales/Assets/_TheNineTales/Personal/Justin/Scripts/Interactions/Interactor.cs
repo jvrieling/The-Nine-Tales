@@ -9,9 +9,28 @@ public class Interactor : MonoBehaviour
     public GameObject interactPrompt;
     public Text interactNameDisplay;
     public LayerMask interactLayers = 1 << 3;
+    public float interactCooldown = 1.5f;
+    private float cdTimer;
+
+    private void OnEnable()
+    {
+        cdTimer = interactCooldown;
+    }
+
+    private void OnDisable()
+    {
+        interactPrompt.SetActive(false);
+    }
 
     void Update()
     {
+        if (cdTimer > 0)
+        {
+            cdTimer -= Time.deltaTime;
+            return;
+        }
+
+
         RaycastHit2D hit = Physics2D.CircleCast(transform.position, interactRange, Vector2.zero, 1, interactLayers);
 
         if (hit)
@@ -26,7 +45,8 @@ public class Interactor : MonoBehaviour
                 {
                     inter.Interact(this);
                 }
-            } else
+            }
+            else
             {
                 Debug.LogError(gameObject.name + " is on the 'Interactable' layer but does not have an Interactable Object script attached!");
             }
@@ -35,6 +55,7 @@ public class Interactor : MonoBehaviour
         {
             interactPrompt.SetActive(false);
         }
+
     }
 
     private void OnDrawGizmosSelected()
