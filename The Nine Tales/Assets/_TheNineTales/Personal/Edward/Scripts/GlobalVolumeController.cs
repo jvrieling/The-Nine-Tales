@@ -28,7 +28,7 @@ public class GlobalVolumeController : MonoBehaviour
     public void CameraFadeDark(float _currentHp, float _totalHp)
     {
         float per = (_totalHp - _currentHp + VintMod) / (_totalHp + VintMod);
-        vignette.intensity.value = per;
+        if(vignette != null) vignette.intensity.value = per;
     }
 
     public void ResetCameraFade()
