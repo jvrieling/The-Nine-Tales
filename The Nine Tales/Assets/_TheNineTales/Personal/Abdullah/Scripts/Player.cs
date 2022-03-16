@@ -551,7 +551,7 @@ public class Player : MonoBehaviour
 
     void RegenHealth()
     {
-
+        //Debug.Log("Cd" + RegenCountdown + " hp/mhp: " + m_CurrentHealth + "/" + m_FullHealth);
         if (m_CurrentHealth < m_FullHealth)
         {
             if(RegenCountdown <= 0)
@@ -564,7 +564,7 @@ public class Player : MonoBehaviour
             }
             else
             {
-                RegenCountdown = -Time.deltaTime;
+                RegenCountdown -= Time.deltaTime;
             }
         }
         else

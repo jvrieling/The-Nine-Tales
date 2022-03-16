@@ -102,6 +102,8 @@ public class StateManager : MonoBehaviour
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
                 pi.enabled = false;
+                cc.m_CurrentHealth = cc.m_FullHealth;
+                GlobalVolumeController.Singleton.CameraFadeDark(cc.m_CurrentHealth, cc.m_FullHealth);
                 break;
             case GameState.StillImage:
                 cc.ForceIdleAnimation();
@@ -109,6 +111,8 @@ public class StateManager : MonoBehaviour
                 cam.SetCameraZoom(true);
                 cam.SetCameraFollow(false);
                 pi.enabled = false;
+                cc.m_CurrentHealth = cc.m_FullHealth;
+                GlobalVolumeController.Singleton.CameraFadeDark(cc.m_CurrentHealth, cc.m_FullHealth);
                 break;
             case GameState.Paused:
                 cc.ForceIdleAnimation();
