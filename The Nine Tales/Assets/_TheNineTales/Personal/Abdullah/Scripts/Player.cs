@@ -83,6 +83,8 @@ public class Player : MonoBehaviour
 
     public float m_FullHealth = 10;
     public float m_CurrentHealth = 10;
+    public float RegenCooldown = 6;
+    float RegenCountdown = 0;
     float m_damageReduction = 0;
 
     public GameObject jumpVFX;
@@ -149,7 +151,7 @@ public class Player : MonoBehaviour
 
         m_PlayerRigidBody.velocity = m_PlayerVelocity;
 
-
+        RegenHealth();
 
         if (Input.GetKeyDown("k"))
         {
@@ -536,7 +538,9 @@ public class Player : MonoBehaviour
 
         damage = damage - (damage * m_damageReduction / 100);
         m_CurrentHealth -= damage;
-        GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth); 
+        GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth);
+        // Reset time left before regen
+        RegenCountdown = RegenCooldown;
 
         if (m_CurrentHealth <= 0)
         {
@@ -544,6 +548,31 @@ public class Player : MonoBehaviour
         }
 
     }
+
+    void RegenHealth()
+    {
+
+        if (m_CurrentHealth < m_FullHealth)
+        {
+            if(RegenCountdown <= 0)
+            {
+                m_CurrentHealth = m_FullHealth;
+                // reset cooldown
+                RegenCountdown = RegenCooldown;
+                // Reset Dark fade
+                GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth);
+            }
+            else
+            {
+                RegenCountdown = -Time.deltaTime;
+            }
+        }
+        else
+        {
+            RegenCountdown = RegenCooldown;
+        }
+    }
+
 
     public void makeDead()
     {
