@@ -507,7 +507,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585547436545439173
+    m_lastTime: -8585541527421128218
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -626,6 +626,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Doakes
+      guid: 132222b9f6dc50498dba2cec3d966903
+      id: 2429712994
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Village
+        ObjectType: 4
+        guid: 175265ed4060474a9f34e17205b6efdd
+      - ElementName: Doakes
+        ObjectType: 3
+        guid: 132222b9f6dc50498dba2cec3d966903
+      Path: Events/Default Work Unit/Music/Village/Doakes
+      maxAttenuation: 0
+      maxDuration: 82.790405
+      minDuration: 82.790405
+    - name: Environmental
+      guid: 8762065de427fa42b599ee8ac89343a2
+      id: 1973600711
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Environmental
+        ObjectType: 4
+        guid: 8762065de427fa42b599ee8ac89343a2
+      Path: Events/Default Work Unit/Environmental
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Fox_Dash
       guid: 9aac398aecbfce4f8e6dc4263cfa8f07
       id: 2956011499
@@ -726,9 +766,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Main_Menu_Theme
-      guid: d542b49efd15384ab196952c9a58baa3
-      id: 1878720482
+    - name: Lumb
+      guid: c30e7225b96310429133430be9a8fa8c
+      id: 660996473
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -739,16 +779,62 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: 3bada98847689943b5bfbd6066eb1240
-      - ElementName: Main_Menu_Theme
+      - ElementName: Village
+        ObjectType: 4
+        guid: 175265ed4060474a9f34e17205b6efdd
+      - ElementName: Lumb
+        ObjectType: 3
+        guid: c30e7225b96310429133430be9a8fa8c
+      Path: Events/Default Work Unit/Music/Village/Lumb
+      maxAttenuation: 0
+      maxDuration: 82.790405
+      minDuration: 82.790405
+    - name: Main Menu
+      guid: e17d8473d8e2824c87d3922d606273f4
+      id: 1026774399
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Main Menu
+        ObjectType: 4
+        guid: e17d8473d8e2824c87d3922d606273f4
+      Path: Events/Default Work Unit/Music/Main Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Main_Theme
+      guid: d542b49efd15384ab196952c9a58baa3
+      id: 2557777556
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Main Menu
+        ObjectType: 4
+        guid: e17d8473d8e2824c87d3922d606273f4
+      - ElementName: Main_Theme
         ObjectType: 3
         guid: d542b49efd15384ab196952c9a58baa3
-      Path: Events/Default Work Unit/Music/Main_Menu_Theme
+      Path: Events/Default Work Unit/Music/Main Menu/Main_Theme
       maxAttenuation: 0
-      maxDuration: 122
-      minDuration: 122
-    - name: Main_Menu_Theme_Stop
+      maxDuration: 72.33462
+      minDuration: 72.33462
+    - name: Main_Theme_Stop
       guid: 64a5dd0b1f2692449b47ebb97cabfc90
-      id: 2681051297
+      id: 3409588627
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -759,10 +845,13 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: 3bada98847689943b5bfbd6066eb1240
-      - ElementName: Main_Menu_Theme_Stop
+      - ElementName: Main Menu
+        ObjectType: 4
+        guid: e17d8473d8e2824c87d3922d606273f4
+      - ElementName: Main_Theme_Stop
         ObjectType: 3
         guid: 64a5dd0b1f2692449b47ebb97cabfc90
-      Path: Events/Default Work Unit/Music/Main_Menu_Theme_Stop
+      Path: Events/Default Work Unit/Music/Main Menu/Main_Theme_Stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -783,6 +872,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Myla
+      guid: 5077b27b8b52bc4091ceef873b70330d
+      id: 3110296066
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Village
+        ObjectType: 4
+        guid: 175265ed4060474a9f34e17205b6efdd
+      - ElementName: Myla
+        ObjectType: 3
+        guid: 5077b27b8b52bc4091ceef873b70330d
+      Path: Events/Default Work Unit/Music/Village/Myla
+      maxAttenuation: 0
+      maxDuration: 82.790405
+      minDuration: 82.790405
     - name: Player
       guid: fc4f10657dbb514cacef8ad9e5cbb9be
       id: 1069431850
@@ -897,6 +1009,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 60
       minDuration: 60
+    - name: Thunder_Strike
+      guid: 6d441fe4559c354e9f1ebd32eb0f94b7
+      id: 735449646
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Environmental
+        ObjectType: 4
+        guid: 8762065de427fa42b599ee8ac89343a2
+      - ElementName: Thunder_Strike
+        ObjectType: 3
+        guid: 6d441fe4559c354e9f1ebd32eb0f94b7
+      Path: Events/Default Work Unit/Environmental/Thunder_Strike
+      maxAttenuation: 0
+      maxDuration: 7.548979
+      minDuration: 7.548979
     - name: UI
       guid: 51e2480c2051c64da8c492b4b898f543
       id: 1551306167
@@ -914,6 +1046,49 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Village
+      guid: 175265ed4060474a9f34e17205b6efdd
+      id: 3945572659
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Village
+        ObjectType: 4
+        guid: 175265ed4060474a9f34e17205b6efdd
+      Path: Events/Default Work Unit/Music/Village
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Village_Neutra_Base
+      guid: 397ac682b179a7458684eec0a1c7b823
+      id: 3605124939
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Village
+        ObjectType: 4
+        guid: 175265ed4060474a9f34e17205b6efdd
+      - ElementName: Village_Neutra_Base
+        ObjectType: 3
+        guid: 397ac682b179a7458684eec0a1c7b823
+      Path: Events/Default Work Unit/Music/Village/Village_Neutra_Base
+      maxAttenuation: 0
+      maxDuration: 82.790405
+      minDuration: 82.790405
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -1134,8 +1309,272 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ef20ec574afe3649810385069bd8b529
     GuidInternal: 
-    m_lastTime: -8585558025540479302
-    List: []
+    m_lastTime: -8585543100389357630
+    List:
+    - name: Player_In_Village
+      guid: 6dfa0e2152a6cc4ab8127e73929bcb14
+      id: 4116480265
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Player_In_Village
+        ObjectType: 9
+        guid: 6dfa0e2152a6cc4ab8127e73929bcb14
+      Path: States/Default Work Unit/Player_In_Village
+      values:
+      - name: No
+        guid: 12785aca7d60834fbb039b21b2f3facf
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_In_Village
+          ObjectType: 9
+          guid: 6dfa0e2152a6cc4ab8127e73929bcb14
+        - ElementName: No
+          ObjectType: 8
+          guid: 12785aca7d60834fbb039b21b2f3facf
+      - name: None
+        guid: bdee7603eb80cb408f79c19e8df69d5e
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_In_Village
+          ObjectType: 9
+          guid: 6dfa0e2152a6cc4ab8127e73929bcb14
+        - ElementName: None
+          ObjectType: 8
+          guid: bdee7603eb80cb408f79c19e8df69d5e
+      - name: Yes
+        guid: 9b3809490ee6fc449718bfa7c79a3c78
+        id: 979470758
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_In_Village
+          ObjectType: 9
+          guid: 6dfa0e2152a6cc4ab8127e73929bcb14
+        - ElementName: Yes
+          ObjectType: 8
+          guid: 9b3809490ee6fc449718bfa7c79a3c78
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Player_Talks_To_Doakes
+      guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
+      id: 1624729662
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Player_Talks_To_Doakes
+        ObjectType: 9
+        guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
+      Path: States/Default Work Unit/Player_Talks_To_Doakes
+      values:
+      - name: No
+        guid: 7d31c9821e5c9f4398e7617646fe40f8
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Doakes
+          ObjectType: 9
+          guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
+        - ElementName: No
+          ObjectType: 8
+          guid: 7d31c9821e5c9f4398e7617646fe40f8
+      - name: None
+        guid: 44d1e37884f35b448f29aec8d9ca91ff
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Doakes
+          ObjectType: 9
+          guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
+        - ElementName: None
+          ObjectType: 8
+          guid: 44d1e37884f35b448f29aec8d9ca91ff
+      - name: Yes
+        guid: e08ddc3a8f51e549833a72f286c32e72
+        id: 979470758
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Doakes
+          ObjectType: 9
+          guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
+        - ElementName: Yes
+          ObjectType: 8
+          guid: e08ddc3a8f51e549833a72f286c32e72
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Player_Talks_To_Lumb
+      guid: e311cff1ab64a948b495818f0c995191
+      id: 2854592485
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Player_Talks_To_Lumb
+        ObjectType: 9
+        guid: e311cff1ab64a948b495818f0c995191
+      Path: States/Default Work Unit/Player_Talks_To_Lumb
+      values:
+      - name: No
+        guid: b2b65259c48b9f43b31eb48b536089c3
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Lumb
+          ObjectType: 9
+          guid: e311cff1ab64a948b495818f0c995191
+        - ElementName: No
+          ObjectType: 8
+          guid: b2b65259c48b9f43b31eb48b536089c3
+      - name: None
+        guid: 7b5aa15da77871408b6ec003d73bad12
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Lumb
+          ObjectType: 9
+          guid: e311cff1ab64a948b495818f0c995191
+        - ElementName: None
+          ObjectType: 8
+          guid: 7b5aa15da77871408b6ec003d73bad12
+      - name: Yes
+        guid: ab73cc46f048b047b0aceb7ddcce4fad
+        id: 979470758
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Lumb
+          ObjectType: 9
+          guid: e311cff1ab64a948b495818f0c995191
+        - ElementName: Yes
+          ObjectType: 8
+          guid: ab73cc46f048b047b0aceb7ddcce4fad
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Player_Talks_To_Myla
+      guid: bde5deb75e2c5b41873baddf378ce05e
+      id: 1010204902
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Player_Talks_To_Myla
+        ObjectType: 9
+        guid: bde5deb75e2c5b41873baddf378ce05e
+      Path: States/Default Work Unit/Player_Talks_To_Myla
+      values:
+      - name: No
+        guid: ce84bbeb22f82545b64ee8dfe0a53412
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Myla
+          ObjectType: 9
+          guid: bde5deb75e2c5b41873baddf378ce05e
+        - ElementName: No
+          ObjectType: 8
+          guid: ce84bbeb22f82545b64ee8dfe0a53412
+      - name: None
+        guid: d50f83daed9ee042a2ab690e3fe07eed
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Myla
+          ObjectType: 9
+          guid: bde5deb75e2c5b41873baddf378ce05e
+        - ElementName: None
+          ObjectType: 8
+          guid: d50f83daed9ee042a2ab690e3fe07eed
+      - name: Yes
+        guid: ab1af7759ed4ce4ea72ddec9e8e6d13f
+        id: 979470758
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Talks_To_Myla
+          ObjectType: 9
+          guid: bde5deb75e2c5b41873baddf378ce05e
+        - ElementName: Yes
+          ObjectType: 8
+          guid: ab1af7759ed4ce4ea72ddec9e8e6d13f
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     PathAndIcons:
@@ -1165,7 +1604,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000700000008000000090000000a0000000c0000000d0000001000000011000000
+  ExpandedWaapiItemIds: 01000000060000000700000008000000090000000d000000100000001100000015000000160000003200000093130000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
