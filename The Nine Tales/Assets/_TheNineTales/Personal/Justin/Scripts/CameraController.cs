@@ -26,6 +26,8 @@ public class CameraController : MonoBehaviour
     [Tooltip("set to true if the camera is currently zoomed in to the narrative camera size. Only affects anything if one of the camera sizes are not set.")]
     public bool zoomedIn;
 
+    public GameObject stormVFX;
+
     private bool follow = true;
 
     private Camera cam;
@@ -63,7 +65,8 @@ public class CameraController : MonoBehaviour
                 if (playerSprite.flipX)
                 {
                     desiredPosition += new Vector3(cam.orthographicSize / 3, 0, 0);
-                } else
+                }
+                else
                 {
                     desiredPosition += new Vector3(-cam.orthographicSize / 3, 0, 0);
                 }
@@ -74,7 +77,7 @@ public class CameraController : MonoBehaviour
         }
 
         desiredPosition.z = -10;
-        if(desiredPosition != transform.position) transform.position = desiredPosition;
+        if (desiredPosition != transform.position) transform.position = desiredPosition;
 
         if (zooming)
         {
@@ -83,6 +86,15 @@ public class CameraController : MonoBehaviour
             cam.orthographicSize = Mathf.Lerp(startingSize, targetSize, zoomCurve.Evaluate(zoomTimer / zoomTime));
 
             if (zoomTimer >= zoomTime) zooming = false;
+        }
+
+        if (zoomedIn)
+        {
+            if (stormVFX != null) stormVFX.transform.localPosition = new Vector3(0, -0.82f, 0);
+        }
+        else
+        {
+            if (stormVFX != null) stormVFX.transform.localPosition = Vector3.zero;
         }
     }
 
@@ -99,8 +111,15 @@ public class CameraController : MonoBehaviour
 
     public void SetCameraZoom(bool zoomIn)
     {
-        if (zoomIn) SetCameraZoom(narrativeCameraSize);
-        else SetCameraZoom(platformingCameraSize);
+        zoomedIn = zoomIn;
+        if (zoomIn)
+        {
+            SetCameraZoom(narrativeCameraSize);
+        }
+        else
+        {
+            SetCameraZoom(platformingCameraSize);
+        }
     }
 
     public void SetCameraZoom(float zoom)
