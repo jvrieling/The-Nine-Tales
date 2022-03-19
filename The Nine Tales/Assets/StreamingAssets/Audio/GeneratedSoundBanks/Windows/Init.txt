@@ -1,0 +1,58 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1010204902	Player_Talks_To_Myla			\Default Work Unit\Player_Talks_To_Myla	
+	1035893910	Village_Convos			\Default Work Unit\Village_Convos	
+	1624729662	Player_Talks_To_Doakes			\Default Work Unit\Player_Talks_To_Doakes	
+	2854592485	Player_Talks_To_Lumb			\Default Work Unit\Player_Talks_To_Lumb	
+	4116480265	Player_In_Village			\Default Work Unit\Player_In_Village	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Player_Talks_To_Myla			
+	979470758	Yes	Player_Talks_To_Myla			
+	1668749452	No	Player_Talks_To_Myla			
+	748895195	None	Village_Convos			
+	2020567476	Talk_To_Lumb	Village_Convos			
+	3289157511	Talk_To_Myla	Village_Convos			
+	3950198291	Talk_To_Doakes	Village_Convos			
+	748895195	None	Player_Talks_To_Doakes			
+	979470758	Yes	Player_Talks_To_Doakes			
+	1668749452	No	Player_Talks_To_Doakes			
+	748895195	None	Player_Talks_To_Lumb			
+	979470758	Yes	Player_Talks_To_Lumb			
+	1668749452	No	Player_Talks_To_Lumb			
+	2020567476	Talk_To_Lumb	Player_Talks_To_Lumb			
+	748895195	None	Player_In_Village			
+	979470758	Yes	Player_In_Village			
+	1668749452	No	Player_In_Village			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Master Audio Bus\World\Ambient	
+	838047381	Non-World			\Default Work Unit\Master Audio Bus\Non-World	
+	983310469	AUX			\Default Work Unit\Master Audio Bus\World\AUX	
+	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	1069431850	Player			\Default Work Unit\Master Audio Bus\World\Player	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\Non-World\UI	
+	2609808943	World			\Default Work Unit\Master Audio Bus\World	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Non-World\Music	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+	4230635974	Default_Motion_Device	Wwise Motion			
+

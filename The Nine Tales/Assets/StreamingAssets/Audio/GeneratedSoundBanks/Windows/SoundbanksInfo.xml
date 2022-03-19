@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Documents - EmsterMini/WwiseProjects/Nine Tales Audio/</ProjectRoot>
+		<SourceFilesRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Documents - EmsterMini/WwiseProjects/Nine Tales Audio/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/Desktop - EmsterMini/Nine Tails/The-Nine-Tales/The Nine Tales/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Documents - EmsterMini/WwiseProjects/Nine Tales Audio/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1069431850" Language="SFX" Hash="4239029982">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<StateGroups>
+				<StateGroup Id="1035893910" Name="Village_Convos" ObjectPath="\States\Default Work Unit\Village_Convos" GUID="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Village_Convos\None" GUID="{ECF5A214-6677-4B1B-8094-3B183CE4A93D}"/>
+						<State Id="3950198291" Name="Talk_To_Doakes" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Doakes" GUID="{14EC36D2-5237-4D06-9FE0-E32482FC4730}"/>
+						<State Id="2020567476" Name="Talk_To_Lumb" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Lumb" GUID="{59B4CFD5-78A5-4E5C-9D04-9A224D6794E8}"/>
+						<State Id="3289157511" Name="Talk_To_Myla" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Myla" GUID="{3F062BED-28C2-46C8-8A50-72BC6C69020C}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3950198291" Name="Talk_To_Doakes" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Doakes" GUID="{14EC36D2-5237-4D06-9FE0-E32482FC4730}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="945798756">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1551306167" Language="SFX" Hash="2542431329">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1866658237" Language="SFX" Hash="2321536032">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambient_Regions</ObjectPath>
+			<ShortName>Ambient_Regions</ShortName>
+			<Path>Ambient_Regions.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4234424953" Name="Ambient_Forest" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest" DurationType="Infinite"/>
+				<Event Id="4164439052" Name="Ambient_Forest_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="953872696" Language="SFX">
+					<ShortName>9T_SD_Forest Ambience Loop.wav</ShortName>
+					<Path>SFX/9T_SD_Forest Ambience Loop_C5579977.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1973600711" Language="SFX" Hash="2671712702">
+			<ObjectPath>\SoundBanks\Default Work Unit\Environmental</ObjectPath>
+			<ShortName>Environmental</ShortName>
+			<Path>Environmental.bnk</Path>
+			<IncludedEvents>
+				<Event Id="735449646" Name="Thunder_Strike" ObjectPath="\Events\Default Work Unit\Environmental\Thunder_Strike" DurationType="OneShot" DurationMin="7.548979" DurationMax="7.548979"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="1049804361" Language="SFX">
+					<ShortName>9T_SD_ENV_Thunder-1.wav</ShortName>
+					<Path>SFX/9T_SD_ENV_Thunder-1_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="4180482411">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="660996473" Name="Lumb" ObjectPath="\Events\Default Work Unit\Music\Village\Lumb" DurationType="OneShot" DurationMin="80.120003" DurationMax="80.120003"/>
+				<Event Id="2557777556" Name="Main_Theme" ObjectPath="\Events\Default Work Unit\Music\Main Menu\Main_Theme" DurationType="Infinite"/>
+				<Event Id="3409588627" Name="Main_Theme_Stop" ObjectPath="\Events\Default Work Unit\Music\Main Menu\Main_Theme_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3110296066" Name="Myla" ObjectPath="\Events\Default Work Unit\Music\Village\Myla" DurationType="OneShot" DurationMin="80.080002" DurationMax="80.080002"/>
+				<Event Id="3605124939" Name="Village_Neutra_Base" ObjectPath="\Events\Default Work Unit\Music\Village\Village_Neutra_Base" DurationType="OneShot" DurationMin="82.790405" DurationMax="82.790405"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="513812249" Language="SFX">
+					<ShortName>Faded Keys_1.wav</ShortName>
+					<Path>SFX/Faded Keys_1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="616865463" Language="SFX">
+					<ShortName>Fingerstyle Bass_1.wav</ShortName>
+					<Path>SFX/Fingerstyle Bass_1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="636986029" Language="SFX">
+					<ShortName>Harp_1.wav</ShortName>
+					<Path>SFX/Harp_1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="833263565" Language="SFX">
+					<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+					<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="915339983" Language="SFX">
+					<ShortName>Grand Piano and Strings_1.wav</ShortName>
+					<Path>SFX/Grand Piano and Strings_1_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="1035893910" Name="Village_Convos" ObjectPath="\States\Default Work Unit\Village_Convos" GUID="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Village_Convos\None" GUID="{ECF5A214-6677-4B1B-8094-3B183CE4A93D}"/>
+						<State Id="3950198291" Name="Talk_To_Doakes" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Doakes" GUID="{14EC36D2-5237-4D06-9FE0-E32482FC4730}"/>
+						<State Id="2020567476" Name="Talk_To_Lumb" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Lumb" GUID="{59B4CFD5-78A5-4E5C-9D04-9A224D6794E8}"/>
+						<State Id="3289157511" Name="Talk_To_Myla" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Myla" GUID="{3F062BED-28C2-46C8-8A50-72BC6C69020C}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
