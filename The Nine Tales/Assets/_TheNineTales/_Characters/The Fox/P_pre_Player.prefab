@@ -318,6 +318,7 @@ MonoBehaviour:
   m_PlayerAccel: {x: 0, y: 0}
   m_FullHealth: 5
   m_CurrentHealth: 5
+  RegenCooldown: 6
   jumpVFX: {fileID: 1988350440947039752, guid: c2ddeb86861652d40a9b38f77f439060, type: 3}
   dashVFX: {fileID: 8992092285104031098, guid: afc1cde7b4611d84bb7dddd7ad79236f, type: 3}
   landVFX: {fileID: 5138902148118288712, guid: 12722312c81391a4baa66575480eed49, type: 3}
@@ -2600,6 +2601,7 @@ MonoBehaviour:
   interactLayers:
     serializedVersion: 2
     m_Bits: 8
+  interactCooldown: 1.5
 --- !u!114 &3987722523644713778
 MonoBehaviour:
   m_ObjectHideFlags: 0
