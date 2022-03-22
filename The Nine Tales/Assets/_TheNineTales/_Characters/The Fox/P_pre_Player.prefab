@@ -251,6 +251,8 @@ GameObject:
   - component: {fileID: 8672836545935732067}
   - component: {fileID: 7964551327419498086}
   - component: {fileID: 7897411903047362637}
+  - component: {fileID: 1689355192195413428}
+  - component: {fileID: 1748168573181439509}
   m_Layer: 0
   m_Name: P_pre_Player
   m_TagString: Player
@@ -509,7 +511,39 @@ MonoBehaviour:
   - {x: -1.1501884, y: -0.855193, z: 0}
   m_ShapePathHash: -906315697
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71986
+  m_InstanceId: 126448
+--- !u!114 &1689355192195413428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246354546436543999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d70a86d5f1e47239fda31c8ac61517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 18086e28b295247c8b0d827370a08404, type: 2}
+--- !u!114 &1748168573181439509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246354546436543999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03b303a5477c4f81a5986603136c5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 02897dab7d5f7498ab33873661b5299d, type: 2}
 --- !u!1 &246354546781621990
 GameObject:
   m_ObjectHideFlags: 0

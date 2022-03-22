@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585539067183797775
+    m_lastTime: -8585538885434111698
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -563,7 +563,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585539067619188732
+    m_lastTime: -8585537983847577157
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -585,6 +585,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Ambient_Campfire_Stop
+      guid: 2dc195532f83084fbe466a7c8e56ea61
+      id: 100151336
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Ambient_Campfire_Stop
+        ObjectType: 3
+        guid: 2dc195532f83084fbe466a7c8e56ea61
+      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Campfire_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Ambient_Dream
       guid: c8b2bc68af0b044c8792ac63ba730a10
       id: 2155509767
@@ -682,6 +702,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Dies_LOL
+      guid: 0bfaf14f1b93264b9aa3b9a12323e558
+      id: 2550655564
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Dies_LOL
+        ObjectType: 3
+        guid: 0bfaf14f1b93264b9aa3b9a12323e558
+      Path: Events/Default Work Unit/Player/Dies_LOL
+      maxAttenuation: 0
+      maxDuration: 4.513542
+      minDuration: 4.513542
     - name: Doakes
       guid: 132222b9f6dc50498dba2cec3d966903
       id: 2429712994
@@ -740,8 +780,8 @@ MonoBehaviour:
         guid: 9aac398aecbfce4f8e6dc4263cfa8f07
       Path: Events/Default Work Unit/Player/Fox_Dash
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.22059
+      minDuration: 0.22059
     - name: Fox_Footstep
       guid: 8093f4ca54405f4792ffab81d2c2a74a
       id: 3242941405
@@ -760,8 +800,8 @@ MonoBehaviour:
         guid: 8093f4ca54405f4792ffab81d2c2a74a
       Path: Events/Default Work Unit/Player/Fox_Footstep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.173968
+      minDuration: 0.098526
     - name: Fox_Jump
       guid: 7b7ba233e024a54194a939a9a4d1470b
       id: 1783467547
@@ -780,8 +820,8 @@ MonoBehaviour:
         guid: 7b7ba233e024a54194a939a9a4d1470b
       Path: Events/Default Work Unit/Player/Fox_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.172381
+      minDuration: 0.172381
     - name: Fox_Land
       guid: b6dcca467055e3479b3d554c73af8e10
       id: 1687841656
@@ -820,8 +860,28 @@ MonoBehaviour:
         guid: 6e6d0c2ccc48a74b94407520be5a1362
       Path: Events/Default Work Unit/Player/Gain_Tail
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 8.25
+      minDuration: 8.25
+    - name: Hurt
+      guid: ab77e72015216f4ba30aae5470fb63dc
+      id: 3193947170
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Hurt
+        ObjectType: 3
+        guid: ab77e72015216f4ba30aae5470fb63dc
+      Path: Events/Default Work Unit/Player/Hurt
+      maxAttenuation: 0
+      maxDuration: 8.25
+      minDuration: 8.25
     - name: Lumb
       guid: c30e7225b96310429133430be9a8fa8c
       id: 660996473
@@ -951,6 +1011,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 80.08
       minDuration: 80.08
+    - name: Platform_Breaking
+      guid: ffc2cbf270a9f14f969aaa30ac077c76
+      id: 403100568
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Environmental
+        ObjectType: 4
+        guid: 8762065de427fa42b599ee8ac89343a2
+      - ElementName: Platform_Breaking
+        ObjectType: 3
+        guid: ffc2cbf270a9f14f969aaa30ac077c76
+      Path: Events/Default Work Unit/Environmental/Platform_Breaking
+      maxAttenuation: 0
+      maxDuration: 3.5
+      minDuration: 3.5
     - name: Player
       guid: fc4f10657dbb514cacef8ad9e5cbb9be
       id: 1069431850
@@ -988,29 +1068,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Respawn
-      guid: 98a3b95a24b8f44d8c937e536368935f
-      id: 4279841335
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
-      - ElementName: Player
-        ObjectType: 4
-        guid: fc4f10657dbb514cacef8ad9e5cbb9be
-      - ElementName: Respawn
-        ObjectType: 3
-        guid: 98a3b95a24b8f44d8c937e536368935f
-      Path: Events/Default Work Unit/Player/Respawn
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Test_Forest
-      guid: 5e7f50d49f8c8f45b0f610c4fe982c7f
-      id: 1109175735
+    - name: Rain
+      guid: 92cdf55e90c5f54b8f3aa38cfeb0bd4d
+      id: 2043403999
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1021,33 +1081,13 @@ MonoBehaviour:
       - ElementName: Ambient_Regions
         ObjectType: 4
         guid: 8b25ec1e21d8e3409f2034779ab46d98
-      - ElementName: Test_Forest
+      - ElementName: Rain
         ObjectType: 3
-        guid: 5e7f50d49f8c8f45b0f610c4fe982c7f
-      Path: Events/Default Work Unit/Ambient_Regions/Test_Forest
+        guid: 92cdf55e90c5f54b8f3aa38cfeb0bd4d
+      Path: Events/Default Work Unit/Ambient_Regions/Rain
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Test_Storm
-      guid: fb241f3e9467e342be5a975324ebd393
-      id: 2584216087
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
-      - ElementName: Ambient_Regions
-        ObjectType: 4
-        guid: 8b25ec1e21d8e3409f2034779ab46d98
-      - ElementName: Test_Storm
-        ObjectType: 3
-        guid: fb241f3e9467e342be5a975324ebd393
-      Path: Events/Default Work Unit/Ambient_Regions/Test_Storm
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Thunder_Strike
       guid: 6d441fe4559c354e9f1ebd32eb0f94b7
       id: 735449646
@@ -1066,8 +1106,8 @@ MonoBehaviour:
         guid: 6d441fe4559c354e9f1ebd32eb0f94b7
       Path: Events/Default Work Unit/Environmental/Thunder_Strike
       maxAttenuation: 0
-      maxDuration: 7.548979
-      minDuration: 7.548979
+      maxDuration: 8
+      minDuration: 7.5
     - name: UI
       guid: 51e2480c2051c64da8c492b4b898f543
       id: 1551306167
@@ -1741,7 +1781,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 07000000080000000b000000150000001600000039000000
+  ExpandedWaapiItemIds: 010000000600000007000000080000000d000000150000001600000039000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

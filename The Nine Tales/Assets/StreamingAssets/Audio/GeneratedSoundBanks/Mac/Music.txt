@@ -1,54 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
-	660996473	Lumb			\Default Work Unit\Music\Village\Lumb	
 	2557777556	Main_Theme			\Default Work Unit\Music\Main Menu\Main_Theme	
-	3110296066	Myla			\Default Work Unit\Music\Village\Myla	
 	3409588627	Main_Theme_Stop			\Default Work Unit\Music\Main Menu\Main_Theme_Stop	
-	3605124939	Village_Neutra_Base			\Default Work Unit\Music\Village\Village_Neutra_Base	
-
-State Group	ID	Name			Wwise Object Path	Notes
-	1010204902	Player_Talks_To_Myla			\Default Work Unit\Player_Talks_To_Myla	
-	1035893910	Village_Convos			\Default Work Unit\Village_Convos	
-	1624729662	Player_Talks_To_Doakes			\Default Work Unit\Player_Talks_To_Doakes	
-	2854592485	Player_Talks_To_Lumb			\Default Work Unit\Player_Talks_To_Lumb	
-	4116480265	Player_In_Village			\Default Work Unit\Player_In_Village	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Player_Talks_To_Myla			
-	979470758	Yes	Player_Talks_To_Myla			
-	1668749452	No	Player_Talks_To_Myla			
-	748895195	None	Village_Convos			
-	2020567476	Talk_To_Lumb	Village_Convos			
-	3289157511	Talk_To_Myla	Village_Convos			
-	3950198291	Talk_To_Doakes	Village_Convos			
-	748895195	None	Player_Talks_To_Doakes			
-	979470758	Yes	Player_Talks_To_Doakes			
-	1668749452	No	Player_Talks_To_Doakes			
-	748895195	None	Player_Talks_To_Lumb			
-	979470758	Yes	Player_Talks_To_Lumb			
-	1668749452	No	Player_Talks_To_Lumb			
-	2020567476	Talk_To_Lumb	Player_Talks_To_Lumb			
-	748895195	None	Player_In_Village			
-	979470758	Yes	Player_In_Village			
-	1668749452	No	Player_In_Village			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	21468444	No	Player_In_Village	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer		
-	156305583	No	Player_Talks_To_Doakes	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Doakes		
-	157064452	Talk_To_Lumb	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Myla		
-	230922194	No	Player_Talks_To_Myla	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Myla		
-	298175521	Talk_To_Myla	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Myla		
-	393595468	Talk_To_Doakes	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Myla		
-	690220346	Talk_To_Myla	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Lumb		
-	761081700	Talk_To_Lumb	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Doakes		
-	771519463	Talk_To_Myla	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Doakes		
-	835068839	Talk_To_Lumb	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Lumb		
-	838239534	No	Player_Talks_To_Lumb	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Lumb		
-	869313962	Talk_To_Doakes	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Doakes		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	513812249	Village_Neutral_Base	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\Faded Keys_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Neutral_Base		14606084
-	616865463	Village_Doakes	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\Fingerstyle Bass_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Doakes		14606084
-	636986029	Village_Myla	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\Harp_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Myla		14606084
+	179886661	9T_M_VillageDoakes_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4		17499136
+	247174006	9T_M_VillageMyla_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\9T Leah_s Audio Files\9T_M_VillageMyla_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageMyla_75_4_4		17499136
 	833263565	Main Theme_85_4-4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\9T_M_MAIN THEME_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main Menu\Main Menu\Main Theme_85_4-4		13872068
-	915339983	Village_Lumb	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\Grand Piano and Strings_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\Base Layer\Village_Lumb		14606084
+	836872794	9T_M_VillageBase_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\9T Leah_s Audio Files\9T_M_VillageBase_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageBase_75_4_4		17499136
+	1043467484	9T_M_VillageLumb_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Mac\SFX\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4		17499136
 
