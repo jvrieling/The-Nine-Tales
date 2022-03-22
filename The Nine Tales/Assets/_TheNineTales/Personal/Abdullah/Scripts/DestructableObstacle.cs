@@ -5,17 +5,10 @@ using UnityEngine;
 public class DestructableObstacle : MonoBehaviour
 {
     public float damage = 1000;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    public AK.Wwise.Event destroySound;
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.GetComponent<Player>() != null)
@@ -23,6 +16,7 @@ public class DestructableObstacle : MonoBehaviour
             if(col.GetComponent<Player>().isDashing == true)
             {
                 Destroy(gameObject);
+                if(destroySound!= null) destroySound.Post(gameObject);
             }
             else
             {
@@ -39,6 +33,7 @@ public class DestructableObstacle : MonoBehaviour
             if (col.GetComponent<Player>().isDashing == true)
             {
                 Destroy(gameObject);
+                if (destroySound != null) destroySound.Post(gameObject);
             }
         }
     }
