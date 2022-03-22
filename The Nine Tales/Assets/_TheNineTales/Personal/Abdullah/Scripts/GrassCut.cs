@@ -12,6 +12,7 @@ public class GrassCut : MonoBehaviour
 
     private static List<int> destroyedPersistants;
 
+    public AK.Wwise.Event cutSound;
     private void Awake()
     {
         if (destroyedPersistants == null)
@@ -34,7 +35,11 @@ public class GrassCut : MonoBehaviour
             {
                 Player.inventory.AddItem(GrassCuttable);
                  if (persistant) destroyedPersistants.Add(id);
+
+                cutSound.Post(gameObject);
+
                 Destroy(gameObject);
+
             }
 
         }
@@ -47,6 +52,7 @@ public class GrassCut : MonoBehaviour
             {
                 Player.inventory.AddItem(GrassCuttable);
                 if (persistant) destroyedPersistants.Add(id);
+                cutSound.Post(gameObject);
                 Destroy(gameObject);
             }
 

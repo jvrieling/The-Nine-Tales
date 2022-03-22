@@ -11,6 +11,8 @@ public class CollapsingPlatform : MonoBehaviour
     Vector3 OriginalPosition;
     float ResetTriggerHeight = -8;
 
+    public AK.Wwise.Event collapseSound;
+
 
     void Start()
     {
@@ -42,6 +44,7 @@ public class CollapsingPlatform : MonoBehaviour
 
     public void Collapse()
     {
+        if(collapseSound.Name != "") collapseSound.Post(gameObject);
         RB.velocity = CollapseSpeed;
         isFalling = true;
     }

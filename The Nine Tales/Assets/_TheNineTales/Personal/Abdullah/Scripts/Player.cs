@@ -98,6 +98,8 @@ public class Player : MonoBehaviour
     public GameObject DamageVFX;
     public GameObject FeetVFX;
 
+    public AK.Wwise.Event deathSound;
+
     private void Awake()
     {
         instance = this;
@@ -576,6 +578,7 @@ public class Player : MonoBehaviour
 
     public void makeDead()
     {
+       if(deathSound.Name != "") deathSound.Post(gameObject);
         // reset darkness
         GlobalVolumeController.Singleton.ResetCameraFade();
         // reset health 
