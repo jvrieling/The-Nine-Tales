@@ -78,7 +78,14 @@ namespace Fungus
         public override void OnEnter()
         {
             GameObject mm = GameObject.Find("SoundMM");
-            mm.SendMessage("PlaySound", character);
+            if (mm != null)
+            {
+                mm.SendMessage("PlaySound");
+            }
+            else
+            {
+                Debug.LogError("No Sound Middle Man found! Ensure the game object is named exactly 'SoundMM'");
+            }
 
             if (!showAlways && executionCount >= showCount)
             {

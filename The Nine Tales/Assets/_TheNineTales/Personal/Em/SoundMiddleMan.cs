@@ -5,8 +5,9 @@ using Fungus;
 
 public class SoundMiddleMan : MonoBehaviour
 {
-    public void PlaySound(Character character)
+    public AK.Wwise.Event PenScribbleSound;
+    public void PlaySound()
     {
-        Debug.Log("Playing sound for" + character.NameText);
+        PenScribbleSound.Post(Player.player);   
     }
 }
