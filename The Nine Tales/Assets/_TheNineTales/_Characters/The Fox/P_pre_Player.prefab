@@ -251,8 +251,8 @@ GameObject:
   - component: {fileID: 8672836545935732067}
   - component: {fileID: 7964551327419498086}
   - component: {fileID: 7897411903047362637}
-  - component: {fileID: 1689355192195413428}
-  - component: {fileID: 1748168573181439509}
+  - component: {fileID: 8230388740279865810}
+  - component: {fileID: 2543249688622025373}
   m_Layer: 0
   m_Name: P_pre_Player
   m_TagString: Player
@@ -327,6 +327,10 @@ MonoBehaviour:
   LastCheckpoint: {fileID: 0}
   DamageVFX: {fileID: 6591836109642705354, guid: e5dd8a6d5d80fa249a181c97ddbf746a, type: 3}
   FeetVFX: {fileID: 8548641258513296527}
+  deathSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!212 &246354546436543992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -511,8 +515,8 @@ MonoBehaviour:
   - {x: -1.1501884, y: -0.855193, z: 0}
   m_ShapePathHash: -906315697
   m_Mesh: {fileID: 0}
-  m_InstanceId: 126448
---- !u!114 &1689355192195413428
+  m_InstanceId: 308746
+--- !u!114 &8230388740279865810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -528,7 +532,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 18086e28b295247c8b0d827370a08404, type: 2}
---- !u!114 &1748168573181439509
+--- !u!114 &2543249688622025373
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

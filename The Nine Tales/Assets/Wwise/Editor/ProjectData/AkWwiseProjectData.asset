@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585538885434111698
+    m_lastTime: -8585536160268425810
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -563,7 +563,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585537983847577157
+    m_lastTime: -8585536059211619627
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -625,6 +625,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Ambient_Dream_Stop
+      guid: ae5d5cfb50c5a742901eba54af16ece1
+      id: 1516204802
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Ambient_Dream_Stop
+        ObjectType: 3
+        guid: ae5d5cfb50c5a742901eba54af16ece1
+      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Dream_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Ambient_Forest
       guid: 39531e387e5a164ebd6588001a6c44d0
       id: 4234424953
@@ -702,6 +722,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Celestial
+      guid: 55929019721641478318f086f83bf8cf
+      id: 540064805
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Celestial
+        ObjectType: 4
+        guid: 55929019721641478318f086f83bf8cf
+      Path: Events/Default Work Unit/Music/Celestial
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Dies_LOL
       guid: 0bfaf14f1b93264b9aa3b9a12323e558
       id: 2550655564
@@ -743,8 +783,8 @@ MonoBehaviour:
         guid: 132222b9f6dc50498dba2cec3d966903
       Path: Events/Default Work Unit/Music/Village/Doakes
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Environmental
       guid: 8762065de427fa42b599ee8ac89343a2
       id: 1973600711
@@ -762,6 +802,72 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Forest
+      guid: cb83f53bcbcf254c98d3b327726c85b7
+      id: 491961918
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Forest
+        ObjectType: 4
+        guid: cb83f53bcbcf254c98d3b327726c85b7
+      Path: Events/Default Work Unit/Music/Forest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Forest_Theme
+      guid: 4bb6e579f9462244a0751ffcea658b13
+      id: 2823140784
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Forest
+        ObjectType: 4
+        guid: cb83f53bcbcf254c98d3b327726c85b7
+      - ElementName: Forest_Theme
+        ObjectType: 3
+        guid: 4bb6e579f9462244a0751ffcea658b13
+      Path: Events/Default Work Unit/Music/Forest/Forest_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Forest_Theme_Stop
+      guid: 84112746bece5848b6aaaf2d0e14289a
+      id: 689545919
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Forest
+        ObjectType: 4
+        guid: cb83f53bcbcf254c98d3b327726c85b7
+      - ElementName: Forest_Theme_Stop
+        ObjectType: 3
+        guid: 84112746bece5848b6aaaf2d0e14289a
+      Path: Events/Default Work Unit/Music/Forest/Forest_Theme_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Fox_Dash
       guid: 9aac398aecbfce4f8e6dc4263cfa8f07
       id: 2956011499
@@ -903,8 +1009,8 @@ MonoBehaviour:
         guid: c30e7225b96310429133430be9a8fa8c
       Path: Events/Default Work Unit/Music/Village/Lumb
       maxAttenuation: 0
-      maxDuration: 80.12
-      minDuration: 80.12
+      maxDuration: 0
+      minDuration: 0
     - name: Main Menu
       guid: e17d8473d8e2824c87d3922d606273f4
       id: 1026774399
@@ -1009,8 +1115,74 @@ MonoBehaviour:
         guid: 5077b27b8b52bc4091ceef873b70330d
       Path: Events/Default Work Unit/Music/Village/Myla
       maxAttenuation: 0
-      maxDuration: 80.08
-      minDuration: 80.08
+      maxDuration: 0
+      minDuration: 0
+    - name: Path
+      guid: ff45bf7c713df44f852b31fca0d45a12
+      id: 1509588232
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Path
+        ObjectType: 4
+        guid: ff45bf7c713df44f852b31fca0d45a12
+      Path: Events/Default Work Unit/Music/Path
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Path_Theme
+      guid: cdcc45379b2fd549909c745f3ff50b79
+      id: 674329606
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Path
+        ObjectType: 4
+        guid: ff45bf7c713df44f852b31fca0d45a12
+      - ElementName: Path_Theme
+        ObjectType: 3
+        guid: cdcc45379b2fd549909c745f3ff50b79
+      Path: Events/Default Work Unit/Music/Path/Path_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Path_Theme_Stop
+      guid: d8fad1f17a03884fbf35823025c9e528
+      id: 1817047765
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Path
+        ObjectType: 4
+        guid: ff45bf7c713df44f852b31fca0d45a12
+      - ElementName: Path_Theme_Stop
+        ObjectType: 3
+        guid: d8fad1f17a03884fbf35823025c9e528
+      Path: Events/Default Work Unit/Music/Path/Path_Theme_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Platform_Breaking
       guid: ffc2cbf270a9f14f969aaa30ac077c76
       id: 403100568
@@ -1066,8 +1238,8 @@ MonoBehaviour:
         guid: 466b9f1feb0e9c4195019917e9d05890
       Path: Events/Default Work Unit/UI/Quill_Scratch
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.623991
+      minDuration: 1.418662
     - name: Rain
       guid: 92cdf55e90c5f54b8f3aa38cfeb0bd4d
       id: 2043403999
@@ -1085,6 +1257,138 @@ MonoBehaviour:
         ObjectType: 3
         guid: 92cdf55e90c5f54b8f3aa38cfeb0bd4d
       Path: Events/Default Work Unit/Ambient_Regions/Rain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Rain_Stop
+      guid: dd45596eecf1cf41ad8db9d9bc569c77
+      id: 1737644906
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Rain_Stop
+        ObjectType: 3
+        guid: dd45596eecf1cf41ad8db9d9bc569c77
+      Path: Events/Default Work Unit/Ambient_Regions/Rain_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Spirit_Theme
+      guid: 6b8782d6d073b7439a1352140972dd38
+      id: 627254640
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Celestial
+        ObjectType: 4
+        guid: 55929019721641478318f086f83bf8cf
+      - ElementName: Spirit_Theme
+        ObjectType: 3
+        guid: 6b8782d6d073b7439a1352140972dd38
+      Path: Events/Default Work Unit/Music/Celestial/Spirit_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Spirit_Theme_Stop
+      guid: 51884525f84ac34f813ec6c82eb50516
+      id: 3845819007
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Celestial
+        ObjectType: 4
+        guid: 55929019721641478318f086f83bf8cf
+      - ElementName: Spirit_Theme_Stop
+        ObjectType: 3
+        guid: 51884525f84ac34f813ec6c82eb50516
+      Path: Events/Default Work Unit/Music/Celestial/Spirit_Theme_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Storm
+      guid: 08fc8e85d3ddd64dbbf1d7a9201642fd
+      id: 1686739424
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Storm
+        ObjectType: 4
+        guid: 08fc8e85d3ddd64dbbf1d7a9201642fd
+      Path: Events/Default Work Unit/Music/Storm
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Storm_Theme
+      guid: c74c412f9d6e7743862076538119737c
+      id: 3504910062
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Storm
+        ObjectType: 4
+        guid: 08fc8e85d3ddd64dbbf1d7a9201642fd
+      - ElementName: Storm_Theme
+        ObjectType: 3
+        guid: c74c412f9d6e7743862076538119737c
+      Path: Events/Default Work Unit/Music/Storm/Storm_Theme
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Storm_Theme_Stop
+      guid: e69a121288144042a0f6eedfb25e0083
+      id: 1560666861
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Storm
+        ObjectType: 4
+        guid: 08fc8e85d3ddd64dbbf1d7a9201642fd
+      - ElementName: Storm_Theme_Stop
+        ObjectType: 3
+        guid: e69a121288144042a0f6eedfb25e0083
+      Path: Events/Default Work Unit/Music/Storm/Storm_Theme_Stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1166,8 +1470,8 @@ MonoBehaviour:
         guid: 397ac682b179a7458684eec0a1c7b823
       Path: Events/Default Work Unit/Music/Village/Village_Neutra_Base
       maxAttenuation: 0
-      maxDuration: 82.790405
-      minDuration: 82.790405
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -1388,11 +1692,11 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ef20ec574afe3649810385069bd8b529
     GuidInternal: 
-    m_lastTime: -8585540677794910786
+    m_lastTime: -8585536096539193096
     List:
-    - name: Player_In_Village
-      guid: 6dfa0e2152a6cc4ab8127e73929bcb14
-      id: 4116480265
+    - name: Celestial
+      guid: 67b0b567016cb9488d6eae44ec4bf06f
+      id: 540064805
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -1400,14 +1704,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ef20ec574afe3649810385069bd8b529
-      - ElementName: Player_In_Village
+      - ElementName: Celestial
         ObjectType: 9
-        guid: 6dfa0e2152a6cc4ab8127e73929bcb14
-      Path: States/Default Work Unit/Player_In_Village
+        guid: 67b0b567016cb9488d6eae44ec4bf06f
+      Path: States/Default Work Unit/Celestial
       values:
-      - name: No
-        guid: 12785aca7d60834fbb039b21b2f3facf
-        id: 1668749452
+      - name: No_Spirit
+        guid: 585da14554b42843b965296e81772490
+        id: 82290036
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1415,14 +1719,14 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_In_Village
+        - ElementName: Celestial
           ObjectType: 9
-          guid: 6dfa0e2152a6cc4ab8127e73929bcb14
-        - ElementName: No
+          guid: 67b0b567016cb9488d6eae44ec4bf06f
+        - ElementName: No_Spirit
           ObjectType: 8
-          guid: 12785aca7d60834fbb039b21b2f3facf
+          guid: 585da14554b42843b965296e81772490
       - name: None
-        guid: bdee7603eb80cb408f79c19e8df69d5e
+        guid: 8682bb4f5bc0624e8c46f32e5a00f35d
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -1431,15 +1735,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_In_Village
+        - ElementName: Celestial
           ObjectType: 9
-          guid: 6dfa0e2152a6cc4ab8127e73929bcb14
+          guid: 67b0b567016cb9488d6eae44ec4bf06f
         - ElementName: None
           ObjectType: 8
-          guid: bdee7603eb80cb408f79c19e8df69d5e
-      - name: Yes
-        guid: 9b3809490ee6fc449718bfa7c79a3c78
-        id: 979470758
+          guid: 8682bb4f5bc0624e8c46f32e5a00f35d
+      - name: Talking_To_Spirit
+        guid: 2f3aed2769274b45b5c4b2d1392372c4
+        id: 4086892909
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1447,18 +1751,18 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_In_Village
+        - ElementName: Celestial
           ObjectType: 9
-          guid: 6dfa0e2152a6cc4ab8127e73929bcb14
-        - ElementName: Yes
+          guid: 67b0b567016cb9488d6eae44ec4bf06f
+        - ElementName: Talking_To_Spirit
           ObjectType: 8
-          guid: 9b3809490ee6fc449718bfa7c79a3c78
+          guid: 2f3aed2769274b45b5c4b2d1392372c4
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Player_Talks_To_Doakes
-      guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
-      id: 1624729662
+    - name: Forest_Beginning
+      guid: 2a4b1289678cc945a4656dd8c87c4c36
+      id: 2378076306
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -1466,14 +1770,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ef20ec574afe3649810385069bd8b529
-      - ElementName: Player_Talks_To_Doakes
+      - ElementName: Forest_Beginning
         ObjectType: 9
-        guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
-      Path: States/Default Work Unit/Player_Talks_To_Doakes
+        guid: 2a4b1289678cc945a4656dd8c87c4c36
+      Path: States/Default Work Unit/Forest_Beginning
       values:
-      - name: No
-        guid: 7d31c9821e5c9f4398e7617646fe40f8
-        id: 1668749452
+      - name: In_Forest_Beginning
+        guid: 904ea43ae515c74fa4dcfafbae838743
+        id: 2025362124
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1481,14 +1785,14 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Doakes
+        - ElementName: Forest_Beginning
           ObjectType: 9
-          guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
-        - ElementName: No
+          guid: 2a4b1289678cc945a4656dd8c87c4c36
+        - ElementName: In_Forest_Beginning
           ObjectType: 8
-          guid: 7d31c9821e5c9f4398e7617646fe40f8
+          guid: 904ea43ae515c74fa4dcfafbae838743
       - name: None
-        guid: 44d1e37884f35b448f29aec8d9ca91ff
+        guid: e207385ba7161640b69f8af367a81029
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -1497,15 +1801,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Doakes
+        - ElementName: Forest_Beginning
           ObjectType: 9
-          guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
+          guid: 2a4b1289678cc945a4656dd8c87c4c36
         - ElementName: None
           ObjectType: 8
-          guid: 44d1e37884f35b448f29aec8d9ca91ff
-      - name: Yes
-        guid: e08ddc3a8f51e549833a72f286c32e72
-        id: 979470758
+          guid: e207385ba7161640b69f8af367a81029
+      - name: Not_In_Forest_Beginning
+        guid: c61234b43a248d4d80fa46186a64161e
+        id: 319536830
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1513,18 +1817,18 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Doakes
+        - ElementName: Forest_Beginning
           ObjectType: 9
-          guid: 6db9f5046e5acf46b4bd6edbdd1ec5cc
-        - ElementName: Yes
+          guid: 2a4b1289678cc945a4656dd8c87c4c36
+        - ElementName: Not_In_Forest_Beginning
           ObjectType: 8
-          guid: e08ddc3a8f51e549833a72f286c32e72
+          guid: c61234b43a248d4d80fa46186a64161e
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Player_Talks_To_Lumb
-      guid: e311cff1ab64a948b495818f0c995191
-      id: 2854592485
+    - name: Forest_Path
+      guid: 8dd0cd6e7bdc3b4eae0548336e8c7663
+      id: 3708762888
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -1532,29 +1836,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ef20ec574afe3649810385069bd8b529
-      - ElementName: Player_Talks_To_Lumb
+      - ElementName: Forest_Path
         ObjectType: 9
-        guid: e311cff1ab64a948b495818f0c995191
-      Path: States/Default Work Unit/Player_Talks_To_Lumb
+        guid: 8dd0cd6e7bdc3b4eae0548336e8c7663
+      Path: States/Default Work Unit/Forest_Path
       values:
-      - name: No
-        guid: b2b65259c48b9f43b31eb48b536089c3
-        id: 1668749452
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Lumb
-          ObjectType: 9
-          guid: e311cff1ab64a948b495818f0c995191
-        - ElementName: No
-          ObjectType: 8
-          guid: b2b65259c48b9f43b31eb48b536089c3
       - name: None
-        guid: 7b5aa15da77871408b6ec003d73bad12
+        guid: 4d95ad88f7eb0843a2fd2b600ee76bcd
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -1563,15 +1851,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Lumb
+        - ElementName: Forest_Path
           ObjectType: 9
-          guid: e311cff1ab64a948b495818f0c995191
+          guid: 8dd0cd6e7bdc3b4eae0548336e8c7663
         - ElementName: None
           ObjectType: 8
-          guid: 7b5aa15da77871408b6ec003d73bad12
-      - name: Talk_To_Lumb
-        guid: 50f4ef971320f3489e14990c2f3f8aa3
-        id: 2020567476
+          guid: 4d95ad88f7eb0843a2fd2b600ee76bcd
+      - name: Not_On_Forest_Path
+        guid: 006a78aa1c2e6645a4ad02b23a526eb4
+        id: 3294614634
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1579,15 +1867,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Lumb
+        - ElementName: Forest_Path
           ObjectType: 9
-          guid: e311cff1ab64a948b495818f0c995191
-        - ElementName: Talk_To_Lumb
+          guid: 8dd0cd6e7bdc3b4eae0548336e8c7663
+        - ElementName: Not_On_Forest_Path
           ObjectType: 8
-          guid: 50f4ef971320f3489e14990c2f3f8aa3
-      - name: Yes
-        guid: ab73cc46f048b047b0aceb7ddcce4fad
-        id: 979470758
+          guid: 006a78aa1c2e6645a4ad02b23a526eb4
+      - name: On_Forest_Path
+        guid: bb2f24907997004184a1552f6db73a88
+        id: 3146944008
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1595,18 +1883,18 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Lumb
+        - ElementName: Forest_Path
           ObjectType: 9
-          guid: e311cff1ab64a948b495818f0c995191
-        - ElementName: Yes
+          guid: 8dd0cd6e7bdc3b4eae0548336e8c7663
+        - ElementName: On_Forest_Path
           ObjectType: 8
-          guid: ab73cc46f048b047b0aceb7ddcce4fad
+          guid: bb2f24907997004184a1552f6db73a88
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Player_Talks_To_Myla
-      guid: bde5deb75e2c5b41873baddf378ce05e
-      id: 1010204902
+    - name: Forest_Storm
+      guid: e81e4a87af34094e908f9c00a30ed24a
+      id: 3190862816
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -1614,14 +1902,14 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: ef20ec574afe3649810385069bd8b529
-      - ElementName: Player_Talks_To_Myla
+      - ElementName: Forest_Storm
         ObjectType: 9
-        guid: bde5deb75e2c5b41873baddf378ce05e
-      Path: States/Default Work Unit/Player_Talks_To_Myla
+        guid: e81e4a87af34094e908f9c00a30ed24a
+      Path: States/Default Work Unit/Forest_Storm
       values:
-      - name: No
-        guid: ce84bbeb22f82545b64ee8dfe0a53412
-        id: 1668749452
+      - name: In_Storm
+        guid: bb67257d91d890419133b48d052d22ac
+        id: 671813814
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1629,14 +1917,14 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Myla
+        - ElementName: Forest_Storm
           ObjectType: 9
-          guid: bde5deb75e2c5b41873baddf378ce05e
-        - ElementName: No
+          guid: e81e4a87af34094e908f9c00a30ed24a
+        - ElementName: In_Storm
           ObjectType: 8
-          guid: ce84bbeb22f82545b64ee8dfe0a53412
+          guid: bb67257d91d890419133b48d052d22ac
       - name: None
-        guid: d50f83daed9ee042a2ab690e3fe07eed
+        guid: 39dad8f0a18cf24c9b9b8b18c2edcc70
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -1645,15 +1933,15 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Myla
+        - ElementName: Forest_Storm
           ObjectType: 9
-          guid: bde5deb75e2c5b41873baddf378ce05e
+          guid: e81e4a87af34094e908f9c00a30ed24a
         - ElementName: None
           ObjectType: 8
-          guid: d50f83daed9ee042a2ab690e3fe07eed
-      - name: Yes
-        guid: ab1af7759ed4ce4ea72ddec9e8e6d13f
-        id: 979470758
+          guid: 39dad8f0a18cf24c9b9b8b18c2edcc70
+      - name: Not_In_Storm
+        guid: 156dcb384a3d584c9626a6e70963b114
+        id: 2151441764
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -1661,12 +1949,78 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: ef20ec574afe3649810385069bd8b529
-        - ElementName: Player_Talks_To_Myla
+        - ElementName: Forest_Storm
           ObjectType: 9
-          guid: bde5deb75e2c5b41873baddf378ce05e
-        - ElementName: Yes
+          guid: e81e4a87af34094e908f9c00a30ed24a
+        - ElementName: Not_In_Storm
           ObjectType: 8
-          guid: ab1af7759ed4ce4ea72ddec9e8e6d13f
+          guid: 156dcb384a3d584c9626a6e70963b114
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Main_Menu
+      guid: 7c2931eb2f239b48a6b2ea4e14bbf873
+      id: 2005704188
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Main_Menu
+        ObjectType: 9
+        guid: 7c2931eb2f239b48a6b2ea4e14bbf873
+      Path: States/Default Work Unit/Main_Menu
+      values:
+      - name: Main_Menu_OFF
+        guid: 57f1a5b94620cb47bd666b922c1a3d9d
+        id: 3309997106
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Main_Menu
+          ObjectType: 9
+          guid: 7c2931eb2f239b48a6b2ea4e14bbf873
+        - ElementName: Main_Menu_OFF
+          ObjectType: 8
+          guid: 57f1a5b94620cb47bd666b922c1a3d9d
+      - name: Main_Menu_ON
+        guid: d7ab75fb502911459e39c209ba00b598
+        id: 681133780
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Main_Menu
+          ObjectType: 9
+          guid: 7c2931eb2f239b48a6b2ea4e14bbf873
+        - ElementName: Main_Menu_ON
+          ObjectType: 8
+          guid: d7ab75fb502911459e39c209ba00b598
+      - name: None
+        guid: a9ebcdeec2355048aadaab3d076f0454
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Main_Menu
+          ObjectType: 9
+          guid: 7c2931eb2f239b48a6b2ea4e14bbf873
+        - ElementName: None
+          ObjectType: 8
+          guid: a9ebcdeec2355048aadaab3d076f0454
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1781,7 +2135,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000d000000150000001600000039000000
+  ExpandedWaapiItemIds: 010000000600000007000000090000000a0000000b0000000c0000000d000000140000001500000016000000250000002600000029000000390000003b0000003c0000003d0000003e0000003f0000004e000000560c0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
