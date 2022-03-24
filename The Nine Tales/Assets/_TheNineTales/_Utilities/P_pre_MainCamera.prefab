@@ -221,9 +221,6 @@ MonoBehaviour:
   runInEditor: 0
   target: {fileID: 0}
   smoothSpeed: 0.125
-  accuracy: 1
-  offset: {x: 0, y: 2.3, z: -10}
-  calculateOffsetOnStart: 0
   platformingCameraSize: 7
   narrativeCameraSize: 5
   zoomTime: 2
@@ -252,6 +249,10 @@ MonoBehaviour:
     m_PostInfinity: 0
     m_RotationOrder: 4
   zoomedIn: 0
+  turnSmoothSpeed: 0.02
+  stormVFX: {fileID: 0}
+  shouldZoom: 1
+  shouldFollow: 1
 --- !u!1 &4459953544726421247
 GameObject:
   m_ObjectHideFlags: 0

@@ -62,6 +62,8 @@ namespace Fungus
                 return;
             }
 
+            targetCamera.SendMessage("SetShouldZoom", false);
+            
             var cameraManager = FungusManager.Instance.CameraManager;
 
             Vector3 targetPosition = targetView.transform.position;

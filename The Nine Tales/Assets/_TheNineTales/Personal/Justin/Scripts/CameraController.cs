@@ -8,10 +8,6 @@ public class CameraController : MonoBehaviour
     [Tooltip("The GameObject to follow around")]
     public Transform target;
     public float smoothSpeed = 0.125f;
-    public float accuracy = 1f;
-
-    public Vector3 offset;
-    public bool calculateOffsetOnStart = true;
 
     public float platformingCameraSize;
     public float narrativeCameraSize = 5.3f;
@@ -26,11 +22,22 @@ public class CameraController : MonoBehaviour
     [Tooltip("set to true if the camera is currently zoomed in to the narrative camera size. Only affects anything if one of the camera sizes are not set.")]
     public bool zoomedIn;
 
+    public float turnSmoothSpeed = 0.05f;
+    private Vector3 turnOffset;
+    private Vector3 turnPos;
+
     public GameObject stormVFX;
 
-    private bool follow = true;
+    public bool shouldZoom = true;
+    public bool shouldFollow = true;
 
     private Camera cam;
+
+    //UNUSED: See line 85.
+    //public float accuracy = 1f;
+    //private bool gettingInput = false;
+    //private float accuracyUpTimer;
+    //private float accuracyDownTimer;
 
     private void Awake()
     {
@@ -47,55 +54,104 @@ public class CameraController : MonoBehaviour
 
     public void Update()
     {
-        Vector3 desiredPosition = transform.position;
-
-        float height = 2 * cam.orthographicSize;
-        float width = height * cam.aspect;
-
-        if (StateManager.CurrentGameState == GameState.Platforming || StateManager.CurrentGameState == GameState.Narrative)
+        if (shouldFollow)
         {
-            desiredPosition = target.position;
-            if (Vector3.Distance(transform.position, desiredPosition) > accuracy)
-            {
-                //Camera targets putting the player on the upper third of the screen if the S key is pressed.
-                int upperOrLowerThird = Input.GetKey(KeyCode.S) ? -3 : 3;
-                desiredPosition += new Vector3(0, cam.orthographicSize / upperOrLowerThird, 0);
+            //Reset values
+            Vector3 desiredPosition;
+            Vector3 targetPos = target.position;
+            turnOffset = Vector3.zero;
 
-                SpriteRenderer playerSprite = StateManager.cc.GetComponent<SpriteRenderer>();
-                if (playerSprite.flipX)
+            //-----Calculate the adjusted position------
+            //Adjusts the camera's target position so it isn't perfectly centered on the player
+
+            //Camera targets putting the player on the upper third of the screen if the S key is pressed.
+            int upperOrLowerThird = Input.GetKey(KeyCode.S) ? -3 : 3;
+            turnOffset += new Vector3(0, cam.orthographicSize / upperOrLowerThird, 0);
+
+            //Put the camera a little ahead of the player in the direction they are facing
+            SpriteRenderer playerSprite = StateManager.cc.GetComponent<SpriteRenderer>();
+            if (playerSprite.flipX)
+            {
+                turnOffset += new Vector3(cam.orthographicSize / 3, 0, 0);
+            }
+            else
+            {
+                turnOffset += new Vector3(-cam.orthographicSize / 3, 0, 0);
+            }
+
+            //Lerp the adjusted position to make it smoother, especially when turning around.
+            turnPos = Vector3.Lerp(turnPos, turnOffset, turnSmoothSpeed);
+
+            //Move the camera towards the final destination.
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, targetPos + turnPos, smoothSpeed);
+            desiredPosition = smoothedPosition;
+            desiredPosition.z = -10; //Ensure the camera's z stays at -10.
+            Vector3 temp = transform.position;
+            temp.z = target.position.z;
+
+            //Finally, move the camera.
+            transform.position = desiredPosition;
+
+            //CODE MAKING USE OF ACCURACY
+            //Makes the camera only follow the player if they start heading too far from the camera.
+            //Currently too jarring - needs code added to make it smoother.
+            /*if (Mathf.Abs(InputTracker.GetDirectionalInput().x) > 0)
+            {
+                if (Vector3.Distance(targetPos + turnOffset, temp) > accuracy)
                 {
-                    desiredPosition += new Vector3(cam.orthographicSize / 3, 0, 0);
+                    accuracy = 0.1f;
+                }
+                accuracyUpTimer = 0;
+                gettingInput = true;
+            }
+            else
+            {
+                if (accuracyUpTimer > 1)
+                {
+                    accuracy = 5;
                 }
                 else
                 {
-                    desiredPosition += new Vector3(-cam.orthographicSize / 3, 0, 0);
+                    accuracyUpTimer += Time.deltaTime;
                 }
+            }
 
-                Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-                desiredPosition = smoothedPosition;
+            //Finally, actually move the camera.
+            if (Vector3.Distance(targetPos + turnOffset, temp) > accuracy) transform.position = desiredPosition;
+            */
+        }
+        if (shouldZoom)
+        {
+            if (zooming)
+            {
+                zoomTimer = Mathf.Clamp(zoomTimer + Time.deltaTime, 0, zoomTime);
+
+                cam.orthographicSize = Mathf.Lerp(startingSize, targetSize, zoomCurve.Evaluate(zoomTimer / zoomTime));
+
+                if (zoomTimer >= zoomTime) zooming = false;
+            }
+
+            if (zoomedIn)
+            {
+                if (stormVFX != null) stormVFX.transform.localPosition = new Vector3(0, -0.82f, 0);
+            }
+            else
+            {
+                if (stormVFX != null) stormVFX.transform.localPosition = Vector3.zero;
             }
         }
 
-        desiredPosition.z = -10;
-        if (desiredPosition != transform.position) transform.position = desiredPosition;
-
-        if (zooming)
-        {
-            zoomTimer = Mathf.Clamp(zoomTimer + Time.deltaTime, 0, zoomTime);
-
-            cam.orthographicSize = Mathf.Lerp(startingSize, targetSize, zoomCurve.Evaluate(zoomTimer / zoomTime));
-
-            if (zoomTimer >= zoomTime) zooming = false;
-        }
-
-        if (zoomedIn)
-        {
-            if (stormVFX != null) stormVFX.transform.localPosition = new Vector3(0, -0.82f, 0);
-        }
-        else
-        {
-            if (stormVFX != null) stormVFX.transform.localPosition = Vector3.zero;
-        }
+    }
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawSphere(turnOffset + ((target != null) ? target.transform.position : Vector3.zero), 0.3f);
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(turnPos + ((target != null) ? target.transform.position : Vector3.zero), 0.3f);
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(turnOffset + ((target != null) ? target.transform.position : Vector3.zero), 0.3f);
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(target.position, 0.3f);
     }
 
     [ContextMenu("Zoom Out")]
@@ -129,8 +185,9 @@ public class CameraController : MonoBehaviour
         zooming = true;
         zoomTimer = 0;
     }
-    public void SetCameraFollow(bool shouldFollowTarget)
+    public void SetShouldZoom(bool zoom)
     {
-        follow = shouldFollowTarget;
+        shouldZoom = zoom;
+        shouldFollow = zoom;
     }
 }

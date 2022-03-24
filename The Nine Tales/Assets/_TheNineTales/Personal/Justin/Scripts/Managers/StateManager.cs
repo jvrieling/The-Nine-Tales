@@ -86,21 +86,20 @@ public class StateManager : MonoBehaviour
                 cc.ForceIdleAnimation(false);
                 cc.EnableControls();
                 cam.SetCameraZoom(true);
-                cam.SetCameraFollow(true);
+                cam.SetShouldZoom(true);
                 pi.enabled = true;
                 break;
             case GameState.Platforming:
                 cc.ForceIdleAnimation(false);
                 cc.EnableControls();
                 cam.SetCameraZoom(false);
-                cam.SetCameraFollow(true);
+                cam.SetShouldZoom(true);
                 pi.enabled = true;
                 break;
             case GameState.Dialogue:
                 cc.ForceIdleAnimation();
                 cc.DisableControls();
                 cam.SetCameraZoom(true);
-                cam.SetCameraFollow(false);
                 pi.enabled = false;
                 cc.m_CurrentHealth = cc.m_FullHealth;
                 GlobalVolumeController.Singleton.CameraFadeDark(cc.m_CurrentHealth, cc.m_FullHealth);
@@ -109,7 +108,6 @@ public class StateManager : MonoBehaviour
                 cc.ForceIdleAnimation();
                 cc.DisableControls();
                 cam.SetCameraZoom(true);
-                cam.SetCameraFollow(false);
                 pi.enabled = false;
                 cc.m_CurrentHealth = cc.m_FullHealth;
                 GlobalVolumeController.Singleton.CameraFadeDark(cc.m_CurrentHealth, cc.m_FullHealth);
@@ -117,7 +115,6 @@ public class StateManager : MonoBehaviour
             case GameState.Paused:
                 cc.ForceIdleAnimation();
                 cc.DisableControls();
-                cam.SetCameraFollow(true);
                 pi.enabled = false;
                 break;
         }
