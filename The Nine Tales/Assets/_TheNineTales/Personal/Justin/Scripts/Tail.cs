@@ -22,6 +22,7 @@ public class Tail : MonoBehaviour
     public SpriteRenderer sr;
     public Player characterController;
 
+    private bool flipTail = false;
     private int lastLength;
     private Vector3[] segments;
     private Vector3[] segmentV;
@@ -78,6 +79,7 @@ public class Tail : MonoBehaviour
             {
                 newPos.x *= -1;
                 tailBase.localPosition = newPos;
+                flipTail = false;
             }
         }
         else
@@ -87,6 +89,7 @@ public class Tail : MonoBehaviour
             {
                 newPos.x *= -1;
                 tailBase.localPosition = newPos;
+                flipTail = true;
             }
         }
 
@@ -99,5 +102,8 @@ public class Tail : MonoBehaviour
         }
 
         lineRend.SetPositions(segments);
+
+        if (flipTail) lineRend.widthMultiplier = -1;
+        else lineRend.widthMultiplier = 1;
     }
 }
