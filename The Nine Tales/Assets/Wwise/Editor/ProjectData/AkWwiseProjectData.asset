@@ -605,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585532902923982575
+    m_lastTime: -8585532797603836047
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -1322,6 +1322,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Spiderweb_Destroy
+      guid: 94572448d67da24fb26fad88c60a3841
+      id: 1072028603
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Spiderweb_Destroy
+        ObjectType: 3
+        guid: 94572448d67da24fb26fad88c60a3841
+      Path: Events/Default Work Unit/Player/Spiderweb_Destroy
+      maxAttenuation: 0
+      maxDuration: 0.383243
+      minDuration: 0.383243
     - name: Spirit_Theme
       guid: 6b8782d6d073b7439a1352140972dd38
       id: 627254640
@@ -2275,7 +2295,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000b0000000c0000000d0000001400000015000000160000001700000018000000250000002600000029000000390000003b0000003c0000003d0000003e0000003f0000004e000000560c0000
+  ExpandedWaapiItemIds: 010000000600000007000000080000000c0000000d0000001400000015000000160000001700000018000000250000002600000029000000390000003b0000003c0000003d0000003e0000003f0000004e000000560c0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

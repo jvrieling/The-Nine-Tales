@@ -104,7 +104,7 @@
 			<ShortName>Music_Ch1b</ShortName>
 			<Path>Music_Ch1b.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="707900966" Language="SFX" Hash="3542097205">
+		<SoundBank Id="707900966" Language="SFX" Hash="1508576651">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1a</ObjectPath>
 			<ShortName>Music_Ch1a</ShortName>
 			<Path>Music_Ch1a.bnk</Path>
@@ -372,7 +372,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3017722254">
+		<SoundBank Id="1069431850" Language="SFX" Hash="1484876532">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
@@ -383,6 +383,7 @@
 				<Event Id="1783467547" Name="Fox_Jump" ObjectPath="\Events\Default Work Unit\Player\Fox_Jump" DurationType="OneShot" DurationMin="0.172381" DurationMax="0.172381"/>
 				<Event Id="2680479089" Name="Gain_Tail" ObjectPath="\Events\Default Work Unit\Player\Gain_Tail" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25"/>
 				<Event Id="3193947170" Name="Hurt" ObjectPath="\Events\Default Work Unit\Player\Hurt" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25"/>
+				<Event Id="1072028603" Name="Spiderweb_Destroy" ObjectPath="\Events\Default Work Unit\Player\Spiderweb_Destroy" DurationType="OneShot" DurationMin="0.383243" DurationMax="0.383243"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2751824" Language="SFX">
@@ -544,7 +545,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1840167780" Language="SFX" Hash="3716747357">
+		<SoundBank Id="1840167780" Language="SFX" Hash="2847705446">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Main_Menu</ObjectPath>
 			<ShortName>Music_Main_Menu</ShortName>
 			<Path>Music_Main_Menu.bnk</Path>
@@ -709,7 +710,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1866658237" Language="SFX" Hash="2461849997">
+		<SoundBank Id="1866658237" Language="SFX" Hash="132457257">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambient_Regions</ObjectPath>
 			<ShortName>Ambient_Regions</ShortName>
 			<Path>Ambient_Regions.bnk</Path>
@@ -722,36 +723,11 @@
 				<Event Id="4164439052" Name="Ambient_Forest_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2043403999" Name="Rain" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain" DurationType="Infinite"/>
 				<Event Id="1737644906" Name="Rain_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="735449646" Name="Thunder_Strike" ObjectPath="\Events\Default Work Unit\Environmental\Thunder_Strike" DurationType="OneShot" DurationMin="7.5" DurationMax="8."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="128565354" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-6.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-6_10C4C929.wem</Path>
-				</File>
-				<File Id="231549192" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-4.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-4_10C4C929.wem</Path>
-				</File>
 				<File Id="293346966" Language="SFX">
 					<ShortName>Rain\9T_SD_Rain Loop.wav</ShortName>
 					<Path>SFX/Rain/9T_SD_Rain Loop_94A96B2A.wem</Path>
-				</File>
-				<File Id="515735321" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-3.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-3_10C4C929.wem</Path>
-				</File>
-				<File Id="611506521" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-2.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-2_10C4C929.wem</Path>
-				</File>
-				<File Id="812297060" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-1.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-1_10C4C929.wem</Path>
-				</File>
-				<File Id="832889168" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-5.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-5_10C4C929.wem</Path>
 				</File>
 				<File Id="953872696" Language="SFX">
 					<ShortName>9T_SD_Forest Ambience Loop.wav</ShortName>
@@ -767,17 +743,30 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1973600711" Language="SFX" Hash="3833222649">
+		<SoundBank Id="1973600711" Language="SFX" Hash="3246988747">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environmental</ObjectPath>
 			<ShortName>Environmental</ShortName>
 			<Path>Environmental.bnk</Path>
 			<IncludedEvents>
 				<Event Id="403100568" Name="Platform_Breaking" ObjectPath="\Events\Default Work Unit\Environmental\Platform_Breaking" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5"/>
+				<Event Id="735449646" Name="Thunder_Strike" ObjectPath="\Events\Default Work Unit\Environmental\Thunder_Strike" DurationType="OneShot" DurationMin="7.5" DurationMax="8."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="43055703" Language="SFX">
 					<ShortName>Platform\9T_SD_Platform3.wav</ShortName>
 					<Path>SFX/Platform/9T_SD_Platform3_10C4C929.wem</Path>
+				</File>
+				<File Id="128565354" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-6.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-6_10C4C929.wem</Path>
+				</File>
+				<File Id="231549192" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-4.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-4_10C4C929.wem</Path>
+				</File>
+				<File Id="515735321" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-3.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-3_10C4C929.wem</Path>
 				</File>
 				<File Id="578756424" Language="SFX">
 					<ShortName>Platform\9T_SD_Platform4.wav</ShortName>
@@ -786,6 +775,18 @@
 				<File Id="600895273" Language="SFX">
 					<ShortName>Platform\9T_SD_Platform1.wav</ShortName>
 					<Path>SFX/Platform/9T_SD_Platform1_10C4C929.wem</Path>
+				</File>
+				<File Id="611506521" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-2.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-2_10C4C929.wem</Path>
+				</File>
+				<File Id="812297060" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-1.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-1_10C4C929.wem</Path>
+				</File>
+				<File Id="832889168" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-5.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-5_10C4C929.wem</Path>
 				</File>
 				<File Id="988037317" Language="SFX">
 					<ShortName>Platform\9T_SD_Platform2.wav</ShortName>
