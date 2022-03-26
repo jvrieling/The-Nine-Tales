@@ -1,4 +1,5 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	259813538	Asha_Cutscenes			\Default Work Unit\Asha_Cutscenes	
 	540064805	Celestial			\Default Work Unit\Celestial	
 	1035893910	Village_Convos			\Default Work Unit\Village_Convos	
 	2005704188	Main_Menu			\Default Work Unit\Main_Menu	
@@ -7,6 +8,11 @@ State Group	ID	Name			Wwise Object Path	Notes
 	3708762888	Forest_Path			\Default Work Unit\Forest_Path	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Asha_Cutscenes			
+	1246123756	Tell_Asha_Truth	Asha_Cutscenes			
+	1524497379	Asha_Dinner_Beginning	Asha_Cutscenes			
+	3648203651	Lie_To_Asha	Asha_Cutscenes			
+	4167876821	First_Meet_Asha	Asha_Cutscenes			
 	82290036	No_Spirit	Celestial			
 	748895195	None	Celestial			
 	4086892909	Talking_To_Spirit	Celestial			

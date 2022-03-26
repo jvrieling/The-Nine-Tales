@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585536160268425810
+    m_lastTime: -8585532881270222626
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -509,9 +509,9 @@ MonoBehaviour:
         ObjectType: 7
         guid: bf40806cca91144c8009c8f96aa473cd
       Path: SoundBanks/Default Work Unit/Environmental
-    - name: Music
-      guid: bcf010824026314299d85ccd904423a0
-      id: 3991942870
+    - name: Music_Ch1a
+      guid: 7ecef0a43ea52c4683d173ff68f300c9
+      id: 707900966
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -519,10 +519,52 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 518228c8806f634b917801cbadfa4d3a
-      - ElementName: Music
+      - ElementName: Music_Ch1a
+        ObjectType: 7
+        guid: 7ecef0a43ea52c4683d173ff68f300c9
+      Path: SoundBanks/Default Work Unit/Music_Ch1a
+    - name: Music_Ch1b
+      guid: 9fde50a27a4f3848b4eaf50389918312
+      id: 707900965
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 518228c8806f634b917801cbadfa4d3a
+      - ElementName: Music_Ch1b
+        ObjectType: 7
+        guid: 9fde50a27a4f3848b4eaf50389918312
+      Path: SoundBanks/Default Work Unit/Music_Ch1b
+    - name: Music_Main_Menu
+      guid: bcf010824026314299d85ccd904423a0
+      id: 1840167780
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 518228c8806f634b917801cbadfa4d3a
+      - ElementName: Music_Main_Menu
         ObjectType: 7
         guid: bcf010824026314299d85ccd904423a0
-      Path: SoundBanks/Default Work Unit/Music
+      Path: SoundBanks/Default Work Unit/Music_Main_Menu
+    - name: Music_Village
+      guid: c9bb8c031afe33428c3f4b1046fd1dfa
+      id: 168053707
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 518228c8806f634b917801cbadfa4d3a
+      - ElementName: Music_Village
+        ObjectType: 7
+        guid: c9bb8c031afe33428c3f4b1046fd1dfa
+      Path: SoundBanks/Default Work Unit/Music_Village
     - name: Player
       guid: 6b59b5d7d583064fb199b3432d49c5be
       id: 1069431850
@@ -563,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585536059211619627
+    m_lastTime: -8585532902923982575
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -1692,8 +1734,106 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ef20ec574afe3649810385069bd8b529
     GuidInternal: 
-    m_lastTime: -8585536096539193096
+    m_lastTime: -8585533753820269817
     List:
+    - name: Asha_Cutscenes
+      guid: a7459891c73ce148b7307f9c4fe78787
+      id: 259813538
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Asha_Cutscenes
+        ObjectType: 9
+        guid: a7459891c73ce148b7307f9c4fe78787
+      Path: States/Default Work Unit/Asha_Cutscenes
+      values:
+      - name: Asha_Dinner_Beginning
+        guid: 40c9923c544e0a42addca615675a5f0a
+        id: 1524497379
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Asha_Cutscenes
+          ObjectType: 9
+          guid: a7459891c73ce148b7307f9c4fe78787
+        - ElementName: Asha_Dinner_Beginning
+          ObjectType: 8
+          guid: 40c9923c544e0a42addca615675a5f0a
+      - name: First_Meet_Asha
+        guid: cbef0614d38c6447a877d15c7f1c0da0
+        id: 4167876821
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Asha_Cutscenes
+          ObjectType: 9
+          guid: a7459891c73ce148b7307f9c4fe78787
+        - ElementName: First_Meet_Asha
+          ObjectType: 8
+          guid: cbef0614d38c6447a877d15c7f1c0da0
+      - name: Lie_To_Asha
+        guid: b91c049ed85cd1489de47ffa98984ef8
+        id: 3648203651
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Asha_Cutscenes
+          ObjectType: 9
+          guid: a7459891c73ce148b7307f9c4fe78787
+        - ElementName: Lie_To_Asha
+          ObjectType: 8
+          guid: b91c049ed85cd1489de47ffa98984ef8
+      - name: None
+        guid: 9a53e25f2679c84e93628c8dfd6949d1
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Asha_Cutscenes
+          ObjectType: 9
+          guid: a7459891c73ce148b7307f9c4fe78787
+        - ElementName: None
+          ObjectType: 8
+          guid: 9a53e25f2679c84e93628c8dfd6949d1
+      - name: Tell_Asha_Truth
+        guid: 1751eb1e22820f4fba5f78f8368f0b28
+        id: 1246123756
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Asha_Cutscenes
+          ObjectType: 9
+          guid: a7459891c73ce148b7307f9c4fe78787
+        - ElementName: Tell_Asha_Truth
+          ObjectType: 8
+          guid: 1751eb1e22820f4fba5f78f8368f0b28
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Celestial
       guid: 67b0b567016cb9488d6eae44ec4bf06f
       id: 540064805
@@ -2135,7 +2275,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000090000000a0000000b0000000c0000000d000000140000001500000016000000250000002600000029000000390000003b0000003c0000003d0000003e0000003f0000004e000000560c0000
+  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000b0000000c0000000d0000001400000015000000160000001700000018000000250000002600000029000000390000003b0000003c0000003d0000003e0000003f0000004e000000560c0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
