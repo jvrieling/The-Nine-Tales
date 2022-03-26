@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Documents - EmsterMini/WwiseProjects/Nine Tales Audio/</ProjectRoot>
+		<SourceFilesRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Documents - EmsterMini/WwiseProjects/Nine Tales Audio/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/Desktop - EmsterMini/Nine Tails/The-Nine-Tales/The Nine Tales/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/emstermini/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Documents - EmsterMini/WwiseProjects/Nine Tales Audio/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1069431850" Language="SFX" Hash="3017722254">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2550655564" Name="Dies_LOL" ObjectPath="\Events\Default Work Unit\Player\Dies_LOL" DurationType="OneShot" DurationMin="4.513542" DurationMax="4.513542"/>
+				<Event Id="2956011499" Name="Fox_Dash" ObjectPath="\Events\Default Work Unit\Player\Fox_Dash" DurationType="OneShot" DurationMin="0.22059" DurationMax="0.22059"/>
+				<Event Id="3242941405" Name="Fox_Footstep" ObjectPath="\Events\Default Work Unit\Player\Fox_Footstep" DurationType="OneShot" DurationMin="0.098526" DurationMax="0.173968"/>
+				<Event Id="1783467547" Name="Fox_Jump" ObjectPath="\Events\Default Work Unit\Player\Fox_Jump" DurationType="OneShot" DurationMin="0.172381" DurationMax="0.172381"/>
+				<Event Id="2680479089" Name="Gain_Tail" ObjectPath="\Events\Default Work Unit\Player\Gain_Tail" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25"/>
+				<Event Id="3193947170" Name="Hurt" ObjectPath="\Events\Default Work Unit\Player\Hurt" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="2751824" Language="SFX">
+					<ShortName>SPIDERWEB-COLLECT-MEDIUM.wav</ShortName>
+					<Path>SFX/SPIDERWEB-COLLECT-MEDIUM_10C4C929.wem</Path>
+				</File>
+				<File Id="87337613" Language="SFX">
+					<ShortName>Hurt\9T_SD_Hurt5.wav</ShortName>
+					<Path>SFX/Hurt/9T_SD_Hurt5_10C4C929.wem</Path>
+				</File>
+				<File Id="129786024" Language="SFX">
+					<ShortName>Hurt\9T_SD_Hurt7.wav</ShortName>
+					<Path>SFX/Hurt/9T_SD_Hurt7_10C4C929.wem</Path>
+				</File>
+				<File Id="303793343" Language="SFX">
+					<ShortName>JUMP-HIGH.wav</ShortName>
+					<Path>SFX/JUMP-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="304475018" Language="SFX">
+					<ShortName>Footsteps\GRASS-STEP3-HIGH.wav</ShortName>
+					<Path>SFX/Footsteps/GRASS-STEP3-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="340166354" Language="SFX">
+					<ShortName>Hurt\9T_SD_Hurt3.wav</ShortName>
+					<Path>SFX/Hurt/9T_SD_Hurt3_10C4C929.wem</Path>
+				</File>
+				<File Id="463066707" Language="SFX">
+					<ShortName>Hurt\9T_SD_Hurt2.wav</ShortName>
+					<Path>SFX/Hurt/9T_SD_Hurt2_10C4C929.wem</Path>
+				</File>
+				<File Id="507123433" Language="SFX">
+					<ShortName>Footsteps\GRASS-STEP1-HIGH.wav</ShortName>
+					<Path>SFX/Footsteps/GRASS-STEP1-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="566475179" Language="SFX">
+					<ShortName>DASH-HIGH.wav</ShortName>
+					<Path>SFX/DASH-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="791681697" Language="SFX">
+					<ShortName>9T_SD_Fox Dies lol.wav</ShortName>
+					<Path>SFX/9T_SD_Fox Dies lol_10C4C929.wem</Path>
+				</File>
+				<File Id="794136656" Language="SFX">
+					<ShortName>Hurt\9T_SD_Hurt6.wav</ShortName>
+					<Path>SFX/Hurt/9T_SD_Hurt6_10C4C929.wem</Path>
+				</File>
+				<File Id="798700818" Language="SFX">
+					<ShortName>9T_SD_New Tail.wav</ShortName>
+					<Path>SFX/9T_SD_New Tail_10C4C929.wem</Path>
+				</File>
+				<File Id="885289111" Language="SFX">
+					<ShortName>Hurt\9T_SD_Hurt4.wav</ShortName>
+					<Path>SFX/Hurt/9T_SD_Hurt4_10C4C929.wem</Path>
+				</File>
+				<File Id="915073957" Language="SFX">
+					<ShortName>Hurt\9T_SD_Hurt1.wav</ShortName>
+					<Path>SFX/Hurt/9T_SD_Hurt1_10C4C929.wem</Path>
+				</File>
+				<File Id="939080959" Language="SFX">
+					<ShortName>Footsteps\GRASS-STEP2-HIGH.wav</ShortName>
+					<Path>SFX/Footsteps/GRASS-STEP2-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="1038518400" Language="SFX">
+					<ShortName>Footsteps\GRASS-STEP4-HIGH.wav</ShortName>
+					<Path>SFX/Footsteps/GRASS-STEP4-HIGH_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="82290036" Name="No_Spirit" ObjectPath="\States\Default Work Unit\Celestial\No_Spirit" GUID="{45A15D58-B454-4328-B965-296E81772490}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="319536830" Name="Not_In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\Not_In_Forest_Beginning" GUID="{B43412C6-243A-4D8D-80FA-46186A64161E}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="540064805" Name="Celestial" ObjectPath="\States\Default Work Unit\Celestial" GUID="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Celestial\None" GUID="{4FBB8286-C05B-4E62-8C46-F32E5A00F35D}"/>
+						<State Id="4086892909" Name="Talking_To_Spirit" ObjectPath="\States\Default Work Unit\Celestial\Talking_To_Spirit" GUID="{27ED3A2F-2769-454B-B5C4-B2D1392372C4}"/>
+						<State Id="82290036" Name="No_Spirit" ObjectPath="\States\Default Work Unit\Celestial\No_Spirit" GUID="{45A15D58-B454-4328-B965-296E81772490}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="671813814" Name="In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\In_Storm" GUID="{7D2567BB-D891-4190-9133-B48D052D22AC}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="681133780" Name="Main_Menu_ON" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_ON" GUID="{FB75ABD7-2950-4511-9E39-C209BA00B598}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2005704188" Name="Main_Menu" ObjectPath="\States\Default Work Unit\Main_Menu" GUID="{EB31297C-232F-489B-A6B2-EA4E14BBF873}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Main_Menu\None" GUID="{EECDEBA9-35C2-4850-AADA-AB3D076F0454}"/>
+						<State Id="681133780" Name="Main_Menu_ON" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_ON" GUID="{FB75ABD7-2950-4511-9E39-C209BA00B598}"/>
+						<State Id="3309997106" Name="Main_Menu_OFF" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_OFF" GUID="{B9A5F157-2046-47CB-BD66-6B922C1A3D9D}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2025362124" Name="In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\In_Forest_Beginning" GUID="{3AA44E90-15E5-4FC7-A4DC-FAFBAE838743}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2151441764" Name="Not_In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\Not_In_Storm" GUID="{38CB6D15-3D4A-4C58-9626-A6E70963B114}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2378076306" Name="Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning" GUID="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Beginning\None" GUID="{5B3807E2-16A7-4016-B69F-8AF367A81029}"/>
+						<State Id="2025362124" Name="In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\In_Forest_Beginning" GUID="{3AA44E90-15E5-4FC7-A4DC-FAFBAE838743}"/>
+						<State Id="319536830" Name="Not_In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\Not_In_Forest_Beginning" GUID="{B43412C6-243A-4D8D-80FA-46186A64161E}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3146944008" Name="On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\On_Forest_Path" GUID="{90242FBB-9779-4100-84A1-552F6DB73A88}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3190862816" Name="Forest_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm" GUID="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Storm\None" GUID="{F0D8DA39-8CA1-4CF2-9B9B-8B18C2EDCC70}"/>
+						<State Id="671813814" Name="In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\In_Storm" GUID="{7D2567BB-D891-4190-9133-B48D052D22AC}"/>
+						<State Id="2151441764" Name="Not_In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\Not_In_Storm" GUID="{38CB6D15-3D4A-4C58-9626-A6E70963B114}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3294614634" Name="Not_On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\Not_On_Forest_Path" GUID="{AA786A00-2E1C-4566-A4AD-02B23A526EB4}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3309997106" Name="Main_Menu_OFF" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_OFF" GUID="{B9A5F157-2046-47CB-BD66-6B922C1A3D9D}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3708762888" Name="Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path" GUID="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Path\None" GUID="{88AD954D-EBF7-4308-A2FD-2B600EE76BCD}"/>
+						<State Id="3146944008" Name="On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\On_Forest_Path" GUID="{90242FBB-9779-4100-84A1-552F6DB73A88}"/>
+						<State Id="3294614634" Name="Not_On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\Not_On_Forest_Path" GUID="{AA786A00-2E1C-4566-A4AD-02B23A526EB4}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3950198291" Name="Talk_To_Doakes" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Doakes" GUID="{14EC36D2-5237-4D06-9FE0-E32482FC4730}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4086892909" Name="Talking_To_Spirit" ObjectPath="\States\Default Work Unit\Celestial\Talking_To_Spirit" GUID="{27ED3A2F-2769-454B-B5C4-B2D1392372C4}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="509336934">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1551306167" Language="SFX" Hash="1894073186">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
+			<ShortName>UI</ShortName>
+			<Path>UI.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1880629771" Name="Quill_Scratch" ObjectPath="\Events\Default Work Unit\UI\Quill_Scratch" DurationType="OneShot" DurationMin="1.418662" DurationMax="2.623991"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="877662393" Language="SFX">
+					<ShortName>QUILLS2-V2-HIGH.wav</ShortName>
+					<Path>SFX/QUILLS2-V2-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="903332835" Language="SFX">
+					<ShortName>QUILLS-V2-HIGH.wav</ShortName>
+					<Path>SFX/QUILLS-V2-HIGH_08BEB9C2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1866658237" Language="SFX" Hash="2926167537">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambient_Regions</ObjectPath>
+			<ShortName>Ambient_Regions</ShortName>
+			<Path>Ambient_Regions.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3652009445" Name="Ambient_Campfire" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Campfire" DurationType="Infinite"/>
+				<Event Id="100151336" Name="Ambient_Campfire_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Campfire_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2155509767" Name="Ambient_Dream" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Dream" DurationType="Infinite"/>
+				<Event Id="1516204802" Name="Ambient_Dream_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Dream_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="4234424953" Name="Ambient_Forest" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest" DurationType="Infinite"/>
+				<Event Id="4164439052" Name="Ambient_Forest_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2043403999" Name="Rain" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain" DurationType="Infinite"/>
+				<Event Id="1737644906" Name="Rain_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="735449646" Name="Thunder_Strike" ObjectPath="\Events\Default Work Unit\Environmental\Thunder_Strike" DurationType="OneShot" DurationMin="7.5" DurationMax="8."/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="128565354" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-6.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-6_10C4C929.wem</Path>
+				</File>
+				<File Id="231549192" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-4.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-4_10C4C929.wem</Path>
+				</File>
+				<File Id="293346966" Language="SFX">
+					<ShortName>Rain\9T_SD_Rain Loop.wav</ShortName>
+					<Path>SFX/Rain/9T_SD_Rain Loop_94A96B2A.wem</Path>
+				</File>
+				<File Id="515735321" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-3.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-3_10C4C929.wem</Path>
+				</File>
+				<File Id="611506521" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-2.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-2_10C4C929.wem</Path>
+				</File>
+				<File Id="812297060" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-1.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-1_10C4C929.wem</Path>
+				</File>
+				<File Id="832889168" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-5.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-5_10C4C929.wem</Path>
+				</File>
+				<File Id="953872696" Language="SFX">
+					<ShortName>9T_SD_Forest Ambience Loop.wav</ShortName>
+					<Path>SFX/9T_SD_Forest Ambience Loop_C5579977.wem</Path>
+				</File>
+				<File Id="990086189" Language="SFX">
+					<ShortName>9T_SD_Dream Ambience.wav</ShortName>
+					<Path>SFX/9T_SD_Dream Ambience_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1016474877" Language="SFX">
+					<ShortName>9T_SD_Fireplace Loop.wav</ShortName>
+					<Path>SFX/9T_SD_Fireplace Loop_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1973600711" Language="SFX" Hash="3833222649">
+			<ObjectPath>\SoundBanks\Default Work Unit\Environmental</ObjectPath>
+			<ShortName>Environmental</ShortName>
+			<Path>Environmental.bnk</Path>
+			<IncludedEvents>
+				<Event Id="403100568" Name="Platform_Breaking" ObjectPath="\Events\Default Work Unit\Environmental\Platform_Breaking" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="43055703" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform3.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform3_10C4C929.wem</Path>
+				</File>
+				<File Id="578756424" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform4.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform4_10C4C929.wem</Path>
+				</File>
+				<File Id="600895273" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform1.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform1_10C4C929.wem</Path>
+				</File>
+				<File Id="988037317" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform2.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform2_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="3204551710">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2823140784" Name="Forest_Theme" ObjectPath="\Events\Default Work Unit\Music\Forest\Forest_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="339602112" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_Intro.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_Intro_D79FB2B7.wem</Path>
+						</File>
+						<File Id="678418694" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_MainLoop.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_MainLoop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="721417471" Language="SFX">
+							<ShortName>9T_M_Celestial_120_3-4.wav</ShortName>
+							<Path>SFX/9T_M_Celestial_120_3-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="833263565" Language="SFX">
+							<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+							<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2025362124" Name="In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\In_Forest_Beginning"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="689545919" Name="Forest_Theme_Stop" ObjectPath="\Events\Default Work Unit\Music\Forest\Forest_Theme_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="319536830" Name="Not_In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\Not_In_Forest_Beginning"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2557777556" Name="Main_Theme" ObjectPath="\Events\Default Work Unit\Music\Main Menu\Main_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="339602112" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_Intro.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_Intro_D79FB2B7.wem</Path>
+						</File>
+						<File Id="678418694" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_MainLoop.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_MainLoop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="721417471" Language="SFX">
+							<ShortName>9T_M_Celestial_120_3-4.wav</ShortName>
+							<Path>SFX/9T_M_Celestial_120_3-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="833263565" Language="SFX">
+							<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+							<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{EB31297C-232F-489B-A6B2-EA4E14BBF873}">
+							<Children>
+								<SwitchContainer SwitchValue="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
+									<Children>
+										<SwitchContainer SwitchValue="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+											<Children>
+												<SwitchContainer SwitchValue="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+													<Children>
+														<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+															<Media>
+																<File Id="833263565"/>
+															</Media>
+														</SwitchContainer>
+													</Children>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B9A5F157-2046-47CB-BD66-6B922C1A3D9D}">
+							<Children>
+								<SwitchContainer SwitchValue="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
+									<Children>
+										<SwitchContainer SwitchValue="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+											<Children>
+												<SwitchContainer SwitchValue="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+													<Children>
+														<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+															<Media>
+																<File Id="339602112"/>
+																<File Id="678418694"/>
+															</Media>
+														</SwitchContainer>
+													</Children>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{B9A5F157-2046-47CB-BD66-6B922C1A3D9D}">
+							<Children>
+								<SwitchContainer SwitchValue="{B43412C6-243A-4D8D-80FA-46186A64161E}">
+									<Children>
+										<SwitchContainer SwitchValue="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+											<Children>
+												<SwitchContainer SwitchValue="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+													<Children>
+														<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+															<Media>
+																<File Id="721417471"/>
+															</Media>
+														</SwitchContainer>
+													</Children>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="681133780" Name="Main_Menu_ON" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_ON"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3409588627" Name="Main_Theme_Stop" ObjectPath="\Events\Default Work Unit\Music\Main Menu\Main_Theme_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3309997106" Name="Main_Menu_OFF" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_OFF"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="674329606" Name="Path_Theme" ObjectPath="\Events\Default Work Unit\Music\Path\Path_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="339602112" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_Intro.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_Intro_D79FB2B7.wem</Path>
+						</File>
+						<File Id="678418694" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_MainLoop.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_MainLoop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="721417471" Language="SFX">
+							<ShortName>9T_M_Celestial_120_3-4.wav</ShortName>
+							<Path>SFX/9T_M_Celestial_120_3-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="833263565" Language="SFX">
+							<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+							<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3146944008" Name="On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\On_Forest_Path"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1817047765" Name="Path_Theme_Stop" ObjectPath="\Events\Default Work Unit\Music\Path\Path_Theme_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3294614634" Name="Not_On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\Not_On_Forest_Path"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="627254640" Name="Spirit_Theme" ObjectPath="\Events\Default Work Unit\Music\Celestial\Spirit_Theme" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="339602112" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_Intro.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_Intro_D79FB2B7.wem</Path>
+						</File>
+						<File Id="678418694" Language="SFX">
+							<ShortName>Forest\9T_M_Forest_162_3-4_MainLoop.wav</ShortName>
+							<Path>SFX/Forest/9T_M_Forest_162_3-4_MainLoop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="721417471" Language="SFX">
+							<ShortName>9T_M_Celestial_120_3-4.wav</ShortName>
+							<Path>SFX/9T_M_Celestial_120_3-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="833263565" Language="SFX">
+							<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+							<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="4086892909" Name="Talking_To_Spirit" ObjectPath="\States\Default Work Unit\Celestial\Talking_To_Spirit"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3845819007" Name="Spirit_Theme_Stop" ObjectPath="\Events\Default Work Unit\Music\Celestial\Spirit_Theme_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="82290036" Name="No_Spirit" ObjectPath="\States\Default Work Unit\Celestial\No_Spirit"/>
+					</ActionSetState>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="339602112" Language="SFX">
+					<ShortName>Forest\9T_M_Forest_162_3-4_Intro.wav</ShortName>
+					<Path>SFX/Forest/9T_M_Forest_162_3-4_Intro_D79FB2B7.wem</Path>
+				</File>
+				<File Id="678418694" Language="SFX">
+					<ShortName>Forest\9T_M_Forest_162_3-4_MainLoop.wav</ShortName>
+					<Path>SFX/Forest/9T_M_Forest_162_3-4_MainLoop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="721417471" Language="SFX">
+					<ShortName>9T_M_Celestial_120_3-4.wav</ShortName>
+					<Path>SFX/9T_M_Celestial_120_3-4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="833263565" Language="SFX">
+					<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+					<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="82290036" Name="No_Spirit" ObjectPath="\States\Default Work Unit\Celestial\No_Spirit" GUID="{45A15D58-B454-4328-B965-296E81772490}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="319536830" Name="Not_In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\Not_In_Forest_Beginning" GUID="{B43412C6-243A-4D8D-80FA-46186A64161E}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="540064805" Name="Celestial" ObjectPath="\States\Default Work Unit\Celestial" GUID="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Celestial\None" GUID="{4FBB8286-C05B-4E62-8C46-F32E5A00F35D}"/>
+						<State Id="4086892909" Name="Talking_To_Spirit" ObjectPath="\States\Default Work Unit\Celestial\Talking_To_Spirit" GUID="{27ED3A2F-2769-454B-B5C4-B2D1392372C4}"/>
+						<State Id="82290036" Name="No_Spirit" ObjectPath="\States\Default Work Unit\Celestial\No_Spirit" GUID="{45A15D58-B454-4328-B965-296E81772490}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="671813814" Name="In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\In_Storm" GUID="{7D2567BB-D891-4190-9133-B48D052D22AC}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="681133780" Name="Main_Menu_ON" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_ON" GUID="{FB75ABD7-2950-4511-9E39-C209BA00B598}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2005704188" Name="Main_Menu" ObjectPath="\States\Default Work Unit\Main_Menu" GUID="{EB31297C-232F-489B-A6B2-EA4E14BBF873}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Main_Menu\None" GUID="{EECDEBA9-35C2-4850-AADA-AB3D076F0454}"/>
+						<State Id="681133780" Name="Main_Menu_ON" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_ON" GUID="{FB75ABD7-2950-4511-9E39-C209BA00B598}"/>
+						<State Id="3309997106" Name="Main_Menu_OFF" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_OFF" GUID="{B9A5F157-2046-47CB-BD66-6B922C1A3D9D}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2025362124" Name="In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\In_Forest_Beginning" GUID="{3AA44E90-15E5-4FC7-A4DC-FAFBAE838743}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2151441764" Name="Not_In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\Not_In_Storm" GUID="{38CB6D15-3D4A-4C58-9626-A6E70963B114}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2378076306" Name="Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning" GUID="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Beginning\None" GUID="{5B3807E2-16A7-4016-B69F-8AF367A81029}"/>
+						<State Id="2025362124" Name="In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\In_Forest_Beginning" GUID="{3AA44E90-15E5-4FC7-A4DC-FAFBAE838743}"/>
+						<State Id="319536830" Name="Not_In_Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning\Not_In_Forest_Beginning" GUID="{B43412C6-243A-4D8D-80FA-46186A64161E}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3146944008" Name="On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\On_Forest_Path" GUID="{90242FBB-9779-4100-84A1-552F6DB73A88}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3190862816" Name="Forest_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm" GUID="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Storm\None" GUID="{F0D8DA39-8CA1-4CF2-9B9B-8B18C2EDCC70}"/>
+						<State Id="671813814" Name="In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\In_Storm" GUID="{7D2567BB-D891-4190-9133-B48D052D22AC}"/>
+						<State Id="2151441764" Name="Not_In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\Not_In_Storm" GUID="{38CB6D15-3D4A-4C58-9626-A6E70963B114}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3294614634" Name="Not_On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\Not_On_Forest_Path" GUID="{AA786A00-2E1C-4566-A4AD-02B23A526EB4}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3309997106" Name="Main_Menu_OFF" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_OFF" GUID="{B9A5F157-2046-47CB-BD66-6B922C1A3D9D}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3708762888" Name="Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path" GUID="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Path\None" GUID="{88AD954D-EBF7-4308-A2FD-2B600EE76BCD}"/>
+						<State Id="3146944008" Name="On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\On_Forest_Path" GUID="{90242FBB-9779-4100-84A1-552F6DB73A88}"/>
+						<State Id="3294614634" Name="Not_On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\Not_On_Forest_Path" GUID="{AA786A00-2E1C-4566-A4AD-02B23A526EB4}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3950198291" Name="Talk_To_Doakes" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Doakes" GUID="{14EC36D2-5237-4D06-9FE0-E32482FC4730}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4086892909" Name="Talking_To_Spirit" ObjectPath="\States\Default Work Unit\Celestial\Talking_To_Spirit" GUID="{27ED3A2F-2769-454B-B5C4-B2D1392372C4}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

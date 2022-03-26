@@ -1,0 +1,50 @@
+Event	ID	Name			Wwise Object Path	Notes
+	627254640	Spirit_Theme			\Default Work Unit\Music\Celestial\Spirit_Theme	
+	674329606	Path_Theme			\Default Work Unit\Music\Path\Path_Theme	
+	689545919	Forest_Theme_Stop			\Default Work Unit\Music\Forest\Forest_Theme_Stop	
+	1817047765	Path_Theme_Stop			\Default Work Unit\Music\Path\Path_Theme_Stop	
+	2557777556	Main_Theme			\Default Work Unit\Music\Main Menu\Main_Theme	
+	2823140784	Forest_Theme			\Default Work Unit\Music\Forest\Forest_Theme	
+	3409588627	Main_Theme_Stop			\Default Work Unit\Music\Main Menu\Main_Theme_Stop	
+	3845819007	Spirit_Theme_Stop			\Default Work Unit\Music\Celestial\Spirit_Theme_Stop	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	540064805	Celestial			\Default Work Unit\Celestial	
+	1035893910	Village_Convos			\Default Work Unit\Village_Convos	
+	2005704188	Main_Menu			\Default Work Unit\Main_Menu	
+	2378076306	Forest_Beginning			\Default Work Unit\Forest_Beginning	
+	3190862816	Forest_Storm			\Default Work Unit\Forest_Storm	
+	3708762888	Forest_Path			\Default Work Unit\Forest_Path	
+
+State	ID	Name	State Group			Notes
+	82290036	No_Spirit	Celestial			
+	748895195	None	Celestial			
+	4086892909	Talking_To_Spirit	Celestial			
+	748895195	None	Village_Convos			
+	2020567476	Talk_To_Lumb	Village_Convos			
+	3289157511	Talk_To_Myla	Village_Convos			
+	3950198291	Talk_To_Doakes	Village_Convos			
+	681133780	Main_Menu_ON	Main_Menu			
+	748895195	None	Main_Menu			
+	3309997106	Main_Menu_OFF	Main_Menu			
+	319536830	Not_In_Forest_Beginning	Forest_Beginning			
+	748895195	None	Forest_Beginning			
+	2025362124	In_Forest_Beginning	Forest_Beginning			
+	671813814	In_Storm	Forest_Storm			
+	748895195	None	Forest_Storm			
+	2151441764	Not_In_Storm	Forest_Storm			
+	748895195	None	Forest_Path			
+	3146944008	On_Forest_Path	Forest_Path			
+	3294614634	Not_On_Forest_Path	Forest_Path			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	195839284	Not_In_Forest_Beginning	Forest_Beginning	\Interactive Music Hierarchy\Default Work Unit\Music\Forest_Loops		
+	412242162	Main_Menu_OFF	Main_Menu	\Interactive Music Hierarchy\Default Work Unit\Music\Main Menu		
+	948631605	No_Spirit	Celestial	\Interactive Music Hierarchy\Default Work Unit\Music\Spirit		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	339602112	9T_M_Forest_162_3-4_Intro	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Forest\9T_M_Forest_162_3-4_Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Forest_Loops\Forest_Intro\9T_M_Forest_162_3-4_Intro		4981040
+	678418694	9T_M_Forest_162_3-4_MainLoop	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Forest\9T_M_Forest_162_3-4_MainLoop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Forest_Loops\Forest_Loop\9T_M_Forest_162_3-4_MainLoop		17564000
+	721417471	9T_M_Celestial_120_3-4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_Celestial_120_3-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Spirit\9T_M_Celestial_120_3-4\9T_M_Celestial_120_3-4		18874512
+	833263565	Main Theme_85_4-4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_MAIN THEME_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Main Menu\Main Menu\Main Theme_85_4-4		13872068
+

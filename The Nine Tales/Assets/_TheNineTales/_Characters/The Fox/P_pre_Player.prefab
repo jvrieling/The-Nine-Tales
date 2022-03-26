@@ -251,6 +251,8 @@ GameObject:
   - component: {fileID: 8672836545935732067}
   - component: {fileID: 7964551327419498086}
   - component: {fileID: 7897411903047362637}
+  - component: {fileID: 8230388740279865810}
+  - component: {fileID: 2543249688622025373}
   m_Layer: 0
   m_Name: P_pre_Player
   m_TagString: Player
@@ -318,12 +320,17 @@ MonoBehaviour:
   m_PlayerAccel: {x: 0, y: 0}
   m_FullHealth: 5
   m_CurrentHealth: 5
+  RegenCooldown: 6
   jumpVFX: {fileID: 1988350440947039752, guid: c2ddeb86861652d40a9b38f77f439060, type: 3}
   dashVFX: {fileID: 8992092285104031098, guid: afc1cde7b4611d84bb7dddd7ad79236f, type: 3}
   landVFX: {fileID: 5138902148118288712, guid: 12722312c81391a4baa66575480eed49, type: 3}
   LastCheckpoint: {fileID: 0}
   DamageVFX: {fileID: 6591836109642705354, guid: e5dd8a6d5d80fa249a181c97ddbf746a, type: 3}
   FeetVFX: {fileID: 8548641258513296527}
+  deathSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!212 &246354546436543992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -508,7 +515,39 @@ MonoBehaviour:
   - {x: -1.1501884, y: -0.855193, z: 0}
   m_ShapePathHash: -906315697
   m_Mesh: {fileID: 0}
-  m_InstanceId: 71986
+  m_InstanceId: 101300
+--- !u!114 &8230388740279865810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246354546436543999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d70a86d5f1e47239fda31c8ac61517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 18086e28b295247c8b0d827370a08404, type: 2}
+--- !u!114 &2543249688622025373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246354546436543999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03b303a5477c4f81a5986603136c5d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 02897dab7d5f7498ab33873661b5299d, type: 2}
 --- !u!1 &246354546781621990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,6 +2639,7 @@ MonoBehaviour:
   interactLayers:
     serializedVersion: 2
     m_Bits: 8
+  interactCooldown: 1.5
 --- !u!114 &3987722523644713778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2848,7 +2888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6612380926238641320, guid: 6c814aeb87e5fbf49923feb03f5d6523, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6612380926238641325, guid: 6c814aeb87e5fbf49923feb03f5d6523, type: 3}
       propertyPath: m_Size.x

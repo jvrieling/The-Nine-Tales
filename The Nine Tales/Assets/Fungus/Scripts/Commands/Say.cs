@@ -27,8 +27,8 @@ namespace Fungus
         [Tooltip("Portrait that represents speaking character")]
         [SerializeField] protected Sprite portrait;
 
-        [Tooltip("Voiceover audio to play when writing the text")]
-        [SerializeField] protected AudioClip voiceOverClip;
+        [Tooltip("Audio to play when writing the text")]
+        [SerializeField] protected string WwiseSoundName;
 
         [Tooltip("Always show this Say text when the command is executed multiple times")]
         [SerializeField] protected bool showAlways = true;
@@ -77,6 +77,16 @@ namespace Fungus
 
         public override void OnEnter()
         {
+            GameObject mm = GameObject.Find("SoundMM");
+            if (mm != null)
+            {
+                mm.SendMessage("PlaySound");
+            }
+            else
+            {
+                Debug.LogError("No Sound Middle Man found! Ensure the game object is named exactly 'SoundMM'");
+            }
+
             if (!showAlways && executionCount >= showCount)
             {
                 Continue();
@@ -125,7 +135,7 @@ namespace Fungus
 
             string subbedText = flowchart.SubstituteVariables(displayText);
 
-            sayDialog.Say(subbedText, !extendPrevious, waitForClick, fadeWhenDone, stopVoiceover, waitForVO, voiceOverClip, delegate {
+            sayDialog.Say(subbedText, !extendPrevious, waitForClick, fadeWhenDone, stopVoiceover, waitForVO, null, delegate {
                 Continue();
             });
         }

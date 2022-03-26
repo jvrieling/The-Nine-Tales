@@ -91,7 +91,7 @@ namespace Fungus.EditorUtils
             portraitProp = serializedObject.FindProperty("portrait");
             storyTextProp = serializedObject.FindProperty("storyText");
             descriptionProp = serializedObject.FindProperty("description");
-            voiceOverClipProp = serializedObject.FindProperty("voiceOverClip");
+            voiceOverClipProp = serializedObject.FindProperty("WwiseSoundName");
             showAlwaysProp = serializedObject.FindProperty("showAlways");
             showCountProp = serializedObject.FindProperty("showCount");
             extendPreviousProp = serializedObject.FindProperty("extendPrevious");
