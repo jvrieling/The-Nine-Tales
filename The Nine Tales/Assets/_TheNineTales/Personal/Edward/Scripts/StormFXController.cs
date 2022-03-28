@@ -5,11 +5,13 @@ using UnityEngine.VFX;
 
 public class StormFXController : MonoBehaviour
 {
-    VisualEffect storm;
+    public VisualEffect storm;
+    public VisualEffect thunder;
 
-    private void Awake()
+    private void Update()
     {
-        storm = GetComponentInChildren<VisualEffect>();
+        if (Input.GetKeyDown(KeyCode.Space))
+            PlayThunder();
     }
 
     public void PlayStorm()
@@ -20,5 +22,11 @@ public class StormFXController : MonoBehaviour
     public void StopStorm()
     {
         storm.Stop();
+    }
+
+    public void PlayThunder()
+    {
+        thunder.Stop();
+        thunder.Play();
     }
 }
