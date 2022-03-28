@@ -605,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585532797603836047
+    m_lastTime: -8585531297503117944
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -744,26 +744,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Ambient_Storm
-      guid: 09bb27857265eb489b56388dff9fb915
-      id: 1893400265
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
-      - ElementName: Ambient_Regions
-        ObjectType: 4
-        guid: 8b25ec1e21d8e3409f2034779ab46d98
-      - ElementName: Ambient_Storm
-        ObjectType: 3
-        guid: 09bb27857265eb489b56388dff9fb915
-      Path: Events/Default Work Unit/Ambient_Regions/Ambient_Storm
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Celestial
       guid: 55929019721641478318f086f83bf8cf
       id: 540064805
@@ -784,6 +764,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Clear_Weather
+      guid: df5b095c35ff824ca230d9bc30a30bb7
+      id: 3514410953
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Clear_Weather
+        ObjectType: 3
+        guid: df5b095c35ff824ca230d9bc30a30bb7
+      Path: Events/Default Work Unit/Ambient_Regions/Clear_Weather
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Clear_Weather_Stop
+      guid: 9f2d1a4256129c4b8e0e5c14351fd15e
+      id: 1327770748
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Ambient_Regions
+        ObjectType: 4
+        guid: 8b25ec1e21d8e3409f2034779ab46d98
+      - ElementName: Clear_Weather_Stop
+        ObjectType: 3
+        guid: 9f2d1a4256129c4b8e0e5c14351fd15e
+      Path: Events/Default Work Unit/Ambient_Regions/Clear_Weather_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Dies_LOL
       guid: 0bfaf14f1b93264b9aa3b9a12323e558
       id: 2550655564

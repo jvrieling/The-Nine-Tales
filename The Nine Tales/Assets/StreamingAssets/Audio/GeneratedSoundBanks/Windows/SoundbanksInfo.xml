@@ -710,7 +710,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1866658237" Language="SFX" Hash="132457257">
+		<SoundBank Id="1866658237" Language="SFX" Hash="716146355">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambient_Regions</ObjectPath>
 			<ShortName>Ambient_Regions</ShortName>
 			<Path>Ambient_Regions.bnk</Path>
@@ -721,25 +721,31 @@
 				<Event Id="1516204802" Name="Ambient_Dream_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Dream_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="4234424953" Name="Ambient_Forest" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest" DurationType="Infinite"/>
 				<Event Id="4164439052" Name="Ambient_Forest_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3514410953" Name="Clear_Weather" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Clear_Weather" DurationType="Infinite"/>
+				<Event Id="1327770748" Name="Clear_Weather_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Clear_Weather_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2043403999" Name="Rain" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain" DurationType="Infinite"/>
 				<Event Id="1737644906" Name="Rain_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="293346966" Language="SFX">
 					<ShortName>Rain\9T_SD_Rain Loop.wav</ShortName>
-					<Path>SFX/Rain/9T_SD_Rain Loop_94A96B2A.wem</Path>
+					<Path>SFX/Rain/9T_SD_Rain Loop_3DD4C042.wem</Path>
 				</File>
 				<File Id="953872696" Language="SFX">
 					<ShortName>9T_SD_Forest Ambience Loop.wav</ShortName>
-					<Path>SFX/9T_SD_Forest Ambience Loop_C5579977.wem</Path>
+					<Path>SFX/9T_SD_Forest Ambience Loop_C2916AEC.wem</Path>
+				</File>
+				<File Id="970988566" Language="SFX">
+					<ShortName>9T_SD_Clear Weather.wav</ShortName>
+					<Path>SFX/9T_SD_Clear Weather_79859859.wem</Path>
 				</File>
 				<File Id="990086189" Language="SFX">
 					<ShortName>9T_SD_Dream Ambience.wav</ShortName>
-					<Path>SFX/9T_SD_Dream Ambience_D79FB2B7.wem</Path>
+					<Path>SFX/9T_SD_Dream Ambience_9ACE594C.wem</Path>
 				</File>
 				<File Id="1016474877" Language="SFX">
 					<ShortName>9T_SD_Fireplace Loop.wav</ShortName>
-					<Path>SFX/9T_SD_Fireplace Loop_D79FB2B7.wem</Path>
+					<Path>SFX/9T_SD_Fireplace Loop_9ACE594C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
