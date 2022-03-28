@@ -127,20 +127,18 @@ public class CameraController : MonoBehaviour
                 zoomTimer = Mathf.Clamp(zoomTimer + Time.deltaTime, 0, zoomTime);
 
                 cam.orthographicSize = Mathf.Lerp(startingSize, targetSize, zoomCurve.Evaluate(zoomTimer / zoomTime));
-
                 if (zoomTimer >= zoomTime) zooming = false;
-            }
-
-            if (zoomedIn)
-            {
-                if (stormVFX != null) stormVFX.transform.localPosition = new Vector3(0, -0.82f, 0);
-            }
-            else
-            {
-                if (stormVFX != null) stormVFX.transform.localPosition = Vector3.zero;
             }
         }
 
+        if (zoomedIn)
+        {
+            if (stormVFX != null) stormVFX.transform.localPosition = new Vector3(0, -0.82f, 0);
+        }
+        else
+        {
+            if (stormVFX != null) stormVFX.transform.localPosition = Vector3.zero;
+        }
     }
     public void OnDrawGizmosSelected()
     {
