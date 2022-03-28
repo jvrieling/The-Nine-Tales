@@ -8,12 +8,6 @@ public class StormFXController : MonoBehaviour
     public VisualEffect storm;
     public VisualEffect thunder;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-            PlayThunder();
-    }
-
     public void PlayStorm()
     {
         storm.Play();
