@@ -5,12 +5,8 @@ using UnityEngine.VFX;
 
 public class StormFXController : MonoBehaviour
 {
-    VisualEffect storm;
-
-    private void Awake()
-    {
-        storm = GetComponentInChildren<VisualEffect>();
-    }
+    public VisualEffect storm;
+    public VisualEffect thunder;
 
     public void PlayStorm()
     {
@@ -20,5 +16,11 @@ public class StormFXController : MonoBehaviour
     public void StopStorm()
     {
         storm.Stop();
+    }
+
+    public void PlayThunder()
+    {
+        thunder.Stop();
+        thunder.Play();
     }
 }
