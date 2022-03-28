@@ -330,7 +330,7 @@ MonoBehaviour:
   deathSound:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: a044fdbdc3c4d4c9f8ecdd88e71097f2, type: 2}
 --- !u!212 &246354546436543992
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
   - {x: -1.1501884, y: -0.855193, z: 0}
   m_ShapePathHash: -906315697
   m_Mesh: {fileID: 0}
-  m_InstanceId: 101300
+  m_InstanceId: 39342
 --- !u!114 &8230388740279865810
 MonoBehaviour:
   m_ObjectHideFlags: 0
