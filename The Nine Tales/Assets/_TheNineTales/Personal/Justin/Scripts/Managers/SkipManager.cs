@@ -7,6 +7,9 @@ public class SkipManager : MonoBehaviour
 {
     public static Flowchart skippableFlowchart;
     private static Flowchart chartOnSkip;
+    private static Flowchart chartToSkipTo;
+    private static string block;
+
 
     private void Awake()
     {
@@ -15,12 +18,22 @@ public class SkipManager : MonoBehaviour
 
     public static void UpdateSkippableFlowchart(Flowchart chart)
     {
+        Debug.Log("updating " + chartOnSkip);
         skippableFlowchart = chart;
+    }
+    public static void UpdateSkippableFlowchart(Flowchart chart, Flowchart skipTo, string blockToExecute)
+    {
+        Debug.Log("updating skip to block");
+        skippableFlowchart = chart;
+        chartToSkipTo = skipTo;
+        block = blockToExecute;
     }
 
     public static void ClearSkippableFlowchart()
     {
         skippableFlowchart = null;
+        chartToSkipTo = null;
+        block = null;
     }
 
     public static void Skip()
@@ -28,7 +41,16 @@ public class SkipManager : MonoBehaviour
         if (skippableFlowchart != null)
         {
             skippableFlowchart.StopAllBlocks();
-            chartOnSkip.ExecuteBlock("skip");
+
+            if(chartToSkipTo != null)
+            {
+                Debug.Log("skipto " + chartToSkipTo);
+                chartToSkipTo.ExecuteBlock((block != null && block != "") ? block : "skip");
+            } else
+            {
+                Debug.Log("skip " + chartOnSkip);
+                chartOnSkip.ExecuteBlock("skip");
+            }
         }
     }
 
