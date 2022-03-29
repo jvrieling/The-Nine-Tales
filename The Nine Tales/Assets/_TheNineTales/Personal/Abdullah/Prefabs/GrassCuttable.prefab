@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 24c35f3c34632b04b9b8a77d70fc7051, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  cutVFX: {fileID: 0}
+  cutVFX: {fileID: 3447748050686872398, guid: 1c028b0e265a19e4c9b9582341499115, type: 3}
 --- !u!61 &1900708392415470317
 BoxCollider2D:
   m_ObjectHideFlags: 0
