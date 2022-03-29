@@ -1091,9 +1091,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 687144217}
-  selectedCommands:
-  - {fileID: 687144219}
+  - {fileID: 687144208}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1262,7 +1261,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &687144218
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1283,7 +1282,7 @@ MonoBehaviour:
   rotTweenType: 4
 --- !u!114 &687144219
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

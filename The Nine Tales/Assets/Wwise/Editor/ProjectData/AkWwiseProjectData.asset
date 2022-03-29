@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585532881270222626
+    m_lastTime: -8585530203476354578
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -605,8 +605,31 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585531297503117944
+    m_lastTime: -8585530207736088591
     List:
+    - name: Ahsa_Music_Stop
+      guid: 60a35243ca0ba144af47a1029669ba61
+      id: 3008146245
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Asha
+        ObjectType: 4
+        guid: 35e06d5f2b3f9647bac143a030949439
+      - ElementName: Ahsa_Music_Stop
+        ObjectType: 3
+        guid: 60a35243ca0ba144af47a1029669ba61
+      Path: Events/Default Work Unit/Music/Asha/Ahsa_Music_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
       id: 3652009445
@@ -744,9 +767,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Celestial
-      guid: 55929019721641478318f086f83bf8cf
-      id: 540064805
+    - name: Asha
+      guid: 35e06d5f2b3f9647bac143a030949439
+      id: 3032062520
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -757,10 +780,33 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: 3bada98847689943b5bfbd6066eb1240
-      - ElementName: Celestial
+      - ElementName: Asha
         ObjectType: 4
-        guid: 55929019721641478318f086f83bf8cf
-      Path: Events/Default Work Unit/Music/Celestial
+        guid: 35e06d5f2b3f9647bac143a030949439
+      Path: Events/Default Work Unit/Music/Asha
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Asha_Dinner_Beginning
+      guid: 90efdb28a1807b478e0c5887e316384d
+      id: 1524497379
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Asha
+        ObjectType: 4
+        guid: 35e06d5f2b3f9647bac143a030949439
+      - ElementName: Asha_Dinner_Beginning
+        ObjectType: 3
+        guid: 90efdb28a1807b478e0c5887e316384d
+      Path: Events/Default Work Unit/Music/Asha/Asha_Dinner_Beginning
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -864,6 +910,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: First_Meet_Asha
+      guid: 0d28a23d7b0eed4d8d86e4c35a684a8c
+      id: 4167876821
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Asha
+        ObjectType: 4
+        guid: 35e06d5f2b3f9647bac143a030949439
+      - ElementName: First_Meet_Asha
+        ObjectType: 3
+        guid: 0d28a23d7b0eed4d8d86e4c35a684a8c
+      Path: Events/Default Work Unit/Music/Asha/First_Meet_Asha
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Forest
       guid: cb83f53bcbcf254c98d3b327726c85b7
       id: 491961918
@@ -905,8 +974,8 @@ MonoBehaviour:
         guid: 4bb6e579f9462244a0751ffcea658b13
       Path: Events/Default Work Unit/Music/Forest/Forest_Theme
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Forest_Theme_Stop
       guid: 84112746bece5848b6aaaf2d0e14289a
       id: 689545919
@@ -1050,6 +1119,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 8.25
       minDuration: 8.25
+    - name: Lie_To_Asha
+      guid: 0bc84dce513d834d83b9d3efa89333ee
+      id: 3648203651
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Asha
+        ObjectType: 4
+        guid: 35e06d5f2b3f9647bac143a030949439
+      - ElementName: Lie_To_Asha
+        ObjectType: 3
+        guid: 0bc84dce513d834d83b9d3efa89333ee
+      Path: Events/Default Work Unit/Music/Asha/Lie_To_Asha
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Lumb
       guid: c30e7225b96310429133430be9a8fa8c
       id: 660996473
@@ -1220,8 +1312,8 @@ MonoBehaviour:
         guid: cdcc45379b2fd549909c745f3ff50b79
       Path: Events/Default Work Unit/Music/Path/Path_Theme
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Path_Theme_Stop
       guid: d8fad1f17a03884fbf35823025c9e528
       id: 1817047765
@@ -1265,6 +1357,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3.5
       minDuration: 3.5
+    - name: Play_Music
+      guid: c0dd2621cf74754998091279fa6adba1
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Play_Music
+        ObjectType: 3
+        guid: c0dd2621cf74754998091279fa6adba1
+      Path: Events/Default Work Unit/Music/Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Player
       guid: fc4f10657dbb514cacef8ad9e5cbb9be
       id: 1069431850
@@ -1362,6 +1474,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.383243
       minDuration: 0.383243
+    - name: Spirit
+      guid: 55929019721641478318f086f83bf8cf
+      id: 751402238
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Spirit
+        ObjectType: 4
+        guid: 55929019721641478318f086f83bf8cf
+      Path: Events/Default Work Unit/Music/Spirit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Spirit_Theme
       guid: 6b8782d6d073b7439a1352140972dd38
       id: 627254640
@@ -1375,16 +1507,16 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: 3bada98847689943b5bfbd6066eb1240
-      - ElementName: Celestial
+      - ElementName: Spirit
         ObjectType: 4
         guid: 55929019721641478318f086f83bf8cf
       - ElementName: Spirit_Theme
         ObjectType: 3
         guid: 6b8782d6d073b7439a1352140972dd38
-      Path: Events/Default Work Unit/Music/Celestial/Spirit_Theme
+      Path: Events/Default Work Unit/Music/Spirit/Spirit_Theme
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Spirit_Theme_Stop
       guid: 51884525f84ac34f813ec6c82eb50516
       id: 3845819007
@@ -1398,13 +1530,33 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 4
         guid: 3bada98847689943b5bfbd6066eb1240
-      - ElementName: Celestial
+      - ElementName: Spirit
         ObjectType: 4
         guid: 55929019721641478318f086f83bf8cf
       - ElementName: Spirit_Theme_Stop
         ObjectType: 3
         guid: 51884525f84ac34f813ec6c82eb50516
-      Path: Events/Default Work Unit/Music/Celestial/Spirit_Theme_Stop
+      Path: Events/Default Work Unit/Music/Spirit/Spirit_Theme_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music
+      guid: 25aa3a88e60b6b4b81b0c46b2da17516
+      id: 2837384057
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Stop_Music
+        ObjectType: 3
+        guid: 25aa3a88e60b6b4b81b0c46b2da17516
+      Path: Events/Default Work Unit/Music/Stop_Music
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1449,8 +1601,8 @@ MonoBehaviour:
         guid: c74c412f9d6e7743862076538119737c
       Path: Events/Default Work Unit/Music/Storm/Storm_Theme
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Storm_Theme_Stop
       guid: e69a121288144042a0f6eedfb25e0083
       id: 1560666861
@@ -1474,6 +1626,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Tell_Asha_Truth
+      guid: 10d2c532e9effb4fa527ae0a8929d6c8
+      id: 1246123756
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Asha
+        ObjectType: 4
+        guid: 35e06d5f2b3f9647bac143a030949439
+      - ElementName: Tell_Asha_Truth
+        ObjectType: 3
+        guid: 10d2c532e9effb4fa527ae0a8929d6c8
+      Path: Events/Default Work Unit/Music/Asha/Tell_Asha_Truth
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Thunder_Strike
       guid: 6d441fe4559c354e9f1ebd32eb0f94b7
       id: 735449646
@@ -1531,9 +1706,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Village_Neutra_Base
-      guid: 397ac682b179a7458684eec0a1c7b823
-      id: 3605124939
+    - name: Village_Music_Stop
+      guid: 3dac6845ce94044da64fcb8414559f31
+      id: 2672801990
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1547,10 +1722,33 @@ MonoBehaviour:
       - ElementName: Village
         ObjectType: 4
         guid: 175265ed4060474a9f34e17205b6efdd
-      - ElementName: Village_Neutra_Base
+      - ElementName: Village_Music_Stop
+        ObjectType: 3
+        guid: 3dac6845ce94044da64fcb8414559f31
+      Path: Events/Default Work Unit/Music/Village/Village_Music_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Village_Neutral_Base
+      guid: 397ac682b179a7458684eec0a1c7b823
+      id: 4142521497
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Village
+        ObjectType: 4
+        guid: 175265ed4060474a9f34e17205b6efdd
+      - ElementName: Village_Neutral_Base
         ObjectType: 3
         guid: 397ac682b179a7458684eec0a1c7b823
-      Path: Events/Default Work Unit/Music/Village/Village_Neutra_Base
+      Path: Events/Default Work Unit/Music/Village/Village_Neutral_Base
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1774,7 +1972,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ef20ec574afe3649810385069bd8b529
     GuidInternal: 
-    m_lastTime: -8585533753820269817
+    m_lastTime: -8585530290180286605
     List:
     - name: Asha_Cutscenes
       guid: a7459891c73ce148b7307f9c4fe78787
@@ -1839,6 +2037,22 @@ MonoBehaviour:
         - ElementName: Lie_To_Asha
           ObjectType: 8
           guid: b91c049ed85cd1489de47ffa98984ef8
+      - name: No_Asha
+        guid: 07a37552ccd1f4498af90717f72922af
+        id: 3581412690
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Asha_Cutscenes
+          ObjectType: 9
+          guid: a7459891c73ce148b7307f9c4fe78787
+        - ElementName: No_Asha
+          ObjectType: 8
+          guid: 07a37552ccd1f4498af90717f72922af
       - name: None
         guid: 9a53e25f2679c84e93628c8dfd6949d1
         id: 748895195
@@ -2219,6 +2433,22 @@ MonoBehaviour:
         guid: 7b3d870a337ce94d9ce83edec2abdc20
       Path: States/Default Work Unit/Village_Convos
       values:
+      - name: Arrive_In_Village
+        guid: df20a76fdb05c54983e11543a4e69b7c
+        id: 1346965307
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Village_Convos
+          ObjectType: 9
+          guid: 7b3d870a337ce94d9ce83edec2abdc20
+        - ElementName: Arrive_In_Village
+          ObjectType: 8
+          guid: df20a76fdb05c54983e11543a4e69b7c
       - name: None
         guid: 14a2f5ec77661b4b80943b183ce4a93d
         id: 748895195
@@ -2235,6 +2465,22 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 14a2f5ec77661b4b80943b183ce4a93d
+      - name: Not_In_Village
+        guid: 162957436e9ea346861218db8f3742d3
+        id: 3126243287
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Village_Convos
+          ObjectType: 9
+          guid: 7b3d870a337ce94d9ce83edec2abdc20
+        - ElementName: Not_In_Village
+          ObjectType: 8
+          guid: 162957436e9ea346861218db8f3742d3
       - name: Talk_To_Doakes
         guid: d236ec143752064d9fe0e32482fc4730
         id: 3950198291
@@ -2315,7 +2561,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000c0000000d0000001400000015000000160000001700000018000000250000002600000029000000390000003b0000003c0000003d0000003e0000003f0000004e000000560c0000
+  ExpandedWaapiItemIds: 0100000006000000070000000a0000000b0000000d0000001400000015000000160000001700000018000000250000002600000029000000390000003b0000003c0000003d0000003e0000003f00000044000000450000004e0000005a00000063000000560c0000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
