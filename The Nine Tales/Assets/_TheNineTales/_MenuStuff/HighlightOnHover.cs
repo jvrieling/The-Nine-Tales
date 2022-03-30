@@ -21,14 +21,14 @@ public class HighlightOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public void OnPointerEnter(PointerEventData eventData)
     {
         img.sprite = hoverButton;
-        normalTextImage.SetActive(false);
-        hoverTextImage.SetActive(true);
+        if (normalTextImage != null) normalTextImage.SetActive(false);
+        if (hoverTextImage != null) hoverTextImage.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         img.sprite = normalButton;
-        hoverTextImage.SetActive(false);
-        normalTextImage.SetActive(true);
+        if (hoverTextImage != null) hoverTextImage.SetActive(false);
+        if (normalTextImage != null) normalTextImage.SetActive(true);
     }
 }
