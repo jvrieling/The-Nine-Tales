@@ -7,41 +7,28 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(Button))]
 public class HighlightOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public int fontSizeBoost = 7;
 
-    public Color hoverColor, hoverColor2;
-    private Color normalColor, normalColor2;
-    private UIGradient gradient;
+    public GameObject normalTextImage, hoverTextImage;
+    public Sprite normalButton, hoverButton;
 
-    private Animator an;
+    private Image img;
 
     private void Awake()
     {
-        an = GetComponent<Animator>();
-        /*gradient = GetComponent<UIGradient>();
-        if(gradient != null)
-        {
-            normalColor = gradient.m_color1;
-            normalColor2 = gradient.m_color2;
-        }*/
+        img = GetComponent<Image>();
     }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
-        an.SetBool("MouseOver", true);
-        /*if(gradient != null)
-        {
-            gradient.m_color1 = hoverColor;
-            gradient.m_color2 = hoverColor2;
-        }*/
+        img.sprite = hoverButton;
+        normalTextImage.SetActive(false);
+        hoverTextImage.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        an.SetBool("MouseOver", false);
-        /*if (gradient != null)
-        {
-            gradient.m_color1 = normalColor;
-            gradient.m_color2 = normalColor2;
-        }*/
+        img.sprite = normalButton;
+        hoverTextImage.SetActive(false);
+        normalTextImage.SetActive(true);
     }
 }

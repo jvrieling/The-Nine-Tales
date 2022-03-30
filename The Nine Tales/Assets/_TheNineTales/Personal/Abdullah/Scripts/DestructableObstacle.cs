@@ -6,7 +6,8 @@ public class DestructableObstacle : MonoBehaviour
 {
     public float damage = 1000;
 
-
+    public GameObject destroyedPrefab;
+    public Spider spider;
     public AK.Wwise.Event destroySound;
 
     void OnTriggerEnter2D(Collider2D col)
@@ -15,8 +16,11 @@ public class DestructableObstacle : MonoBehaviour
         {
             if(col.GetComponent<Player>().isDashing == true)
             {
+                if (destroySound != null) destroySound.Post(gameObject);
+                if (destroyedPrefab != null) Instantiate(destroyedPrefab, transform.position, Quaternion.identity);
+                if (spider != null) spider.Kill();
                 Destroy(gameObject);
-                if(destroySound!= null) destroySound.Post(gameObject);
+                
             }
             else
             {
@@ -24,17 +28,6 @@ public class DestructableObstacle : MonoBehaviour
                 col.GetComponent<Player>().addDamage(damage);
             }
 
-        }
-    }
-    private void OnTriggerStay2D(Collider2D col)
-    {
-        if (col.GetComponent<Player>() != null)
-        {
-            if (col.GetComponent<Player>().isDashing == true)
-            {
-                Destroy(gameObject);
-                if (destroySound != null) destroySound.Post(gameObject);
-            }
         }
     }
 }

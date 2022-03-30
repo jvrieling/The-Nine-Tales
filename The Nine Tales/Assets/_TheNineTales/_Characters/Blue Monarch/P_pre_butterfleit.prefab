@@ -4824,6 +4824,7 @@ GameObject:
   - component: {fileID: 7153130194183990197}
   - component: {fileID: 7153130194183990194}
   - component: {fileID: 7153130194183990199}
+  - component: {fileID: 1469182056}
   m_Layer: 0
   m_Name: P_pre_butterfleit
   m_TagString: Untagged
@@ -4997,3 +4998,17 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1469182056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7153130194183990195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956dcf7598470f340848554bb5124fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.7
+  moveRange: 2.5
