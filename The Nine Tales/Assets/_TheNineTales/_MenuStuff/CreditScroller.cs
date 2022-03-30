@@ -18,6 +18,10 @@ public class CreditScroller : MonoBehaviour
             SceneManager.LoadScene("P_sc_MainMenu");
         }
         
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton7))
+        {
+            SceneManager.LoadScene("P_sc_MainMenu");
+        }
 
     }
 }
