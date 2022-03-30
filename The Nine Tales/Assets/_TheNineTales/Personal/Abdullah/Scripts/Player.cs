@@ -59,7 +59,8 @@ public class Player : MonoBehaviour
     public bool GroundValue;
     public SpriteRenderer PlayerSprite;
 
-    bool CanDash = true;
+    [HideInInspector]
+    public bool CanDash = true;
     public bool isDashing = false;
 
     public enum FacingDirection { Left, Right }
