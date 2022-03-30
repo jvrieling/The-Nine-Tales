@@ -10,6 +10,7 @@ public class SkipManager : MonoBehaviour
     private static Flowchart chartToSkipTo;
     private static string block;
 
+    public static bool canSkip;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class SkipManager : MonoBehaviour
     {
         Debug.Log("updating " + chartOnSkip);
         skippableFlowchart = chart;
+        canSkip = true;
     }
     public static void UpdateSkippableFlowchart(Flowchart chart, Flowchart skipTo, string blockToExecute)
     {
@@ -27,6 +29,7 @@ public class SkipManager : MonoBehaviour
         skippableFlowchart = chart;
         chartToSkipTo = skipTo;
         block = blockToExecute;
+        canSkip = true;
     }
 
     public static void ClearSkippableFlowchart()
@@ -34,6 +37,7 @@ public class SkipManager : MonoBehaviour
         skippableFlowchart = null;
         chartToSkipTo = null;
         block = null;
+        canSkip = false;
     }
 
     public static void Skip()
@@ -52,6 +56,8 @@ public class SkipManager : MonoBehaviour
                 chartOnSkip.ExecuteBlock("skip");
             }
         }
+
+        ClearSkippableFlowchart();
     }
 
     private void Update()
