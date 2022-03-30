@@ -1,10 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
 	660996473	Lumb			\Default Work Unit\Music\Village\Lumb	
+	1346965307	Arrive_In_Village			\Default Work Unit\Music\Village\Arrive_In_Village	
 	2429712994	Doakes			\Default Work Unit\Music\Village\Doakes	
+	2672801990	Village_Music_Stop			\Default Work Unit\Music\Village\Village_Music_Stop	
+	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
+	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
 	3110296066	Myla			\Default Work Unit\Music\Village\Myla	
-	3605124939	Village_Neutra_Base			\Default Work Unit\Music\Village\Village_Neutra_Base	
+	4142521497	Village_Neutral_Base			\Default Work Unit\Music\Village\Village_Neutral_Base	
 
 State Group	ID	Name			Wwise Object Path	Notes
+	259813538	Asha_Cutscenes			\Default Work Unit\Asha_Cutscenes	
 	540064805	Celestial			\Default Work Unit\Celestial	
 	1035893910	Village_Convos			\Default Work Unit\Village_Convos	
 	2005704188	Main_Menu			\Default Work Unit\Main_Menu	
@@ -13,13 +18,22 @@ State Group	ID	Name			Wwise Object Path	Notes
 	3708762888	Forest_Path			\Default Work Unit\Forest_Path	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Asha_Cutscenes			
+	1246123756	Tell_Asha_Truth	Asha_Cutscenes			
+	1524497379	Asha_Dinner_Beginning	Asha_Cutscenes			
+	3581412690	No_Asha	Asha_Cutscenes			
+	3648203651	Lie_To_Asha	Asha_Cutscenes			
+	4167876821	First_Meet_Asha	Asha_Cutscenes			
 	82290036	No_Spirit	Celestial			
 	748895195	None	Celestial			
 	4086892909	Talking_To_Spirit	Celestial			
 	748895195	None	Village_Convos			
+	1346965307	Arrive_In_Village	Village_Convos			
 	2020567476	Talk_To_Lumb	Village_Convos			
+	3126243287	Not_In_Village	Village_Convos			
 	3289157511	Talk_To_Myla	Village_Convos			
 	3950198291	Talk_To_Doakes	Village_Convos			
+	4142521497	Village_Neutral_Base	Village_Convos			
 	681133780	Main_Menu_ON	Main_Menu			
 	748895195	None	Main_Menu			
 	3309997106	Main_Menu_OFF	Main_Menu			
@@ -35,13 +49,45 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	7375695	Talk_To_Lumb	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4		
+	20062792	Not_In_Village	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village		
+	159438822	Not_In_Village	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageBase_75_4_4		
+	172994180	Village_Neutral_Base	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageMyla_75_4_4		
+	219301466	Tell_Asha_Truth	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
+	273292183	First_Meet_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
+	407911947	Tell_Asha_Truth	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
+	421890761	Village_Neutral_Base	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4		
+	444615271	Not_In_Village	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files		
+	459124569	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
+	459271292	Asha_Dinner_Beginning	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
 	472904638	Talk_To_Doakes	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4		
+	482547958	Asha_Dinner_Beginning	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
 	489209408	Talk_To_Myla	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4		
+	513174376	Not_In_Village	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageMyla_75_4_4		
+	525821330	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
 	568612135	Talk_To_Myla	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4		
+	593448252	Asha_Dinner_Beginning	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
+	695212497	Not_In_Village	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4		
+	712535310	No_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
+	735826238	Not_In_Storm	Forest_Storm	\Interactive Music Hierarchy\Default Work Unit\Music\Storm		
+	740676861	First_Meet_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
+	751179363	Tell_Asha_Truth	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
+	773188948	Not_In_Village	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4		
+	825311992	Village_Neutral_Base	Village_Convos	\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4		
+	845465422	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
+	905027963	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
+	964059028	First_Meet_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
+	974184612	No_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
+	1007911440	No_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	179886661	9T_M_VillageDoakes_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageDoakes_75_4_4		17499136
+	234135775	9T_M_BARN2_85_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN2_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth\9T_M_BARN2_85_4_4\9T_M_BARN2_85_4_4		6217476
 	247174006	9T_M_VillageMyla_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T Leah_s Audio Files\9T_M_VillageMyla_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageMyla_75_4_4		17499136
+	787756732	9T_M_BARN1_78_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN1_78_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha\9T_M_BARN1_78_4_4\9T_M_BARN1_78_4_4		10633404
+	806442598	9T_M_Storm_162_3-4-Intro	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Storm\9T_M_Storm_162_3-4-Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Storm\Storm_Intro\9T_M_Storm_162_3-4-Intro		3929536
+	806449591	9T_M_BARN3 (bottom layer)_85_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN3 (bottom layer)_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning\9T_M_BARN3 (bottom layer)_85_4_4\9T_M_BARN3 (bottom layer)_85_4_4		9758184
 	836872794	9T_M_VillageBase_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T Leah_s Audio Files\9T_M_VillageBase_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageBase_75_4_4		17499136
+	837528230	9T_M_BARN3-FULL_85_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN3-FULL_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha\9T_M_BARN3-FULL_85_4_4\9T_M_BARN3-FULL_85_4_4		9758184
+	905019884	9T_M_Storm_162_3-4-MainLoop	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Storm\9T_M_Storm_162_3-4-MainLoop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Storm\Storm_Loop\9T_M_Storm_162_3-4-MainLoop		17561120
 	1043467484	9T_M_VillageLumb_75_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Village\9T Leah_s Audio Files\9T_M_VillageLumb_75_4_4		17499136
 

@@ -1,16 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
 	100151336	Ambient_Campfire_Stop			\Default Work Unit\Ambient_Regions\Ambient_Campfire_Stop	
+	1327770748	Clear_Weather_Stop			\Default Work Unit\Ambient_Regions\Clear_Weather_Stop	
 	1516204802	Ambient_Dream_Stop			\Default Work Unit\Ambient_Regions\Ambient_Dream_Stop	
 	1737644906	Rain_Stop			\Default Work Unit\Ambient_Regions\Rain_Stop	
 	2043403999	Rain			\Default Work Unit\Ambient_Regions\Rain	
 	2155509767	Ambient_Dream			\Default Work Unit\Ambient_Regions\Ambient_Dream	
+	3514410953	Clear_Weather			\Default Work Unit\Ambient_Regions\Clear_Weather	
 	3652009445	Ambient_Campfire			\Default Work Unit\Ambient_Regions\Ambient_Campfire	
 	4164439052	Ambient_Forest_Stop			\Default Work Unit\Ambient_Regions\Ambient_Forest_Stop	
 	4234424953	Ambient_Forest			\Default Work Unit\Ambient_Regions\Ambient_Forest	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	293346966	9T_SD_Rain Loop	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Rain\9T_SD_Rain Loop_94A96B2A.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\9T_SD_Rain Loop		8064208
-	953872696	Ambient_Forest	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Forest Ambience Loop_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\Ambient_Forest		23040144
-	990086189	Ambient_Dream	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Dream Ambience_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\Ambient_Dream		23808144
-	1016474877	Ambient_Campfire	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Fireplace Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\Ambient_Campfire		13824144
+	293346966	9T_SD_Rain Loop	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Rain\9T_SD_Rain Loop_3DD4C042.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\9T_SD_Rain Loop		8064208
+	953872696	Ambient_Forest	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Forest Ambience Loop_C2916AEC.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\Ambient_Forest		23040144
+	970988566	Clear Weather	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Clear Weather_79859859.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\Clear Weather		9216144
+	990086189	Ambient_Dream	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Dream Ambience_9ACE594C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\Ambient_Dream		23808144
+	1016474877	Ambient_Campfire	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Fireplace Loop_9ACE594C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambient_Regions\Ambient_Campfire		13824144
 

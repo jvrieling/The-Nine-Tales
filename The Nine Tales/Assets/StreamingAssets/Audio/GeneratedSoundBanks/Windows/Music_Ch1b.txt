@@ -1,0 +1,72 @@
+Event	ID	Name			Wwise Object Path	Notes
+	674329606	Path_Theme			\Default Work Unit\Music\Path\Path_Theme	
+	1817047765	Path_Theme_Stop			\Default Work Unit\Music\Path\Path_Theme_Stop	
+	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
+	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	259813538	Asha_Cutscenes			\Default Work Unit\Asha_Cutscenes	
+	540064805	Celestial			\Default Work Unit\Celestial	
+	1035893910	Village_Convos			\Default Work Unit\Village_Convos	
+	2005704188	Main_Menu			\Default Work Unit\Main_Menu	
+	2378076306	Forest_Beginning			\Default Work Unit\Forest_Beginning	
+	3190862816	Forest_Storm			\Default Work Unit\Forest_Storm	
+	3708762888	Forest_Path			\Default Work Unit\Forest_Path	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Asha_Cutscenes			
+	1246123756	Tell_Asha_Truth	Asha_Cutscenes			
+	1524497379	Asha_Dinner_Beginning	Asha_Cutscenes			
+	3581412690	No_Asha	Asha_Cutscenes			
+	3648203651	Lie_To_Asha	Asha_Cutscenes			
+	4167876821	First_Meet_Asha	Asha_Cutscenes			
+	82290036	No_Spirit	Celestial			
+	748895195	None	Celestial			
+	4086892909	Talking_To_Spirit	Celestial			
+	748895195	None	Village_Convos			
+	1346965307	Arrive_In_Village	Village_Convos			
+	2020567476	Talk_To_Lumb	Village_Convos			
+	3126243287	Not_In_Village	Village_Convos			
+	3289157511	Talk_To_Myla	Village_Convos			
+	3950198291	Talk_To_Doakes	Village_Convos			
+	4142521497	Village_Neutral_Base	Village_Convos			
+	681133780	Main_Menu_ON	Main_Menu			
+	748895195	None	Main_Menu			
+	3309997106	Main_Menu_OFF	Main_Menu			
+	319536830	Not_In_Forest_Beginning	Forest_Beginning			
+	748895195	None	Forest_Beginning			
+	2025362124	In_Forest_Beginning	Forest_Beginning			
+	671813814	In_Storm	Forest_Storm			
+	748895195	None	Forest_Storm			
+	2151441764	Not_In_Storm	Forest_Storm			
+	748895195	None	Forest_Path			
+	3146944008	On_Forest_Path	Forest_Path			
+	3294614634	Not_On_Forest_Path	Forest_Path			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	219301466	Tell_Asha_Truth	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
+	273292183	First_Meet_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
+	407911947	Tell_Asha_Truth	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
+	459124569	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
+	459271292	Asha_Dinner_Beginning	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
+	466698154	Not_On_Forest_Path	Forest_Path	\Interactive Music Hierarchy\Default Work Unit\Music\Path		
+	482547958	Asha_Dinner_Beginning	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
+	525821330	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
+	593448252	Asha_Dinner_Beginning	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
+	712535310	No_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
+	740676861	First_Meet_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
+	751179363	Tell_Asha_Truth	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
+	845465422	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha		
+	905027963	Lie_To_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
+	964059028	First_Meet_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning		
+	974184612	No_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth		
+	1007911440	No_Asha	Asha_Cutscenes	\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	234135775	9T_M_BARN2_85_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN2_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Tell_Asha_Truth\9T_M_BARN2_85_4_4\9T_M_BARN2_85_4_4		6217476
+	507802866	9T_M_Path_162_3-4_MainLoop	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_Path_162_3-4_MainLoop_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Path\9T_M_Path_162_3-4_MainLoop\9T_M_Path_162_3-4_MainLoop		18085408
+	787756732	9T_M_BARN1_78_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN1_78_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\First_Meet_Asha\9T_M_BARN1_78_4_4\9T_M_BARN1_78_4_4		10633404
+	806449591	9T_M_BARN3 (bottom layer)_85_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN3 (bottom layer)_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Asha_Dinner_Beginning\9T_M_BARN3 (bottom layer)_85_4_4\9T_M_BARN3 (bottom layer)_85_4_4		9758184
+	837528230	9T_M_BARN3-FULL_85_4_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_BARN3-FULL_85_4_4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Lie_To_Asha\9T_M_BARN3-FULL_85_4_4\9T_M_BARN3-FULL_85_4_4		9758184
+	902148181	9T_M_Path_162_3-4_Intro	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_M_Path_162_3-4_Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Path\9T_M_Path_162_3-4_Intro\9T_M_Path_162_3-4_Intro		5764592
+
