@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8064907598542371360}
   - component: {fileID: 8064907598542371361}
   m_Layer: 8
-  m_Name: CollapseStone
+  m_Name: P_pre_CollapseStone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,6 +234,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollapseSpeed: {x: 0, y: -3}
   CollapseTime: 1
+  collapseSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &8064907598941982357
 GameObject:
   m_ObjectHideFlags: 0

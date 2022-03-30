@@ -27,7 +27,14 @@ public class Spider : MonoBehaviour
         rb.AddForce(RandomVector(launchForceMin, launchForceMax), ForceMode2D.Impulse);
         rb.AddTorque(Random.Range(launchTorqueMin, launchTorqueMax));
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        DestructableObstacle temp = collision.gameObject.GetComponent<DestructableObstacle>();
+        if(temp != null)
+        {
+            temp.spider = this;
+        }
+    }
     public static Vector3 RandomVector(Vector3 min, Vector3 max)
     {
         return new Vector3(Random.Range(min.x, max.x), Random.Range(min.y, max.y), Random.Range(min.z, max.z));
