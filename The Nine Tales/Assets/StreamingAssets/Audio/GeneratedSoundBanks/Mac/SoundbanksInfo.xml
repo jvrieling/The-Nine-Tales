@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="168053707" Language="SFX" Hash="4274013522">
+		<SoundBank Id="168053707" Language="SFX" Hash="3848462140">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Village</ObjectPath>
 			<ShortName>Music_Village</ShortName>
 			<Path>Music_Village.bnk</Path>
@@ -57,6 +57,10 @@
 				<File Id="247174006" Language="SFX">
 					<ShortName>9T Leah_s Audio Files\9T_M_VillageMyla_75_4_4.wav</ShortName>
 					<Path>SFX/9T Leah_s Audio Files/9T_M_VillageMyla_75_4_4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="833263565" Language="SFX">
+					<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+					<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
 				</File>
 				<File Id="836872794" Language="SFX">
 					<ShortName>9T Leah_s Audio Files\9T_M_VillageBase_75_4_4.wav</ShortName>
@@ -112,6 +116,13 @@
 				<StateGroup Id="2020567476" Name="Talk_To_Lumb" ObjectPath="\States\Default Work Unit\Village_Convos\Talk_To_Lumb" GUID="{59B4CFD5-78A5-4E5C-9D04-9A224D6794E8}">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Credits" GUID="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Credits\None" GUID="{34F3ABA5-B420-4462-BE5B-9564A17C17AD}"/>
+						<State Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits" GUID="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}"/>
+						<State Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits" GUID="{C2DCC874-F4FE-4432-8DC9-F2E446DE72DD}"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="2378076306" Name="Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning" GUID="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Beginning\None" GUID="{5B3807E2-16A7-4016-B69F-8AF367A81029}"/>
@@ -147,11 +158,31 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="707900965" Language="SFX" Hash="2873612787">
+		<SoundBank Id="707900965" Language="SFX" Hash="564957212">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1b</ObjectPath>
 			<ShortName>Music_Ch1b</ShortName>
 			<Path>Music_Ch1b.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1524497379" Name="Asha_Dinner_Beginning" ObjectPath="\Events\Default Work Unit\Music\Asha\Asha_Dinner_Beginning" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1524497379" Name="Asha_Dinner_Beginning" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Asha_Dinner_Beginning"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3516570971" Name="Asha_Music_Stop" ObjectPath="\Events\Default Work Unit\Music\Asha\Asha_Music_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3581412690" Name="No_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\No_Asha"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4167876821" Name="First_Meet_Asha" ObjectPath="\Events\Default Work Unit\Music\Asha\First_Meet_Asha" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4167876821" Name="First_Meet_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\First_Meet_Asha"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3648203651" Name="Lie_To_Asha" ObjectPath="\Events\Default Work Unit\Music\Asha\Lie_To_Asha" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3648203651" Name="Lie_To_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Lie_To_Asha"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="674329606" Name="Path_Theme" ObjectPath="\Events\Default Work Unit\Music\Path\Path_Theme" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3146944008" Name="On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\On_Forest_Path"/>
@@ -164,6 +195,11 @@
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Music" DurationType="Infinite"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Music\Stop_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1246123756" Name="Tell_Asha_Truth" ObjectPath="\Events\Default Work Unit\Music\Asha\Tell_Asha_Truth" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1246123756" Name="Tell_Asha_Truth" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Tell_Asha_Truth"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="234135775" Language="SFX">
@@ -181,6 +217,10 @@
 				<File Id="806449591" Language="SFX">
 					<ShortName>9T_M_BARN3 (bottom layer)_85_4_4.wav</ShortName>
 					<Path>SFX/9T_M_BARN3 (bottom layer)_85_4_4_D79FB2B7.wem</Path>
+				</File>
+				<File Id="833263565" Language="SFX">
+					<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
+					<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
 				</File>
 				<File Id="837528230" Language="SFX">
 					<ShortName>9T_M_BARN3-FULL_85_4_4.wav</ShortName>
@@ -223,11 +263,24 @@
 						<State Id="4142521497" Name="Village_Neutral_Base" ObjectPath="\States\Default Work Unit\Village_Convos\Village_Neutral_Base" GUID="{35A5CBB2-15AF-423F-9DD4-703C28ED05FD}"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="1246123756" Name="Tell_Asha_Truth" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Tell_Asha_Truth" GUID="{1EEB5117-8222-4F0F-BA5F-78F8368F0B28}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1524497379" Name="Asha_Dinner_Beginning" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Asha_Dinner_Beginning" GUID="{3C92C940-4E54-420A-ADDC-A615675A5F0A}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="2005704188" Name="Main_Menu" ObjectPath="\States\Default Work Unit\Main_Menu" GUID="{EB31297C-232F-489B-A6B2-EA4E14BBF873}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Main_Menu\None" GUID="{EECDEBA9-35C2-4850-AADA-AB3D076F0454}"/>
 						<State Id="681133780" Name="Main_Menu_ON" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_ON" GUID="{FB75ABD7-2950-4511-9E39-C209BA00B598}"/>
 						<State Id="3309997106" Name="Main_Menu_OFF" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_OFF" GUID="{B9A5F157-2046-47CB-BD66-6B922C1A3D9D}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Credits" GUID="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Credits\None" GUID="{34F3ABA5-B420-4462-BE5B-9564A17C17AD}"/>
+						<State Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits" GUID="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}"/>
+						<State Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits" GUID="{C2DCC874-F4FE-4432-8DC9-F2E446DE72DD}"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="2378076306" Name="Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning" GUID="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
@@ -250,6 +303,12 @@
 				<StateGroup Id="3294614634" Name="Not_On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\Not_On_Forest_Path" GUID="{AA786A00-2E1C-4566-A4AD-02B23A526EB4}">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="3581412690" Name="No_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\No_Asha" GUID="{5275A307-D1CC-49F4-8AF9-0717F72922AF}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3648203651" Name="Lie_To_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Lie_To_Asha" GUID="{9E041CB9-5CD8-48D1-9DE4-7FFA98984EF8}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="3708762888" Name="Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path" GUID="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Forest_Path\None" GUID="{88AD954D-EBF7-4308-A2FD-2B600EE76BCD}"/>
@@ -257,9 +316,12 @@
 						<State Id="3294614634" Name="Not_On_Forest_Path" ObjectPath="\States\Default Work Unit\Forest_Path\Not_On_Forest_Path" GUID="{AA786A00-2E1C-4566-A4AD-02B23A526EB4}"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="4167876821" Name="First_Meet_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\First_Meet_Asha" GUID="{1406EFCB-8CD3-4764-A877-D15C7F1C0DA0}">
+					<States/>
+				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="707900966" Language="SFX" Hash="3199491793">
+		<SoundBank Id="707900966" Language="SFX" Hash="2612022037">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1a</ObjectPath>
 			<ShortName>Music_Ch1a</ShortName>
 			<Path>Music_Ch1a.bnk</Path>
@@ -317,10 +379,6 @@
 					<ShortName>Forest\9T_M_Forest_162_3-4_Intro.wav</ShortName>
 					<Path>SFX/Forest/9T_M_Forest_162_3-4_Intro_D79FB2B7.wem</Path>
 				</File>
-				<File Id="507802866" Language="SFX">
-					<ShortName>9T_M_Path_162_3-4_MainLoop.wav</ShortName>
-					<Path>SFX/9T_M_Path_162_3-4_MainLoop_D79FB2B7.wem</Path>
-				</File>
 				<File Id="678418694" Language="SFX">
 					<ShortName>Forest\9T_M_Forest_162_3-4_MainLoop.wav</ShortName>
 					<Path>SFX/Forest/9T_M_Forest_162_3-4_MainLoop_D79FB2B7.wem</Path>
@@ -336,10 +394,6 @@
 				<File Id="806442598" Language="SFX">
 					<ShortName>Storm\9T_M_Storm_162_3-4-Intro.wav</ShortName>
 					<Path>SFX/Storm/9T_M_Storm_162_3-4-Intro_D79FB2B7.wem</Path>
-				</File>
-				<File Id="902148181" Language="SFX">
-					<ShortName>9T_M_Path_162_3-4_Intro.wav</ShortName>
-					<Path>SFX/9T_M_Path_162_3-4_Intro_D79FB2B7.wem</Path>
 				</File>
 				<File Id="905019884" Language="SFX">
 					<ShortName>Storm\9T_M_Storm_162_3-4-MainLoop.wav</ShortName>
@@ -399,6 +453,13 @@
 				</StateGroup>
 				<StateGroup Id="2151441764" Name="Not_In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\Not_In_Storm" GUID="{38CB6D15-3D4A-4C58-9626-A6E70963B114}">
 					<States/>
+				</StateGroup>
+				<StateGroup Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Credits" GUID="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Credits\None" GUID="{34F3ABA5-B420-4462-BE5B-9564A17C17AD}"/>
+						<State Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits" GUID="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}"/>
+						<State Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits" GUID="{C2DCC874-F4FE-4432-8DC9-F2E446DE72DD}"/>
+					</States>
 				</StateGroup>
 				<StateGroup Id="2378076306" Name="Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning" GUID="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
 					<States>
@@ -558,6 +619,9 @@
 						<State Id="4142521497" Name="Village_Neutral_Base" ObjectPath="\States\Default Work Unit\Village_Convos\Village_Neutral_Base" GUID="{35A5CBB2-15AF-423F-9DD4-703C28ED05FD}"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits" GUID="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="1246123756" Name="Tell_Asha_Truth" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Tell_Asha_Truth" GUID="{1EEB5117-8222-4F0F-BA5F-78F8368F0B28}">
 					<States/>
 				</StateGroup>
@@ -582,6 +646,13 @@
 				</StateGroup>
 				<StateGroup Id="2151441764" Name="Not_In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\Not_In_Storm" GUID="{38CB6D15-3D4A-4C58-9626-A6E70963B114}">
 					<States/>
+				</StateGroup>
+				<StateGroup Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Credits" GUID="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Credits\None" GUID="{34F3ABA5-B420-4462-BE5B-9564A17C17AD}"/>
+						<State Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits" GUID="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}"/>
+						<State Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits" GUID="{C2DCC874-F4FE-4432-8DC9-F2E446DE72DD}"/>
+					</States>
 				</StateGroup>
 				<StateGroup Id="2378076306" Name="Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning" GUID="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
 					<States>
@@ -615,6 +686,9 @@
 				<StateGroup Id="3581412690" Name="No_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\No_Asha" GUID="{5275A307-D1CC-49F4-8AF9-0717F72922AF}">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits" GUID="{C2DCC874-F4FE-4432-8DC9-F2E446DE72DD}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="3648203651" Name="Lie_To_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Lie_To_Asha" GUID="{9E041CB9-5CD8-48D1-9DE4-7FFA98984EF8}">
 					<States/>
 				</StateGroup>
@@ -639,7 +713,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="739204249">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2968302168">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -662,11 +736,106 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1840167780" Language="SFX" Hash="1303272374">
-			<ObjectPath>\SoundBanks\Default Work Unit\Music_Main_Menu</ObjectPath>
-			<ShortName>Music_Main_Menu</ShortName>
-			<Path>Music_Main_Menu.bnk</Path>
+		<SoundBank Id="1866658237" Language="SFX" Hash="2963850332">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambient_Regions</ObjectPath>
+			<ShortName>Ambient_Regions</ShortName>
+			<Path>Ambient_Regions.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3652009445" Name="Ambient_Campfire" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Campfire" DurationType="Infinite"/>
+				<Event Id="100151336" Name="Ambient_Campfire_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Campfire_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2155509767" Name="Ambient_Dream" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Dream" DurationType="Infinite"/>
+				<Event Id="1516204802" Name="Ambient_Dream_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Dream_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="4234424953" Name="Ambient_Forest" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest" DurationType="Infinite"/>
+				<Event Id="4164439052" Name="Ambient_Forest_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3514410953" Name="Clear_Weather" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Clear_Weather" DurationType="Infinite"/>
+				<Event Id="1327770748" Name="Clear_Weather_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Clear_Weather_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2043403999" Name="Rain" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain" DurationType="Infinite"/>
+				<Event Id="1737644906" Name="Rain_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="293346966" Language="SFX">
+					<ShortName>Rain\9T_SD_Rain Loop.wav</ShortName>
+					<Path>SFX/Rain/9T_SD_Rain Loop_3DD4C042.wem</Path>
+				</File>
+				<File Id="953872696" Language="SFX">
+					<ShortName>9T_SD_Forest Ambience Loop.wav</ShortName>
+					<Path>SFX/9T_SD_Forest Ambience Loop_C2916AEC.wem</Path>
+				</File>
+				<File Id="970988566" Language="SFX">
+					<ShortName>9T_SD_Clear Weather.wav</ShortName>
+					<Path>SFX/9T_SD_Clear Weather_79859859.wem</Path>
+				</File>
+				<File Id="990086189" Language="SFX">
+					<ShortName>9T_SD_Dream Ambience.wav</ShortName>
+					<Path>SFX/9T_SD_Dream Ambience_9ACE594C.wem</Path>
+				</File>
+				<File Id="1016474877" Language="SFX">
+					<ShortName>9T_SD_Fireplace Loop.wav</ShortName>
+					<Path>SFX/9T_SD_Fireplace Loop_9ACE594C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1973600711" Language="SFX" Hash="3246988747">
+			<ObjectPath>\SoundBanks\Default Work Unit\Environmental</ObjectPath>
+			<ShortName>Environmental</ShortName>
+			<Path>Environmental.bnk</Path>
+			<IncludedEvents>
+				<Event Id="403100568" Name="Platform_Breaking" ObjectPath="\Events\Default Work Unit\Environmental\Platform_Breaking" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5"/>
+				<Event Id="735449646" Name="Thunder_Strike" ObjectPath="\Events\Default Work Unit\Environmental\Thunder_Strike" DurationType="OneShot" DurationMin="7.5" DurationMax="8."/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="43055703" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform3.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform3_10C4C929.wem</Path>
+				</File>
+				<File Id="128565354" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-6.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-6_10C4C929.wem</Path>
+				</File>
+				<File Id="231549192" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-4.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-4_10C4C929.wem</Path>
+				</File>
+				<File Id="515735321" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-3.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-3_10C4C929.wem</Path>
+				</File>
+				<File Id="578756424" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform4.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform4_10C4C929.wem</Path>
+				</File>
+				<File Id="600895273" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform1.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform1_10C4C929.wem</Path>
+				</File>
+				<File Id="611506521" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-2.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-2_10C4C929.wem</Path>
+				</File>
+				<File Id="812297060" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-1.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-1_10C4C929.wem</Path>
+				</File>
+				<File Id="832889168" Language="SFX">
+					<ShortName>Thunder\9T_SD_Thunder-5.wav</ShortName>
+					<Path>SFX/Thunder/9T_SD_Thunder-5_10C4C929.wem</Path>
+				</File>
+				<File Id="988037317" Language="SFX">
+					<ShortName>Platform\9T_SD_Platform2.wav</ShortName>
+					<Path>SFX/Platform/9T_SD_Platform2_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3735044908" Language="SFX" Hash="241202579">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_Main_Theme</ObjectPath>
+			<ShortName>Music_Main_Theme</ShortName>
+			<Path>Music_Main_Theme.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1174846523" Name="In_Credits" ObjectPath="\Events\Default Work Unit\Music\Credits\In_Credits" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2557777556" Name="Main_Theme" ObjectPath="\Events\Default Work Unit\Music\Main Menu\Main_Theme" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="234135775" Language="SFX">
@@ -712,9 +881,13 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="833263565"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="833263565"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -741,9 +914,13 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="833263565"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="833263565"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -770,10 +947,14 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="339602112"/>
-																				<File Id="678418694"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="339602112"/>
+																						<File Id="678418694"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -800,9 +981,13 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="721417471"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="721417471"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -829,10 +1014,14 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="806442598"/>
-																				<File Id="905019884"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="806442598"/>
+																						<File Id="905019884"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -859,9 +1048,13 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="787756732"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="787756732"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -888,10 +1081,14 @@
 																<SwitchContainer SwitchValue="{90242FBB-9779-4100-84A1-552F6DB73A88}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="507802866"/>
-																				<File Id="902148181"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="507802866"/>
+																						<File Id="902148181"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -918,12 +1115,16 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{6FA720DF-05DB-49C5-83E1-1543A4E69B7C}">
-																			<Media>
-																				<File Id="179886661"/>
-																				<File Id="247174006"/>
-																				<File Id="836872794"/>
-																				<File Id="1043467484"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="179886661"/>
+																						<File Id="247174006"/>
+																						<File Id="836872794"/>
+																						<File Id="1043467484"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -950,12 +1151,16 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{14EC36D2-5237-4D06-9FE0-E32482FC4730}">
-																			<Media>
-																				<File Id="179886661"/>
-																				<File Id="247174006"/>
-																				<File Id="836872794"/>
-																				<File Id="1043467484"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="179886661"/>
+																						<File Id="247174006"/>
+																						<File Id="836872794"/>
+																						<File Id="1043467484"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -982,12 +1187,16 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{59B4CFD5-78A5-4E5C-9D04-9A224D6794E8}">
-																			<Media>
-																				<File Id="179886661"/>
-																				<File Id="247174006"/>
-																				<File Id="836872794"/>
-																				<File Id="1043467484"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="179886661"/>
+																						<File Id="247174006"/>
+																						<File Id="836872794"/>
+																						<File Id="1043467484"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -1014,9 +1223,13 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="806449591"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="806449591"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -1043,9 +1256,13 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="837528230"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="837528230"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -1072,9 +1289,13 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
-																			<Media>
-																				<File Id="234135775"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="234135775"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -1101,12 +1322,16 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{35A5CBB2-15AF-423F-9DD4-703C28ED05FD}">
-																			<Media>
-																				<File Id="179886661"/>
-																				<File Id="247174006"/>
-																				<File Id="836872794"/>
-																				<File Id="1043467484"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="179886661"/>
+																						<File Id="247174006"/>
+																						<File Id="836872794"/>
+																						<File Id="1043467484"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -1133,12 +1358,49 @@
 																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
 																	<Children>
 																		<SwitchContainer SwitchValue="{3F062BED-28C2-46C8-8A50-72BC6C69020C}">
-																			<Media>
-																				<File Id="179886661"/>
-																				<File Id="247174006"/>
-																				<File Id="836872794"/>
-																				<File Id="1043467484"/>
-																			</Media>
+																			<Children>
+																				<SwitchContainer SwitchValue="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+																					<Media>
+																						<File Id="179886661"/>
+																						<File Id="247174006"/>
+																						<File Id="836872794"/>
+																						<File Id="1043467484"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
+																		</SwitchContainer>
+																	</Children>
+																</SwitchContainer>
+															</Children>
+														</SwitchContainer>
+													</Children>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EB31297C-232F-489B-A6B2-EA4E14BBF873}">
+							<Children>
+								<SwitchContainer SwitchValue="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
+									<Children>
+										<SwitchContainer SwitchValue="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+											<Children>
+												<SwitchContainer SwitchValue="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+													<Children>
+														<SwitchContainer SwitchValue="{919845A7-3CC7-48E1-B730-7F9C4FE78787}">
+															<Children>
+																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+																	<Children>
+																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
+																			<Children>
+																				<SwitchContainer SwitchValue="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}">
+																					<Media>
+																						<File Id="833263565"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
 																		</SwitchContainer>
 																	</Children>
 																</SwitchContainer>
@@ -1160,6 +1422,11 @@
 				<Event Id="3409588627" Name="Main_Theme_Stop" ObjectPath="\Events\Default Work Unit\Music\Main Menu\Main_Theme_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3309997106" Name="Main_Menu_OFF" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_OFF"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3592090459" Name="No_Credits" ObjectPath="\Events\Default Work Unit\Music\Credits\No_Credits" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Music" DurationType="Infinite">
@@ -1267,6 +1534,9 @@
 						<State Id="4142521497" Name="Village_Neutral_Base" ObjectPath="\States\Default Work Unit\Village_Convos\Village_Neutral_Base" GUID="{35A5CBB2-15AF-423F-9DD4-703C28ED05FD}"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits" GUID="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="1246123756" Name="Tell_Asha_Truth" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Tell_Asha_Truth" GUID="{1EEB5117-8222-4F0F-BA5F-78F8368F0B28}">
 					<States/>
 				</StateGroup>
@@ -1291,6 +1561,13 @@
 				</StateGroup>
 				<StateGroup Id="2151441764" Name="Not_In_Storm" ObjectPath="\States\Default Work Unit\Forest_Storm\Not_In_Storm" GUID="{38CB6D15-3D4A-4C58-9626-A6E70963B114}">
 					<States/>
+				</StateGroup>
+				<StateGroup Id="2201105581" Name="Credits" ObjectPath="\States\Default Work Unit\Credits" GUID="{AE609A1C-DFFB-48B4-AE7E-51511A76EE89}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Credits\None" GUID="{34F3ABA5-B420-4462-BE5B-9564A17C17AD}"/>
+						<State Id="1174846523" Name="In_Credits" ObjectPath="\States\Default Work Unit\Credits\In_Credits" GUID="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}"/>
+						<State Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits" GUID="{C2DCC874-F4FE-4432-8DC9-F2E446DE72DD}"/>
+					</States>
 				</StateGroup>
 				<StateGroup Id="2378076306" Name="Forest_Beginning" ObjectPath="\States\Default Work Unit\Forest_Beginning" GUID="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
 					<States>
@@ -1324,6 +1601,9 @@
 				<StateGroup Id="3581412690" Name="No_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\No_Asha" GUID="{5275A307-D1CC-49F4-8AF9-0717F72922AF}">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="3592090459" Name="No_Credits" ObjectPath="\States\Default Work Unit\Credits\No_Credits" GUID="{C2DCC874-F4FE-4432-8DC9-F2E446DE72DD}">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="3648203651" Name="Lie_To_Asha" ObjectPath="\States\Default Work Unit\Asha_Cutscenes\Lie_To_Asha" GUID="{9E041CB9-5CD8-48D1-9DE4-7FFA98984EF8}">
 					<States/>
 				</StateGroup>
@@ -1347,96 +1627,6 @@
 					<States/>
 				</StateGroup>
 			</StateGroups>
-		</SoundBank>
-		<SoundBank Id="1866658237" Language="SFX" Hash="2963850332">
-			<ObjectPath>\SoundBanks\Default Work Unit\Ambient_Regions</ObjectPath>
-			<ShortName>Ambient_Regions</ShortName>
-			<Path>Ambient_Regions.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3652009445" Name="Ambient_Campfire" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Campfire" DurationType="Infinite"/>
-				<Event Id="100151336" Name="Ambient_Campfire_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Campfire_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2155509767" Name="Ambient_Dream" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Dream" DurationType="Infinite"/>
-				<Event Id="1516204802" Name="Ambient_Dream_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Dream_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="4234424953" Name="Ambient_Forest" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest" DurationType="Infinite"/>
-				<Event Id="4164439052" Name="Ambient_Forest_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Ambient_Forest_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="3514410953" Name="Clear_Weather" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Clear_Weather" DurationType="Infinite"/>
-				<Event Id="1327770748" Name="Clear_Weather_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Clear_Weather_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-				<Event Id="2043403999" Name="Rain" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain" DurationType="Infinite"/>
-				<Event Id="1737644906" Name="Rain_Stop" ObjectPath="\Events\Default Work Unit\Ambient_Regions\Rain_Stop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="293346966" Language="SFX">
-					<ShortName>Rain\9T_SD_Rain Loop.wav</ShortName>
-					<Path>SFX/Rain/9T_SD_Rain Loop_3DD4C042.wem</Path>
-				</File>
-				<File Id="953872696" Language="SFX">
-					<ShortName>9T_SD_Forest Ambience Loop.wav</ShortName>
-					<Path>SFX/9T_SD_Forest Ambience Loop_C2916AEC.wem</Path>
-				</File>
-				<File Id="970988566" Language="SFX">
-					<ShortName>9T_SD_Clear Weather.wav</ShortName>
-					<Path>SFX/9T_SD_Clear Weather_79859859.wem</Path>
-				</File>
-				<File Id="990086189" Language="SFX">
-					<ShortName>9T_SD_Dream Ambience.wav</ShortName>
-					<Path>SFX/9T_SD_Dream Ambience_9ACE594C.wem</Path>
-				</File>
-				<File Id="1016474877" Language="SFX">
-					<ShortName>9T_SD_Fireplace Loop.wav</ShortName>
-					<Path>SFX/9T_SD_Fireplace Loop_9ACE594C.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
-		</SoundBank>
-		<SoundBank Id="1973600711" Language="SFX" Hash="3246988747">
-			<ObjectPath>\SoundBanks\Default Work Unit\Environmental</ObjectPath>
-			<ShortName>Environmental</ShortName>
-			<Path>Environmental.bnk</Path>
-			<IncludedEvents>
-				<Event Id="403100568" Name="Platform_Breaking" ObjectPath="\Events\Default Work Unit\Environmental\Platform_Breaking" DurationType="OneShot" DurationMin="3.5" DurationMax="3.5"/>
-				<Event Id="735449646" Name="Thunder_Strike" ObjectPath="\Events\Default Work Unit\Environmental\Thunder_Strike" DurationType="OneShot" DurationMin="7.5" DurationMax="8."/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="43055703" Language="SFX">
-					<ShortName>Platform\9T_SD_Platform3.wav</ShortName>
-					<Path>SFX/Platform/9T_SD_Platform3_10C4C929.wem</Path>
-				</File>
-				<File Id="128565354" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-6.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-6_10C4C929.wem</Path>
-				</File>
-				<File Id="231549192" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-4.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-4_10C4C929.wem</Path>
-				</File>
-				<File Id="515735321" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-3.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-3_10C4C929.wem</Path>
-				</File>
-				<File Id="578756424" Language="SFX">
-					<ShortName>Platform\9T_SD_Platform4.wav</ShortName>
-					<Path>SFX/Platform/9T_SD_Platform4_10C4C929.wem</Path>
-				</File>
-				<File Id="600895273" Language="SFX">
-					<ShortName>Platform\9T_SD_Platform1.wav</ShortName>
-					<Path>SFX/Platform/9T_SD_Platform1_10C4C929.wem</Path>
-				</File>
-				<File Id="611506521" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-2.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-2_10C4C929.wem</Path>
-				</File>
-				<File Id="812297060" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-1.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-1_10C4C929.wem</Path>
-				</File>
-				<File Id="832889168" Language="SFX">
-					<ShortName>Thunder\9T_SD_Thunder-5.wav</ShortName>
-					<Path>SFX/Thunder/9T_SD_Thunder-5_10C4C929.wem</Path>
-				</File>
-				<File Id="988037317" Language="SFX">
-					<ShortName>Platform\9T_SD_Platform2.wav</ShortName>
-					<Path>SFX/Platform/9T_SD_Platform2_10C4C929.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

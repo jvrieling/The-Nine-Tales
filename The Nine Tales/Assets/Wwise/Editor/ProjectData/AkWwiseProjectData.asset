@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585529338318586986
+    m_lastTime: -8585528640209107387
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -537,9 +537,9 @@ MonoBehaviour:
         ObjectType: 7
         guid: 9fde50a27a4f3848b4eaf50389918312
       Path: SoundBanks/Default Work Unit/Music_Ch1b
-    - name: Music_Main_Menu
+    - name: Music_Main_Theme
       guid: bcf010824026314299d85ccd904423a0
-      id: 1840167780
+      id: 3735044908
       PathAndIcons:
       - ElementName: SoundBanks
         ObjectType: 5
@@ -547,10 +547,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 518228c8806f634b917801cbadfa4d3a
-      - ElementName: Music_Main_Menu
+      - ElementName: Music_Main_Theme
         ObjectType: 7
         guid: bcf010824026314299d85ccd904423a0
-      Path: SoundBanks/Default Work Unit/Music_Main_Menu
+      Path: SoundBanks/Default Work Unit/Music_Main_Theme
     - name: Music_Village
       guid: c9bb8c031afe33428c3f4b1046fd1dfa
       id: 168053707
@@ -605,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585529377532069896
+    m_lastTime: -8585528672915880473
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -808,8 +808,8 @@ MonoBehaviour:
         guid: 90efdb28a1807b478e0c5887e316384d
       Path: Events/Default Work Unit/Music/Asha/Asha_Dinner_Beginning
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Asha_Music_Stop
       guid: 60a35243ca0ba144af47a1029669ba61
       id: 3516570971
@@ -873,6 +873,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Credits
+      guid: e8783340c93bd34c851a423d2aa4b6b0
+      id: 2201105581
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Credits
+        ObjectType: 4
+        guid: e8783340c93bd34c851a423d2aa4b6b0
+      Path: Events/Default Work Unit/Music/Credits
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Dies_LOL
       guid: 0bfaf14f1b93264b9aa3b9a12323e558
       id: 2550655564
@@ -1142,6 +1162,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 8.25
       minDuration: 8.25
+    - name: In_Credits
+      guid: 0f915b2a3dd8eb4391db0b3000d87fd7
+      id: 1174846523
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Credits
+        ObjectType: 4
+        guid: e8783340c93bd34c851a423d2aa4b6b0
+      - ElementName: In_Credits
+        ObjectType: 3
+        guid: 0f915b2a3dd8eb4391db0b3000d87fd7
+      Path: Events/Default Work Unit/Music/Credits/In_Credits
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Lie_To_Asha
       guid: 0bc84dce513d834d83b9d3efa89333ee
       id: 3648203651
@@ -1163,8 +1206,8 @@ MonoBehaviour:
         guid: 0bc84dce513d834d83b9d3efa89333ee
       Path: Events/Default Work Unit/Music/Asha/Lie_To_Asha
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Lumb
       guid: c30e7225b96310429133430be9a8fa8c
       id: 660996473
@@ -1291,6 +1334,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5077b27b8b52bc4091ceef873b70330d
       Path: Events/Default Work Unit/Music/Village/Myla
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: No_Credits
+      guid: f537ae25d3e26447a05b22bc6f50b7e1
+      id: 3592090459
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Music
+        ObjectType: 4
+        guid: 3bada98847689943b5bfbd6066eb1240
+      - ElementName: Credits
+        ObjectType: 4
+        guid: e8783340c93bd34c851a423d2aa4b6b0
+      - ElementName: No_Credits
+        ObjectType: 3
+        guid: f537ae25d3e26447a05b22bc6f50b7e1
+      Path: Events/Default Work Unit/Music/Credits/No_Credits
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1670,8 +1736,8 @@ MonoBehaviour:
         guid: 10d2c532e9effb4fa527ae0a8929d6c8
       Path: Events/Default Work Unit/Music/Asha/Tell_Asha_Truth
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Thunder_Strike
       guid: 6d441fe4559c354e9f1ebd32eb0f94b7
       id: 735449646
@@ -1995,7 +2061,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ef20ec574afe3649810385069bd8b529
     GuidInternal: 
-    m_lastTime: -8585529377901333796
+    m_lastTime: -8585528688200964488
     List:
     - name: Asha_Cutscenes
       guid: a7459891c73ce148b7307f9c4fe78787
@@ -2174,6 +2240,72 @@ MonoBehaviour:
         - ElementName: Talking_To_Spirit
           ObjectType: 8
           guid: 2f3aed2769274b45b5c4b2d1392372c4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Credits
+      guid: 1c9a60aefbdfb448ae7e51511a76ee89
+      id: 2201105581
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Credits
+        ObjectType: 9
+        guid: 1c9a60aefbdfb448ae7e51511a76ee89
+      Path: States/Default Work Unit/Credits
+      values:
+      - name: In_Credits
+        guid: ca2778b6b7637e4d8a72fa8a593a3dc0
+        id: 1174846523
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Credits
+          ObjectType: 9
+          guid: 1c9a60aefbdfb448ae7e51511a76ee89
+        - ElementName: In_Credits
+          ObjectType: 8
+          guid: ca2778b6b7637e4d8a72fa8a593a3dc0
+      - name: No_Credits
+        guid: 74c8dcc2fef432448dc9f2e446de72dd
+        id: 3592090459
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Credits
+          ObjectType: 9
+          guid: 1c9a60aefbdfb448ae7e51511a76ee89
+        - ElementName: No_Credits
+          ObjectType: 8
+          guid: 74c8dcc2fef432448dc9f2e446de72dd
+      - name: None
+        guid: a5abf33420b46244be5b9564a17c17ad
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Credits
+          ObjectType: 9
+          guid: 1c9a60aefbdfb448ae7e51511a76ee89
+        - ElementName: None
+          ObjectType: 8
+          guid: a5abf33420b46244be5b9564a17c17ad
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2600,7 +2732,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000000a00000016000000170000004300000045000000490000004c000000590000005b000000
+  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000b000000160000001700000039000000430000004600000049000000590000005b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
