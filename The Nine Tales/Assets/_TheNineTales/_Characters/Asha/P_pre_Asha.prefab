@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8d0caf7fc72115040b47070134bb8164, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e5766c6aa66cd5489d8a720ee29b707, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 3961623666007694320}
   portrait: {fileID: 21300000, guid: 157a882e725280549ad5aa266d76e6b4, type: 3}
-  voiceOverClip: {fileID: 0}
+  WwiseSoundName: 
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 3961623666007694320}
   portrait: {fileID: 21300000, guid: 0a35ffcba553ebe4382fca759c765b8a, type: 3}
-  voiceOverClip: {fileID: 0}
+  WwiseSoundName: 
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -505,7 +505,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 3961623666007694320}
   portrait: {fileID: 21300000, guid: 3d97cd1a0b148fb4fa3ae30e318b03a8, type: 3}
-  voiceOverClip: {fileID: 0}
+  WwiseSoundName: 
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -722,7 +722,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 3961623666007694320}
   portrait: {fileID: 21300000, guid: 3d97cd1a0b148fb4fa3ae30e318b03a8, type: 3}
-  voiceOverClip: {fileID: 0}
+  WwiseSoundName: 
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -750,7 +750,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 3961623666007694320}
   portrait: {fileID: 21300000, guid: 3d97cd1a0b148fb4fa3ae30e318b03a8, type: 3}
-  voiceOverClip: {fileID: 0}
+  WwiseSoundName: 
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 3961623666007694320}
   portrait: {fileID: 21300000, guid: 3d97cd1a0b148fb4fa3ae30e318b03a8, type: 3}
-  voiceOverClip: {fileID: 0}
+  WwiseSoundName: 
   showAlways: 1
   showCount: 1
   extendPrevious: 0

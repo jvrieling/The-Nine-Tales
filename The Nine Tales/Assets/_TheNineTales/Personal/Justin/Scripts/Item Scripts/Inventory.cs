@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public static List<ItemStack> items;
-    public Item debugItem;
+    public Item debugItem1, debugItem2;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
     public void GiveDebugItem()
     {
         if (items == null) items = new List<ItemStack>();
-        if (debugItem != null) AddItem(debugItem);
+        if (debugItem1 != null) AddItem(debugItem1);
         else Debug.LogError("Failed to give debug item: there is no debug item set!");
     }
 
@@ -28,7 +28,7 @@ public class Inventory : MonoBehaviour
     public void UseDebugItem()
     {
         if (items == null) items = new List<ItemStack>();
-        if (debugItem != null) UseItem(debugItem);
+        if (debugItem1 != null) UseItem(debugItem1);
         else Debug.LogError("Failed to use debug item: there is no debug item set!");
     }
 

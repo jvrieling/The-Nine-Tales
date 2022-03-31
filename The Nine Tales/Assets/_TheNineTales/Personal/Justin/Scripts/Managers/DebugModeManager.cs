@@ -5,6 +5,7 @@ using IngameDebugConsole;
 
 public class DebugModeManager : MonoBehaviour
 {
+    public GameObject console;
     public Item[] givableItems;
 
     public static Item[] items;
@@ -16,6 +17,17 @@ public class DebugModeManager : MonoBehaviour
         DebugLogConsole.AddCommand<string>("give", "Gives an item", Give);
         DebugLogConsole.AddCommand<string, int>("give", "Gives an item", Give);
         DebugLogConsole.AddCommand<string, int, int>("check", "Checks if a plyer has an item between min and max (inclusive)", CheckInventory);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.RightBracket))
+        {
+            if (Input.GetKeyDown(KeyCode.LeftBracket))
+            {
+                console.SetActive(!console.activeSelf);
+            }
+        }
     }
 
     public static void CheckInventory(string item, int min, int max)
