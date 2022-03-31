@@ -19,7 +19,6 @@ public class Tail : MonoBehaviour
     public Transform tailBase;
     public LineRenderer lineRend;
     public Transform targetDir;
-    public SpriteRenderer sr;
     public Player characterController;
 
     private bool flipTail = false;
@@ -48,7 +47,6 @@ public class Tail : MonoBehaviour
     {
         if (lineRend == null) lineRend = GetComponentInParent<LineRenderer>();
         if (tailBase == null) tailBase = transform;
-        if (sr == null) sr = GetComponentInParent<SpriteRenderer>();
         if (targetDir == null) targetDir = transform.GetChild(0);
         if (characterController == null) characterController = GetComponentInParent<Player>();
 
@@ -72,7 +70,7 @@ public class Tail : MonoBehaviour
         //Flip the target direction if the sprite is flipped.
         //Note: The sprite gets flipped by the character controller.
         Vector3 newPos = tailBase.localPosition;
-        if (sr.flipX)
+        if (characterController.GetFacingDirection() == Player.FacingDirection.Right)
         {
             tailBase.rotation = startingRotation * Quaternion.Euler(0, 0, 180);
             if (tailBase.localPosition.x > 0)

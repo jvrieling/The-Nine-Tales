@@ -94,6 +94,7 @@ public class Player : MonoBehaviour
     private bool groundedLastFrame;
 
     private Animator an;
+    private float initialAnimatorXScale;
 
     public GameObject LastCheckpoint;
     public GameObject DamageVFX;
@@ -108,7 +109,9 @@ public class Player : MonoBehaviour
         player = gameObject;
         inventory = GetComponentInChildren<Inventory>();
         interactor = GetComponentInChildren<Interactor>();
-        an = GetComponent<Animator>();
+        an = GetComponentInChildren<Animator>();
+        Debug.Log("an " + an);
+        initialAnimatorXScale = an.transform.localScale.x;
     }
 
 
@@ -265,23 +268,20 @@ public class Player : MonoBehaviour
     {
         if (InputTracker.GetDirectionalInput().x > 0)
         {
-            PlayerSprite.flipX = true;
-
-
+            an.SetBool("RunningInput", true);
+            an.transform.localScale = new Vector3(-initialAnimatorXScale, an.transform.localScale.y, an.transform.localScale.z);
             return FacingDirection.Right;
         }
         else if (InputTracker.GetDirectionalInput().x < 0)
         {
-            PlayerSprite.flipX = false;
 
-
+            an.SetBool("RunningInput", true);
+            an.transform.localScale = new Vector3(initialAnimatorXScale, an.transform.localScale.y, an.transform.localScale.z);
             return FacingDirection.Left;
         }
         else
         {
-
-            PlayerSprite.flipX = PlayerSprite.flipX;
-
+            an.SetBool("RunningInput", false);
             return LastFacingDirection;
         }
 
@@ -375,6 +375,7 @@ public class Player : MonoBehaviour
 
     void HandleDash()
     {
+        an.SetBool("IsDashing", isDashing);
         if (( Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown("joystick button 1")) && CanDash)
         {
             StartDash();
@@ -400,6 +401,7 @@ public class Player : MonoBehaviour
         isDashing = true;
         CanDash = false;
         Instantiate(dashVFX, transform);
+        an.SetTrigger("Dash");
     }
 
     void EnableDash()

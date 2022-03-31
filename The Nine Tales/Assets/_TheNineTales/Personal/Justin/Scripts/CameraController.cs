@@ -33,6 +33,8 @@ public class CameraController : MonoBehaviour
 
     private Camera cam;
 
+    private Player p;
+
     //UNUSED: See line 85.
     //public float accuracy = 1f;
     //private bool gettingInput = false;
@@ -51,7 +53,10 @@ public class CameraController : MonoBehaviour
         if (zoomedIn && narrativeCameraSize == 0) narrativeCameraSize = cam.orthographicSize;
         else if (!zoomedIn && platformingCameraSize == 0) platformingCameraSize = cam.orthographicSize;
     }
-
+    private void Start()
+    {
+        p = Player.player.GetComponent<Player>();
+    }
     public void Update()
     {
         if (shouldFollow)
@@ -69,8 +74,7 @@ public class CameraController : MonoBehaviour
             turnOffset += new Vector3(0, cam.orthographicSize / upperOrLowerThird, 0);
 
             //Put the camera a little ahead of the player in the direction they are facing
-            SpriteRenderer playerSprite = StateManager.cc.GetComponent<SpriteRenderer>();
-            if (playerSprite.flipX)
+            if (p.GetFacingDirection() == Player.FacingDirection.Left)
             {
                 turnOffset += new Vector3(cam.orthographicSize / 3, 0, 0);
             }
