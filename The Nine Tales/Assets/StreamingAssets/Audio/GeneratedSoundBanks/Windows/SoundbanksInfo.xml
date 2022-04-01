@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="168053707" Language="SFX" Hash="3848462140">
+		<SoundBank Id="168053707" Language="SFX" Hash="936904061">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Village</ObjectPath>
 			<ShortName>Music_Village</ShortName>
 			<Path>Music_Village.bnk</Path>
@@ -158,7 +158,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="707900965" Language="SFX" Hash="564957212">
+		<SoundBank Id="707900965" Language="SFX" Hash="3935120848">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1b</ObjectPath>
 			<ShortName>Music_Ch1b</ShortName>
 			<Path>Music_Ch1b.bnk</Path>
@@ -321,7 +321,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="707900966" Language="SFX" Hash="2612022037">
+		<SoundBank Id="707900966" Language="SFX" Hash="3423434424">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1a</ObjectPath>
 			<ShortName>Music_Ch1a</ShortName>
 			<Path>Music_Ch1a.bnk</Path>
@@ -826,7 +826,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3735044908" Language="SFX" Hash="241202579">
+		<SoundBank Id="3735044908" Language="SFX" Hash="594680205">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Main_Theme</ObjectPath>
 			<ShortName>Music_Main_Theme</ShortName>
 			<Path>Music_Main_Theme.bnk</Path>
@@ -838,33 +838,9 @@
 				</Event>
 				<Event Id="2557777556" Name="Main_Theme" ObjectPath="\Events\Default Work Unit\Music\Main Menu\Main_Theme" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="234135775" Language="SFX">
-							<ShortName>9T_M_BARN2_85_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN2_85_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="787756732" Language="SFX">
-							<ShortName>9T_M_BARN1_78_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN1_78_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="806442598" Language="SFX">
-							<ShortName>Storm\9T_M_Storm_162_3-4-Intro.wav</ShortName>
-							<Path>SFX/Storm/9T_M_Storm_162_3-4-Intro_D79FB2B7.wem</Path>
-						</File>
-						<File Id="806449591" Language="SFX">
-							<ShortName>9T_M_BARN3 (bottom layer)_85_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN3 (bottom layer)_85_4_4_D79FB2B7.wem</Path>
-						</File>
 						<File Id="833263565" Language="SFX">
 							<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
 							<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="837528230" Language="SFX">
-							<ShortName>9T_M_BARN3-FULL_85_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN3-FULL_85_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="905019884" Language="SFX">
-							<ShortName>Storm\9T_M_Storm_162_3-4-MainLoop.wav</ShortName>
-							<Path>SFX/Storm/9T_M_Storm_162_3-4-MainLoop_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -1414,6 +1390,72 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EB31297C-232F-489B-A6B2-EA4E14BBF873}">
+							<Children>
+								<SwitchContainer SwitchValue="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
+									<Children>
+										<SwitchContainer SwitchValue="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+											<Children>
+												<SwitchContainer SwitchValue="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+													<Children>
+														<SwitchContainer SwitchValue="{9E041CB9-5CD8-48D1-9DE4-7FFA98984EF8}">
+															<Children>
+																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+																	<Children>
+																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
+																			<Children>
+																				<SwitchContainer SwitchValue="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}">
+																					<Media>
+																						<File Id="833263565"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
+																		</SwitchContainer>
+																	</Children>
+																</SwitchContainer>
+															</Children>
+														</SwitchContainer>
+													</Children>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EB31297C-232F-489B-A6B2-EA4E14BBF873}">
+							<Children>
+								<SwitchContainer SwitchValue="{89124B2A-8C67-45C9-A465-6DD8C87C4C36}">
+									<Children>
+										<SwitchContainer SwitchValue="{67B5B067-6C01-48B9-8D6E-AE44EC4BF06F}">
+											<Children>
+												<SwitchContainer SwitchValue="{874A1EE8-34AF-4E09-908F-9C00A30ED24A}">
+													<Children>
+														<SwitchContainer SwitchValue="{5275A307-D1CC-49F4-8AF9-0717F72922AF}">
+															<Children>
+																<SwitchContainer SwitchValue="{6ECDD08D-DC7B-4E3B-AE05-48336E8C7663}">
+																	<Children>
+																		<SwitchContainer SwitchValue="{0A873D7B-7C33-4DE9-9CE8-3EDEC2ABDC20}">
+																			<Children>
+																				<SwitchContainer SwitchValue="{B67827CA-63B7-4D7E-8A72-FA8A593A3DC0}">
+																					<Media>
+																						<File Id="833263565"/>
+																					</Media>
+																				</SwitchContainer>
+																			</Children>
+																		</SwitchContainer>
+																	</Children>
+																</SwitchContainer>
+															</Children>
+														</SwitchContainer>
+													</Children>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
 						<ActionSetStateEntry Id="681133780" Name="Main_Menu_ON" ObjectPath="\States\Default Work Unit\Main_Menu\Main_Menu_ON"/>
@@ -1431,66 +1473,18 @@
 				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="234135775" Language="SFX">
-							<ShortName>9T_M_BARN2_85_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN2_85_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="787756732" Language="SFX">
-							<ShortName>9T_M_BARN1_78_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN1_78_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="806442598" Language="SFX">
-							<ShortName>Storm\9T_M_Storm_162_3-4-Intro.wav</ShortName>
-							<Path>SFX/Storm/9T_M_Storm_162_3-4-Intro_D79FB2B7.wem</Path>
-						</File>
-						<File Id="806449591" Language="SFX">
-							<ShortName>9T_M_BARN3 (bottom layer)_85_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN3 (bottom layer)_85_4_4_D79FB2B7.wem</Path>
-						</File>
 						<File Id="833263565" Language="SFX">
 							<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
 							<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="837528230" Language="SFX">
-							<ShortName>9T_M_BARN3-FULL_85_4_4.wav</ShortName>
-							<Path>SFX/9T_M_BARN3-FULL_85_4_4_D79FB2B7.wem</Path>
-						</File>
-						<File Id="905019884" Language="SFX">
-							<ShortName>Storm\9T_M_Storm_162_3-4-MainLoop.wav</ShortName>
-							<Path>SFX/Storm/9T_M_Storm_162_3-4-MainLoop_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Music\Stop_Music" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="234135775" Language="SFX">
-					<ShortName>9T_M_BARN2_85_4_4.wav</ShortName>
-					<Path>SFX/9T_M_BARN2_85_4_4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="787756732" Language="SFX">
-					<ShortName>9T_M_BARN1_78_4_4.wav</ShortName>
-					<Path>SFX/9T_M_BARN1_78_4_4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="806442598" Language="SFX">
-					<ShortName>Storm\9T_M_Storm_162_3-4-Intro.wav</ShortName>
-					<Path>SFX/Storm/9T_M_Storm_162_3-4-Intro_D79FB2B7.wem</Path>
-				</File>
-				<File Id="806449591" Language="SFX">
-					<ShortName>9T_M_BARN3 (bottom layer)_85_4_4.wav</ShortName>
-					<Path>SFX/9T_M_BARN3 (bottom layer)_85_4_4_D79FB2B7.wem</Path>
-				</File>
 				<File Id="833263565" Language="SFX">
 					<ShortName>9T_M_MAIN THEME_85_4_4.wav</ShortName>
 					<Path>SFX/9T_M_MAIN THEME_85_4_4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="837528230" Language="SFX">
-					<ShortName>9T_M_BARN3-FULL_85_4_4.wav</ShortName>
-					<Path>SFX/9T_M_BARN3-FULL_85_4_4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="905019884" Language="SFX">
-					<ShortName>Storm\9T_M_Storm_162_3-4-MainLoop.wav</ShortName>
-					<Path>SFX/Storm/9T_M_Storm_162_3-4-MainLoop_D79FB2B7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<StateGroups>
