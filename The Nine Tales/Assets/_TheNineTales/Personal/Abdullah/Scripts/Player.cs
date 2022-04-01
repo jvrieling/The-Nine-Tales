@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
 
     public GameObject LastCheckpoint;
     public GameObject DamageVFX;
-    public GameObject FeetVFX;
+    //public GameObject FeetVFX;
 
     public AK.Wwise.Event deathSound;
 
@@ -110,8 +110,8 @@ public class Player : MonoBehaviour
         inventory = GetComponentInChildren<Inventory>();
         interactor = GetComponentInChildren<Interactor>();
         an = GetComponentInChildren<Animator>();
-        Debug.Log("an " + an);
         initialAnimatorXScale = an.transform.localScale.x;
+        if(LastFacingDirection == FacingDirection.Right) an.transform.localScale = new Vector3(-initialAnimatorXScale, an.transform.localScale.y, an.transform.localScale.z);
     }
 
 
@@ -397,7 +397,7 @@ public class Player : MonoBehaviour
     {
         Invoke("EnableDash", DashCooldown);
         Invoke("ResetSpeedLimit", DashDuration);
-        FeetVFX.gameObject.SetActive(false);
+        //FeetVFX.gameObject.SetActive(false);
         isDashing = true;
         CanDash = false;
         Instantiate(dashVFX, transform);
@@ -407,7 +407,7 @@ public class Player : MonoBehaviour
     void EnableDash()
     {
         CanDash = true;
-        FeetVFX.gameObject.SetActive(true);
+        //FeetVFX.gameObject.SetActive(true);
     }
     void ResetSpeedLimit()
     {

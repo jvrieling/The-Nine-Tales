@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Sprite Atlas
+  m_Name: P_atl_UnstableRocks
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings: []
     packingSettings:
       serializedVersion: 2
-      padding: 4
+      padding: 8
       blockOffset: 1
       allowAlphaSplitting: 0
       enableRotation: 1
@@ -32,21 +32,21 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: fbc075565bfe44f4c9342001e7114e8f, type: 3}
-    - {fileID: 21300000, guid: 2fd2b6413e19b9d418dd73cebc324922, type: 3}
-    - {fileID: 21300000, guid: daa1012cb53fe1643ae710440ea50346, type: 3}
+    - {fileID: 21300000, guid: 4624d4dad2586f34aaa4e0dc0237fca9, type: 3}
+    - {fileID: 21300000, guid: cb05213e14e519f46954f0a3159f267a, type: 3}
+    - {fileID: 21300000, guid: 8997a11393d3da94ea3d948dce10c6f8, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 2fd2b6413e19b9d418dd73cebc324922, type: 3}
-  - {fileID: 21300000, guid: fbc075565bfe44f4c9342001e7114e8f, type: 3}
-  - {fileID: 21300000, guid: daa1012cb53fe1643ae710440ea50346, type: 3}
+  - {fileID: 21300000, guid: 8997a11393d3da94ea3d948dce10c6f8, type: 3}
+  - {fileID: 21300000, guid: 4624d4dad2586f34aaa4e0dc0237fca9, type: 3}
+  - {fileID: 21300000, guid: cb05213e14e519f46954f0a3159f267a, type: 3}
   m_PackedSpriteNamesToIndex:
-  - leaf 1
-  - leaf 2
-  - leaf 3
+  - P_spr_Unstable_Rock_3
+  - P_spr_Unstable_Rock
+  - P_spr_Unstable_Rock_2
   m_RenderDataMap: {}
-  m_Tag: New Sprite Atlas
+  m_Tag: P_atl_UnstableRocks
   m_IsVariant: 0

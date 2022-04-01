@@ -13,12 +13,14 @@ public class CollapsingPlatform : MonoBehaviour
 
     public AK.Wwise.Event collapseSound;
 
+    private ParticleSystem ps;
 
     void Start()
     {
         // Save original platform position to allow it to reset when player die or if it falls
         OriginalPosition = transform.position;
         RB = GetComponent<Rigidbody2D>();
+        ps = GetComponentInChildren<ParticleSystem>();
         PlatformManager.Singleton.CollapsingPlatforms.Add(this);
     }
 
@@ -26,7 +28,7 @@ public class CollapsingPlatform : MonoBehaviour
     void Update()
     {
         // Rest platfrom if it falls too low
-        if(transform.position.y < ResetTriggerHeight)
+        if (transform.position.y < ResetTriggerHeight)
         {
             ResetToPosition();
         }
@@ -39,12 +41,13 @@ public class CollapsingPlatform : MonoBehaviour
         {
             // Strt falling after delay
             Invoke("Collapse", CollapseTime);
+            if (ps != null) ps.Play();
         }
     }
 
     public void Collapse()
     {
-        if(collapseSound.Name != "") collapseSound.Post(gameObject);
+        if (collapseSound.Name != "") collapseSound.Post(gameObject);
         RB.velocity = CollapseSpeed;
         isFalling = true;
     }
@@ -59,5 +62,6 @@ public class CollapsingPlatform : MonoBehaviour
         RB.velocity = Vector3.zero;
         transform.position = OriginalPosition;
         isFalling = false;
+        if (ps != null) ps.Stop();
     }
 }
