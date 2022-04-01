@@ -8,7 +8,11 @@ public class DebugModeManager : MonoBehaviour
     public GameObject console;
     public Item[] givableItems;
 
+    public Sprite RML;
+
     public static Item[] items;
+
+    public static bool debugMode;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +30,15 @@ public class DebugModeManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftBracket))
             {
                 console.SetActive(!console.activeSelf);
+                debugMode = !debugMode;
+            }
+        }
+        if(debugMode)
+        {
+            if (Input.GetKey(KeyCode.R) && Input.GetKey(KeyCode.M) && Input.GetKey(KeyCode.L))
+            {
+                GameObject l = GameObject.Find("Lumb");
+                if (l != null) l.GetComponent<SpriteRenderer>().sprite = RML;
             }
         }
     }
