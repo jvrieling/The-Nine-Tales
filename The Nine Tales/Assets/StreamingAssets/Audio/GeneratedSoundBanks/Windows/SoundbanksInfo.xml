@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="168053707" Language="SFX" Hash="936904061">
+		<SoundBank Id="168053707" Language="SFX" Hash="3055257089">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Village</ObjectPath>
 			<ShortName>Music_Village</ShortName>
 			<Path>Music_Village.bnk</Path>
@@ -158,7 +158,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="707900965" Language="SFX" Hash="3935120848">
+		<SoundBank Id="707900965" Language="SFX" Hash="1142662126">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1b</ObjectPath>
 			<ShortName>Music_Ch1b</ShortName>
 			<Path>Music_Ch1b.bnk</Path>
@@ -499,18 +499,124 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="1484876532">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2535483683">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2550655564" Name="Dies_LOL" ObjectPath="\Events\Default Work Unit\Player\Dies_LOL" DurationType="OneShot" DurationMin="4.513542" DurationMax="4.513542"/>
-				<Event Id="2956011499" Name="Fox_Dash" ObjectPath="\Events\Default Work Unit\Player\Fox_Dash" DurationType="OneShot" DurationMin="0.22059" DurationMax="0.22059"/>
-				<Event Id="3242941405" Name="Fox_Footstep" ObjectPath="\Events\Default Work Unit\Player\Fox_Footstep" DurationType="OneShot" DurationMin="0.098526" DurationMax="0.173968"/>
-				<Event Id="1783467547" Name="Fox_Jump" ObjectPath="\Events\Default Work Unit\Player\Fox_Jump" DurationType="OneShot" DurationMin="0.172381" DurationMax="0.172381"/>
-				<Event Id="2680479089" Name="Gain_Tail" ObjectPath="\Events\Default Work Unit\Player\Gain_Tail" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25"/>
-				<Event Id="3193947170" Name="Hurt" ObjectPath="\Events\Default Work Unit\Player\Hurt" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25"/>
-				<Event Id="1072028603" Name="Spiderweb_Destroy" ObjectPath="\Events\Default Work Unit\Player\Spiderweb_Destroy" DurationType="OneShot" DurationMin="0.383243" DurationMax="0.383243"/>
+				<Event Id="2550655564" Name="Dies_LOL" ObjectPath="\Events\Default Work Unit\Player\Dies_LOL" DurationType="OneShot" DurationMin="4.513542" DurationMax="4.513542">
+					<IncludedMemoryFiles>
+						<File Id="791681697" Language="SFX">
+							<ShortName>9T_SD_Fox Dies lol.wav</ShortName>
+							<Path>SFX/9T_SD_Fox Dies lol_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2956011499" Name="Fox_Dash" ObjectPath="\Events\Default Work Unit\Player\Fox_Dash" DurationType="OneShot" DurationMin="0.22059" DurationMax="0.22059">
+					<IncludedMemoryFiles>
+						<File Id="566475179" Language="SFX">
+							<ShortName>DASH-HIGH.wav</ShortName>
+							<Path>SFX/DASH-HIGH_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3242941405" Name="Fox_Footstep" ObjectPath="\Events\Default Work Unit\Player\Fox_Footstep" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1783467547" Name="Fox_Jump" ObjectPath="\Events\Default Work Unit\Player\Fox_Jump" DurationType="OneShot" DurationMin="0.172381" DurationMax="0.172381">
+					<IncludedMemoryFiles>
+						<File Id="303793343" Language="SFX">
+							<ShortName>JUMP-HIGH.wav</ShortName>
+							<Path>SFX/JUMP-HIGH_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1687841656" Name="Fox_Land" ObjectPath="\Events\Default Work Unit\Player\Fox_Land" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2680479089" Name="Gain_Tail" ObjectPath="\Events\Default Work Unit\Player\Gain_Tail" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25">
+					<IncludedMemoryFiles>
+						<File Id="798700818" Language="SFX">
+							<ShortName>9T_SD_New Tail.wav</ShortName>
+							<Path>SFX/9T_SD_New Tail_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3193947170" Name="Hurt" ObjectPath="\Events\Default Work Unit\Player\Hurt" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25">
+					<IncludedMemoryFiles>
+						<File Id="798700818" Language="SFX">
+							<ShortName>9T_SD_New Tail.wav</ShortName>
+							<Path>SFX/9T_SD_New Tail_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1766743556" Name="Play_Footstep_Material" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Material" DurationType="OneShot" DurationMin="0.098526" DurationMax="0.173968">
+					<IncludedMemoryFiles>
+						<File Id="280788416" Language="SFX">
+							<ShortName>STEP-FOLIAGE-LOW_4.wav</ShortName>
+							<Path>SFX/STEP-FOLIAGE-LOW_4_10C4C929.wem</Path>
+						</File>
+						<File Id="304475018" Language="SFX">
+							<ShortName>Footsteps\GRASS-STEP3-HIGH.wav</ShortName>
+							<Path>SFX/Footsteps/GRASS-STEP3-HIGH_10C4C929.wem</Path>
+						</File>
+						<File Id="393939333" Language="SFX">
+							<ShortName>STEP-FOLIAGE-LOW_2.wav</ShortName>
+							<Path>SFX/STEP-FOLIAGE-LOW_2_10C4C929.wem</Path>
+						</File>
+						<File Id="507123433" Language="SFX">
+							<ShortName>Footsteps\GRASS-STEP1-HIGH.wav</ShortName>
+							<Path>SFX/Footsteps/GRASS-STEP1-HIGH_10C4C929.wem</Path>
+						</File>
+						<File Id="538812612" Language="SFX">
+							<ShortName>STEP-FOLIAGE-LOW_1.wav</ShortName>
+							<Path>SFX/STEP-FOLIAGE-LOW_1_10C4C929.wem</Path>
+						</File>
+						<File Id="939080959" Language="SFX">
+							<ShortName>Footsteps\GRASS-STEP2-HIGH.wav</ShortName>
+							<Path>SFX/Footsteps/GRASS-STEP2-HIGH_10C4C929.wem</Path>
+						</File>
+						<File Id="958853102" Language="SFX">
+							<ShortName>STEP-FOLIAGE-LOW_3.wav</ShortName>
+							<Path>SFX/STEP-FOLIAGE-LOW_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1038518400" Language="SFX">
+							<ShortName>Footsteps\GRASS-STEP4-HIGH.wav</ShortName>
+							<Path>SFX/Footsteps/GRASS-STEP4-HIGH_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{24A25FA0-EDB3-479E-963C-34484A171272}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{1E6BCB43-EEC1-4C3B-90AE-EB49F9DED2A6}">
+							<Media>
+								<File Id="280788416"/>
+								<File Id="393939333"/>
+								<File Id="538812612"/>
+								<File Id="958853102"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{24A25FA0-EDB3-479E-963C-34484A171272}">
+							<Media>
+								<File Id="304475018"/>
+								<File Id="507123433"/>
+								<File Id="939080959"/>
+								<File Id="1038518400"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1072028603" Name="Spiderweb_Destroy" ObjectPath="\Events\Default Work Unit\Player\Spiderweb_Destroy" DurationType="OneShot" DurationMin="0.383243" DurationMax="0.383243">
+					<IncludedMemoryFiles>
+						<File Id="2751824" Language="SFX">
+							<ShortName>SPIDERWEB-COLLECT-MEDIUM.wav</ShortName>
+							<Path>SFX/SPIDERWEB-COLLECT-MEDIUM_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1018073521" Name="Weed_Destroy" ObjectPath="\Events\Default Work Unit\Player\Weed_Destroy" DurationType="OneShot" DurationMin="0.448005" DurationMax="0.448005">
+					<IncludedMemoryFiles>
+						<File Id="701462106" Language="SFX">
+							<ShortName>CUTTING-GRASS-MEDIUM.wav</ShortName>
+							<Path>SFX/CUTTING-GRASS-MEDIUM_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2751824" Language="SFX">
@@ -525,6 +631,10 @@
 					<ShortName>Hurt\9T_SD_Hurt7.wav</ShortName>
 					<Path>SFX/Hurt/9T_SD_Hurt7_10C4C929.wem</Path>
 				</File>
+				<File Id="280788416" Language="SFX">
+					<ShortName>STEP-FOLIAGE-LOW_4.wav</ShortName>
+					<Path>SFX/STEP-FOLIAGE-LOW_4_10C4C929.wem</Path>
+				</File>
 				<File Id="303793343" Language="SFX">
 					<ShortName>JUMP-HIGH.wav</ShortName>
 					<Path>SFX/JUMP-HIGH_10C4C929.wem</Path>
@@ -537,6 +647,10 @@
 					<ShortName>Hurt\9T_SD_Hurt3.wav</ShortName>
 					<Path>SFX/Hurt/9T_SD_Hurt3_10C4C929.wem</Path>
 				</File>
+				<File Id="393939333" Language="SFX">
+					<ShortName>STEP-FOLIAGE-LOW_2.wav</ShortName>
+					<Path>SFX/STEP-FOLIAGE-LOW_2_10C4C929.wem</Path>
+				</File>
 				<File Id="463066707" Language="SFX">
 					<ShortName>Hurt\9T_SD_Hurt2.wav</ShortName>
 					<Path>SFX/Hurt/9T_SD_Hurt2_10C4C929.wem</Path>
@@ -545,9 +659,17 @@
 					<ShortName>Footsteps\GRASS-STEP1-HIGH.wav</ShortName>
 					<Path>SFX/Footsteps/GRASS-STEP1-HIGH_10C4C929.wem</Path>
 				</File>
+				<File Id="538812612" Language="SFX">
+					<ShortName>STEP-FOLIAGE-LOW_1.wav</ShortName>
+					<Path>SFX/STEP-FOLIAGE-LOW_1_10C4C929.wem</Path>
+				</File>
 				<File Id="566475179" Language="SFX">
 					<ShortName>DASH-HIGH.wav</ShortName>
 					<Path>SFX/DASH-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="701462106" Language="SFX">
+					<ShortName>CUTTING-GRASS-MEDIUM.wav</ShortName>
+					<Path>SFX/CUTTING-GRASS-MEDIUM_10C4C929.wem</Path>
 				</File>
 				<File Id="791681697" Language="SFX">
 					<ShortName>9T_SD_Fox Dies lol.wav</ShortName>
@@ -572,6 +694,10 @@
 				<File Id="939080959" Language="SFX">
 					<ShortName>Footsteps\GRASS-STEP2-HIGH.wav</ShortName>
 					<Path>SFX/Footsteps/GRASS-STEP2-HIGH_10C4C929.wem</Path>
+				</File>
+				<File Id="958853102" Language="SFX">
+					<ShortName>STEP-FOLIAGE-LOW_3.wav</ShortName>
+					<Path>SFX/STEP-FOLIAGE-LOW_3_10C4C929.wem</Path>
 				</File>
 				<File Id="1038518400" Language="SFX">
 					<ShortName>Footsteps\GRASS-STEP4-HIGH.wav</ShortName>
@@ -712,20 +838,67 @@
 					<States/>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="684570577" Name="Footstep_Material" ObjectPath="\Switches\Default Work Unit\Footstep_Material" GUID="{59A1B91B-3038-4252-8255-7D6F6C52E51C}">
+					<Switches>
+						<Switch Id="4256116324" Name="Footstep_Grass" ObjectPath="\Switches\Default Work Unit\Footstep_Material\Footstep_Grass" GUID="{24A25FA0-EDB3-479E-963C-34484A171272}"/>
+						<Switch Id="758275043" Name="Footstep_Foliage" ObjectPath="\Switches\Default Work Unit\Footstep_Material\Footstep_Foliage" GUID="{1E6BCB43-EEC1-4C3B-90AE-EB49F9DED2A6}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="4171943471">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="1615640302">
+		<SoundBank Id="1551306167" Language="SFX" Hash="4063300415">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1880629771" Name="Quill_Scratch" ObjectPath="\Events\Default Work Unit\UI\Quill_Scratch" DurationType="OneShot" DurationMin="1.418662" DurationMax="2.623991"/>
+				<Event Id="3199494009" Name="Health_Regen" ObjectPath="\Events\Default Work Unit\UI\Health_Regen" DurationType="OneShot" DurationMin="2." DurationMax="2.">
+					<IncludedMemoryFiles>
+						<File Id="963972109" Language="SFX">
+							<ShortName>HEALTH-REGEN-MEDIUM.wav</ShortName>
+							<Path>SFX/HEALTH-REGEN-MEDIUM_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1442983119" Name="Low_Health_Warning" ObjectPath="\Events\Default Work Unit\UI\Low_Health_Warning" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="870482346" Language="SFX">
+							<ShortName>LOW-HEALTH-MEDIUM.wav</ShortName>
+							<Path>SFX/LOW-HEALTH-MEDIUM_B104B632.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1880629771" Name="Quill_Scratch" ObjectPath="\Events\Default Work Unit\UI\Quill_Scratch" DurationType="OneShot" DurationMin="1.418662" DurationMax="2.623991">
+					<IncludedMemoryFiles>
+						<File Id="877662393" Language="SFX">
+							<ShortName>QUILLS2-V2-HIGH.wav</ShortName>
+							<Path>SFX/QUILLS2-V2-HIGH_10C4C929.wem</Path>
+						</File>
+						<File Id="903332835" Language="SFX">
+							<ShortName>QUILLS-V2-HIGH.wav</ShortName>
+							<Path>SFX/QUILLS-V2-HIGH_08BEB9C2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1973847113" Name="Selection" ObjectPath="\Events\Default Work Unit\UI\Selection" DurationType="OneShot" DurationMin="0.153651" DurationMax="0.153651">
+					<IncludedMemoryFiles>
+						<File Id="973186775" Language="SFX">
+							<ShortName>SELECTION-MEDIUM.wav</ShortName>
+							<Path>SFX/SELECTION-MEDIUM_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="870482346" Language="SFX">
+					<ShortName>LOW-HEALTH-MEDIUM.wav</ShortName>
+					<Path>SFX/LOW-HEALTH-MEDIUM_B104B632.wem</Path>
+				</File>
 				<File Id="877662393" Language="SFX">
 					<ShortName>QUILLS2-V2-HIGH.wav</ShortName>
 					<Path>SFX/QUILLS2-V2-HIGH_10C4C929.wem</Path>
@@ -733,6 +906,14 @@
 				<File Id="903332835" Language="SFX">
 					<ShortName>QUILLS-V2-HIGH.wav</ShortName>
 					<Path>SFX/QUILLS-V2-HIGH_08BEB9C2.wem</Path>
+				</File>
+				<File Id="963972109" Language="SFX">
+					<ShortName>HEALTH-REGEN-MEDIUM.wav</ShortName>
+					<Path>SFX/HEALTH-REGEN-MEDIUM_10C4C929.wem</Path>
+				</File>
+				<File Id="973186775" Language="SFX">
+					<ShortName>SELECTION-MEDIUM.wav</ShortName>
+					<Path>SFX/SELECTION-MEDIUM_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -826,7 +1007,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3735044908" Language="SFX" Hash="594680205">
+		<SoundBank Id="3735044908" Language="SFX" Hash="3113702224">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Main_Theme</ObjectPath>
 			<ShortName>Music_Main_Theme</ShortName>
 			<Path>Music_Main_Theme.bnk</Path>

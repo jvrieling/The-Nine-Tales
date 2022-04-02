@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585528447400836531
+    m_lastTime: -8585527604444246772
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -605,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585528341577777467
+    m_lastTime: -8585527608970665025
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -1080,8 +1080,8 @@ MonoBehaviour:
         guid: 8093f4ca54405f4792ffab81d2c2a74a
       Path: Events/Default Work Unit/Player/Fox_Footstep
       maxAttenuation: 0
-      maxDuration: 0.173968
-      minDuration: 0.098526
+      maxDuration: 0
+      minDuration: 0
     - name: Fox_Jump
       guid: 7b7ba233e024a54194a939a9a4d1470b
       id: 1783467547
@@ -1120,8 +1120,8 @@ MonoBehaviour:
         guid: b6dcca467055e3479b3d554c73af8e10
       Path: Events/Default Work Unit/Player/Fox_Land
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Gain_Tail
       guid: 6e6d0c2ccc48a74b94407520be5a1362
       id: 2680479089
@@ -1142,6 +1142,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 8.25
       minDuration: 8.25
+    - name: Health_Regen
+      guid: bbfe0d807729dc43a852b658ad50917d
+      id: 3199494009
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: UI
+        ObjectType: 4
+        guid: 51e2480c2051c64da8c492b4b898f543
+      - ElementName: Health_Regen
+        ObjectType: 3
+        guid: bbfe0d807729dc43a852b658ad50917d
+      Path: Events/Default Work Unit/UI/Health_Regen
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 2
     - name: Hurt
       guid: ab77e72015216f4ba30aae5470fb63dc
       id: 3193947170
@@ -1208,6 +1228,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Low_Health_Warning
+      guid: 06081cb16c84614c9ac9671d39b2b8e0
+      id: 1442983119
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: UI
+        ObjectType: 4
+        guid: 51e2480c2051c64da8c492b4b898f543
+      - ElementName: Low_Health_Warning
+        ObjectType: 3
+        guid: 06081cb16c84614c9ac9671d39b2b8e0
+      Path: Events/Default Work Unit/UI/Low_Health_Warning
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Lumb
       guid: c30e7225b96310429133430be9a8fa8c
       id: 660996473
@@ -1446,6 +1486,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 3.5
       minDuration: 3.5
+    - name: Play_Footstep_Material
+      guid: de2f778f927ec545b4cb0176b2aab319
+      id: 1766743556
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Play_Footstep_Material
+        ObjectType: 3
+        guid: de2f778f927ec545b4cb0176b2aab319
+      Path: Events/Default Work Unit/Player/Play_Footstep_Material
+      maxAttenuation: 0
+      maxDuration: 0.173968
+      minDuration: 0.098526
     - name: Play_Music
       guid: c0dd2621cf74754998091279fa6adba1
       id: 2932040671
@@ -1543,6 +1603,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Selection
+      guid: 74d8c19368b5494f83423ad2b9582a93
+      id: 1973847113
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: UI
+        ObjectType: 4
+        guid: 51e2480c2051c64da8c492b4b898f543
+      - ElementName: Selection
+        ObjectType: 3
+        guid: 74d8c19368b5494f83423ad2b9582a93
+      Path: Events/Default Work Unit/UI/Selection
+      maxAttenuation: 0
+      maxDuration: 0.153651
+      minDuration: 0.153651
     - name: Spiderweb_Destroy
       guid: 94572448d67da24fb26fad88c60a3841
       id: 1072028603
@@ -1841,6 +1921,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Weed_Destroy
+      guid: e19f8914c58bb54882fe4807534ca90b
+      id: 1018073521
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Weed_Destroy
+        ObjectType: 3
+        guid: e19f8914c58bb54882fe4807534ca90b
+      Path: Events/Default Work Unit/Player/Weed_Destroy
+      maxAttenuation: 0
+      maxDuration: 0.448005
+      minDuration: 0.448005
   RtpcWwu:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     PathAndIcons:
@@ -2715,8 +2815,58 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: e5db6688ed9efc45817b04d283795eb4
     GuidInternal: 
-    m_lastTime: -8585558025540609041
-    List: []
+    m_lastTime: -8585527619993696404
+    List:
+    - name: Footstep_Material
+      guid: 1bb9a1593830524282557d6f6c52e51c
+      id: 684570577
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e5db6688ed9efc45817b04d283795eb4
+      - ElementName: Footstep_Material
+        ObjectType: 11
+        guid: 1bb9a1593830524282557d6f6c52e51c
+      Path: Switches/Default Work Unit/Footstep_Material
+      values:
+      - name: Footstep_Foliage
+        guid: 43cb6b1ec1ee3b4c90aeeb49f9ded2a6
+        id: 758275043
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5db6688ed9efc45817b04d283795eb4
+        - ElementName: Footstep_Material
+          ObjectType: 11
+          guid: 1bb9a1593830524282557d6f6c52e51c
+        - ElementName: Footstep_Foliage
+          ObjectType: 10
+          guid: 43cb6b1ec1ee3b4c90aeeb49f9ded2a6
+      - name: Footstep_Grass
+        guid: a05fa224b3ed9e47963c34484a171272
+        id: 4256116324
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: e5db6688ed9efc45817b04d283795eb4
+        - ElementName: Footstep_Material
+          ObjectType: 11
+          guid: 1bb9a1593830524282557d6f6c52e51c
+        - ElementName: Footstep_Grass
+          ObjectType: 10
+          guid: a05fa224b3ed9e47963c34484a171272
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     PathAndIcons:
@@ -2732,7 +2882,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000b000000160000001700000039000000430000004600000049000000590000005e000000
+  ExpandedWaapiItemIds: 0100000006000000070000000b000000160000001700000021000000220000002300000039000000430000004600000049000000590000005e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
