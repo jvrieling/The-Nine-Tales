@@ -76,11 +76,11 @@ public class CameraController : MonoBehaviour
             //Put the camera a little ahead of the player in the direction they are facing
             if (p.GetFacingDirection() == Player.FacingDirection.Left)
             {
-                turnOffset += new Vector3(cam.orthographicSize / 3, 0, 0);
+                turnOffset += new Vector3(-cam.orthographicSize / 3, 0, 0);
             }
             else
             {
-                turnOffset += new Vector3(-cam.orthographicSize / 3, 0, 0);
+                turnOffset += new Vector3(cam.orthographicSize / 3, 0, 0);
             }
 
             //Lerp the adjusted position to make it smoother, especially when turning around.
