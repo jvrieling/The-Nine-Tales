@@ -852,7 +852,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="4063300415">
+		<SoundBank Id="1551306167" Language="SFX" Hash="444026391">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
@@ -870,6 +870,14 @@
 						<File Id="870482346" Language="SFX">
 							<ShortName>LOW-HEALTH-MEDIUM.wav</ShortName>
 							<Path>SFX/LOW-HEALTH-MEDIUM_B104B632.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="786828986" Name="New_Tail_Unlocked" ObjectPath="\Events\Default Work Unit\UI\New_Tail_Unlocked" DurationType="OneShot" DurationMin="5.5" DurationMax="5.5">
+					<IncludedMemoryFiles>
+						<File Id="619227783" Language="SFX">
+							<ShortName>Fox_New_Tail_music__sfx.wav</ShortName>
+							<Path>SFX/Fox_New_Tail_music__sfx_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -895,6 +903,10 @@
 				</Event>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="619227783" Language="SFX">
+					<ShortName>Fox_New_Tail_music__sfx.wav</ShortName>
+					<Path>SFX/Fox_New_Tail_music__sfx_10C4C929.wem</Path>
+				</File>
 				<File Id="870482346" Language="SFX">
 					<ShortName>LOW-HEALTH-MEDIUM.wav</ShortName>
 					<Path>SFX/LOW-HEALTH-MEDIUM_B104B632.wem</Path>

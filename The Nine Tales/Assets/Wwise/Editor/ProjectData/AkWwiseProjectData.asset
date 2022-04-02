@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585527604444246772
+    m_lastTime: -8585526830632219369
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -605,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585527608970665025
+    m_lastTime: -8585526831576657012
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -1377,6 +1377,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: New_Tail_Unlocked
+      guid: 9e444360415b2f42a121dd2f3f9379c5
+      id: 786828986
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: UI
+        ObjectType: 4
+        guid: 51e2480c2051c64da8c492b4b898f543
+      - ElementName: New_Tail_Unlocked
+        ObjectType: 3
+        guid: 9e444360415b2f42a121dd2f3f9379c5
+      Path: Events/Default Work Unit/UI/New_Tail_Unlocked
+      maxAttenuation: 0
+      maxDuration: 5.5
+      minDuration: 5.5
     - name: No_Credits
       guid: f537ae25d3e26447a05b22bc6f50b7e1
       id: 3592090459
@@ -2882,7 +2902,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000000b000000160000001700000021000000220000002300000039000000430000004600000049000000590000005e000000
+  ExpandedWaapiItemIds: 0100000006000000070000000b0000000c000000160000001700000021000000220000002300000039000000430000004600000049000000590000005e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
