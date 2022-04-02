@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585526830632219369
+    m_lastTime: -8585526761101597286
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -1059,7 +1059,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 9aac398aecbfce4f8e6dc4263cfa8f07
       Path: Events/Default Work Unit/Player/Fox_Dash
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.22059
       minDuration: 0.22059
     - name: Fox_Footstep
@@ -1099,7 +1099,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7b7ba233e024a54194a939a9a4d1470b
       Path: Events/Default Work Unit/Player/Fox_Jump
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.172381
       minDuration: 0.172381
     - name: Fox_Land
@@ -1523,7 +1523,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: de2f778f927ec545b4cb0176b2aab319
       Path: Events/Default Work Unit/Player/Play_Footstep_Material
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: 0.173968
       minDuration: 0.098526
     - name: Play_Music
@@ -2902,7 +2902,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000000b0000000c000000160000001700000021000000220000002300000039000000430000004600000049000000590000005e000000
+  ExpandedWaapiItemIds: 0100000006000000070000000a0000000c000000160000001700000018000000210000002200000023000000390000004300000046000000490000004e000000590000005e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
