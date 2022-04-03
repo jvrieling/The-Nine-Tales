@@ -1443,7 +1443,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dfb8eccc4a8f34495a9581b4b9f007ce, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: be1c3760a3d4e47c49fa8c0ff00dd510, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3779f2fb502b34e0bb8870c50f1e29fe, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1c1b19eaabdbd4e898ae3185c3d3c93e, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -10931,170 +10931,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!43 &434120671
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 42
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 16
-    localAABB:
-      m_Center: {x: -0.34307232, y: -0.29894885, z: 0}
-      m_Extent: {x: 0.80711615, y: 0.572302, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 00000100020000000300010004000300000004000500030004000600050006000400070002000800000000000900040001000a00020003000b00010005000c00030004000d00070006000e00050007000f000600
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 16
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 704
-    _typelessdata: 2697ed3e4c0a5fbf0000000060f37f3f63cca03c00000080000000802697ed3e4c0a5fbf2697ed3e4c0a5fbfc515e23ef2f48b3e000000004fd272bdbd8c7f3f0000008000000080c515e23ef2f48b3ec515e23ef2f48b3e76d6e73ed30f99be0000000060f37f3f7fcca03c0000008000000080c515e23ef2f48b3e2697ed3e4c0a5fbf80d081be5aa46d3e000000004ed272bdbd8c7f3f000000800000008063db72bfd05e433ec515e23ef2f48b3e2da7afbe1dfc5cbf000000007cf922bcc2fc7fbf00000000000000802697ed3e4c0a5fbf603993bfeeed5abf63db72bfd05e433e0000000077607bbfd1ba413e000000800000008063db72bfd05e433e63db72bfd05e433e895386bf3a16aabe0000000077607bbfcaba413e0000008000000080603993bfeeed5abf63db72bfd05e433e603993bfeeed5abf000000007cf922bcc2fc7fbf0000000000000080603993bfeeed5abf603993bfeeed5abf76d6e73ed30f99be0000000060f37f3f63cca03c0000008000000080c515e23ef2f48b3e2697ed3e4c0a5fbf2697ed3e4c0a5fbf000000007cf922bcc2fc7fbf00000000000000802697ed3e4c0a5fbf2697ed3e4c0a5fbfc515e23ef2f48b3e0000000060f37f3f7fcca03c0000008000000080c515e23ef2f48b3ec515e23ef2f48b3e80d081be5aa46d3e000000004fd272bdbd8c7f3f000000800000008063db72bfd05e433ec515e23ef2f48b3e63db72bfd05e433e000000004ed272bdbd8c7f3f000000800000008063db72bfd05e433e63db72bfd05e433e2da7afbe1dfc5cbf000000007cf922bcc2fc7fbf00000000000000802697ed3e4c0a5fbf603993bfeeed5abf895386bf3a16aabe0000000077607bbfd1ba413e0000008000000080603993bfeeed5abf63db72bfd05e433e603993bfeeed5abf0000000077607bbfcaba413e0000008000000080603993bfeeed5abf603993bfeeed5abf
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -0.34307232, y: -0.29894885, z: 0}
-    m_Extent: {x: 0.80711615, y: 0.572302, z: 0}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1001 &434730733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15194,7 +15030,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7646a02cc909f4a06a56153e83e39dee, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e805ada887d8849e0a8242f9f8d9e4eb, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &465619032
 MonoBehaviour:
@@ -15213,7 +15049,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fd8c8c0f4ab7244ce9514a6fdc5a8e01, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1ec1fb4db72064053ab4aa3e7aafc5c8, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &465619033
 MonoBehaviour:
@@ -15232,7 +15068,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f27ad7e3c920b49cd8b1f774c31abe77, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a00d59adeea3a4b5abe2db0f33a76439, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &465619034
 MonoBehaviour:
@@ -15251,7 +15087,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bb29af8e50d8743ac8e18d127114d1ab, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 44026c1a01bd440c59c9b9e5623716c8, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &465619036
 MonoBehaviour:
@@ -15270,7 +15106,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9e889c8641aae4c0fb8a356b197eff69, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ad2d09a2d5c34410d9d21df8e9738d98, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &465619037
 MonoBehaviour:
@@ -15289,7 +15125,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 91947e504ff9348e6ab19232921ac4d4, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 547636d28fee74495ad0a75f2a41ac3a, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &465619038
 MonoBehaviour:
@@ -15323,7 +15159,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ef41cd35f17374756b6723b2dbf6bdec, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 86f4a8f3f947240daa1eb4892aa9434c, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &465619040
 MonoBehaviour:
@@ -24631,6 +24467,170 @@ Transform:
   m_Father: {fileID: 801330617}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &860679949
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 42
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 16
+    localAABB:
+      m_Center: {x: -0.34307232, y: -0.29894885, z: 0}
+      m_Extent: {x: 0.80711615, y: 0.572302, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 00000100020000000300010004000300000004000500030004000600050006000400070002000800000000000900040001000a00020003000b00010005000c00030004000d00070006000e00050007000f000600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 16
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 704
+    _typelessdata: 2697ed3e4c0a5fbf0000000060f37f3f63cca03c00000080000000802697ed3e4c0a5fbf2697ed3e4c0a5fbfc515e23ef2f48b3e000000004fd272bdbd8c7f3f0000008000000080c515e23ef2f48b3ec515e23ef2f48b3e76d6e73ed30f99be0000000060f37f3f7fcca03c0000008000000080c515e23ef2f48b3e2697ed3e4c0a5fbf80d081be5aa46d3e000000004ed272bdbd8c7f3f000000800000008063db72bfd05e433ec515e23ef2f48b3e2da7afbe1dfc5cbf000000007cf922bcc2fc7fbf00000000000000802697ed3e4c0a5fbf603993bfeeed5abf63db72bfd05e433e0000000077607bbfd1ba413e000000800000008063db72bfd05e433e63db72bfd05e433e895386bf3a16aabe0000000077607bbfcaba413e0000008000000080603993bfeeed5abf63db72bfd05e433e603993bfeeed5abf000000007cf922bcc2fc7fbf0000000000000080603993bfeeed5abf603993bfeeed5abf76d6e73ed30f99be0000000060f37f3f63cca03c0000008000000080c515e23ef2f48b3e2697ed3e4c0a5fbf2697ed3e4c0a5fbf000000007cf922bcc2fc7fbf00000000000000802697ed3e4c0a5fbf2697ed3e4c0a5fbfc515e23ef2f48b3e0000000060f37f3f7fcca03c0000008000000080c515e23ef2f48b3ec515e23ef2f48b3e80d081be5aa46d3e000000004fd272bdbd8c7f3f000000800000008063db72bfd05e433ec515e23ef2f48b3e63db72bfd05e433e000000004ed272bdbd8c7f3f000000800000008063db72bfd05e433e63db72bfd05e433e2da7afbe1dfc5cbf000000007cf922bcc2fc7fbf00000000000000802697ed3e4c0a5fbf603993bfeeed5abf895386bf3a16aabe0000000077607bbfd1ba413e0000008000000080603993bfeeed5abf63db72bfd05e433e603993bfeeed5abf0000000077607bbfcaba413e0000008000000080603993bfeeed5abf603993bfeeed5abf
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.34307232, y: -0.29894885, z: 0}
+    m_Extent: {x: 0.80711615, y: 0.572302, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &862952982
 GameObject:
   m_ObjectHideFlags: 0
@@ -25540,7 +25540,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bb29af8e50d8743ac8e18d127114d1ab, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 44026c1a01bd440c59c9b9e5623716c8, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -57973,7 +57973,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 65.74425
     y: 167.15019
-    width: 107.894714
+    width: 110.43956
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -60651,38 +60651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1467329385 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6168549705595702921, guid: b2602b7ad7deedf4bb795734618dc743, type: 3}
-  m_PrefabInstance: {fileID: 6168549704199758920}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310004065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1467329396
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310004065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 385
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 1467329385}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
 --- !u!114 &1467329397
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -60906,7 +60874,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ada533b8e88644af6b977ea4ab2bc0b6, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 4b21da207154e4582a58447d1d9273b9, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329463
 MonoBehaviour:
@@ -60925,26 +60893,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 38e075e91d6574713867c3b1236c8872, type: 2}
-  soundObject: {fileID: 0}
---- !u!114 &1467329495
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310004065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f34393be2d6994b85c3c5416751ad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 395
-  indentLevel: 0
-  myEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3f8c9a9532bc24c63819bb9250907101, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 7711be49ec9874002b7eadcd17e8b893, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329511
 MonoBehaviour:
@@ -60978,7 +60927,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5f4bb25bbc377406dbedab4bedf80135, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 480db945bd6ab4805938a937e3452e34, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329513
 MonoBehaviour:
@@ -60997,7 +60946,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2a536e03b5f0c46eba79aaa228448291, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 024146a58e5ea46b9af15045debb36a2, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329514
 MonoBehaviour:
@@ -61551,7 +61500,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -215.94499
     y: 119.302635
-    width: 118.421036
+    width: 119.23077
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -61615,7 +61564,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ef41cd35f17374756b6723b2dbf6bdec, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 7711be49ec9874002b7eadcd17e8b893, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329556
 MonoBehaviour:
@@ -61634,7 +61583,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2a536e03b5f0c46eba79aaa228448291, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 024146a58e5ea46b9af15045debb36a2, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329557
 MonoBehaviour:
@@ -61653,7 +61602,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5f4bb25bbc377406dbedab4bedf80135, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 480db945bd6ab4805938a937e3452e34, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329558
 MonoBehaviour:
@@ -61672,7 +61621,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bb29af8e50d8743ac8e18d127114d1ab, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 44026c1a01bd440c59c9b9e5623716c8, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329559
 MonoBehaviour:
@@ -61691,7 +61640,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 38e075e91d6574713867c3b1236c8872, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 4dcd3ab67371644c199511cf8bf3462e, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &1467329560
 MonoBehaviour:
@@ -61729,7 +61678,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 79c7beb5d1aab4bd2b67aae555223c87, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 10854be9321494456b45c55121454154, type: 2}
   soundObject: {fileID: 0}
 --- !u!1001 &1469182054
 PrefabInstance:
@@ -65639,7 +65588,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bb29af8e50d8743ac8e18d127114d1ab, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 44026c1a01bd440c59c9b9e5623716c8, type: 2}
   soundObject: {fileID: 86814653}
 --- !u!1 &1540344111
 GameObject:
@@ -77571,7 +77520,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3f8c9a9532bc24c63819bb9250907101, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: aa070d94614dd43c6a5cd5128bba1617, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -77627,7 +77576,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f27ad7e3c920b49cd8b1f774c31abe77, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e805ada887d8849e0a8242f9f8d9e4eb, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0
@@ -81559,7 +81508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6168549705595702980, guid: b2602b7ad7deedf4bb795734618dc743, type: 3}
       propertyPath: commandList.Array.size
-      value: 35
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 6168549705595702980, guid: b2602b7ad7deedf4bb795734618dc743, type: 3}
       propertyPath: commandList.Array.data[0]
@@ -81600,7 +81549,7 @@ PrefabInstance:
     - target: {fileID: 6168549705595702980, guid: b2602b7ad7deedf4bb795734618dc743, type: 3}
       propertyPath: commandList.Array.data[9]
       value: 
-      objectReference: {fileID: 1467329495}
+      objectReference: {fileID: 0}
     - target: {fileID: 6168549705595702980, guid: b2602b7ad7deedf4bb795734618dc743, type: 3}
       propertyPath: commandList.Array.data[10]
       value: 
@@ -81700,7 +81649,7 @@ PrefabInstance:
     - target: {fileID: 6168549705595702980, guid: b2602b7ad7deedf4bb795734618dc743, type: 3}
       propertyPath: commandList.Array.data[34]
       value: 
-      objectReference: {fileID: 1467329396}
+      objectReference: {fileID: 0}
     - target: {fileID: 6168549705595702982, guid: b2602b7ad7deedf4bb795734618dc743, type: 3}
       propertyPath: zoom
       value: 0.9100001
@@ -82169,7 +82118,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8614f58e1a8864333a4d0e9e0e75e881, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 49aa3f28352e846898a74642ba523f02, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &6168549704199758928
 MonoBehaviour:
@@ -82188,7 +82137,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8614f58e1a8864333a4d0e9e0e75e881, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 8a3d35e27431940f5bc88467801f1c41, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &6168549704199758929
 MonoBehaviour:
@@ -82226,7 +82175,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c9402027d45ea4864a2514c62ea6aaf5, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 8a3d35e27431940f5bc88467801f1c41, type: 2}
   soundObject: {fileID: 0}
 --- !u!1001 &6668318202145371567
 PrefabInstance:
@@ -82989,7 +82938,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7646a02cc909f4a06a56153e83e39dee, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: e805ada887d8849e0a8242f9f8d9e4eb, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &6668318202145371572
 MonoBehaviour:
@@ -83008,7 +82957,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fd8c8c0f4ab7244ce9514a6fdc5a8e01, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1ec1fb4db72064053ab4aa3e7aafc5c8, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &6668318202145371573
 MonoBehaviour:
@@ -83027,7 +82976,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f27ad7e3c920b49cd8b1f774c31abe77, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: a00d59adeea3a4b5abe2db0f33a76439, type: 2}
   soundObject: {fileID: 0}
 --- !u!1001 &8702299815728525156
 PrefabInstance:
@@ -83353,7 +83302,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dfb8eccc4a8f34495a9581b4b9f007ce, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: aa070d94614dd43c6a5cd5128bba1617, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &8702299815728525165
 MonoBehaviour:
@@ -83372,7 +83321,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3f8c9a9532bc24c63819bb9250907101, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1c1b19eaabdbd4e898ae3185c3d3c93e, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &8702299815728525166
 MonoBehaviour:
@@ -83391,7 +83340,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3f8c9a9532bc24c63819bb9250907101, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: be1c3760a3d4e47c49fa8c0ff00dd510, type: 2}
   soundObject: {fileID: 0}
 --- !u!1001 &9126270366633408150
 PrefabInstance:
@@ -83400,6 +83349,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2033519147}
     m_Modifications:
+    - target: {fileID: 9126270366633408214, guid: eef33c51351aa8f44a6c387badee7456, type: 3}
+      propertyPath: myEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 86f4a8f3f947240daa1eb4892aa9434c, type: 2}
+    - target: {fileID: 9126270366633408215, guid: eef33c51351aa8f44a6c387badee7456, type: 3}
+      propertyPath: myEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ad2d09a2d5c34410d9d21df8e9738d98, type: 2}
+    - target: {fileID: 9126270366633408216, guid: eef33c51351aa8f44a6c387badee7456, type: 3}
+      propertyPath: myEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 547636d28fee74495ad0a75f2a41ac3a, type: 2}
+    - target: {fileID: 9126270366633408217, guid: eef33c51351aa8f44a6c387badee7456, type: 3}
+      propertyPath: myEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: db9f21d637e7f47c288f2c14b570080c, type: 2}
     - target: {fileID: 9126270367822661699, guid: eef33c51351aa8f44a6c387badee7456, type: 3}
       propertyPath: nodeRect.x
       value: -470.06616
@@ -83786,7 +83751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9126270367822661757, guid: eef33c51351aa8f44a6c387badee7456, type: 3}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9126270367822661757, guid: eef33c51351aa8f44a6c387badee7456, type: 3}
       propertyPath: selectedCommands.Array.size
@@ -84100,7 +84065,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f64837258352f4e4696d4e747ce42499, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 5f7d204ab3997427181674a03cd836fd, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408189
 MonoBehaviour:
@@ -84119,7 +84084,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 867a360acb1e54ba6b472c6adb0540e2, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: db9f21d637e7f47c288f2c14b570080c, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408190
 MonoBehaviour:
@@ -84138,7 +84103,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 91947e504ff9348e6ab19232921ac4d4, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ad2d09a2d5c34410d9d21df8e9738d98, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408200 stripped
 MonoBehaviour:
@@ -84190,7 +84155,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8529e9761093f4e4db5c7eb18e182283, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 86f4a8f3f947240daa1eb4892aa9434c, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408207
 MonoBehaviour:
@@ -84209,7 +84174,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 565b83dfa290d4225886464ae118d549, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 547636d28fee74495ad0a75f2a41ac3a, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408211
 MonoBehaviour:
@@ -84249,7 +84214,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8529e9761093f4e4db5c7eb18e182283, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 86f4a8f3f947240daa1eb4892aa9434c, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408215
 MonoBehaviour:
@@ -84268,7 +84233,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 565b83dfa290d4225886464ae118d549, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 547636d28fee74495ad0a75f2a41ac3a, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408216
 MonoBehaviour:
@@ -84287,7 +84252,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 91947e504ff9348e6ab19232921ac4d4, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ad2d09a2d5c34410d9d21df8e9738d98, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408217
 MonoBehaviour:
@@ -84306,7 +84271,7 @@ MonoBehaviour:
   myEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 867a360acb1e54ba6b472c6adb0540e2, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: db9f21d637e7f47c288f2c14b570080c, type: 2}
   soundObject: {fileID: 0}
 --- !u!114 &9126270366633408218
 MonoBehaviour:

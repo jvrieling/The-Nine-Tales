@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: a523732cdf014146a8572b3bb46eac39
     GuidInternal: 
-    m_lastTime: -8585552668816695404
+    m_lastTime: -8585525927081388354
     List:
     - name: Ambient
       guid: a66d6568530cf847b5bb2e6c1bb11339
@@ -605,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585526831576657012
+    m_lastTime: -8585525927081100287
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -744,6 +744,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Animation_Load_Failsafe
+      guid: 293400594b96e74780f22fef0cf0e127
+      id: 2905909780
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Animation_Load_Failsafe
+        ObjectType: 3
+        guid: 293400594b96e74780f22fef0cf0e127
+      Path: Events/Default Work Unit/Player/Animation_Load_Failsafe
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Arrive_In_Village
       guid: f9e637cabb932440a925a4cc280c75b4
       id: 1346965307
@@ -1062,26 +1082,6 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: 0.22059
       minDuration: 0.22059
-    - name: Fox_Footstep
-      guid: 8093f4ca54405f4792ffab81d2c2a74a
-      id: 3242941405
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
-      - ElementName: Player
-        ObjectType: 4
-        guid: fc4f10657dbb514cacef8ad9e5cbb9be
-      - ElementName: Fox_Footstep
-        ObjectType: 3
-        guid: 8093f4ca54405f4792ffab81d2c2a74a
-      Path: Events/Default Work Unit/Player/Fox_Footstep
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Fox_Jump
       guid: 7b7ba233e024a54194a939a9a4d1470b
       id: 1783467547
@@ -1102,46 +1102,6 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: 0.172381
       minDuration: 0.172381
-    - name: Fox_Land
-      guid: b6dcca467055e3479b3d554c73af8e10
-      id: 1687841656
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
-      - ElementName: Player
-        ObjectType: 4
-        guid: fc4f10657dbb514cacef8ad9e5cbb9be
-      - ElementName: Fox_Land
-        ObjectType: 3
-        guid: b6dcca467055e3479b3d554c73af8e10
-      Path: Events/Default Work Unit/Player/Fox_Land
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Gain_Tail
-      guid: 6e6d0c2ccc48a74b94407520be5a1362
-      id: 2680479089
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
-      - ElementName: Player
-        ObjectType: 4
-        guid: fc4f10657dbb514cacef8ad9e5cbb9be
-      - ElementName: Gain_Tail
-        ObjectType: 3
-        guid: 6e6d0c2ccc48a74b94407520be5a1362
-      Path: Events/Default Work Unit/Player/Gain_Tail
-      maxAttenuation: 0
-      maxDuration: 8.25
-      minDuration: 8.25
     - name: Health_Regen
       guid: bbfe0d807729dc43a852b658ad50917d
       id: 3199494009
@@ -1180,8 +1140,8 @@ MonoBehaviour:
         guid: ab77e72015216f4ba30aae5470fb63dc
       Path: Events/Default Work Unit/Player/Hurt
       maxAttenuation: 0
-      maxDuration: 8.25
-      minDuration: 8.25
+      maxDuration: 4
+      minDuration: 4
     - name: In_Credits
       guid: 0f915b2a3dd8eb4391db0b3000d87fd7
       id: 1174846523
@@ -1563,6 +1523,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Player_Unmute
+      guid: 854926f881863849abc18a69efe3603d
+      id: 959462367
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
+      - ElementName: Player
+        ObjectType: 4
+        guid: fc4f10657dbb514cacef8ad9e5cbb9be
+      - ElementName: Player_Unmute
+        ObjectType: 3
+        guid: 854926f881863849abc18a69efe3603d
+      Path: Events/Default Work Unit/Player/Player_Unmute
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Quill_Scratch
       guid: 466b9f1feb0e9c4195019917e9d05890
       id: 1880629771
@@ -2169,6 +2149,33 @@ MonoBehaviour:
         ObjectType: 13
         guid: 197ba8edaa73a0409f192073606db710
       Path: Game Parameters/Factory SoundSeed Air Game Syncs/SS_Air_Turbulence
+  - PhysicalPath: Game Parameters/Mute.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Mute
+      ObjectType: 12
+      guid: 75660be825151741a2eb58ed09caa1eb
+    ParentPath: Game Parameters/Mute
+    guid: 75660be825151741a2eb58ed09caa1eb
+    GuidInternal: 
+    m_lastTime: -8585525929614061415
+    List:
+    - name: Mute_Player_Soundbank
+      guid: 36203e73d3b9d14bb4394a202d65e366
+      id: 2665574512
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Mute
+        ObjectType: 12
+        guid: 75660be825151741a2eb58ed09caa1eb
+      - ElementName: Mute_Player_Soundbank
+        ObjectType: 13
+        guid: 36203e73d3b9d14bb4394a202d65e366
+      Path: Game Parameters/Mute/Mute_Player_Soundbank
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     PathAndIcons:
@@ -2181,7 +2188,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: ef20ec574afe3649810385069bd8b529
     GuidInternal: 
-    m_lastTime: -8585528688200964488
+    m_lastTime: -8585526006089960104
     List:
     - name: Asha_Cutscenes
       guid: a7459891c73ce148b7307f9c4fe78787
@@ -2693,6 +2700,72 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Player_Load
+      guid: 1c96de300a53694d8346d61b69ca6b3f
+      id: 3610741985
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ef20ec574afe3649810385069bd8b529
+      - ElementName: Player_Load
+        ObjectType: 9
+        guid: 1c96de300a53694d8346d61b69ca6b3f
+      Path: States/Default Work Unit/Player_Load
+      values:
+      - name: None
+        guid: ff7af98ba75110438c45c5f648c11745
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Load
+          ObjectType: 9
+          guid: 1c96de300a53694d8346d61b69ca6b3f
+        - ElementName: None
+          ObjectType: 8
+          guid: ff7af98ba75110438c45c5f648c11745
+      - name: Player_Mute
+        guid: 28301c5add0a7947a998f09d791b5895
+        id: 2213550990
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Load
+          ObjectType: 9
+          guid: 1c96de300a53694d8346d61b69ca6b3f
+        - ElementName: Player_Mute
+          ObjectType: 8
+          guid: 28301c5add0a7947a998f09d791b5895
+      - name: Player_Unmute
+        guid: 7a1971d10e16b24d930bcc0d948916bc
+        id: 959462367
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: ef20ec574afe3649810385069bd8b529
+        - ElementName: Player_Load
+          ObjectType: 9
+          guid: 1c96de300a53694d8346d61b69ca6b3f
+        - ElementName: Player_Unmute
+          ObjectType: 8
+          guid: 7a1971d10e16b24d930bcc0d948916bc
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Village_Convos
       guid: 7b3d870a337ce94d9ce83edec2abdc20
       id: 1035893910
@@ -2902,7 +2975,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000000a0000000c000000160000001700000018000000210000002200000023000000390000004300000046000000490000004e000000590000005e000000
+  ExpandedWaapiItemIds: 010000000600000007000000080000000a0000000c0000001600000017000000180000002100000022000000230000003900000043000000490000004a0000004b0000004d0000004e0000004f000000540000005e000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
