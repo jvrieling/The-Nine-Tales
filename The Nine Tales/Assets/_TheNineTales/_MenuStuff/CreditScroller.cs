@@ -23,5 +23,9 @@ public class CreditScroller : MonoBehaviour
             SceneManager.LoadScene("P_sc_MainMenu");
         }
 
+        if (Input.GetKeyDown(KeyCode.Backspace)) {
+            SceneManager.LoadScene("P_sc_MainMenu");
+        }
+
     }
 }
