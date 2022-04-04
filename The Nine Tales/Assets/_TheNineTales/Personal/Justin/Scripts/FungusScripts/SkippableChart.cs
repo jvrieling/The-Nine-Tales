@@ -14,7 +14,6 @@ public class SkippableChart : Command
     public string blockToExecute;
     public override void OnEnter()
     {
-        Debug.Log("Allow skippping!");
         if (blockToExecute != null && blockToExecute != "")
         {
             if (ChartWhenSkipped == null) ChartWhenSkipped = GetFlowchart();

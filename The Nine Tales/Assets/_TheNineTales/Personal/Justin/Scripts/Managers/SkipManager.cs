@@ -50,11 +50,9 @@ public class SkipManager : MonoBehaviour
 
             if(chartToSkipTo != null)
             {
-                Debug.Log("skipto " + chartToSkipTo);
                 chartToSkipTo.ExecuteBlock((block != null && block != "") ? block : "skip");
             } else
             {
-                Debug.Log("skip " + chartOnSkip);
                 chartOnSkip.ExecuteBlock("skip");
             }
         }

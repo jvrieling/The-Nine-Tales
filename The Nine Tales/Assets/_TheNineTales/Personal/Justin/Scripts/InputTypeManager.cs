@@ -37,6 +37,7 @@ public class InputTypeManager : MonoBehaviour
 
     public void ToggleInputType()
     {
+        if (statusImage == null) statusImage = GameObject.Find("InputStatusImage").GetComponent<Image>();
         if (isMouse)
         {
             Debug.Log("Input type changed to controller.");

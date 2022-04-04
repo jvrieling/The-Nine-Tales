@@ -6,6 +6,7 @@ public class ToggleInputType : MonoBehaviour
 {
     public void Toggle()
     {
+        Debug.Log(InputTypeManager.instance);
         InputTypeManager.instance.ToggleInputType();
     }
 }
