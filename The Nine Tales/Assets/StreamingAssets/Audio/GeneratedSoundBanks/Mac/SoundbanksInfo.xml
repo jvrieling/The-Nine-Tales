@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="168053707" Language="SFX" Hash="1986705243">
+		<SoundBank Id="168053707" Language="SFX" Hash="3055257089">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Village</ObjectPath>
 			<ShortName>Music_Village</ShortName>
 			<Path>Music_Village.bnk</Path>
@@ -158,7 +158,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="707900965" Language="SFX" Hash="4262214876">
+		<SoundBank Id="707900965" Language="SFX" Hash="1142662126">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1b</ObjectPath>
 			<ShortName>Music_Ch1b</ShortName>
 			<Path>Music_Ch1b.bnk</Path>
@@ -321,7 +321,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="707900966" Language="SFX" Hash="2603158228">
+		<SoundBank Id="707900966" Language="SFX" Hash="3423434424">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Ch1a</ObjectPath>
 			<ShortName>Music_Ch1a</ShortName>
 			<Path>Music_Ch1a.bnk</Path>
@@ -499,12 +499,11 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1069431850" Language="SFX" Hash="3752023393">
+		<SoundBank Id="1069431850" Language="SFX" Hash="2535483683">
 			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2905909780" Name="Animation_Load_Failsafe" ObjectPath="\Events\Default Work Unit\Player\Animation_Load_Failsafe" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2550655564" Name="Dies_LOL" ObjectPath="\Events\Default Work Unit\Player\Dies_LOL" DurationType="OneShot" DurationMin="4.513542" DurationMax="4.513542">
 					<IncludedMemoryFiles>
 						<File Id="791681697" Language="SFX">
@@ -513,7 +512,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2956011499" Name="Fox_Dash" ObjectPath="\Events\Default Work Unit\Player\Fox_Dash" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.22059" DurationMax="0.22059">
+				<Event Id="2956011499" Name="Fox_Dash" ObjectPath="\Events\Default Work Unit\Player\Fox_Dash" DurationType="OneShot" DurationMin="0.22059" DurationMax="0.22059">
 					<IncludedMemoryFiles>
 						<File Id="566475179" Language="SFX">
 							<ShortName>DASH-HIGH.wav</ShortName>
@@ -521,7 +520,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1783467547" Name="Fox_Jump" ObjectPath="\Events\Default Work Unit\Player\Fox_Jump" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.172381" DurationMax="0.172381">
+				<Event Id="3242941405" Name="Fox_Footstep" ObjectPath="\Events\Default Work Unit\Player\Fox_Footstep" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1783467547" Name="Fox_Jump" ObjectPath="\Events\Default Work Unit\Player\Fox_Jump" DurationType="OneShot" DurationMin="0.172381" DurationMax="0.172381">
 					<IncludedMemoryFiles>
 						<File Id="303793343" Language="SFX">
 							<ShortName>JUMP-HIGH.wav</ShortName>
@@ -529,39 +529,24 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3193947170" Name="Hurt" ObjectPath="\Events\Default Work Unit\Player\Hurt" DurationType="OneShot" DurationMin="4." DurationMax="4.">
+				<Event Id="1687841656" Name="Fox_Land" ObjectPath="\Events\Default Work Unit\Player\Fox_Land" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2680479089" Name="Gain_Tail" ObjectPath="\Events\Default Work Unit\Player\Gain_Tail" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25">
 					<IncludedMemoryFiles>
-						<File Id="87337613" Language="SFX">
-							<ShortName>Hurt\9T_SD_Hurt5.wav</ShortName>
-							<Path>SFX/Hurt/9T_SD_Hurt5_10C4C929.wem</Path>
-						</File>
-						<File Id="129786024" Language="SFX">
-							<ShortName>Hurt\9T_SD_Hurt7.wav</ShortName>
-							<Path>SFX/Hurt/9T_SD_Hurt7_10C4C929.wem</Path>
-						</File>
-						<File Id="340166354" Language="SFX">
-							<ShortName>Hurt\9T_SD_Hurt3.wav</ShortName>
-							<Path>SFX/Hurt/9T_SD_Hurt3_10C4C929.wem</Path>
-						</File>
-						<File Id="463066707" Language="SFX">
-							<ShortName>Hurt\9T_SD_Hurt2.wav</ShortName>
-							<Path>SFX/Hurt/9T_SD_Hurt2_10C4C929.wem</Path>
-						</File>
-						<File Id="794136656" Language="SFX">
-							<ShortName>Hurt\9T_SD_Hurt6.wav</ShortName>
-							<Path>SFX/Hurt/9T_SD_Hurt6_10C4C929.wem</Path>
-						</File>
-						<File Id="885289111" Language="SFX">
-							<ShortName>Hurt\9T_SD_Hurt4.wav</ShortName>
-							<Path>SFX/Hurt/9T_SD_Hurt4_10C4C929.wem</Path>
-						</File>
-						<File Id="915073957" Language="SFX">
-							<ShortName>Hurt\9T_SD_Hurt1.wav</ShortName>
-							<Path>SFX/Hurt/9T_SD_Hurt1_10C4C929.wem</Path>
+						<File Id="798700818" Language="SFX">
+							<ShortName>9T_SD_New Tail.wav</ShortName>
+							<Path>SFX/9T_SD_New Tail_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1766743556" Name="Play_Footstep_Material" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Material" MaxAttenuation="100." DurationType="OneShot" DurationMin="0.098526" DurationMax="0.173968">
+				<Event Id="3193947170" Name="Hurt" ObjectPath="\Events\Default Work Unit\Player\Hurt" DurationType="OneShot" DurationMin="8.25" DurationMax="8.25">
+					<IncludedMemoryFiles>
+						<File Id="798700818" Language="SFX">
+							<ShortName>9T_SD_New Tail.wav</ShortName>
+							<Path>SFX/9T_SD_New Tail_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1766743556" Name="Play_Footstep_Material" ObjectPath="\Events\Default Work Unit\Player\Play_Footstep_Material" DurationType="OneShot" DurationMin="0.098526" DurationMax="0.173968">
 					<IncludedMemoryFiles>
 						<File Id="280788416" Language="SFX">
 							<ShortName>STEP-FOLIAGE-LOW_4.wav</ShortName>
@@ -616,7 +601,6 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="959462367" Name="Player_Unmute" ObjectPath="\Events\Default Work Unit\Player\Player_Unmute" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1072028603" Name="Spiderweb_Destroy" ObjectPath="\Events\Default Work Unit\Player\Spiderweb_Destroy" DurationType="OneShot" DurationMin="0.383243" DurationMax="0.383243">
 					<IncludedMemoryFiles>
 						<File Id="2751824" Language="SFX">
@@ -694,6 +678,10 @@
 				<File Id="794136656" Language="SFX">
 					<ShortName>Hurt\9T_SD_Hurt6.wav</ShortName>
 					<Path>SFX/Hurt/9T_SD_Hurt6_10C4C929.wem</Path>
+				</File>
+				<File Id="798700818" Language="SFX">
+					<ShortName>9T_SD_New Tail.wav</ShortName>
+					<Path>SFX/9T_SD_New Tail_10C4C929.wem</Path>
 				</File>
 				<File Id="885289111" Language="SFX">
 					<ShortName>Hurt\9T_SD_Hurt4.wav</ShortName>
@@ -859,12 +847,12 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2327537434">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2968302168">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1551306167" Language="SFX" Hash="2810599357">
+		<SoundBank Id="1551306167" Language="SFX" Hash="444026391">
 			<ObjectPath>\SoundBanks\Default Work Unit\UI</ObjectPath>
 			<ShortName>UI</ShortName>
 			<Path>UI.bnk</Path>
@@ -941,7 +929,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1866658237" Language="SFX" Hash="3342164198">
+		<SoundBank Id="1866658237" Language="SFX" Hash="2963850332">
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambient_Regions</ObjectPath>
 			<ShortName>Ambient_Regions</ShortName>
 			<Path>Ambient_Regions.bnk</Path>
@@ -980,7 +968,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1973600711" Language="SFX" Hash="1527355123">
+		<SoundBank Id="1973600711" Language="SFX" Hash="3246988747">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environmental</ObjectPath>
 			<ShortName>Environmental</ShortName>
 			<Path>Environmental.bnk</Path>
@@ -1031,7 +1019,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3735044908" Language="SFX" Hash="258780367">
+		<SoundBank Id="3735044908" Language="SFX" Hash="3113702224">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music_Main_Theme</ObjectPath>
 			<ShortName>Music_Main_Theme</ShortName>
 			<Path>Music_Main_Theme.bnk</Path>

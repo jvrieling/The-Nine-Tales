@@ -1,13 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	959462367	Player_Unmute			\Default Work Unit\Player\Player_Unmute	
 	1018073521	Weed_Destroy			\Default Work Unit\Player\Weed_Destroy	
 	1072028603	Spiderweb_Destroy			\Default Work Unit\Player\Spiderweb_Destroy	
+	1687841656	Fox_Land			\Default Work Unit\Player\Fox_Land	
 	1766743556	Play_Footstep_Material			\Default Work Unit\Player\Play_Footstep_Material	
 	1783467547	Fox_Jump			\Default Work Unit\Player\Fox_Jump	
 	2550655564	Dies_LOL			\Default Work Unit\Player\Dies_LOL	
-	2905909780	Animation_Load_Failsafe			\Default Work Unit\Player\Animation_Load_Failsafe	
+	2680479089	Gain_Tail			\Default Work Unit\Player\Gain_Tail	
 	2956011499	Fox_Dash			\Default Work Unit\Player\Fox_Dash	
 	3193947170	Hurt			\Default Work Unit\Player\Hurt	
+	3242941405	Fox_Footstep			\Default Work Unit\Player\Fox_Footstep	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	684570577	Footstep_Material			\Default Work Unit\Footstep_Material	
@@ -17,24 +18,25 @@ Switch	ID	Name	Switch Group			Notes
 	4256116324	Footstep_Grass	Footstep_Material			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	2751824	Spirderweb_Destroy	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\SPIDERWEB-COLLECT-MEDIUM_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Spirderweb_Destroy		11088
-	87337613	9T_SD_Hurt5	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt5		39578
-	129786024	9T_SD_Hurt7	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt7_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt7		40275
-	280788416	STEP-FOLIAGE-LOW_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_4		2524
-	303793343	Fox_Jump	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\JUMP-HIGH_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Fox_Jump		2564
-	304475018	GRASS-STEP3-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP3-HIGH_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP3-HIGH		2410
-	340166354	9T_SD_Hurt3	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt3		39309
-	393939333	STEP-FOLIAGE-LOW_2	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_2		3030
-	463066707	9T_SD_Hurt2	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt2		39251
-	507123433	GRASS-STEP1-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP1-HIGH_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP1-HIGH		2112
-	538812612	STEP-FOLIAGE-LOW_1	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_1		1596
-	566475179	Fox_Dash	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\DASH-HIGH_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Fox_Dash		2608
-	701462106	Weed_Destory	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\CUTTING-GRASS-MEDIUM_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Weed_Destory		7222
-	791681697	Fox_Dies_LOL	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Fox Dies lol_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Fox_Dies_LOL		67287
-	794136656	9T_SD_Hurt6	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt6_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt6		41004
-	885289111	9T_SD_Hurt4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt4		40161
-	915073957	9T_SD_Hurt1	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt1		39683
-	939080959	GRASS-STEP2-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP2-HIGH_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP2-HIGH		1441
-	958853102	STEP-FOLIAGE-LOW_3	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_3		2462
-	1038518400	GRASS-STEP4-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP4-HIGH_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP4-HIGH		2112
+	2751824	Spirderweb_Destroy	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\SPIDERWEB-COLLECT-MEDIUM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Spirderweb_Destroy		67748
+	87337613	9T_SD_Hurt5	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt5		768192
+	129786024	9T_SD_Hurt7	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt7		768192
+	280788416	STEP-FOLIAGE-LOW_4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_4		26512
+	303793343	Fox_Jump	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\JUMP-HIGH_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Fox_Jump		30552
+	304475018	GRASS-STEP3-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP3-HIGH_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP3-HIGH		15488
+	340166354	9T_SD_Hurt3	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt3		768192
+	393939333	STEP-FOLIAGE-LOW_2	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_2		30832
+	463066707	9T_SD_Hurt2	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt2		768192
+	507123433	GRASS-STEP1-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP1-HIGH_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP1-HIGH		13328
+	538812612	STEP-FOLIAGE-LOW_1	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_1		17524
+	566475179	Fox_Dash	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\DASH-HIGH_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Fox_Dash		19600
+	701462106	Weed_Destory	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\CUTTING-GRASS-MEDIUM_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Weed_Destory		79172
+	791681697	Fox_Dies_LOL	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_Fox Dies lol_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Fox_Dies_LOL		866792
+	794136656	9T_SD_Hurt6	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt6		768192
+	798700818	Gain_Tail	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\9T_SD_New Tail_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Gain_Tail		1584192
+	885289111	9T_SD_Hurt4	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt4		768192
+	915073957	9T_SD_Hurt1	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Hurt\9T_SD_Hurt1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Hurt\9T_SD_Hurt1		768192
+	939080959	GRASS-STEP2-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP2-HIGH_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP2-HIGH		8834
+	958853102	STEP-FOLIAGE-LOW_3	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\STEP-FOLIAGE-LOW_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Foliage\STEP-FOLIAGE-LOW_3		26512
+	1038518400	GRASS-STEP4-HIGH	Y:\Documents\Documents - EmsterMini\WwiseProjects\Nine Tales Audio\.cache\Windows\SFX\Footsteps\GRASS-STEP4-HIGH_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Player\Footstep_Player\Footstep_Material\Fox_Footstep_Grass\GRASS-STEP4-HIGH		13328
 
