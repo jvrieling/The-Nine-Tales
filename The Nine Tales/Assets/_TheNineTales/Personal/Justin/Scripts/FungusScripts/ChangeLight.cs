@@ -16,10 +16,12 @@ public class ChangeLight : Command
 
     public override void OnEnter()
     {
-        FadeLight fade = lightToChange.gameObject.AddComponent<FadeLight>();
-        fade.Initialize(lightToChange, newIntensity, newColor, fadeDuration);
-        //lightToChange.color = newColor;
-        //lightToChange.intensity = newIntensity;
+        if (lightToChange != null)
+        {
+            FadeLight fade = lightToChange.gameObject.AddComponent<FadeLight>();
+            fade.Initialize(lightToChange, newIntensity, newColor, fadeDuration);
+        }
+        
         Continue();
     }
 

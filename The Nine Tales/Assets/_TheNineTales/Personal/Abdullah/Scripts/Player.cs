@@ -641,4 +641,17 @@ public class Player : MonoBehaviour
     {
         an.SetBool("ForceIdle", force);
     }
+
+    public static void FaceDirection(FacingDirection dir = FacingDirection.Right)
+    {
+        Player p = player.GetComponent<Player>();
+        if (dir == FacingDirection.Left)
+        {
+            p.an.transform.localScale = new Vector3(p.initialAnimatorXScale, p.an.transform.localScale.y, p.an.transform.localScale.z);
+        } else
+        {
+            p.an.transform.localScale = new Vector3(-p.initialAnimatorXScale, p.an.transform.localScale.y, p.an.transform.localScale.z);
+        }
+        p.LastFacingDirection = dir;
+    }
 }

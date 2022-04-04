@@ -8,7 +8,9 @@ public class SkipManager : MonoBehaviour
     public static Flowchart skippableFlowchart;
     private static Flowchart chartOnSkip;
     private static Flowchart chartToSkipTo;
+    public Flowchart skipToDisplay;
     private static string block;
+    public string skipToBlockDisplay;
 
     public static bool canSkip;
 
@@ -66,5 +68,7 @@ public class SkipManager : MonoBehaviour
         {
             Skip();
         }
+        skipToDisplay = chartToSkipTo;
+        skipToBlockDisplay = block;
     }
 }
