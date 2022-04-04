@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TailsPersist : MonoBehaviour
 {
-    private static bool[] tailsEnabled;
+    public static bool[] tailsEnabled;
 
     private void Awake()
     {
