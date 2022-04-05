@@ -559,7 +559,8 @@ public class Player : MonoBehaviour
 
         damage = damage - (damage * m_damageReduction / 100);
         m_CurrentHealth -= damage;
-        GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth);
+        //GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth);
+        DamageImage.DamageImageSingleton.CalculateAlpha(m_CurrentHealth, m_FullHealth);
         // Reset time left before regen
         RegenCountdown = RegenCooldown;
 
@@ -581,7 +582,8 @@ public class Player : MonoBehaviour
                 // reset cooldown
                 RegenCountdown = RegenCooldown;
                 // Reset Dark fade
-                GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth);
+                //GlobalVolumeController.Singleton.CameraFadeDark(m_CurrentHealth, m_FullHealth);
+                DamageImage.DamageImageSingleton.CalculateAlpha(m_CurrentHealth, m_FullHealth);
             }
             else
             {
@@ -599,9 +601,10 @@ public class Player : MonoBehaviour
     {
        if(deathSound.Name != "") deathSound.Post(gameObject);
         // reset darkness
-        GlobalVolumeController.Singleton.ResetCameraFade();
+        //GlobalVolumeController.Singleton.ResetCameraFade();
+        DamageImage.DamageImageSingleton.ResetImage();
         // reset health 
-        m_CurrentHealth = m_maxHorizontalSpeed;
+        m_CurrentHealth = m_FullHealth;
         // Show VFX
         Instantiate(DamageVFX, transform.position + new Vector3(0,0, -2), Quaternion.identity);
 
