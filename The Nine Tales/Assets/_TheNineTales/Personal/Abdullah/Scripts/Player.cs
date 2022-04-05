@@ -100,6 +100,10 @@ public class Player : MonoBehaviour
     public GameObject DamageVFX;
     //public GameObject FeetVFX;
 
+    bool BlockedLeft;
+    bool BlockedRight;
+    bool BlockedUp;
+
     public AK.Wwise.Event deathSound;
 
     private void Awake()
@@ -154,6 +158,7 @@ public class Player : MonoBehaviour
         IsBlockedRight();
         IsBlockedLeft();
         IsBlockedUp();
+        Unstuck();
 
         m_PlayerRigidBody.velocity = m_PlayerVelocity;
 
@@ -226,10 +231,11 @@ public class Player : MonoBehaviour
                 m_PlayerVelocity.x = 0;
                 print("Blocked Right");
             }
+            BlockedRight = true;
         }
         else
         {
-
+            BlockedRight = false;
         }
     }
 
@@ -242,10 +248,11 @@ public class Player : MonoBehaviour
                 m_PlayerVelocity.x = 0;
                 print("Blocked Left");
             }
+            BlockedLeft = true;
         }
         else
         {
-
+            BlockedLeft = false;
         }
     }
     void IsBlockedUp()
@@ -257,10 +264,19 @@ public class Player : MonoBehaviour
                m_PlayerVelocity.y = 0;
                 print("Blocked Up");
             }
+            BlockedUp = true;
         }
         else
         {
+            BlockedUp = false;
+        }
+    }
 
+    void Unstuck()
+    {
+        if (BlockedUp && BlockedRight && BlockedLeft && IsGrounded())
+        {
+            transform.position = transform.position + (Vector3.up* 0.3f);
         }
     }
 
