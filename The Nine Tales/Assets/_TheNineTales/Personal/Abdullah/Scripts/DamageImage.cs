@@ -26,6 +26,10 @@ public class DamageImage : MonoBehaviour
 
     public void CalculateAlpha(float currentHp, float totalHp)
     {
+        if (DamageImageSingleton == null)
+        {
+            return;
+        }
         if (currentHp >= totalHp)
         {
             ResetImage();
