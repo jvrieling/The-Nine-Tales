@@ -479,7 +479,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 518228c8806f634b917801cbadfa4d3a
     GuidInternal: 
-    m_lastTime: -8585526761101597286
+    m_lastTime: -8585523500502706005
     List:
     - name: Ambient_Regions
       guid: ffd90b56c0e8af4297a90db1cf65ebbd
@@ -605,7 +605,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 7e2e31a57c2d4c46b34ccea3bc01669e
     GuidInternal: 
-    m_lastTime: -8585525927081100287
+    m_lastTime: -8585523500502927999
     List:
     - name: Ambient_Campfire
       guid: 73d81bd2289dc843b557d58f2fbdc35a
@@ -744,26 +744,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Animation_Load_Failsafe
-      guid: 293400594b96e74780f22fef0cf0e127
-      id: 2905909780
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7e2e31a57c2d4c46b34ccea3bc01669e
-      - ElementName: Player
-        ObjectType: 4
-        guid: fc4f10657dbb514cacef8ad9e5cbb9be
-      - ElementName: Animation_Load_Failsafe
-        ObjectType: 3
-        guid: 293400594b96e74780f22fef0cf0e127
-      Path: Events/Default Work Unit/Player/Animation_Load_Failsafe
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Arrive_In_Village
       guid: f9e637cabb932440a925a4cc280c75b4
       id: 1346965307
@@ -2975,7 +2955,7 @@ MonoBehaviour:
     m_lastTime: -8585558025537866916
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 07000000080000000b00000053000000
+  ExpandedWaapiItemIds: 0100000007000000080000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

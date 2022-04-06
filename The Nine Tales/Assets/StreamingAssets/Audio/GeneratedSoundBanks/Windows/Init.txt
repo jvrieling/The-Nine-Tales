@@ -6,6 +6,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2201105581	Credits			\Default Work Unit\Credits	
 	2378076306	Forest_Beginning			\Default Work Unit\Forest_Beginning	
 	3190862816	Forest_Storm			\Default Work Unit\Forest_Storm	
+	3610741985	Player_Load			\Default Work Unit\Player_Load	
 	3708762888	Forest_Path			\Default Work Unit\Forest_Path	
 
 State	ID	Name	State Group			Notes
@@ -37,6 +38,9 @@ State	ID	Name	State Group			Notes
 	671813814	In_Storm	Forest_Storm			
 	748895195	None	Forest_Storm			
 	2151441764	Not_In_Storm	Forest_Storm			
+	748895195	None	Player_Load			
+	959462367	Player_Unmute	Player_Load			
+	2213550990	Player_Mute	Player_Load			
 	748895195	None	Forest_Path			
 	3146944008	On_Forest_Path	Forest_Path			
 	3294614634	Not_On_Forest_Path	Forest_Path			
